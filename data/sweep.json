@@ -1,0 +1,765 @@
+{
+  "cost_bps": 0.0,
+  "results": [
+    {
+      "binanceus": {
+        "win_test": 0.5139,
+        "net_bps_test": 1.246,
+        "net_bps_train": 1.201,
+        "gross_bps_test": 1.246,
+        "bets_test": 4470
+      },
+      "coinbase": {
+        "win_test": 0.526,
+        "net_bps_test": 0.522,
+        "net_bps_train": 0.293,
+        "gross_bps_test": 0.522,
+        "bets_test": 3525
+      },
+      "survives": true,
+      "min_net_test": 0.522,
+      "strategy": "streak_rev_4"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.582,
+        "net_bps_test": 2.798,
+        "net_bps_train": 2.081,
+        "gross_bps_test": 2.798,
+        "bets_test": 6893
+      },
+      "coinbase": {
+        "win_test": 0.5482,
+        "net_bps_test": 0.401,
+        "net_bps_train": 0.268,
+        "gross_bps_test": 0.401,
+        "bets_test": 3995
+      },
+      "survives": true,
+      "min_net_test": 0.401,
+      "strategy": "boll_40_2.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5215,
+        "net_bps_test": 1.27,
+        "net_bps_train": 1.16,
+        "gross_bps_test": 1.27,
+        "bets_test": 10005
+      },
+      "coinbase": {
+        "win_test": 0.5273,
+        "net_bps_test": 0.393,
+        "net_bps_train": 0.323,
+        "gross_bps_test": 0.393,
+        "bets_test": 7460
+      },
+      "survives": true,
+      "min_net_test": 0.393,
+      "strategy": "streak_rev_3"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5922,
+        "net_bps_test": 3.164,
+        "net_bps_train": 2.099,
+        "gross_bps_test": 3.164,
+        "bets_test": 5593
+      },
+      "coinbase": {
+        "win_test": 0.5503,
+        "net_bps_test": 0.187,
+        "net_bps_train": 0.389,
+        "gross_bps_test": 0.187,
+        "bets_test": 3333
+      },
+      "survives": true,
+      "min_net_test": 0.187,
+      "strategy": "boll_20_2.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5242,
+        "net_bps_test": 1.168,
+        "net_bps_train": 1.204,
+        "gross_bps_test": 1.168,
+        "bets_test": 22590
+      },
+      "coinbase": {
+        "win_test": 0.5153,
+        "net_bps_test": 0.112,
+        "net_bps_train": 0.208,
+        "gross_bps_test": 0.112,
+        "bets_test": 15398
+      },
+      "survives": true,
+      "min_net_test": 0.112,
+      "strategy": "streak_rev_2"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6249,
+        "net_bps_test": 4.157,
+        "net_bps_train": 3.364,
+        "gross_bps_test": 4.157,
+        "bets_test": 3540
+      },
+      "coinbase": {
+        "win_test": 0.5473,
+        "net_bps_test": 0.049,
+        "net_bps_train": 0.042,
+        "gross_bps_test": 0.049,
+        "bets_test": 1798
+      },
+      "survives": true,
+      "min_net_test": 0.049,
+      "strategy": "mrvf_48_2.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5297,
+        "net_bps_test": 1.154,
+        "net_bps_train": 1.324,
+        "gross_bps_test": 1.154,
+        "bets_test": 55107
+      },
+      "coinbase": {
+        "win_test": 0.5089,
+        "net_bps_test": 0.014,
+        "net_bps_train": 0.154,
+        "gross_bps_test": 0.014,
+        "bets_test": 31465
+      },
+      "survives": true,
+      "min_net_test": 0.014,
+      "strategy": "meanrev_2"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5247,
+        "net_bps_test": 1.057,
+        "net_bps_train": 1.193,
+        "gross_bps_test": 1.057,
+        "bets_test": 51450
+      },
+      "coinbase": {
+        "win_test": 0.5102,
+        "net_bps_test": -0.0,
+        "net_bps_train": -0.015,
+        "gross_bps_test": -0.0,
+        "bets_test": 31457
+      },
+      "survives": false,
+      "min_net_test": -0.0,
+      "strategy": "meanrev_1"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.564,
+        "net_bps_test": 1.835,
+        "net_bps_train": 1.689,
+        "gross_bps_test": 1.835,
+        "bets_test": 28312
+      },
+      "coinbase": {
+        "win_test": 0.526,
+        "net_bps_test": 0.0,
+        "net_bps_train": 0.143,
+        "gross_bps_test": 0.0,
+        "bets_test": 16166
+      },
+      "survives": false,
+      "min_net_test": 0.0,
+      "strategy": "boll_40_1.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5409,
+        "net_bps_test": 1.328,
+        "net_bps_train": 1.15,
+        "gross_bps_test": 1.328,
+        "bets_test": 56317
+      },
+      "coinbase": {
+        "win_test": 0.5136,
+        "net_bps_test": -0.008,
+        "net_bps_train": 0.126,
+        "gross_bps_test": -0.008,
+        "bets_test": 31466
+      },
+      "survives": false,
+      "min_net_test": -0.008,
+      "strategy": "meanrev_6"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5223,
+        "net_bps_test": 0.501,
+        "net_bps_train": 0.432,
+        "gross_bps_test": 0.501,
+        "bets_test": 56361
+      },
+      "coinbase": {
+        "win_test": 0.5125,
+        "net_bps_test": -0.026,
+        "net_bps_train": -0.019,
+        "gross_bps_test": -0.026,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -0.026,
+      "strategy": "meanrev_48"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5349,
+        "net_bps_test": 1.236,
+        "net_bps_train": 1.247,
+        "gross_bps_test": 1.236,
+        "bets_test": 55948
+      },
+      "coinbase": {
+        "win_test": 0.5112,
+        "net_bps_test": -0.036,
+        "net_bps_train": 0.079,
+        "gross_bps_test": -0.036,
+        "bets_test": 31463
+      },
+      "survives": false,
+      "min_net_test": -0.036,
+      "strategy": "meanrev_3"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5296,
+        "net_bps_test": 0.816,
+        "net_bps_train": 0.66,
+        "gross_bps_test": 0.816,
+        "bets_test": 56360
+      },
+      "coinbase": {
+        "win_test": 0.5124,
+        "net_bps_test": -0.046,
+        "net_bps_train": 0.038,
+        "gross_bps_test": -0.046,
+        "bets_test": 31469
+      },
+      "survives": false,
+      "min_net_test": -0.046,
+      "strategy": "meanrev_24"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.572,
+        "net_bps_test": 2.226,
+        "net_bps_train": 1.967,
+        "gross_bps_test": 2.226,
+        "bets_test": 15333
+      },
+      "coinbase": {
+        "win_test": 0.5254,
+        "net_bps_test": -0.09,
+        "net_bps_train": 0.142,
+        "gross_bps_test": -0.09,
+        "bets_test": 8845
+      },
+      "survives": false,
+      "min_net_test": -0.09,
+      "strategy": "boll_40_1.5"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5355,
+        "net_bps_test": 1.032,
+        "net_bps_train": 0.933,
+        "gross_bps_test": 1.032,
+        "bets_test": 56352
+      },
+      "coinbase": {
+        "win_test": 0.5107,
+        "net_bps_test": -0.093,
+        "net_bps_train": 0.076,
+        "gross_bps_test": -0.093,
+        "bets_test": 31471
+      },
+      "survives": false,
+      "min_net_test": -0.093,
+      "strategy": "meanrev_12"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5249,
+        "net_bps_test": 0.064,
+        "net_bps_train": -0.046,
+        "gross_bps_test": 0.064,
+        "bets_test": 56366
+      },
+      "coinbase": {
+        "win_test": 0.4973,
+        "net_bps_test": -0.093,
+        "net_bps_train": 0.135,
+        "gross_bps_test": -0.093,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -0.093,
+      "strategy": "time_of_day"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5791,
+        "net_bps_test": 2.553,
+        "net_bps_train": 2.338,
+        "gross_bps_test": 2.553,
+        "bets_test": 14169
+      },
+      "coinbase": {
+        "win_test": 0.5309,
+        "net_bps_test": -0.126,
+        "net_bps_train": 0.2,
+        "gross_bps_test": -0.126,
+        "bets_test": 8426
+      },
+      "survives": false,
+      "min_net_test": -0.126,
+      "strategy": "boll_20_1.5"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.5748,
+        "net_bps_test": 2.339,
+        "net_bps_train": 2.147,
+        "gross_bps_test": 2.339,
+        "bets_test": 27695
+      },
+      "coinbase": {
+        "win_test": 0.5206,
+        "net_bps_test": -0.151,
+        "net_bps_train": 0.146,
+        "gross_bps_test": -0.151,
+        "bets_test": 16103
+      },
+      "survives": false,
+      "min_net_test": -0.151,
+      "strategy": "boll_20_1.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6165,
+        "net_bps_test": 3.94,
+        "net_bps_train": 2.812,
+        "gross_bps_test": 3.94,
+        "bets_test": 3518
+      },
+      "coinbase": {
+        "win_test": 0.5236,
+        "net_bps_test": -0.191,
+        "net_bps_train": -0.095,
+        "gross_bps_test": -0.191,
+        "bets_test": 1847
+      },
+      "survives": false,
+      "min_net_test": -0.191,
+      "strategy": "mrvf_12_2.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6289,
+        "net_bps_test": 4.259,
+        "net_bps_train": 3.852,
+        "gross_bps_test": 4.259,
+        "bets_test": 8022
+      },
+      "coinbase": {
+        "win_test": 0.5241,
+        "net_bps_test": -0.199,
+        "net_bps_train": -0.003,
+        "gross_bps_test": -0.199,
+        "bets_test": 3997
+      },
+      "survives": false,
+      "min_net_test": -0.199,
+      "strategy": "mrvf_24_1.5"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6098,
+        "net_bps_test": 3.834,
+        "net_bps_train": 3.731,
+        "gross_bps_test": 3.834,
+        "bets_test": 16268
+      },
+      "coinbase": {
+        "win_test": 0.5148,
+        "net_bps_test": -0.236,
+        "net_bps_train": 0.038,
+        "gross_bps_test": -0.236,
+        "bets_test": 8554
+      },
+      "survives": false,
+      "min_net_test": -0.236,
+      "strategy": "mrvf_24_1.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.604,
+        "net_bps_test": 3.48,
+        "net_bps_train": 3.559,
+        "gross_bps_test": 3.48,
+        "bets_test": 17255
+      },
+      "coinbase": {
+        "win_test": 0.5153,
+        "net_bps_test": -0.243,
+        "net_bps_train": 0.061,
+        "gross_bps_test": -0.243,
+        "bets_test": 9373
+      },
+      "survives": false,
+      "min_net_test": -0.243,
+      "strategy": "mrvf_12_1.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6144,
+        "net_bps_test": 3.712,
+        "net_bps_train": 3.658,
+        "gross_bps_test": 3.712,
+        "bets_test": 8376
+      },
+      "coinbase": {
+        "win_test": 0.5146,
+        "net_bps_test": -0.249,
+        "net_bps_train": -0.013,
+        "gross_bps_test": -0.249,
+        "bets_test": 4355
+      },
+      "survives": false,
+      "min_net_test": -0.249,
+      "strategy": "mrvf_12_1.5"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6204,
+        "net_bps_test": 3.935,
+        "net_bps_train": 3.147,
+        "gross_bps_test": 3.935,
+        "bets_test": 3506
+      },
+      "coinbase": {
+        "win_test": 0.5362,
+        "net_bps_test": -0.265,
+        "net_bps_train": -0.249,
+        "gross_bps_test": -0.265,
+        "bets_test": 1824
+      },
+      "survives": false,
+      "min_net_test": -0.265,
+      "strategy": "mrvf_24_2.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6297,
+        "net_bps_test": 4.482,
+        "net_bps_train": 3.951,
+        "gross_bps_test": 4.482,
+        "bets_test": 7713
+      },
+      "coinbase": {
+        "win_test": 0.5325,
+        "net_bps_test": -0.268,
+        "net_bps_train": 0.1,
+        "gross_bps_test": -0.268,
+        "bets_test": 3720
+      },
+      "survives": false,
+      "min_net_test": -0.268,
+      "strategy": "mrvf_48_1.5"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.6129,
+        "net_bps_test": 3.996,
+        "net_bps_train": 3.765,
+        "gross_bps_test": 3.996,
+        "bets_test": 15493
+      },
+      "coinbase": {
+        "win_test": 0.5168,
+        "net_bps_test": -0.365,
+        "net_bps_train": 0.019,
+        "gross_bps_test": -0.365,
+        "bets_test": 8013
+      },
+      "survives": false,
+      "min_net_test": -0.365,
+      "strategy": "mrvf_48_1.0"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4777,
+        "net_bps_test": -0.501,
+        "net_bps_train": -0.432,
+        "gross_bps_test": -0.501,
+        "bets_test": 56361
+      },
+      "coinbase": {
+        "win_test": 0.4875,
+        "net_bps_test": 0.026,
+        "net_bps_train": 0.019,
+        "gross_bps_test": 0.026,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -0.501,
+      "strategy": "momentum_48"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4683,
+        "net_bps_test": -0.73,
+        "net_bps_train": -0.666,
+        "gross_bps_test": -0.73,
+        "bets_test": 56366
+      },
+      "coinbase": {
+        "win_test": 0.4854,
+        "net_bps_test": 0.023,
+        "net_bps_train": -0.013,
+        "gross_bps_test": 0.023,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -0.73,
+      "strategy": "ema_96"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4704,
+        "net_bps_test": -0.816,
+        "net_bps_train": -0.66,
+        "gross_bps_test": -0.816,
+        "bets_test": 56360
+      },
+      "coinbase": {
+        "win_test": 0.4876,
+        "net_bps_test": 0.046,
+        "net_bps_train": -0.038,
+        "gross_bps_test": 0.046,
+        "bets_test": 31469
+      },
+      "survives": false,
+      "min_net_test": -0.816,
+      "strategy": "momentum_24"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4645,
+        "net_bps_test": -1.032,
+        "net_bps_train": -0.933,
+        "gross_bps_test": -1.032,
+        "bets_test": 56352
+      },
+      "coinbase": {
+        "win_test": 0.4893,
+        "net_bps_test": 0.093,
+        "net_bps_train": -0.076,
+        "gross_bps_test": 0.093,
+        "bets_test": 31471
+      },
+      "survives": false,
+      "min_net_test": -1.032,
+      "strategy": "momentum_12"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4753,
+        "net_bps_test": -1.057,
+        "net_bps_train": -1.193,
+        "gross_bps_test": -1.057,
+        "bets_test": 51450
+      },
+      "coinbase": {
+        "win_test": 0.4898,
+        "net_bps_test": 0.0,
+        "net_bps_train": 0.015,
+        "gross_bps_test": 0.0,
+        "bets_test": 31457
+      },
+      "survives": false,
+      "min_net_test": -1.057,
+      "strategy": "momentum_1"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4565,
+        "net_bps_test": -1.098,
+        "net_bps_train": -0.953,
+        "gross_bps_test": -1.098,
+        "bets_test": 56366
+      },
+      "coinbase": {
+        "win_test": 0.4829,
+        "net_bps_test": 0.021,
+        "net_bps_train": -0.006,
+        "gross_bps_test": 0.021,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -1.098,
+      "strategy": "ema_48"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4703,
+        "net_bps_test": -1.154,
+        "net_bps_train": -1.324,
+        "gross_bps_test": -1.154,
+        "bets_test": 55107
+      },
+      "coinbase": {
+        "win_test": 0.4911,
+        "net_bps_test": -0.014,
+        "net_bps_train": -0.154,
+        "gross_bps_test": -0.014,
+        "bets_test": 31465
+      },
+      "survives": false,
+      "min_net_test": -1.154,
+      "strategy": "momentum_2"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4651,
+        "net_bps_test": -1.236,
+        "net_bps_train": -1.247,
+        "gross_bps_test": -1.236,
+        "bets_test": 55948
+      },
+      "coinbase": {
+        "win_test": 0.4888,
+        "net_bps_test": 0.036,
+        "net_bps_train": -0.079,
+        "gross_bps_test": 0.036,
+        "bets_test": 31463
+      },
+      "survives": false,
+      "min_net_test": -1.236,
+      "strategy": "momentum_3"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4591,
+        "net_bps_test": -1.328,
+        "net_bps_train": -1.15,
+        "gross_bps_test": -1.328,
+        "bets_test": 56317
+      },
+      "coinbase": {
+        "win_test": 0.4864,
+        "net_bps_test": 0.008,
+        "net_bps_train": -0.126,
+        "gross_bps_test": 0.008,
+        "bets_test": 31466
+      },
+      "survives": false,
+      "min_net_test": -1.328,
+      "strategy": "momentum_6"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4469,
+        "net_bps_test": -1.517,
+        "net_bps_train": -1.425,
+        "gross_bps_test": -1.517,
+        "bets_test": 56366
+      },
+      "coinbase": {
+        "win_test": 0.4834,
+        "net_bps_test": 0.044,
+        "net_bps_train": -0.057,
+        "gross_bps_test": 0.044,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -1.517,
+      "strategy": "ema_24"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4366,
+        "net_bps_test": -1.868,
+        "net_bps_train": -1.877,
+        "gross_bps_test": -1.868,
+        "bets_test": 56366
+      },
+      "coinbase": {
+        "win_test": 0.4839,
+        "net_bps_test": 0.026,
+        "net_bps_train": -0.076,
+        "gross_bps_test": 0.026,
+        "bets_test": 31474
+      },
+      "survives": false,
+      "min_net_test": -1.868,
+      "strategy": "ema_12"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4265,
+        "net_bps_test": -2.291,
+        "net_bps_train": -1.95,
+        "gross_bps_test": -2.291,
+        "bets_test": 10408
+      },
+      "coinbase": {
+        "win_test": 0.4567,
+        "net_bps_test": -0.308,
+        "net_bps_train": -0.283,
+        "gross_bps_test": -0.308,
+        "bets_test": 4364
+      },
+      "survives": false,
+      "min_net_test": -2.291,
+      "strategy": "breakout_12"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4257,
+        "net_bps_test": -2.374,
+        "net_bps_train": -1.806,
+        "gross_bps_test": -2.374,
+        "bets_test": 6936
+      },
+      "coinbase": {
+        "win_test": 0.4494,
+        "net_bps_test": -0.65,
+        "net_bps_train": -0.116,
+        "gross_bps_test": -0.65,
+        "bets_test": 2846
+      },
+      "survives": false,
+      "min_net_test": -2.374,
+      "strategy": "breakout_24"
+    },
+    {
+      "binanceus": {
+        "win_test": 0.4231,
+        "net_bps_test": -2.685,
+        "net_bps_train": -1.588,
+        "gross_bps_test": -2.685,
+        "bets_test": 4469
+      },
+      "coinbase": {
+        "win_test": 0.4396,
+        "net_bps_test": -0.907,
+        "net_bps_train": 0.107,
+        "gross_bps_test": -0.907,
+        "bets_test": 1754
+      },
+      "survives": false,
+      "min_net_test": -2.685,
+      "strategy": "breakout_48"
+    }
+  ]
+}

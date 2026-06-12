@@ -1,0 +1,9 @@
+# local-only forward-trading artifacts (cloud uses the self-contained live view)
+data/paper_ledger.csv
+data/paper_runs.log
+
+# python / streamlit
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.ipynb_checkpoints/
