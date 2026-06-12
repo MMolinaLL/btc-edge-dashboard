@@ -50,7 +50,7 @@ def fmt_pct(x):
     return "—" if pd.isna(x) else f"{x*100:.2f}%"
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=60, show_spinner=False)
 def fetch_live_candles():
     """Recent 5m BTC candles from a live, US-reachable source — no local PC needed."""
     import requests
@@ -89,7 +89,7 @@ def fetch_live_candles():
         return None, None
 
 
-@st.cache_data(ttl=300, show_spinner="Fetching live BTC data…")
+@st.cache_data(ttl=60, show_spinner="Fetching live BTC data…")
 def live_forward(cost_bps):
     df, src = fetch_live_candles()
     if df is None or len(df) < 100:
@@ -103,20 +103,133 @@ def live_forward(cost_bps):
             "t0": df.index[0], "t1": df.index[-1], "equity": eq.iloc[::step]}
 
 
-# ------------------------------ header ------------------------------------
-st.title("📈 Edge Research Dashboard")
-st.caption("Backtest-first. Every number is net of cost and split into "
-           "train / out-of-sample test. Controls (coinflip) must land at chance.")
+@st.cache_data(ttl=60, show_spinner=False)
+def live_market():
+    """Recent BTC price for the friendly Live tab: current price, 24h move, chart."""
+    df, src = fetch_live_candles()
+    if df is None or len(df) < 50:
+        return None
+    close = df["close"]
+    last = float(close.iloc[-1])
+    back24 = close.iloc[-min(288, len(close))]          # ~24h ago (288 5-min candles)
+    window = close.iloc[-min(288, len(close)):]
+    chart = close.iloc[-min(576, len(close)):]          # ~48h chart
+    step = max(1, len(chart) // 1500)
+    return {"src": src, "price": last,
+            "chg24": (last / back24 - 1) * 100,
+            "high24": float(window.max()), "low24": float(window.min()),
+            "series": chart.iloc[::step]}
 
-# auto-refresh the page so live data stays current (every 5 min)
+
+# ------------------------------ header ------------------------------------
+st.title("🤖 Bitcoin Bot — Live")
+st.caption("A bot making tiny **practice** bets on Bitcoin's next move with fake money — "
+           "built to honestly test whether a strategy actually works before risking real cash. "
+           "The **Live** tab is your home; the rest is the technical research behind it.")
+
+# auto-refresh the page so live data stays current (every minute)
 try:
     from streamlit_autorefresh import st_autorefresh
-    st_autorefresh(interval=300_000, key="auto_refresh")
+    st_autorefresh(interval=60_000, key="auto_refresh")
 except Exception:
     pass
 
-tab_over, tab_btc, tab_wx, tab_search, tab_paper = st.tabs(
-    ["Overview", "BTC strategies", "Weather markets", "Edge search", "Paper trading"])
+tab_live, tab_over, tab_btc, tab_wx, tab_search, tab_paper = st.tabs(
+    ["🟢 Live", "Overview", "Strategy lab", "Weather", "Strategy search", "Bot details"])
+
+
+# ================================ LIVE ====================================
+with tab_live:
+    st.caption("This bot makes tiny **practice** bets (fake money) on whether Bitcoin will tick "
+               "up or down over the next 5 minutes — to test a strategy before anyone risks real "
+               "cash. Here's what's happening right now (updates every minute).")
+
+    mk = live_market()
+    if mk is None:
+        st.error("Couldn't reach a live price feed right now — it retries automatically.")
+    else:
+        c1, c2, c3 = st.columns(3)
+        c1.metric("₿ Bitcoin price (live)", f"${mk['price']:,.0f}",
+                  f"{mk['chg24']:+.2f}% (24h)")
+        c2.metric("24h high", f"${mk['high24']:,.0f}")
+        c3.metric("24h low", f"${mk['low24']:,.0f}")
+        s = mk["series"]
+        up = s.iloc[-1] >= s.iloc[0]
+        pfig = go.Figure(go.Scatter(x=s.index, y=s.values, mode="lines",
+                         line=dict(width=2, color="#16a34a" if up else "#dc2626")))
+        pfig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10),
+                           yaxis_title="USD")
+        pfig.update_yaxes(range=[s.min() * 0.999, s.max() * 1.001])
+        st.plotly_chart(pfig, use_container_width=True)
+        st.caption(f"Live Bitcoin price, last ~{len(s)//12 or 1}h · source {mk['src']}.")
+
+    st.divider()
+    st.subheader("🤖 What the bot is doing right now")
+    lf = live_forward(3.0)
+    if lf is not None:
+        sig = lf["signal"]
+        if sig == 1:
+            st.success("**Betting UP** — it thinks Bitcoin will tick **up** in the next 5 minutes.")
+        elif sig == -1:
+            st.error("**Betting DOWN** — it thinks Bitcoin will tick **down** in the next 5 minutes.")
+        else:
+            st.info("**Watching, not betting.** The bot is picky — it only bets when the price "
+                    "looks unusually stretched. Most of the time (like now) it sits out. "
+                    "That's on purpose — fewer, higher-quality bets.")
+
+    st.divider()
+    st.subheader("💰 Pretend-money scoreboard")
+    stake = st.slider("Fake money to bet per play", 10, 1000, 100, 10, format="$%d")
+    live_ledger = os.path.join(DATA, "live_ledger.csv")
+    done = pd.DataFrame()
+    if os.path.exists(live_ledger):
+        ll = pd.read_csv(live_ledger, parse_dates=["entry_time", "resolve_time"])
+        done = ll.dropna(subset=["pnl_bps"]).copy()
+    START = 1000.0
+    if len(done):
+        done["dollars"] = done["pnl_bps"] / 10000 * stake
+        done["balance"] = START + done["dollars"].cumsum()
+        cur = float(done["balance"].iloc[-1])
+        a, b, cc, d = st.columns(4)
+        a.metric("Balance now", f"${cur:,.2f}", f"{cur - START:+,.2f}")
+        b.metric("Plays made", f"{len(done)}")
+        cc.metric("Won", f"{int((done['dollars'] > 0).sum())} / {len(done)}")
+        d.metric("Started with", f"${START:,.0f}")
+        bfig = go.Figure(go.Scatter(x=done["resolve_time"], y=done["balance"], mode="lines",
+                         line=dict(width=2, color="#16a34a" if cur >= START else "#dc2626")))
+        bfig.add_hline(y=START, line_dash="dash", line_color="#aaa")
+        bfig.update_layout(height=260, margin=dict(l=10, r=10, t=10, b=10), yaxis_title="USD")
+        st.plotly_chart(bfig, use_container_width=True)
+        st.caption("Fake money, real prices. The moves are small because the edge is small — "
+                   "that's the honest reality this project is testing. Drag the slider to see how "
+                   "a bigger bet size would scale it.")
+        st.markdown("**Recent plays**")
+        for _, r in done.tail(8)[::-1].iterrows():
+            dirn = "UP" if r["signal"] == 1 else "DOWN"
+            won = r["dollars"] > 0
+            t = pd.Timestamp(r["resolve_time"]).strftime("%b %d, %I:%M %p")
+            st.write(f"{'✅' if won else '❌'} {t} — bet **{dirn}**, "
+                     f"{'won' if won else 'lost'} **${abs(r['dollars']):.2f}**")
+    else:
+        st.info("No completed plays yet. The bot is selective — it only bets a few times a day, "
+                "and each bet takes 5 minutes to settle. This fills in over the coming hours.")
+
+    st.divider()
+    sp = os.path.join(DATA, "..", "reports", "state.json")
+    rp = os.path.join(DATA, "..", "reports", "latest.md")
+    if os.path.exists(sp):
+        with open(sp) as f:
+            ms = json.load(f)
+        badge = {"none": "🟢", "watch": "🟡", "alert": "🔴"}.get(ms.get("alert_level"), "⚪")
+        st.subheader(f"{badge} What the AI watchdog says")
+        if os.path.exists(rp):
+            with open(rp, encoding="utf-8") as f:
+                st.markdown(f.read())
+        st.caption(f"Written by Claude · {ms.get('updated','')} · refreshes a few times a day.")
+    else:
+        st.subheader("🤖 AI watchdog")
+        st.info("Claude writes a plain-English assessment a few times a day — it'll appear here "
+                "automatically once the monitor has run.")
 
 
 # ============================== OVERVIEW ==================================
