@@ -332,6 +332,51 @@ with tab_search:
 
 # ============================== PAPER =====================================
 with tab_paper:
+    # --- AI monitor assessment (written by the GitHub Actions monitor) ---
+    state_path = os.path.join(DATA, "..", "reports", "state.json")
+    report_path = os.path.join(DATA, "..", "reports", "latest.md")
+    if os.path.exists(state_path):
+        with open(state_path) as f:
+            mstate = json.load(f)
+        badge = {"none": "🟢", "watch": "🟡", "alert": "🔴"}.get(mstate.get("alert_level"), "⚪")
+        st.subheader(f"{badge} AI monitor")
+        if mstate.get("alert_level") == "alert":
+            st.error(f"**ALERT:** {mstate.get('alert_message','')}")
+        elif mstate.get("alert_level") == "watch":
+            st.warning(f"**WATCH:** {mstate.get('alert_message','')}")
+        if os.path.exists(report_path):
+            with st.expander(f"📋 {mstate.get('headline','Latest assessment')}",
+                             expanded=True):
+                with open(report_path, encoding="utf-8") as f:
+                    st.markdown(f.read())
+        st.caption(f"Written by Claude ({mstate.get('model','')}) · {mstate.get('updated','')} "
+                   "· runs automatically a few times a day.")
+        st.divider()
+
+    # --- persisted forward ledger (committed by GitHub Actions — no PC) ---
+    live_ledger = os.path.join(DATA, "live_ledger.csv")
+    if os.path.exists(live_ledger):
+        ll = pd.read_csv(live_ledger, parse_dates=["entry_time", "resolve_time"])
+        done = ll.dropna(subset=["pnl_bps"])
+        st.subheader("Persisted forward ledger (serverless, no PC)")
+        cc = st.columns(4)
+        cc[0].metric("Logged trades", f"{len(ll):,}")
+        cc[1].metric("Resolved", f"{len(done):,}")
+        if len(done):
+            cc[2].metric("Win %", fmt_pct((done["pnl_bps"] > 0).mean()))
+            cc[3].metric("Net bps/trade", f"{done['pnl_bps'].mean():+.2f}")
+            eqfig = go.Figure(go.Scatter(x=done["resolve_time"], y=done["pnl_bps"].cumsum(),
+                              line=dict(width=2,
+                                        color="#16a34a" if done["pnl_bps"].mean() > 0 else "#dc2626")))
+            eqfig.add_hline(y=0, line_color="#aaa")
+            eqfig.update_layout(height=300, margin=dict(l=10, r=10, t=30, b=10),
+                                title="Forward equity (bps) — accumulated by GitHub Actions")
+            st.plotly_chart(eqfig, use_container_width=True)
+        else:
+            st.caption("Ledger created; waiting for the first trades to resolve "
+                       "(composite_score is selective, so this fills slowly).")
+        st.divider()
+
     st.subheader("Live forward test — composite_score")
     st.caption("Recomputed from the latest **real** BTC 5-minute data on every refresh "
                "(the cloud fetches it directly — no PC required). The strategy uses fixed "

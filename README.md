@@ -18,6 +18,12 @@ live BTC data itself), see [`DEPLOY.md`](DEPLOY.md) (Streamlit Community Cloud).
 The *Paper trading* tab recomputes `composite_score` from live data on every
 refresh; the other tabs render the bundled historical data.
 
+**AI monitoring engine** (optional, serverless) — GitHub Actions collect live data,
+have **Claude** write honest assessments + degradation alerts + regime notes, and
+open PRs proposing new strategies for the harness to score. Setup + cost in
+[`SETUP_AI.md`](SETUP_AI.md). Scripts live in `automation/`, workflows in
+`.github/workflows/`.
+
 Five tabs: **Overview** (data inventory + findings), **BTC strategies** (live
 leaderboard, cost slider, price + equity charts with a train/test split),
 **Weather markets** (bucket-price convergence vs. the running-high temperature),

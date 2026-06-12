@@ -1,0 +1,47 @@
+name: research
+
+# Claude proposes new candidate strategies; the existing harness scores them
+# against the strict cross-venue bar; the survivors (if any) go into a PR for
+# human review. Nothing auto-merges. Weekly + on-demand.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"   # Mondays 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: run research
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "No ANTHROPIC_API_KEY secret set — skipping. Add it in repo Settings → Secrets."
+            exit 0
+          fi
+          python automation/research.py
+      - name: open PR with proposals
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ai-research-proposals
+          title: "🤖 Automated strategy research proposals"
+          commit-message: "research: new strategy proposals + cross-venue scores"
+          body: |
+            Claude proposed new candidate strategies; the harness scored them against
+            the strict cross-venue bar. See `reports/research_latest.md` for results.
+            **Review before merging** — proposals run in CI but are not auto-trusted.
+          add-paths: |
+            search_user/ai_proposed.py
+            data/search_results.json
+            reports/research_latest.md

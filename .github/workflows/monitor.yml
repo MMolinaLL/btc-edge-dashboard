@@ -1,0 +1,40 @@
+name: monitor
+
+# Claude reads the live results and writes an honest assessment + degradation
+# alert + regime note. Runs 3x/day to keep API cost trivial (pennies/run).
+# Refreshes the results snapshot first, then commits the snapshot + reports.
+
+on:
+  schedule:
+    - cron: "0 6,14,22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - run: python automation/collect.py   # refresh data/live_results.json
+      - name: run AI monitor
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "No ANTHROPIC_API_KEY secret set — skipping AI step. Add it in repo Settings → Secrets."
+            exit 0
+          fi
+          python automation/ai_monitor.py
+      - name: commit snapshot + reports
+        run: |
+          git config user.name "btc-bot[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live_results.json data/live_ledger.csv reports/
+          git diff --cached --quiet || git commit -m "monitor: ai assessment $(date -u +%FT%TZ)"
+          git push
