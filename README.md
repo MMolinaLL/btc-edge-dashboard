@@ -9,9 +9,14 @@ paper-trading loop so we learn from reality, not from a curve-fit.
 ## Run the dashboard
 
 ```bash
-pip install streamlit plotly pandas pyarrow numpy requests
+pip install -r requirements.txt
 streamlit run app.py        # opens http://localhost:8501
 ```
+
+To host it **always-on at a public URL** (free, no PC required — the cloud fetches
+live BTC data itself), see [`DEPLOY.md`](DEPLOY.md) (Streamlit Community Cloud).
+The *Paper trading* tab recomputes `composite_score` from live data on every
+refresh; the other tabs render the bundled historical data.
 
 Five tabs: **Overview** (data inventory + findings), **BTC strategies** (live
 leaderboard, cost slider, price + equity charts with a train/test split),
