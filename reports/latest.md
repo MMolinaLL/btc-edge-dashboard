@@ -1,23 +1,22 @@
-# 🟢 Sample far too thin (7 bets) to judge — no signal active; edge unproven as expected
+# 🟢 Still far too thin (7 bets) to judge — no active signal; marginal edge remains unproven as expected
 
-_Updated 2026-06-12 03:42 UTC · model claude-opus-4-8_
+_Updated 2026-06-12 16:34 UTC · model claude-opus-4-8_
 
-**Regime:** No active signal right now (signal=0); BTC near $63.4k. Nothing unusual in regime, just a quiet, slow-accumulating sample.
+**Regime:** No signal firing right now (signal=0), BTC near $63.8k. Nothing abnormal in the regime — just a quiet, slowly accumulating sample.
 
 ## How it's doing
 
-Honestly: there's almost nothing to judge yet. The rolling window shows just **7 bets**, with a win rate of **42.9%**, gross of **+0.146 bps**, and net of **-2.854 bps** after assumed **3.0 bps** cost. The persistent ledger shows **0 resolved trades**. Right now there is **no active signal** (signal=0).
+Nothing meaningful has changed since last check. The strategy is sitting flat (signal=0) with BTC around **$63,835**. The live window still shows only **7 bets** — a handful, not a sample you can draw conclusions from.
 
-## What the numbers do and don't tell us
+## What the numbers say (and don't)
 
-Seven bets is statistical noise — you cannot distinguish skill from luck at this size. Recall the strategy's *expected* gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost, so even in the best case it's **marginal and likely not net-profitable after realistic costs**. A slightly negative net over 7 bets is fully consistent with that thin, marginal expectation — it is **not** evidence of breakdown. It would take dozens of resolved trades to say anything meaningful.
+- Win rate **71.4%** sounds nice, but across 7 bets that's literally a 5-of-7 outcome — pure noise at this size.
+- Window **gross +1.58 bps** is running *below* the ~4 bps gross edge we expected from validation, and **net -1.42 bps** after an assumed 3.0 bps cost.
+- The formal ledger has **0 resolved trades** and total +0.0 bps — so there's no independent confirmation yet.
+- The edge search still finds **0 survivors** at the stricter 5 bps two-venue bar, consistent with this being a marginal, likely-not-net-profitable signal.
 
-Note also `edge_search_survivors: 0`: no candidate cleared the stricter bar (net positive on both venues at 5 bps cost). That reinforces the prior view that this is a fragile, best-of-a-weak-field signal.
+None of these move the needle. With 7 observations, a negative net is fully explainable by chance and slightly elevated cost assumptions.
 
-## What changed
+## Honest bottom line
 
-No prior assessment to compare against; this is effectively a baseline read.
-
-## Bottom line
-
-No alarm, but no enthusiasm either. The sample is too small to conclude anything, and the underlying edge was always marginal at best. Keep accumulating data. Do not expect guaranteed profit — net positive after real costs remains unproven.
+The data remains **too thin to judge**. This is exactly the expected state for a selective strategy that trades ~1-2% of candles: the sample grows slowly. The validated edge (~4 bps gross vs ~3.9 bps breakeven) was already marginal and probably not profitable after realistic costs — nothing here changes that. No degradation alert is warranted, but no evidence of a working edge either. Keep watching; revisit once dozens of resolved trades accumulate.
