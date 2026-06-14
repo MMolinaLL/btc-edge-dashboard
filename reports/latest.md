@@ -1,19 +1,24 @@
 # 🟢 Still far too thin (5 bets) to judge — no active signal; marginal edge remains unproven
 
-_Updated 2026-06-13 18:54 UTC · model claude-opus-4-8_
+_Updated 2026-06-14 10:34 UTC · model claude-opus-4-8_
 
-**Regime:** No signal firing right now (signal=0), BTC near $64.1k. Nothing abnormal in the regime — a quiet, slowly accumulating sample.
+**Regime:** No signal firing right now (signal=0), BTC near $64.6k. Nothing abnormal in the regime — a quiet, slowly accumulating sample.
 
 ## How it's doing
 
-Nothing has meaningfully changed since last check. The signal is **not firing right now** (signal=0), and BTC sits near **$64,068**. The rolling window still shows just **5 bets** — the same tiny sample — with all 5 winning (win=1.0) and net **+7.8 bps** after assumed 3 bps cost (gross +10.8 bps). The persistent trade ledger shows **0 resolved trades**, so there's no confirmed track record yet.
+Nothing meaningful has changed since last time. The strategy is **not firing right now** (signal=0), and BTC sits around **$64,583**. The rolling window still shows just **5 bets** — far too few to draw any conclusion.
 
-## What the numbers do and don't tell us
+## What the numbers say (and don't)
 
-5 bets is statistically meaningless. A 100% win rate over 5 trades is exactly what you'd expect to see by chance fairly often, and it tells us **nothing** about whether the edge is real. The +7.8 bps net looks encouraging, but the validated reality stands: gross edge is only **~4 bps/bet** against a **~3.9 bps breakeven cost**, meaning this strategy is marginal and **likely not net-profitable** after realistic trading costs. The window's apparent profit is small-sample noise, not evidence of an edge.
+- The window reports **net +7.84 bps/bet** (gross 10.84, cost 3.0) with a 100% win rate over those 5 bets. That **looks** great, but 5 trades with all wins is exactly the kind of small-sample noise we refuse to celebrate. A single normal losing streak would erase it.
+- The persistent **ledger** shows **0 resolved trades** — so there is no durable out-of-sample track record yet.
+- Remember the validated baseline: gross edge is only **~4 bps/bet** against a **~3.9 bps breakeven cost**. The strategy is marginal and likely **not net-profitable** after realistic costs. The window's flattering numbers don't override that.
+- `edge_search_survivors = 0` against the strict bar (net positive on both venues at 5 bps cost) is a reminder that no variant has cleanly cleared the cost hurdle.
 
-Note also `edge_search_survivors = 0`: no variant cleared the stricter bar (net positive on both venues at 5 bps cost). That reinforces caution, not confidence.
+## What changed vs last time
+
+Essentially nothing material. Bet count is unchanged at 5; price drifted modestly higher (~$64.1k → $64.6k). No new resolved trades.
 
 ## Bottom line
 
-Too thin to conclude anything — and that's the honest call. The early results aren't alarming, but they aren't validation either. We need **dozens** of resolved trades before reading into win rate or net bps. No degradation signal, no reason to act. Keep accumulating data and avoid over-interpreting a 5-for-5 streak.
+Too thin to judge — and that's the honest answer. The early numbers are positive but statistically meaningless at this size, and the underlying edge remains marginal at best. No action; keep accumulating sample.
