@@ -1,24 +1,23 @@
-# 🟢 Still far too thin (5 bets) to judge — no active signal; marginal edge remains unproven
+# 🟢 Still far too thin (8 bets) to judge — no active signal; marginal edge remains unproven
 
-_Updated 2026-06-14 10:34 UTC · model claude-opus-4-8_
+_Updated 2026-06-14 18:53 UTC · model claude-opus-4-8_
 
-**Regime:** No signal firing right now (signal=0), BTC near $64.6k. Nothing abnormal in the regime — a quiet, slowly accumulating sample.
+**Regime:** No signal firing right now (signal=0), BTC near $63.8k. Nothing abnormal in the regime — a quiet, slowly accumulating sample.
 
 ## How it's doing
 
-Nothing meaningful has changed since last time. The strategy is **not firing right now** (signal=0), and BTC sits around **$64,583**. The rolling window still shows just **5 bets** — far too few to draw any conclusion.
+Nothing meaningful has changed since last time. The live window now holds **8 bets** (up from 5), still a tiny sample. There's **no active signal** (signal=0), and the live ledger shows **0 resolved trades** — so we're really only looking at the rolling backtest-style window.
 
-## What the numbers say (and don't)
+## What the numbers say
 
-- The window reports **net +7.84 bps/bet** (gross 10.84, cost 3.0) with a 100% win rate over those 5 bets. That **looks** great, but 5 trades with all wins is exactly the kind of small-sample noise we refuse to celebrate. A single normal losing streak would erase it.
-- The persistent **ledger** shows **0 resolved trades** — so there is no durable out-of-sample track record yet.
-- Remember the validated baseline: gross edge is only **~4 bps/bet** against a **~3.9 bps breakeven cost**. The strategy is marginal and likely **not net-profitable** after realistic costs. The window's flattering numbers don't override that.
-- `edge_search_survivors = 0` against the strict bar (net positive on both venues at 5 bps cost) is a reminder that no variant has cleanly cleared the cost hurdle.
+- **Win rate 75%** sounds nice, but across just 8 bets it's statistically meaningless — a couple of flips would swing it hard.
+- **Gross +0.46 bps** is well below the strategy's already-marginal ~4 bps expectation, and at an assumed **3.0 bps cost** that lands at **net −2.5 bps/bet**.
+- That negative net is *consistent with* the validated reality that this signal is marginal and likely not net-profitable after realistic costs — but 8 bets cannot confirm or deny anything.
 
-## What changed vs last time
+## What it doesn't tell us
 
-Essentially nothing material. Bet count is unchanged at 5; price drifted modestly higher (~$64.1k → $64.6k). No new resolved trades.
+With this little data, the net number is noise, not signal. We can't distinguish "edge is gone" from "normal variance." The edge search still shows **0 survivors** against the strict bar (net positive on both venues at 5 bps cost), reinforcing that a durable, cost-surviving edge has not been demonstrated.
 
 ## Bottom line
 
-Too thin to judge — and that's the honest answer. The early numbers are positive but statistically meaningless at this size, and the underlying edge remains marginal at best. No action; keep accumulating sample.
+Too thin to judge. No degradation alert is warranted, but no encouragement either — this remains an unproven, marginal strategy. Keep accumulating resolved trades before drawing conclusions. No profit is implied or guaranteed.
