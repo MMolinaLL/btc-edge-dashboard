@@ -1,23 +1,24 @@
-# 🟢 Still far too thin (8 bets) to judge — no active signal; marginal edge remains unproven
+# 🟢 Still too thin (15 bets) to judge; early window net is negative but well within noise
 
-_Updated 2026-06-14 18:53 UTC · model claude-opus-4-8_
+_Updated 2026-06-15 17:38 UTC · model claude-opus-4-8_
 
-**Regime:** No signal firing right now (signal=0), BTC near $63.8k. Nothing abnormal in the regime — a quiet, slowly accumulating sample.
+**Regime:** No signal active right now (signal=0), BTC near $66.8k. Quiet regime, nothing abnormal — the sample is just accumulating slowly as expected for a selective strategy.
 
 ## How it's doing
 
-Nothing meaningful has changed since last time. The live window now holds **8 bets** (up from 5), still a tiny sample. There's **no active signal** (signal=0), and the live ledger shows **0 resolved trades** — so we're really only looking at the rolling backtest-style window.
+The live window now shows **15 resolved bets** (up from 8 last time), with a **33% win rate**, **gross −5.9 bps**, and **net −8.9 bps** after ~3 bps costs. No signal is firing at the moment (signal=0), and the separate ledger has zero resolved trades.
 
-## What the numbers say
+## What changed vs last time
 
-- **Win rate 75%** sounds nice, but across just 8 bets it's statistically meaningless — a couple of flips would swing it hard.
-- **Gross +0.46 bps** is well below the strategy's already-marginal ~4 bps expectation, and at an assumed **3.0 bps cost** that lands at **net −2.5 bps/bet**.
-- That negative net is *consistent with* the validated reality that this signal is marginal and likely not net-profitable after realistic costs — but 8 bets cannot confirm or deny anything.
+We've added ~7 bets, and the running net is negative. That sounds bad, but at 15 bets the numbers are dominated by chance, not by any reliable read on the edge.
 
-## What it doesn't tell us
+## What the numbers do and don't tell us
 
-With this little data, the net number is noise, not signal. We can't distinguish "edge is gone" from "normal variance." The edge search still shows **0 survivors** against the strict bar (net positive on both venues at 5 bps cost), reinforcing that a durable, cost-surviving edge has not been demonstrated.
+- **Do:** confirm the strategy is selective and accumulating slowly, exactly as designed.
+- **Don't:** tell us whether the edge is real or broken. With only 15 bets, a −8.9 bps result is easily explained by a couple of unlucky losers. You'd need *dozens* of trades to distinguish signal from noise.
 
-## Bottom line
+Remember the baseline: the validated gross edge was only ~4 bps/bet against a ~3.9 bps breakeven cost. This was always **marginal and likely not net-profitable** after realistic costs — so a small negative print is not surprising and not yet evidence of degradation.
 
-Too thin to judge. No degradation alert is warranted, but no encouragement either — this remains an unproven, marginal strategy. Keep accumulating resolved trades before drawing conclusions. No profit is implied or guaranteed.
+## Honest bottom line
+
+Too thin to judge. The early window is negative, but that's noise-level given the sample. No alert warranted. This strategy was never a sure thing; it remains an unproven, marginal candidate. Keep collecting data — flag for review only if the net stays clearly negative across several dozen trades.
