@@ -1,23 +1,15 @@
-# 🟢 Still too thin (17 bets) to judge; early window net negative but firmly inside noise
+# 🟢 Still too thin to judge (14 bets); rolling window negative but well inside noise
 
-_Updated 2026-06-16 16:11 UTC · model claude-opus-4-8_
+_Updated 2026-06-17 12:57 UTC · model claude-opus-4-8_
 
-**Regime:** No signal active right now (signal=0), BTC near $65.8k. Quiet, unremarkable regime — the selective sample is simply accumulating slowly as designed.
+**Regime:** No signal active right now (signal=0), BTC near $64.9k. Quiet regime; the selective sample is accumulating slowly as designed, and the rolling window actually shrank vs last check.
 
-## How it's doing
+**How it's doing:** Nothing has broken, but nothing has been proven either. The current rolling window shows just **14 bets** — a hair *fewer* than the 17 we noted last time, since this is a moving window, not a growing total. The live trade ledger is still empty (0 resolved), so all of this comes from the short backtest-style window.
 
-The live window now holds **17 bets**, up from 15 last time. Win rate is **41.2%**, gross is **-4.2 bps/bet**, and after **3 bps** cost the net is **-7.2 bps/bet**. So far the recorded results are negative.
+**The numbers:** Window net is **-6.67 bps/bet** (gross **-3.67 bps**, after **3.0 bps** assumed cost), with a **35.7% win rate** over 14 bets. On paper that's negative — but 14 outcomes is statistically meaningless. Coin-flip luck alone swings results far more than this over such a tiny sample, so a negative print here tells us essentially nothing.
 
-## What changed
+**What changed:** Very little. The window is marginally smaller and slightly more negative than before, but still firmly inside noise. No signal is currently active.
 
-Very little. Two more bets came in since the prior check, and the picture is essentially unchanged: still tiny, still slightly negative. No signal is active right now.
+**Context worth remembering:** Even in validation this edge was marginal — roughly **4 bps gross** against a **~3.9 bps** breakeven cost — and likely not net-profitable after realistic fees. The independent edge search still shows **0 survivors** at the stricter 5 bps, two-venue bar.
 
-## What the numbers do and don't tell us
-
-**Don't over-read this.** Seventeen bets is far too few to distinguish a real problem from ordinary bad luck. With a strategy whose *expected* gross edge is only ~4 bps, the per-bet noise dwarfs the signal — a handful of trades can easily swing tens of bps either way. A -7 bps net over 17 bets is well within what pure chance produces even if the (marginal) edge were intact.
-
-It's worth remembering the validated baseline: this strategy's edge is **marginal at best**, with breakeven cost (~3.9 bps) sitting right around realistic trading costs. It was never expected to be a strong money-maker, and the current edge-search shows **0 survivors** clearing the stricter 5 bps/both-venues bar.
-
-## Bottom line
-
-Too thin to judge — no alert. The early tally is negative but inside noise. Keep accumulating; I'd want **several dozen** resolved bets before reading anything into the net figure. No implication of profit here either way: this remains a marginal candidate.
+**Bottom line:** Too thin to judge. The early read is unremarkable-to-soft, but not actionable. We need dozens more resolved trades before any conclusion. No profit is implied or expected here.
