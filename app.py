@@ -121,6 +121,21 @@ def live_market():
             "series": chart.iloc[::step]}
 
 
+@st.cache_data(show_spinner="Running the test…")
+def backtest_recent(days):
+    """Simulate composite_score over the last `days` of bundled real prices."""
+    df = load_parquet(os.path.join(DATA, "btc_5m.parquet"))
+    if df is None or len(df) < 100:
+        return None
+    if days:
+        df = df.loc[df.index >= df.index[-1] - pd.Timedelta(days=days)]
+    sig = np.asarray(ee.ALL_STRATEGIES["composite_score"](df))
+    res = ee.evaluate_spot(df, sig, 3.0)
+    a = res["all"]
+    return {"bets": a["bets"], "win": a["win"], "total_bps": a["total"],
+            "equity": res["equity"]}
+
+
 # ------------------------------ header ------------------------------------
 st.title("🤖 Bitcoin Bot — Live")
 st.caption("A bot making tiny **practice** bets on Bitcoin's next move with fake money — "
@@ -178,8 +193,44 @@ with tab_live:
                     "That's on purpose — fewer, higher-quality bets.")
 
     st.divider()
-    st.subheader("💰 Pretend-money scoreboard")
-    stake = st.slider("Fake money to bet per play", 10, 1000, 100, 10, format="$%d")
+    START = 1000.0
+    stake = st.slider("💵 Fake money to bet per play (used by the test and scoreboard below)",
+                      10, 1000, 100, 10, format="$%d")
+
+    # --- run a test: instant simulation on past real prices ---
+    st.subheader("🧪 Test the bot on past data")
+    st.caption("Pick a period and see how the bot **would have** done on real past Bitcoin "
+               "prices — instant, no waiting.")
+    period = st.selectbox("Simulate the bot over the last…",
+                          ["1 week", "1 month", "3 months", "1 year", "Everything (2 years)"],
+                          index=1)
+    days_map = {"1 week": 7, "1 month": 30, "3 months": 90, "1 year": 365,
+                "Everything (2 years)": None}
+    bt = backtest_recent(days_map[period])
+    if bt and bt["bets"] > 0:
+        pnl = bt["total_bps"] / 10000 * stake
+        t1, t2, t3, t4 = st.columns(4)
+        t1.metric("Bets it would've made", f"{bt['bets']:,}")
+        t2.metric("Win rate", fmt_pct(bt["win"]))
+        t3.metric("Profit / loss", f"${pnl:+,.2f}")
+        t4.metric("Ending balance", f"${START + pnl:,.2f}")
+        bal = START + bt["equity"] / 10000 * stake
+        stp = max(1, len(bal) // 1500)
+        tfig = go.Figure(go.Scatter(x=bal.index[::stp], y=bal.values[::stp], mode="lines",
+                         line=dict(width=2, color="#16a34a" if pnl >= 0 else "#dc2626")))
+        tfig.add_hline(y=START, line_dash="dash", line_color="#aaa")
+        tfig.update_layout(height=260, margin=dict(l=10, r=10, t=10, b=10), yaxis_title="USD")
+        st.plotly_chart(tfig, use_container_width=True)
+        st.caption(f"Simulated on **real past Bitcoin prices**, net of trading costs — what the bot "
+                   f"*would have* done. Over the last {period.lower()} it would have "
+                   f"**{'made' if pnl > 0 else 'lost'} ${abs(pnl):,.2f}** betting ${stake}/play "
+                   f"across {bt['bets']:,} bets. ⚠️ Past results don't predict the future — that's "
+                   "why we also run it live going forward (below).")
+    else:
+        st.info("Not enough price history for that period.")
+
+    st.divider()
+    st.subheader("💰 Live scoreboard (real forward results)")
     live_ledger = os.path.join(DATA, "live_ledger.csv")
     done = pd.DataFrame()
     if os.path.exists(live_ledger):
