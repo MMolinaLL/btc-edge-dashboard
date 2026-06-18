@@ -1,13 +1,20 @@
-# 🟢 Still too thin to judge (10 bets); rolling window negative but pure noise at this size
+# 🟢 Still far too thin to judge (4 bets in window); no live signal active
 
-_Updated 2026-06-17 21:31 UTC · model claude-opus-4-8_
+_Updated 2026-06-18 12:03 UTC · model claude-opus-4-8_
 
-**Regime:** No signal active right now (signal=0), BTC near $64.2k. Quiet regime; the selective sample remains tiny and the rolling window actually shrank to 10 bets vs 14 last check.
+**Regime:** No signal active right now (signal=0), BTC near $63.9k. Quiet regime; the rolling window shrank to just 4 bets vs 10 last check, so there's effectively nothing to evaluate.
 
-**How it's doing:** Effectively unchanged and still un-judgeable. The rolling window now shows just **10 bets**, with a **50% win rate**, **gross -1.13 bps**, and **net -4.13 bps** after assumed 3 bps costs. No signal is firing right now (signal=0), and the persistent ledger has **0 resolved trades** — so there's no durable track record yet.
+## Bottom line
+Nothing actionable. The sample is even thinner than last time, so we still cannot say whether the edge is holding or fading.
 
-**What changed vs last time:** The window got *smaller* (10 vs 14 bets), which means old bets aged out faster than new ones came in — exactly what you'd expect from a strategy that trades only ~1-2% of candles. The rolling net is still negative, but on a different (and tinier) sample, so it's not a meaningful trend.
+## What the numbers show
+- **Rolling window: 4 bets.** Win rate 0.75 looks nice, but with 4 trades that's noise — one outcome flips it dramatically.
+- **Gross +2.24 bps, cost 3.0 bps, net −0.76 bps.** Net is slightly negative, but this is fully consistent with the strategy's known profile: a marginal ~4 bps gross edge against a ~3.9 bps breakeven cost. At 4 bets, the difference between this and 'fine' is statistical dust.
+- **Ledger: 0 resolved trades.** The live, properly-tracked record still has nothing in it.
+- **Edge-search survivors: 0** at the strict bar (net positive on both venues at 5 bps cost). That's a standing reminder this signal is marginal and likely not net-profitable after realistic costs.
 
-**What the numbers do and don't tell us:** With only 10 outcomes, a single trade swings the average by tens of bps. A negative reading here is statistically indistinguishable from luck — it tells us essentially nothing about whether the edge is holding. Recall the validated reality: the gross edge is only ~4 bps/bet against a ~3.9 bps breakeven, so this signal was always marginal and likely **not net-profitable after real costs**. Note also that the broader edge search currently has **0 survivors** clearing the stricter 5 bps two-venue bar.
+## What changed vs last time
+The window dropped from 10 bets to 4 — the selective signal trades only ~1-2% of candles, so the sample is shrinking, not building. No signal is currently active.
 
-**Bottom line:** Too thin to conclude anything — no alert warranted, but no encouragement either. This was a borderline candidate by design; keep accumulating bets and don't read into a 10-sample negative blip. No guarantee of profit at any point.
+## What this does and doesn't tell us
+It does confirm the strategy is behaving selectively and quietly, as designed. It does **not** tell us anything about edge durability — we'd need dozens of resolved trades before a negative net would mean degradation rather than randomness. No profit is implied or guaranteed here; the honest base case remains 'marginal, possibly unprofitable after costs.'

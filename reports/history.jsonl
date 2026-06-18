@@ -8,3 +8,4 @@
 {"t": "2026-06-16 16:11 UTC", "headline": "Still too thin (17 bets) to judge; early window net negative but firmly inside noise", "alert_level": "none"}
 {"t": "2026-06-17 12:57 UTC", "headline": "Still too thin to judge (14 bets); rolling window negative but well inside noise", "alert_level": "none"}
 {"t": "2026-06-17 21:31 UTC", "headline": "Still too thin to judge (10 bets); rolling window negative but pure noise at this size", "alert_level": "none"}
+{"t": "2026-06-18 12:03 UTC", "headline": "Still far too thin to judge (4 bets in window); no live signal active", "alert_level": "none"}
