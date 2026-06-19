@@ -1,13 +1,22 @@
-# 🟢 Still too thin to judge (6 bets in window); no live signal active
+# 🟢 Too thin to judge: 4 bets in window, no live position (signal=0)
 
-_Updated 2026-06-18 21:35 UTC · model claude-opus-4-8_
+_Updated 2026-06-19 12:38 UTC · model claude-opus-4-8_
 
-**Regime:** No position right now (signal=0), BTC ~$62.9k. Quiet, range-y conditions; the rolling window holds just 6 bets, far too few to evaluate edge.
+**Regime:** Flat right now (signal=0), BTC ~$62.4k. Quiet, range-bound conditions; the rolling window holds just 4 bets — far too few to evaluate the edge.
 
-**What's happening:** The strategy is flat (signal=0) with BTC near **$62,899**. The rolling window now shows **6 bets** (up from 4 last check), with a **66.7% win rate**, **gross +1.87 bps**, an assumed **3.0 bps** cost, and a **net of -1.13 bps** per bet.
+## How it's doing
+The strategy is **not in a position** right now (signal=0), so nothing is at risk this moment. Price sits around **$62,396**.
 
-**What changed:** Two more bets resolved since last time. That's it — still a trickle, consistent with a selective signal that only trades ~1–2% of candles. The standalone trade ledger remains empty (0 resolved trades).
+## What the numbers show
+The rolling window contains just **4 bets**: win rate 0.50, gross **-1.25 bps**, costs **3.0 bps**, net **-4.25 bps**. The persistent ledger shows **0 resolved trades** (total 0.0 bps). So essentially all we have is a handful of window observations.
 
-**What the numbers do and don't tell us:** With only 6 outcomes, the negative net (-1.13 bps) is **statistical noise, not evidence of breakdown**. A single bet can flip these averages. Note also that the gross here (1.87 bps) is running below the strategy's already-marginal ~4 bps design edge — but again, 6 samples can't distinguish a real shortfall from luck. The broader edge-search bar (net positive on both venues at 5 bps cost) still has **0 survivors**, reinforcing that this signal was always marginal and probably **not net-profitable after realistic costs**.
+## What changed vs last time
+Last check noted 6 bets; now the window shows 4. Both are negligible samples. The slightly negative net is exactly the kind of wiggle you'd expect from random noise on 4 trades — it tells us **nothing** about whether the edge is intact or gone.
 
-**Honest bottom line:** Nothing actionable. The data is too thin to confirm OR deny an edge, and the underlying strategy was never expected to clear realistic trading costs reliably. No alert is warranted — but keep expectations low. This is a marginal candidate being monitored, not a profitable system. We need dozens more resolved bets before any rolling number means anything.
+## What this does and doesn't tell us
+- **Doesn't tell us:** that the strategy is broken. Four bets cannot distinguish a real ~4 bps gross edge from zero.
+- **Reminds us:** even the validated edge (~4 bps gross vs ~3.9 bps breakeven cost) is razor-thin and likely **not net-profitable after realistic costs**. The 3.0 bps cost assumption here is already eating most of any gross signal.
+- **Edge-search survivors: 0** — no candidate cleared the stricter 5 bps two-venue bar, consistent with this being marginal at best.
+
+## Bottom line
+No alert. The sample is **too small to judge**, and there's no live exposure. Keep collecting data; don't read anything into the small negative net. This remains a marginal, possibly unprofitable signal — no implied profit here.
