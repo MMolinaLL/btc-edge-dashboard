@@ -13,3 +13,4 @@
 {"t": "2026-06-19 12:38 UTC", "headline": "Too thin to judge: 4 bets in window, no live position (signal=0)", "alert_level": "none"}
 {"t": "2026-06-19 20:20 UTC", "headline": "Too thin to judge: still 4 bets in window, flat (signal=0), BTC ~$63.0k", "alert_level": "none"}
 {"t": "2026-06-20 08:36 UTC", "headline": "Too thin to judge: still 4 bets in window, flat (signal=0), BTC ~$63.4k", "alert_level": "none"}
+{"t": "2026-06-20 18:58 UTC", "headline": "Too thin to judge: 5 bets in window, net +4.5 bps, BTC ~$63.7k, flat now", "alert_level": "none"}
