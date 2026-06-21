@@ -1,24 +1,25 @@
-# 🟢 Too thin to judge: 6 bets in rolling window, net ~0 bps, BTC ~$64.3k, currently flat
+# 🟢 Too thin to judge: 4 bets in window, net +0.9 bps, BTC ~$64.1k, currently flat
 
-_Updated 2026-06-21 10:55 UTC · model claude-opus-4-8_
+_Updated 2026-06-21 19:05 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0) with BTC near $64,293 — quiet, range-bound conditions and no open position. The rolling window holds just 6 bets, far too few to draw any conclusion.
+**Regime:** Strategy is flat (signal=0) with BTC near $64,109 — quiet, range-bound conditions and no open position. The rolling window holds just 4 bets, far too few to draw any conclusion.
 
 ## How it's doing
 
-The strategy is **idle right now** (signal = 0), holding no position with BTC around **$64,293**. Nothing is being risked at the moment.
+The strategy is currently **flat** (signal = 0), holding no position with BTC at ~$64,109. There's nothing to manage right now.
+
+## What the numbers say
+
+The rolling window shows just **4 bets** with a 50% win rate. Gross edge is **3.9 bps** and net is **+0.9 bps** after an assumed 3.0 bps cost. That looks faintly positive — but **4 trades is statistically meaningless**. The result could easily flip negative with one more bet. The persistent ledger shows **0 resolved trades** (total 0.0 bps), so there's no longer-run track record to lean on yet.
 
 ## What changed vs last time
 
-- Window bet count nudged from **5 → 6**.
-- Rolling net edge slipped from **+4.5 bps to essentially break-even (-0.012 bps)** after costs, with a coin-flip win rate (50%).
-- Gross edge in the window is **+2.99 bps**, almost exactly eaten by the **3.0 bps** assumed cost.
-- The persistent ledger still shows **0 resolved trades** — these 6 are window/backtest-style bets, not banked live results.
+Last check had 6 bets at roughly net ~0 bps; now we're at 4 bets at +0.9 bps. This is just window churn, not a meaningful trend either way.
 
-## What the numbers do and don't tell us
+## What this does and doesn't tell us
 
-They tell us the strategy is behaving roughly as designed: marginal, with gross edge sitting right on top of trading costs. They **do not** tell us whether the edge is holding or fading — 6 bets is statistical noise. A single trade can swing this figure by several bps. We need **dozens** of resolved trades before any read is meaningful, and the edge-search bar (positive net on both venues at 5 bps cost) still has **0 survivors**.
+It tells us the strategy is behaving as designed (selective, rarely trading) and isn't blowing up. It does **not** tell us the edge is real or net-profitable. Recall the validated reality: gross edge ~4 bps vs. breakeven cost ~3.9 bps — this signal is **marginal and likely not profitable after realistic costs**. The edge search also currently shows **0 survivors** at the stricter 5 bps/dual-venue bar.
 
-## Honest bottom line
+## Bottom line
 
-No edge is proven and none is broken — there simply isn't enough data. This was always a marginal candidate (~4 bps gross vs ~3.9 bps breakeven) that is **likely not net-profitable after realistic costs**. The slip from +4.5 to ~0 bps is within noise, not a degradation signal. Keep watching; do not expect or claim profit.
+No alarm, but no proof of edge. Sample is far too thin to conclude anything. Keep collecting data; don't read profit into 4 bets.
