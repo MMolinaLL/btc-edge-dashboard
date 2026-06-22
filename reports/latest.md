@@ -1,25 +1,22 @@
-# 🟢 Too thin to judge: 4 bets in window, net +0.9 bps, BTC ~$64.1k, currently flat
+# 🟢 Still too thin to judge: 8 bets, net +5.0 bps in window, BTC ~$64.6k, currently flat
 
-_Updated 2026-06-21 19:05 UTC · model claude-opus-4-8_
+_Updated 2026-06-22 16:14 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0) with BTC near $64,109 — quiet, range-bound conditions and no open position. The rolling window holds just 4 bets, far too few to draw any conclusion.
+**Regime:** Strategy is flat (signal=0) with BTC near $64,643 \and and no open position. The rolling window now holds 8 bets \u2014 double the last check, but still far too few to conclude anything.
 
 ## How it's doing
 
-The strategy is currently **flat** (signal = 0), holding no position with BTC at ~$64,109. There's nothing to manage right now.
-
-## What the numbers say
-
-The rolling window shows just **4 bets** with a 50% win rate. Gross edge is **3.9 bps** and net is **+0.9 bps** after an assumed 3.0 bps cost. That looks faintly positive — but **4 trades is statistically meaningless**. The result could easily flip negative with one more bet. The persistent ledger shows **0 resolved trades** (total 0.0 bps), so there's no longer-run track record to lean on yet.
+The strategy is currently **flat** (signal = 0), holding no position, with BTC around **$64,643** on Coinbase. The rolling window now shows **8 bets**, a 75% win rate, and **+5.0 bps net** per bet after an assumed 3.0 bps cost (gross +8.0 bps).
 
 ## What changed vs last time
 
-Last check had 6 bets at roughly net ~0 bps; now we're at 4 bets at +0.9 bps. This is just window churn, not a meaningful trend either way.
+Last check had 4 bets at roughly +0.9 bps net. We've added a handful more bets and the rolling net looks healthier (+5.0 bps). That's *directionally encouraging* but it's a tiny sample doing what tiny samples do: bouncing around. Eight outcomes can easily swing from a couple of lucky fades.
 
-## What this does and doesn't tell us
+## What the numbers do and don't tell us
 
-It tells us the strategy is behaving as designed (selective, rarely trading) and isn't blowing up. It does **not** tell us the edge is real or net-profitable. Recall the validated reality: gross edge ~4 bps vs. breakeven cost ~3.9 bps — this signal is **marginal and likely not profitable after realistic costs**. The edge search also currently shows **0 survivors** at the stricter 5 bps/dual-venue bar.
+- **Do:** Recent bets happened to land in the green, consistent with the signal's intended mean-reversion behavior.
+- **Don't:** With only 8 resolved bets, this tells us essentially nothing about the true edge. Note also the window assumes **3.0 bps cost**, but the validated **breakeven is ~3.9 bps** \u2014 at realistic costs this strategy is marginal and likely **not net-profitable**. The separate ledger still shows **0 trades**, and the edge search has **0 survivors** at the 5 bps bar.
 
 ## Bottom line
 
-No alarm, but no proof of edge. Sample is far too thin to conclude anything. Keep collecting data; don't read profit into 4 bets.
+No red flags, but no proof of edge either. The data remains **far too thin to judge**. Treat the +5.0 bps as noise, not signal, and keep watching as the sample grows. No guarantee of profit here.
