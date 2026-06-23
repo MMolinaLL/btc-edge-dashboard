@@ -18,3 +18,4 @@
 {"t": "2026-06-21 19:05 UTC", "headline": "Too thin to judge: 4 bets in window, net +0.9 bps, BTC ~$64.1k, currently flat", "alert_level": "none"}
 {"t": "2026-06-22 16:14 UTC", "headline": "Still too thin to judge: 8 bets, net +5.0 bps in window, BTC ~$64.6k, currently flat", "alert_level": "none"}
 {"t": "2026-06-23 10:47 UTC", "headline": "Still too thin: 13 bets, gross ~0 bps, net -3.1 bps after costs, BTC ~$62.2k, flat", "alert_level": "none"}
+{"t": "2026-06-23 21:06 UTC", "headline": "Still too thin: 13 bets, gross ~3.7 bps, net +0.7 bps after 3 bps cost, BTC ~$62.5k, flat", "alert_level": "none"}
