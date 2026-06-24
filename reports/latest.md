@@ -1,13 +1,22 @@
-# 🟢 Still too thin: 13 bets, gross ~4.8 bps, net +1.8 bps after 3 bps cost; BTC ~$62.5k, flat
+# 🟢 Still too thin: 15 bets, gross ~4.1 bps, net +1.1 bps after 3 bps cost; BTC ~$60.7k, flat
 
-_Updated 2026-06-24 10:28 UTC · model claude-opus-4-8_
+_Updated 2026-06-24 20:22 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0) with no open position and BTC near $62,500. The rolling window holds just 13 bets — far too small to judge edge.
+**Regime:** Strategy is flat (signal=0) with no open position and BTC near $60,700. The rolling window holds just 15 bets — far too small to draw conclusions.
 
-**How it's doing:** Quiet and flat. The signal is currently 0 (no trade), and the live ledger still shows **0 resolved trades** — nothing has executed in the tracked account.
+## How it's doing
 
-**What the numbers say:** The rolling backtest-style window covers **13 bets**, winning 76.9%, with **gross ~4.8 bps** and **net +1.8 bps** after an assumed 3.0 bps cost. On paper that's slightly better than last check (gross ~3.7, net +0.7), but it's the *same 13-bet window* — a couple of data points reshuffling, not new evidence.
+The strategy is currently **flat** (signal = 0, no open position) with BTC around **$60,688**. The rolling window now shows **15 bets** (up from 13 last time), winning **73.3%**, with a gross edge of **~4.1 bps** and **~+1.1 bps net** after a 3 bps cost assumption.
 
-**What they don't tell us:** Almost everything that matters. Thirteen bets is statistical noise; a single outcome swings the win rate by ~8 points and net bps by more than the entire edge. Recall the validated edge is only ~4 bps gross against a ~3.9 bps breakeven cost — razor-thin and likely **not net-profitable** at realistic 5 bps costs. Notably, the independent edge search still returns **0 survivors** under the strict bar (positive net on both venues at 5 bps, no look-ahead), reinforcing that any apparent profit here is fragile.
+## What changed vs last time
 
-**Bottom line:** No change in conviction. The strategy is behaving as expected — selective, rarely trading, sample growing slowly — and there's nothing alarming and nothing to celebrate. Do not read the positive net bps as evidence of profit; it isn't. We need dozens of *resolved* live trades before drawing any conclusion. Holding at **none**.
+Very little. Two more bets resolved (13 → 15), and the rolling net slipped slightly from +1.8 to **+1.1 bps**. The gross edge eased from ~4.8 to ~4.1 bps — basically noise at this sample size. BTC drifted down from ~$62.5k to ~$60.7k.
+
+## What the numbers do and don't tell us
+
+- **Do:** the rolling window is still marginally positive net, and roughly in line with the ~4 bps gross edge expected.
+- **Don't:** 15 bets is **far too few** to confirm anything. A 73% win rate on 15 trades can flip easily. Note also the cost here is modeled at 3 bps, but the validated breakeven is ~3.9 bps — at realistic costs this edge may be **net-zero or negative**. The separate ledger shows **0 resolved trades**, and the edge re-search found **0 survivors** meeting the strict two-venue bar.
+
+## Bottom line
+
+No red flags, but no validation either. This remains a **marginal, likely-not-net-profitable** candidate, and the live sample is too thin to judge. No action needed — keep collecting data.
