@@ -1,21 +1,17 @@
-# 🟢 Still too thin: 16 bets, gross 2.7 bps, net -0.3 bps after 3 bps cost; BTC ~$61.6k, flat
+# 🟡 Edge gone negative: 26 bets, gross -9.2 bps, net -12.2 bps after 3 bps cost; BTC ~$59.4k, flat
 
-_Updated 2026-06-25 09:59 UTC · model claude-opus-4-8_
+_Updated 2026-06-25 21:02 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0) with no open position and BTC near $61,650. The rolling window holds just 16 bets — far too small to draw conclusions.
+> **WATCH:** Rolling gross edge has flipped negative (-9.2 bps) over 26 bets — early degradation signal, but sample still small.
 
-## How it's doing
+**Regime:** Strategy is flat (signal=0) with no open position and BTC near $59,400, down ~$2.2k since last check. The 26-bet rolling window now shows a negative gross edge — worth watching, not yet conclusive.
 
-The strategy is currently **flat** (signal=0, no open position) with BTC around **$61,650**, up slightly from ~$60,700 last check. Nothing is at risk right now.
+**How it's doing:** Currently flat — no live position (signal=0). The rolling window now covers 26 bets with a 50% win rate, gross **-9.2 bps** and net **-12.2 bps** after 3 bps of assumed cost.
 
-## What changed vs last time
+**What changed vs last time:** Last check had 16 bets at gross **+2.7 bps** (net -0.3). We've added ~10 bets and the gross edge has flipped from slightly positive to clearly negative. That's a meaningful directional change, and it pushes the picture below the strategy's modest expected ~4 bps gross edge.
 
-The rolling window ticked up from 15 to **16 bets**. The win rate stayed strong on paper (68.75%), but the gross edge slipped from ~4.1 to **2.7 bps**, so after the assumed **3.0 bps** trading cost the net went from +1.1 bps to **-0.3 bps** per bet. That's a small negative — but it's exactly the kind of move that one or two trades can cause when the sample is this tiny.
+**What the numbers do tell us:** Over this recent stretch the signal has not made money even before costs. A 50% win rate with negative gross means the losing bets are bigger than the winners here — the opposite of what a working mean-reversion edge should do.
 
-## What the numbers do and don't tell us
+**What they don't tell us:** 26 bets is still a small sample. At ~1-2% of candles trading, a handful of large adverse moves can dominate, and this could be noise rather than a real breakdown. The persistent zero ledger trades and zero edge-search survivors are consistent with a strategy that was always marginal.
 
-They tell us the strategy is behaving as a marginal signal should: gross edge hovering in the low single-digit bps, right on top of realistic costs. They do **not** tell us whether the edge is real or gone. With only 16 bets, a net of -0.3 bps is statistical noise — indistinguishable from zero. We'd need dozens of resolved trades before any verdict means anything. The separate ledger shows **0 resolved trades**, and the broader edge search found **0 survivors** that clear a stricter 5 bps bar on both venues.
-
-## Bottom line
-
-Too thin to judge, and that's the honest answer. This was always a borderline, likely-not-net-profitable signal (~4 bps gross vs ~3.9 bps breakeven). No alarm, no celebration — just keep accumulating sample. No implied profit here.
+**Bottom line:** This was never likely to be net-profitable after realistic costs (~3.9 bps breakeven on a ~4 bps gross edge). The recent flip to negative gross is an early warning, not yet a confirmed failure. Keep it flat/paper, watch the next ~20-30 bets — if gross stays negative, escalate.
