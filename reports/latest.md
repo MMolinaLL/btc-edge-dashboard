@@ -1,15 +1,23 @@
-# 🟡 Negative rolling window persists: 21 bets, gross -8.8 bps, net -11.8 bps after 3 bps cost; BTC ~$59.6k, flat
+# 🟡 Unchanged: 21-bet window still negative, gross -8.8 bps / net -11.8 bps after 3 bps cost; BTC ~$59.6k, flat
 
-_Updated 2026-06-26 10:30 UTC · model claude-opus-4-8_
+_Updated 2026-06-26 20:22 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window gross edge still negative (-8.8 bps over 21 bets) vs ~+4 bps expected; small sample, keep watching.
+> **WATCH:** Rolling window negative gross and net over 21 bets — early degradation signal, sample still thin.
 
-**Regime:** Strategy is flat (signal=0) with no open position and BTC near $59,600. The rolling window remains negative both gross and net — an early degradation sign, not yet conclusive.
+**Regime:** Strategy is flat (signal=0) with no open position and BTC near $59,600. The rolling window remains negative both gross and net — an early warning, not yet conclusive given the small sample.
 
-**How it's doing:** The current rolling window covers just **21 bets**, with a **42.9% win rate**, **gross −8.76 bps**, and **net −11.76 bps** after 3 bps of cost. That is the wrong sign: this signal was only ever expected to earn about **+4 bps gross per bet**, and even that is marginal versus its ~3.9 bps breakeven cost. Right now the window is losing money both before and after costs.
+## How it's doing
+No change since last check — same data snapshot. The strategy is **flat** (signal=0, no position open) with BTC near **$59,639**.
 
-**What changed:** Last check showed 26 bets at gross −9.2 / net −12.2 bps. The window has rolled forward (now 21 bets) but the picture is essentially the same — still negative, slightly less negative. BTC is roughly flat (~$59.6k vs ~$59.4k). No position is open (signal=0), and the persistent ledger has **0 resolved trades**, so there's no realized P&L to confirm anything yet.
+The rolling window covers **21 bets**: win rate **42.9%**, gross **-8.76 bps**, net **-11.76 bps** after 3 bps cost. So over this stretch the signal has been losing money *before* costs, not just getting eaten by fees.
 
-**What the numbers do and don't tell us:** 21 bets is a tiny sample. With a ~4 bps edge, normal noise easily swings a window this small into the red, so this is **not** proof the edge is gone. But two consecutive negative windows is worth flagging. Separately, the offline edge search now finds **0 survivors** meeting the bar (net positive on both venues at 5 bps cost), reinforcing that this strategy was always marginal.
+## What changed vs last time
+Nothing material — identical numbers. Still no resolved trades in the live ledger (0 trades), so the official out-of-sample record hasn't grown.
 
-**Bottom line:** Stay cautious, not panicked. The edge was thin to begin with and is currently not showing up live. Keep watching; do not assume profitability.
+## What the numbers do and don't tell us
+- This is a **small sample**. 21 bets is far too few to conclude the edge is broken. With a strategy whose gross edge was only ~4 bps/bet, normal noise easily produces a stretch like this.
+- That said, being negative *gross* (-8.8 bps) is a yellow flag worth watching — it's not just costs.
+- Separately, the edge search found **0 survivors** at its 5-bps two-venue bar, consistent with this being a marginal, likely-not-net-profitable signal to begin with.
+
+## Honest bottom line
+This was always a marginal candidate (~4 bps gross edge vs ~3.9 bps breakeven cost). The live window leans negative but the sample is too thin to call it a true breakdown. **Watch**, don't pause yet. I'd want to see dozens more trades stay clearly negative before escalating. No expectation of guaranteed profit here.
