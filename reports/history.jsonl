@@ -23,3 +23,4 @@
 {"t": "2026-06-24 20:22 UTC", "headline": "Still too thin: 15 bets, gross ~4.1 bps, net +1.1 bps after 3 bps cost; BTC ~$60.7k, flat", "alert_level": "none"}
 {"t": "2026-06-25 09:59 UTC", "headline": "Still too thin: 16 bets, gross 2.7 bps, net -0.3 bps after 3 bps cost; BTC ~$61.6k, flat", "alert_level": "none"}
 {"t": "2026-06-25 21:02 UTC", "headline": "Edge gone negative: 26 bets, gross -9.2 bps, net -12.2 bps after 3 bps cost; BTC ~$59.4k, flat", "alert_level": "watch"}
+{"t": "2026-06-26 10:30 UTC", "headline": "Negative rolling window persists: 21 bets, gross -8.8 bps, net -11.8 bps after 3 bps cost; BTC ~$59.6k, flat", "alert_level": "watch"}
