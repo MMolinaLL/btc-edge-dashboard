@@ -31,3 +31,4 @@
 {"t": "2026-06-28 17:54 UTC", "headline": "Flat (signal=0); tiny 4-bet window positive +12.0 bps net (gross +15.0, 3 bps cost); BTC ~$59.5k", "alert_level": "none"}
 {"t": "2026-06-29 13:56 UTC", "headline": "Idle (signal=0); 2-bet window net -2.4 bps \u2014 far too thin to judge; BTC ~$59.3k", "alert_level": "none"}
 {"t": "2026-06-29 20:32 UTC", "headline": "Idle (signal=0); 3-bet window net +0.4 bps \u2014 still far too thin to judge; BTC ~$60.3k", "alert_level": "none"}
+{"t": "2026-06-30 10:42 UTC", "headline": "Idle (signal=0); 4-bet window net +5.1 bps \u2014 still far too thin to judge; BTC ~$59.2k", "alert_level": "none"}

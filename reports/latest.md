@@ -1,21 +1,17 @@
-# 🟢 Idle (signal=0); 3-bet window net +0.4 bps — still far too thin to judge; BTC ~$60.3k
+# 🟢 Idle (signal=0); 4-bet window net +5.1 bps — still far too thin to judge; BTC ~$59.2k
 
-_Updated 2026-06-29 20:32 UTC · model claude-opus-4-8_
+_Updated 2026-06-30 10:42 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $60,300, up ~$1k since last check. The rolling window now spans just 3 bets, carrying essentially no statistical signal either way.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $59,200, down roughly $1k since last check. The rolling window now spans just 4 bets, which carries essentially no statistical weight.
 
-## Status
+**Status: quiet and inconclusive — exactly as expected for a selective strategy.**
 
-The strategy is currently **idle** — `signal=0`, so there's no open position. BTC sits around **$60,330**, up roughly $1,000 from the ~$59,300 noted last time.
+Right now the strategy holds no position (signal = 0). Since it only acts on ~1–2% of candles, long idle stretches are normal and not a problem.
 
-## What changed
+**What the numbers say.** The rolling window shows 4 bets, all winners (100%), averaging +5.1 bps net after an assumed 3.0 bps cost (+8.1 bps gross). That looks nice on the surface — but with only 4 trades it tells us almost nothing. A single bet can swing these figures wildly, and a 100% win rate over 4 tries is well within pure luck. The persistent trade ledger still shows 0 resolved trades, so there is no durable track record yet.
 
-The rolling window ticked from 2 bets to **3 bets**, and the headline number flipped from slightly negative (~-2.4 bps) to slightly positive: **+0.4 bps net** (3.4 bps gross minus 3.0 bps assumed cost), with 1/3 wins reported... actually win-rate shows 1.0 on this tiny window. The persistent trade ledger still shows **0 resolved trades** and 0.0 total bps — so nothing has fully closed out yet.
+**What changed vs last time.** One more bet has been added (3 → 4), and the window net ticked up from ~+0.4 to +5.1 bps. BTC slipped about $1k to ~$59,230. None of this is statistically meaningful.
 
-## What the numbers do and don't tell us
+**Important context.** This signal was the best candidate found, but its validated edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — marginal, and likely NOT net-profitable after realistic trading costs. Note too that `edge_search_survivors = 0`: nothing cleared the stricter 5 bps two-venue bar.
 
-They tell us almost nothing about edge. Three bets is noise, not evidence. Recall the validated picture: the gross edge is only ~**4 bps/bet** against a ~**3.9 bps breakeven cost** — marginal, and likely *not* net-profitable after realistic costs. A +0.4 bps window is fully consistent with both a real (tiny) edge and pure luck. Notably, `edge_search_survivors=0`: nothing currently clears the stricter bar (positive net on both venues at 5 bps cost), a reminder this signal is fragile.
-
-## Bottom line
-
-No action needed and no alarm. The data is **too thin to judge** — we'd want dozens of resolved trades before drawing any conclusion. No profit is implied or guaranteed; treat this as a marginal candidate still under observation.
+**Bottom line.** Too thin to judge. The early window leans positive, but that is noise, not proof. No degradation signal, no reason to act. We need dozens of resolved trades before drawing any conclusion — and even then, expect this edge to be fragile, not a money machine.
