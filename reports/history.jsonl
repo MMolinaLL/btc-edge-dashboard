@@ -33,3 +33,4 @@
 {"t": "2026-06-29 20:32 UTC", "headline": "Idle (signal=0); 3-bet window net +0.4 bps \u2014 still far too thin to judge; BTC ~$60.3k", "alert_level": "none"}
 {"t": "2026-06-30 10:42 UTC", "headline": "Idle (signal=0); 4-bet window net +5.1 bps \u2014 still far too thin to judge; BTC ~$59.2k", "alert_level": "none"}
 {"t": "2026-06-30 20:33 UTC", "headline": "Idle (signal=0); 8-bet window net +3.7 bps \u2014 still far too thin to judge; BTC ~$58.6k", "alert_level": "none"}
+{"t": "2026-07-01 10:55 UTC", "headline": "Idle (signal=0); 9-bet window net +2.6 bps \u2014 still far too thin to judge; BTC ~$58.6k", "alert_level": "none"}
