@@ -1,13 +1,22 @@
-# 🟢 Idle (signal=0); 18-bet window net +0.86 bps — marginally positive but far too thin to judge; BTC ~$60.4k
+# 🟢 Idle (signal=0); 20-bet window net +1.37 bps — marginally positive but far too thin to judge; BTC ~$61.7k
 
-_Updated 2026-07-02 08:39 UTC · model claude-opus-4-8_
+_Updated 2026-07-02 19:02 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $60,378, up modestly from ~$59.9k last check. The rolling window grew to 18 bets — still statistically negligible.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $61,661, up from ~$60,378 last check. The rolling window ticked up to 20 bets — still statistically negligible.
 
-**Status: idle and inconclusive — nothing alarming.** The strategy is currently flat (signal=0), so no capital is at risk right now. BTC sits around $60,378, a small uptick from ~$59.9k at the previous check.
+## Status
+The strategy is currently **idle** (signal=0) — it sees no extreme setup worth fading right now. That's normal: this signal only fires on ~1–2% of candles, so long quiet stretches are expected.
 
-**What changed:** The rolling window ticked up from 12 to 18 bets, and net performance moved from roughly breakeven (-0.1 bps) to slightly positive (+0.86 bps/bet). Win rate is 61%. On the surface that looks fine, but the shift is almost certainly just noise from six extra trades.
+## What changed vs last time
+- Rolling window grew from 18 to **20 bets**.
+- Window net edge improved slightly to **+1.37 bps/bet** (from +0.86), with a 60% win rate; gross is 4.37 bps against an assumed 3.0 bps cost.
+- BTC rose to ~$61,661 from ~$60,378.
+- The live ledger still shows **0 resolved trades** — the window stats are a backtest/rolling proxy, not accumulated live P&L.
 
-**What the numbers do and don't tell us:** Gross edge in-window is 3.86 bps against an assumed 3.0 bps cost, leaving +0.86 bps net — consistent with the validated finding that this signal is *marginal* (gross edge ~4 bps, breakeven cost ~3.9 bps). At realistic costs it may well not be net-profitable. Crucially, 18 resolved bets is nowhere near enough to distinguish a real edge from luck; you'd want dozens more before drawing conclusions. The separate ledger still shows zero live trades resolved.
+## What the numbers do and don't tell us
+With only 20 bets, a +1.37 bps average is **statistical noise**, not evidence of an edge. At ~4 bps gross with a ~3.9 bps breakeven cost, this strategy was always marginal and likely not net-profitable after realistic fees. A single win or loss swings this small sample meaningfully. Note the window uses a 3.0 bps cost assumption, which is *below* the ~3.9 bps breakeven — so even the mildly positive figure flatters the case.
 
-**Bottom line:** No evidence of degradation, and no evidence of durable profit either — the sample is simply too thin to judge. The edge-search survivor count remains 0 against the strict two-venue, 5-bps-cost bar, a reminder this is a fragile, marginal signal. Keep monitoring; do not treat the small positive window as a green light.
+Also worth flagging: the edge-search found **0 survivors** at the stricter 5 bps two-venue bar, reinforcing that no configuration clears realistic costs.
+
+## Bottom line
+No degradation, no edge confirmed — just too little data. Nothing here warrants action or excitement. Keep collecting; dozens of *resolved live* trades are needed before any conclusion. No profit is implied or guaranteed.
