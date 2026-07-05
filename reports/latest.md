@@ -1,13 +1,13 @@
-# 🟢 Idle (signal=0); 9-bet window net +2.24 bps — positive but far too thin to mean anything; BTC ~$63.1k
+# 🟢 Idle (signal=0); 6-bet window net +3.27 bps — positive but far too thin to judge; BTC ~$62.9k
 
-_Updated 2026-07-04 17:41 UTC · model claude-opus-4-8_
+_Updated 2026-07-05 08:32 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $63,097, up roughly $600 since the last check. The rolling window holds just 9 bets — statistically meaningless.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $62,933, down modestly (~$160) since the last check. The rolling window holds only 6 bets — statistically meaningless.
 
-**Status:** The strategy is sitting on its hands — `signal=0`, no open position. That's normal for a selective mean-reversion system that only trades ~1-2% of candles.
+**Status:** The strategy is sitting on its hands right now (signal = 0, no live position). That's normal — this is a selective signal that trades only ~1-2% of candles, so long idle stretches are expected.
 
-**What changed vs last time:** The rolling window shrank from 16 bets to just 9, and the reported net flipped from roughly flat (-0.07 bps) to slightly positive (+2.24 bps net, +5.24 gross at an assumed 3.0 bps cost, 78% win rate). Do not read anything into this swing — with only 9 observations, a couple of trades dominate the average. BTC ticked up to ~$63,097 from ~$62,462.
+**What the numbers say:** The rolling window shows 6 bets, an 83% win rate, and +3.27 bps net after an assumed 3.0 bps cost (gross 6.27 bps). On paper that looks fine, even a touch above the ~4 bps gross edge we expect. But **6 bets is essentially nothing** — one or two outcomes swing these figures wildly, so this tells us almost nothing about whether the edge is real live.
 
-**What the numbers do and don't tell us:** They tell us the system is alive, idle, and hasn't blown up. They tell us essentially *nothing* about whether the edge is holding. Nine bets cannot distinguish a real +2 bps edge from pure luck, especially when the validated gross edge is only ~4 bps against a ~3.9 bps breakeven cost. Note the assumed 3.0 bps cost here is below that breakeven — at realistic costs this window would be near zero. The persistent ledger still shows 0 resolved trades, so there's no live track record yet. `edge_search_survivors=0` is a reminder that nothing has cleared the stricter dual-venue 5 bps bar.
+**What changed vs last time:** The window actually shrank from 9 bets to 6, and BTC ticked down ~$160 to ~$62,933. The formal ledger still shows 0 resolved trades, so there's no independent, cost-realistic track record yet. Separately, the edge search still shows **0 survivors** against the strict bar (net-positive on both venues at 5 bps cost) — a reminder this signal is marginal at best.
 
-**Bottom line:** No edge confirmed, no degradation detected — just not enough data. This remains a marginal, likely-not-net-profitable candidate. Keep collecting; judge nothing until dozens of resolved trades accumulate.
+**Honest bottom line:** Nothing is broken, but nothing is proven either. The live sample is far too small to confirm or reject the edge, and remember the validated reality: gross edge ~4 bps vs ~3.9 bps breakeven cost means this is likely **not net-profitable after realistic costs**. Keep collecting data; don't read the green numbers as a win. No action needed.
