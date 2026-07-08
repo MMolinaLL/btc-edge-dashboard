@@ -1,15 +1,15 @@
-# 🟢 Idle (signal=0); 17-bet window net -13.9 bps, gross -10.9 bps — negative but far too thin to judge; BTC ~$61.7k
+# 🟢 Idle (signal=0); 12-bet window net -13.5 bps but far too thin to judge; BTC ~$62.3k
 
-_Updated 2026-07-08 16:02 UTC · model claude-opus-4-8_
+_Updated 2026-07-08 23:08 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no live position) with BTC near $61,682, down about $350 (~0.6%) since the last check around $62,034. The rolling window is still just 17 bets — far too small to separate edge from noise.
+**Regime:** Strategy is flat (signal=0, no live position) with BTC near $62,264, up about $580 (~0.9%) since the last check around $61,682. The rolling window is a mere 12 bets — nowhere near enough to distinguish real edge from random noise.
 
-**Status:** The strategy is sitting on the sidelines right now (signal = 0), so there's no live position. Since last check, one more bet cleared into the window (16 → 17 bets), and BTC drifted down slightly to ~$61.7k.
+**Status:** The strategy is sitting on its hands right now (signal = 0, no open position). BTC is around $62,264 on Coinbase, up roughly 0.9% from last check.
 
-**What the numbers say:** The 17-bet rolling window shows a 41% win rate, gross of **-10.9 bps** and net of **-13.9 bps** after 3 bps costs. The confirmed ledger has just **1 resolved trade**, a short from 2026-07-06 that lost -13.0 bps (price ticked up against it). So both the window and the ledger are negative.
+**What changed:** The rolling window shrank from 17 bets to 12 (older trades aged out), and its net result is -13.47 bps (gross -10.47 bps, ~3 bps cost). The separate ledger still shows just 1 fully resolved live trade — a short on 2026-07-06 that lost 13 bps when price ticked up against it.
 
-**What this does and doesn't tell us:** Almost nothing, statistically. Recall this strategy trades only ~1-2% of candles and its expected edge is tiny (~4 bps gross vs ~3.9 bps breakeven cost) — meaning it was always marginal and likely not net-profitable after real costs. With 17 bets (and only 1 in the clean ledger), a single trade swings the average by double digits. A negative reading here is fully consistent with random noise around a near-zero edge. It is **not** evidence of decay.
+**What the numbers tell us:** Almost nothing yet, honestly. With only 12 bets (and a single resolved ledger trade), a -13 bps average is well within the range of pure luck. A couple of unlucky fades can drag a tiny sample deeply negative without saying anything about the underlying edge. A ~42% win rate on 12 bets is statistically indistinguishable from a coin flip.
 
-**Also worth noting:** the independent edge search currently has **0 survivors** clearing the ‘positive net on both venues at 5 bps cost’ bar — a reminder that a robust profitable signal has not been established.
+**What they don't tell us:** Whether the edge is actually broken. Recall this signal was only ever marginal — ~4 bps gross per bet against a ~3.9 bps breakeven cost — so it may not be net-profitable even when working as designed. The current negative print is consistent both with 'no real edge' and with 'normal noise.' Also note: the broader edge search now shows 0 survivors clearing the strict two-venue, 5-bps-cost bar.
 
-**Bottom line:** Negative so far, but the sample is far too thin to conclude anything. No action; keep collecting data. No profit is implied or guaranteed.
+**Bottom line:** Too thin to judge. No action warranted — this is not evidence of profit, nor yet evidence of breakdown. Keep collecting trades.
