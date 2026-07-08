@@ -1,17 +1,13 @@
-# 🟢 Idle (signal=0); 17-bet window net -15.4 bps, gross -12.4 bps — negative but far too thin to judge; BTC ~$63.6k
+# 🟢 Idle (signal=0); 16-bet window net -15.0 bps, gross -12.0 bps — negative but far too thin to judge; BTC ~$62.0k
 
-_Updated 2026-07-07 23:02 UTC · model claude-opus-4-8_
+_Updated 2026-07-08 08:30 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no live position) with BTC near $63,550, roughly flat vs ~$63,900 last check. The rolling window is still just 17 bets — a tiny sample where a handful of trades dominate, so the negative readings remain noise rather than evidence of edge decay.
+**Regime:** Strategy is flat (signal=0, no live position) with BTC near $62,034, down roughly $1.5k (~2.4%) since last check around $63,550. The rolling window remains just 16 bets — a tiny sample where one or two trades dominate — so the negative readings are still noise, not evidence of edge decay.
 
-## How it's doing
-The strategy is currently **idle** (signal=0) — no live position, waiting for an extreme setup that hasn't appeared. This is normal: it only trades ~1-2% of candles.
+**How it's doing:** The strategy is sitting flat right now (signal = 0), so there's no live position at risk. BTC has drifted down to about $62,034 from roughly $63,550 last time — a modest ~2.4% dip, nothing dramatic.
 
-## What changed vs last time
-Very little. The rolling window ticked from 16→17 bets, with net moving from -14.8 to **-15.4 bps** and gross from -11.8 to **-12.4 bps**. Win rate is 29.4%. The trade ledger still shows just **1 fully-resolved live trade**, which lost -13.0 bps (a short that got run over by a ~10 bps upward move). BTC drifted from ~$63.9k to ~$63.6k.
+**What changed:** Very little. The rolling window nudged from 17 to 16 bets, and the numbers stayed negative: **net −15.0 bps**, **gross −12.0 bps** at an assumed 3.0 bps cost, with a **37.5% win rate**. The separate ledger shows just **1 resolved live trade**, which lost −13.0 bps (a short that went the wrong way as price rose).
 
-## What the numbers do and don't tell us
-They do confirm the strategy hasn't caught a winning trade yet on this thin sample. They **do not** tell us the edge is broken. With only 17 bets — and a real edge that was never more than ~4 bps gross against a ~3.9 bps breakeven — a stretch of negative results is fully consistent with random noise. You'd need dozens of resolved trades before any conclusion is statistically meaningful.
+**What the numbers do and don't tell us:** They tell us recent results are underwater. They do **not** tell us the edge is broken. Remember this signal was only ever expected to earn ~4 bps gross per bet against a ~3.9 bps breakeven cost — it's marginal by design, and it trades on only ~1–2% of candles. A 16-bet sample is dominated by chance; a couple of coin-flips swing the whole picture. You genuinely cannot distinguish 'no edge' from 'small edge, bad luck' at this size.
 
-## Honest bottom line
-Nothing to act on. The readings are negative, but the sample is far too small to distinguish bad luck from genuine decay. Also worth remembering the baseline: this candidate was marginal from the start (likely **not** net-profitable after realistic costs), and the fresh edge search found **0 survivors**. No implied profit here — just patient monitoring until the sample grows.
+**Bottom line:** Too thin to judge, and that's the honest answer. The strategy is idle and not bleeding capital right now. Negative readings warrant patience, not panic — but also no optimism about profit. Keep accumulating trades before drawing conclusions; a few dozen resolved bets are the minimum before the negatives would mean anything.
