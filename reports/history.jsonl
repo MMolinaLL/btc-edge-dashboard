@@ -53,3 +53,4 @@
 {"t": "2026-07-08 16:02 UTC", "headline": "Idle (signal=0); 17-bet window net -13.9 bps, gross -10.9 bps \u2014 negative but far too thin to judge; BTC ~$61.7k", "alert_level": "none"}
 {"t": "2026-07-08 23:08 UTC", "headline": "Idle (signal=0); 12-bet window net -13.5 bps but far too thin to judge; BTC ~$62.3k", "alert_level": "none"}
 {"t": "2026-07-09 09:41 UTC", "headline": "Idle (signal=0); 9-bet window net -9.1 bps, sample far too thin to judge; BTC ~$62.9k", "alert_level": "none"}
+{"t": "2026-07-09 16:28 UTC", "headline": "Idle (signal=0); 7-bet window net -6.9 bps, sample far too thin to judge; BTC ~$62.6k", "alert_level": "none"}
