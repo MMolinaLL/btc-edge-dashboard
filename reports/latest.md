@@ -1,15 +1,15 @@
-# 🟢 Idle (signal=0); 6-bet window net -5.6 bps, sample far too thin to judge; BTC ~$63.2k
+# 🟢 Idle (signal=0); only 1 resolved trade (-13 bps) and 3-bet window — far too thin to judge; BTC ~$64.4k
 
-_Updated 2026-07-09 23:12 UTC · model claude-opus-4-8_
+_Updated 2026-07-10 09:37 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $63,155, up roughly $540 (~0.9%) since the last check around $62,612. With a 6-bet rolling window and just one resolved ledger trade, this is pure noise, not signal.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,414, up roughly $1,260 (~2%) since the last check around $63,155. Trade counts remain in single digits, so nothing here rises above noise.
 
-**Status: quiet and inconclusive.** The strategy is currently idle (signal=0), holding no position. BTC sits near $63,155, up about $540 (~0.9%) from the ~$62,612 seen at the last check.
+**Status: idle and un-judgeable.** The strategy currently holds no position (signal=0) and BTC sits around $64,414, up ~2% from ~$63,155 last check.
 
-**What changed:** Almost nothing meaningful. The rolling window shows 6 bets (was 7) at a 50% win rate, netting -5.6 bps after 3 bps cost (gross -2.6 bps). The full ledger has just **1 resolved trade** — a short on July 6 that lost 13.0 bps net as price ticked up against it.
+**What changed vs last time:** The rolling window shrank from 6 bets to 3 and now shows net **+1.86 bps** (gross +4.86, cost 3.0) — cosmetically positive, but on just three bets that number is meaningless. The trade ledger still contains a single resolved trade: a short entered 2026-07-06 that lost **-13.0 bps** (price rose ~10 bps against it plus ~3 bps cost).
 
-**What the numbers tell us:** Effectively nothing yet. One trade and a 6-bet window are far below any threshold for judging edge. Random noise easily produces stretches like this. Recall the strategy's *expected* gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — it's marginal by design and may not be net-profitable live. A few losing bets is entirely consistent with that thin-edge reality.
+**What the numbers do tell us:** Very little, statistically. One losing trade and a 3-bet window are pure small-sample noise. A single -13 bps loss is well within the normal range for a strategy whose *expected* edge is only ~4 bps gross against a ~3.9 bps breakeven cost. It neither confirms nor refutes the edge.
 
-**What they don't tell us:** Whether the edge is intact or broken. We'd need dozens of resolved trades before drawing conclusions. Separately, the independent edge search still shows **0 survivors** clearing the strict bar (net-positive on both venues at 5 bps cost) — a standing reminder that a robust, cost-surviving edge has not been demonstrated.
+**What they don't tell us:** Whether the edge is holding. We'd need dozens of resolved trades before any rolling net figure is informative. Also worth noting: `edge_search_survivors` = 0 under the strict bar (net positive on both venues at 5 bps cost), a reminder this signal was marginal to begin with.
 
-**Bottom line:** No alert. The strategy is doing what a selective signal does — waiting. Losses so far are noise-level, not evidence of degradation. No profit is implied or guaranteed; keep collecting data.
+**Bottom line:** Nothing actionable. The one loss is expected noise, not degradation. No profit is implied or guaranteed — keep collecting trades before drawing conclusions.
