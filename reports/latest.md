@@ -1,15 +1,23 @@
-# 🟢 Idle (signal=0); only 1 resolved trade (-13 bps), sample far too thin to judge; BTC ~$63.9k
+# 🟢 Idle (signal=0); only 1 resolved trade (-13 bps), sample far too thin to judge; BTC ~$64.1k
 
-_Updated 2026-07-10 16:26 UTC · model claude-opus-4-8_
+_Updated 2026-07-10 22:59 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $63,946, roughly $470 lower than the last check (~$64,414). Trade counts are still in the single digits, so nothing here rises above noise.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,068, roughly $120 higher than the last check (~$63,946). Trade counts remain in the single digits, so nothing here is statistically meaningful.
 
-**Status:** The strategy is sitting on its hands (signal = 0), which is normal — it only trades ~1-2% of candles by design, so idle stretches are expected.
+## How it's doing
 
-**What the numbers say:** The ledger shows just **1 resolved trade**, and it lost **-13.0 bps** (a short entered 2026-07-06 that went against us as price ticked up). Separately, a small rolling window reports **2 bets, +6.1 bps net**. These two figures don't fully agree because they count different things over different spans — and with a literal handful of trades, that's exactly the kind of jitter you'd expect from noise, not signal.
+The strategy is currently **idle** (signal = 0), meaning it sees no extreme setup worth fading right now. BTC sits at **$64,068**, essentially flat versus last check (~$63,946).
 
-**What changed vs last time:** Essentially nothing material. BTC drifted down about $470 (to ~$63,946). Trade count is unchanged in substance — still single digits.
+## What changed vs last time
 
-**What this does and doesn't tell us:** With 1-2 resolved trades, we can conclude **nothing** about whether the edge is holding. One losing trade is not degradation; it's a coin flip. Remember the backdrop: the validated gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost, so even in the best case this is marginal and may not be net-profitable after real costs. The separate edge-search also found **0 survivors** at its stricter bar.
+Almost nothing. Still just **1 resolved trade** in the ledger, which lost **-13.0 bps** (entered short on 2026-07-06, price rose against it). The price ticked up ~$120. No new trades have been logged.
 
-**Bottom line:** Too thin to judge — no action warranted. No profit is implied or guaranteed. We need dozens of resolved trades before any verdict.
+## What the numbers do and don't tell us
+
+They tell us the one live trade lost money. They tell us **essentially nothing** about whether the edge is holding — a single bet is pure noise. Recall this strategy's expected edge is tiny (~4 bps gross vs ~3.9 bps breakeven cost), so it was never expected to be reliably net-profitable, and with a ~1-2% trade rate the sample grows slowly. Note the small discrepancy: the ledger uses a 3.0 bps cost while the honest breakeven is ~3.9 bps, so real-world results would likely look slightly worse.
+
+Also worth flagging: `edge_search_survivors = 0` — no candidate cleared the stricter bar (net positive on both venues at 5 bps cost). That's a standing reminder this edge is marginal at best.
+
+## Bottom line
+
+Too thin to judge. One losing trade is not degradation — it's noise. No action; keep collecting data. This was never a guaranteed money-maker.
