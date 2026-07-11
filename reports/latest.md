@@ -1,23 +1,20 @@
-# 🟢 Idle (signal=0); only 1 resolved trade (-13 bps); sample far too thin to judge; BTC ~$64.3k
+# 🟢 Idle (signal=0); still just 1 resolved trade (-13 bps); sample far too thin to judge; BTC ~$64.1k
 
-_Updated 2026-07-11 14:55 UTC · model claude-opus-4-8_
+_Updated 2026-07-11 22:50 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,325, up modestly from last check (~$64,111). With a single resolved trade, nothing here is statistically meaningful.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,123, down slightly from the last check (~$64,325). With only one resolved trade on record, nothing here is statistically meaningful.
 
-## Status
+## How it's doing
+The strategy is currently **idle** (signal=0), holding no position. This is normal — it only trades ~1–2% of candles, so long quiet stretches are expected.
 
-The strategy is currently **idle** (signal = 0) — it sees no extreme setup worth fading right now. BTC sits at **~$64,325**, up slightly from ~$64,111 at the last check.
-
-## What changed
-
-Nothing material. The ledger still shows just **1 resolved trade**, the same short entry from July 6 that lost **-13.0 bps** net (a -10.0 bps gross move against it plus 3.0 bps cost). No new trades have resolved since the prior assessment.
+## What changed vs last time
+Basically nothing of substance. BTC ticked down modestly from ~$64,325 to **$64,123**. The ledger still shows just **1 resolved trade**, unchanged from the prior check. There's a separate 'window' line showing a single bet at +5.2 bps net, but the persistent ledger shows the one lifetime trade at **−13.0 bps** (a short that lost ~10 bps gross plus 3 bps cost). These are the same tiny sample viewed differently — neither tells us anything real.
 
 ## What the numbers do and don't tell us
+- **Do:** confirm the system is running, resolving trades, and applying costs correctly.
+- **Don't:** say anything about edge. One trade is pure noise. You'd need dozens of resolved bets before any win-rate or net-bps figure is worth interpreting.
 
-- **One trade tells us essentially nothing.** A single -13 bps outcome is well within normal noise for a strategy whose expected edge is only ~4 bps/bet. You cannot distinguish bad luck from a broken edge at n=1.
-- The `window` block showing +5.2 bps net on 1 bet is also a sample of one — ignore it as evidence.
-- The edge search still reports **0 survivors** clearing the strict bar (net positive on both venues at 5 bps cost). This reinforces the pre-existing view that the edge is marginal and likely not net-profitable after realistic costs.
+Remember the validated backdrop: the gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — **marginal and likely not net-profitable after realistic costs**. Notably, the independent edge-search found **0 survivors** at the 5 bps bar on both venues, reinforcing that this is a fragile, best-of-a-weak-field candidate.
 
 ## Bottom line
-
-No alert warranted — not because things look good, but because there's nothing to judge yet. This is a selective strategy (~1-2% of candles), so the live sample will grow slowly; expect dozens of trades before any read is meaningful. Keep expectations low: even validated, the gross edge (~4 bps) barely exceeds breakeven cost (~3.9 bps). No profit is implied or guaranteed.
+Too thin to judge — no alert. Don't read anything into the single −13 bps loss, and don't expect reliable profit here. Just keep accumulating out-of-sample trades and reassess once the count reaches the dozens.
