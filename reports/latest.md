@@ -1,13 +1,16 @@
-# 🟢 Idle (signal=0); window 12 bets net +3.6 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$62.5k
+# 🟢 Idle (signal=0); window 12 bets net +4.8 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$64.2k
 
-_Updated 2026-07-14 08:06 UTC · model claude-opus-4-8_
+_Updated 2026-07-14 15:24 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $62,483, up about $595 from the prior check (~$61,888). No meaningful regime shift; the tradeable sample remains tiny.
+**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,241, up roughly $1,758 from the prior check (~$62,483). No meaningful regime shift; the actually-traded sample remains tiny.
 
-**Status: idle and inconclusive.** The strategy currently has no position (signal=0). BTC sits at ~$62,483 on Coinbase, up roughly $595 since the last check (~$61,888) — a small move, no regime change worth flagging.
+**Status: idle and unproven.** The strategy is currently flat (signal=0), so there's no open risk right now. BTC sits at ~$64,241 on Coinbase, up about $1,758 since the last check — a modest drift, nothing that changes the picture.
 
-**What the numbers say (and don't).** The rolling window shows 12 bets, 83% wins, and +3.6 bps net after 3 bps costs. That looks fine on the surface, but 12 bets is far too few to mean anything — a single trade can swing these figures. Separately, the live ledger has just **1 resolved trade**, a short entered/exited on 2026-07-06 that lost 13.0 bps (a 10 bps adverse move plus 3 bps cost). One losing trade is noise, not evidence of breakdown.
+**What the numbers say (and don't):**
+- The rolling *window* shows 12 bets, 83% wins, +7.8 bps gross / +4.8 bps net at an assumed 3 bps cost. That looks fine on the surface, but 12 bets is far too few to trust — this is noise-range, not evidence of edge.
+- The *live ledger* has just **1 resolved trade**, and it lost: a short on 2026-07-06 that went against us for -10 bps gross, -13 bps net. One losing trade tells us essentially nothing.
+- Recall the validated backtest edge was only ~4 bps/bet gross against a ~3.9 bps breakeven cost — i.e. marginal, and likely **not net-profitable after realistic costs**. Nothing here changes that.
 
-**Context you must keep in mind.** This signal's validated gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — it is marginal and likely NOT net-profitable after realistic costs. The edge search still shows **0 survivors** at the stricter 5 bps, two-venue bar, consistent with a thin-to-nonexistent net edge.
+**Worth noting:** the independent edge search now shows **0 survivors** against the stricter bar (net-positive on both venues at 5 bps cost). That reinforces the prior caution that a durable, cost-robust edge has not been confirmed.
 
-**Bottom line.** Nothing actionable. The strategy is behaving as expected for a highly selective signal: it rarely trades, so the sample grows slowly. We cannot confirm or reject its edge yet — neither the +3.6 bps window nor the -13 bps single trade is enough to judge. No profit is implied or guaranteed. Keep collecting data; revisit once dozens of independent trades accrue.
+**Bottom line:** Too thin to judge, exactly as before. No degradation alert is warranted, but neither is any confidence that this makes money. Keep collecting data; don't read anything into the single -13 bps loss or the flattering 12-bet window. No guarantee of profit here.
