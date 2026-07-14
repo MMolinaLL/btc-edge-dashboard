@@ -67,3 +67,4 @@
 {"t": "2026-07-13 09:29 UTC", "headline": "Idle (signal=0); window 10 bets net +3.6 bps, 1 ledger trade -13 bps; still far too thin; BTC ~$63.0k", "alert_level": "none"}
 {"t": "2026-07-13 16:34 UTC", "headline": "Idle (signal=0); window 11 bets net +3.2 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$62.2k", "alert_level": "none"}
 {"t": "2026-07-13 22:56 UTC", "headline": "Idle (signal=0); window 12 bets net +3.6 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$61.9k", "alert_level": "none"}
+{"t": "2026-07-14 08:06 UTC", "headline": "Idle (signal=0); window 12 bets net +3.6 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$62.5k", "alert_level": "none"}
