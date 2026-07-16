@@ -1,19 +1,13 @@
-# 🟢 Idle (signal=0); window 8 bets net +7.7 bps, 1 ledger trade -13 bps; sample far too thin; BTC ~$64.8k
+# 🟢 Signal active (1); window 12 bets net +4.0 bps, only 1 ledger trade resolved at -13 bps; sample far too thin; BTC ~$63.9k
 
-_Updated 2026-07-15 22:58 UTC · model claude-opus-4-8_
+_Updated 2026-07-16 08:15 UTC · model claude-opus-4-8_
 
-**Regime:** Strategy is flat (signal=0, no open position) with BTC near $64,826, down roughly $480 from the prior check (~$65,306). No meaningful regime shift; the live traded sample is still far too small to judge edge.
+**Regime:** Strategy just flipped to an active long signal (signal=1) with BTC near $63,902, down roughly $900 from the prior check (~$64,826). No clear regime shift; live traded sample remains far too small to judge edge.
 
-## Status: idle, and still too early to judge
+**How it's doing:** The strategy is now signalling a trade (signal=1), a change from last check when it was flat. The backtest-style rolling window shows 12 bets, a 75% win rate, and +4.0 bps net after 3 bps costs (+7.0 gross). That looks fine on paper and is roughly in line with the tiny, marginal edge we expect.
 
-The strategy is currently **flat** (signal=0) — it's waiting for one of its rare extreme setups, which is normal given it trades only ~1-2% of candles.
+**What changed vs last time:** Signal moved from 0 (idle) to 1 (active). The window grew from 8 to 12 bets. The live ledger now shows 2 trades but still only **1 resolved**, and that single resolved trade lost -13.0 bps (a short that went against us as price rose).
 
-**What the numbers say:**
-- The rolling *window* shows 8 bets, 87.5% wins, +7.7 bps net after 3 bps costs. That looks nice, but 8 bets is essentially noise — a single outcome swings the average heavily.
-- The *ledger* (actual resolved live trades) still has just **1 trade**, a loser: -13.0 bps (short entered at $63,438, price rose to $63,501). One trade tells us nothing about the edge.
+**What the numbers do and don't tell us:** With just 1 resolved live trade, the -13 bps result is pure noise — one coin flip, not evidence of anything. The 12-bet window is also tiny; a couple dozen trades minimum are needed before any read is meaningful. Separately, the independent edge search found **0 survivors** meeting the strict bar (net positive on both venues at 5 bps cost), a reminder this edge is marginal at best.
 
-**What changed vs last time:** Very little. The window bet count moved from 12 to 8 (older bets rolled off), net stayed positive (~+8 bps). The ledger is unchanged at 1 trade. BTC drifted down ~$480.
-
-**What this does and doesn't tell us:** It doesn't tell us the strategy works. Recall the validated reality: the gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — marginal, and likely **not** net-profitable after realistic fees. Note also `edge_search_survivors: 0`, meaning nothing cleared the stricter 5 bps two-venue bar.
-
-**Bottom line:** No degradation signal and no cause for alarm — but equally, no evidence of a durable edge. We need dozens of resolved ledger trades before drawing any conclusion. Treat all current P&L as noise.
+**Honest bottom line:** Nothing here warrants alarm or excitement. The sample is far too thin to conclude the edge is holding or breaking. Remember the core caveat: gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost, so this strategy is likely **not net-profitable after realistic costs**. Keep collecting data; no action needed.
