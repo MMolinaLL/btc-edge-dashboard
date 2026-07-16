@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); 2 resolved live trades both losers (-16.7 bps total); sample far too thin to judge; BTC ~$64.7k
+# 🟢 Signal flat (0); only 2 resolved live trades, both small losers (-16.7 bps total); far too thin to judge; BTC ~$63.9k
 
-_Updated 2026-07-16 15:39 UTC · model claude-opus-4-8_
+_Updated 2026-07-16 22:57 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently inactive (0) with BTC near $64,735, up modestly from ~$63,900 last check. No clear regime shift; the live traded sample is still far too small to say anything meaningful.
+**Regime:** Signal is currently inactive (0). BTC near $63,908, slightly down from ~$64,735 last check — no meaningful regime shift, and the live traded sample remains far too small to draw conclusions.
 
-**How it's doing:** Honestly, we still can't tell — the live sample is tiny. The strategy's real-money ledger has just **2 resolved trades**, and both lost: one -13.0 bps, one -3.7 bps, for -16.7 bps total (mean -8.3 bps/trade). That looks bad on the surface, but 2 trades is pure noise — you'd expect strings of losers by chance even from a genuinely positive edge.
+**How it's doing:** Still essentially unmeasurable. The live ledger has just **2 resolved trades**, both small losers: a short on Jul 6 (-13.0 bps) and a long on Jul 16 (-3.7 bps), totaling **-16.7 bps**. That's a 0% win rate, but on two bets that number is noise, not signal.
 
-**What changed vs last time:** The signal flipped from active long (1) back to flat (0), and BTC recovered to ~$64,735 from ~$63,900. The second ledger trade (a long entered 2026-07-16) resolved as a small -3.7 bps loss. The prior lone trade (-13 bps) is unchanged.
+**What changed vs last time:** Nothing material. Same 2 resolved trades, price drifted down from ~$64,735 to ~$63,908, and the signal is still flat (0), so no new position is being taken right now.
 
-**What the numbers do and don't tell us:** The `window` block (10 bets, 60% win, +3.8 bps net) is a rolling/backtest-style view that looks fine, but it's a different, small set. The `ledger` is the true out-of-sample tally, and it's just 2 trades — statistically meaningless. Neither is enough to confirm or reject the edge.
+**What the numbers do and don't tell us:** The separate rolling 'window' figure (10 bets, +3.8 bps net, 60% win) looks fine and roughly matches the strategy's expected marginal edge — but this comes from a different/backfilled tally, not the two live trades, and 10 bets is still tiny. Remember the validated edge is only **~4 bps/bet gross vs a ~3.9 bps breakeven cost**: even at full strength this is marginal and likely NOT net-profitable after realistic costs. The `edge_search_survivors: 0` is a standing reminder that nothing cleared the strict both-venues test.
 
-**Bottom line:** This strategy was always marginal: ~4 bps gross edge against a ~3.9 bps breakeven cost, and the broader edge search found **zero survivors** that stayed positive at 5 bps cost on both venues. So it likely is NOT net-profitable after realistic costs. The two live losers are consistent with that skepticism but don't prove degradation. No action; keep collecting data. No profit is implied or guaranteed.
+**Honest bottom line:** Too thin to judge. Two losing live trades are not evidence of breakdown, just as the 10-bet window isn't evidence of edge. We need dozens of resolved trades before any verdict. No action warranted; keep watching.
