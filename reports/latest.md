@@ -1,13 +1,21 @@
-# 🟢 Signal flat (0); only 2 resolved live trades, both small losers (-16.7 bps total); far too thin to judge; BTC ~$63.9k
+# 🟢 Signal flat (0); only 2 resolved live trades (-16.7 bps), still far too thin to judge; BTC ~$62.8k
 
-_Updated 2026-07-16 22:57 UTC · model claude-opus-4-8_
+_Updated 2026-07-17 08:11 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently inactive (0). BTC near $63,908, slightly down from ~$64,735 last check — no meaningful regime shift, and the live traded sample remains far too small to draw conclusions.
+**Regime:** Signal currently inactive (0). BTC near $62,792, down ~$1,100 from ~$63,908 last check — a modest drift lower, no meaningful regime shift. Live traded sample remains far too small to draw conclusions.
 
-**How it's doing:** Still essentially unmeasurable. The live ledger has just **2 resolved trades**, both small losers: a short on Jul 6 (-13.0 bps) and a long on Jul 16 (-3.7 bps), totaling **-16.7 bps**. That's a 0% win rate, but on two bets that number is noise, not signal.
+## How it's doing
 
-**What changed vs last time:** Nothing material. Same 2 resolved trades, price drifted down from ~$64,735 to ~$63,908, and the signal is still flat (0), so no new position is being taken right now.
+The strategy is quiet right now — the live signal is **0 (no position)**. Because this is a selective mean-reversion strategy that only trades ~1-2% of candles, activity grows slowly by design.
 
-**What the numbers do and don't tell us:** The separate rolling 'window' figure (10 bets, +3.8 bps net, 60% win) looks fine and roughly matches the strategy's expected marginal edge — but this comes from a different/backfilled tally, not the two live trades, and 10 bets is still tiny. Remember the validated edge is only **~4 bps/bet gross vs a ~3.9 bps breakeven cost**: even at full strength this is marginal and likely NOT net-profitable after realistic costs. The `edge_search_survivors: 0` is a standing reminder that nothing cleared the strict both-venues test.
+**What changed vs last time:** Essentially nothing on the trading side. Still just **2 resolved live trades**, both small losers, totaling **-16.7 bps** (mean -8.3 bps each). BTC drifted from ~$63,908 to **$62,792**, a ~1.7% dip — unremarkable.
 
-**Honest bottom line:** Too thin to judge. Two losing live trades are not evidence of breakdown, just as the 10-bet window isn't evidence of edge. We need dozens of resolved trades before any verdict. No action warranted; keep watching.
+## What the numbers do and don't tell us
+
+- The 14-bet backtest window shows gross **+2.75 bps** vs assumed cost **3.0 bps**, netting **-0.25 bps**. That's consistent with the known reality: the edge is marginal (~4 bps gross) and likely not net-profitable after realistic costs.
+- The 2 live trades (both losing) tell us **almost nothing** statistically — two coin flips landing tails is not evidence of breakdown.
+- Notably, the independent edge search found **0 survivors** at the stricter 5 bps / both-venues bar. This reinforces that a durable, cost-surviving edge has *not* been established.
+
+## Bottom line
+
+Too thin to judge — no alert warranted. Nothing here contradicts the prior honest view: this is a marginal signal that probably does not clear realistic trading costs. Keep collecting data; do not read the two small losses as either failure or (obviously) success. No profit is implied or guaranteed.
