@@ -79,3 +79,4 @@
 {"t": "2026-07-17 08:11 UTC", "headline": "Signal flat (0); only 2 resolved live trades (-16.7 bps), still far too thin to judge; BTC ~$62.8k", "alert_level": "none"}
 {"t": "2026-07-17 15:14 UTC", "headline": "Signal flat (0); 3 live trades all losing (-39.5 bps total) but sample far too thin to judge; BTC ~$62.8k", "alert_level": "none"}
 {"t": "2026-07-17 22:52 UTC", "headline": "Signal flat (0); still only 3 live trades, all losing (-39.5 bps), but sample far too thin to judge; BTC ~$63.9k", "alert_level": "none"}
+{"t": "2026-07-18 07:51 UTC", "headline": "Signal flat (0); still 3 live trades, all losing (-39.5 bps) \u2014 sample far too thin to judge; BTC ~$63.96k", "alert_level": "none"}
