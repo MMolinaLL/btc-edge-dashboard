@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); 3 live trades all red (-39.5 bps), 10-bet window net -3.9 bps — sample far too thin to judge; BTC ~$65.1k
+# 🟢 Signal flat (0); 3 live trades all red (-39.5 bps), 10-bet window net -2.9 bps — sample far too thin to judge; BTC ~$66.2k
 
-_Updated 2026-07-20 23:01 UTC · model claude-opus-4-8_
+_Updated 2026-07-21 08:30 UTC · model claude-opus-4-8_
 
-**Regime:** Signal currently inactive (signal=0). BTC ~$65,088, roughly flat vs ~$65,294 last check. No regime shift flagged; every sample here (3 resolved trades, 10-bet window) is far too small for any statistical conclusion.
+**Regime:** Signal currently inactive (signal=0). BTC ~$66,161, up ~$1,000 vs last check. No regime shift flagged; every live sample here (3 resolved trades, 10-bet window) remains far too small for statistical conclusions.
 
-**How it's doing:** The strategy is quiet right now — the live signal is 0, so it's holding no position. The tiny track record remains in the red: all 3 resolved trades lost money, averaging -13.2 bps each, for -39.5 bps total. The broader 10-bet window sits at -3.9 bps net (-0.9 bps gross before the assumed 3 bps cost), with wins split 50/50.
+**How it's doing.** The strategy is not signaling right now (signal=0), so it's sitting on its hands — which is expected given it only trades ~1-2% of candles. BTC is ~$66,161, up about $1k since the last look.
 
-**What changed vs last time:** Essentially nothing. Same 3 resolved trades, same -39.5 bps, same flat signal. BTC is ~$65,088, roughly unchanged from ~$65,294. No new trades have resolved since the prior check.
+**What changed.** Almost nothing. The live ledger still shows just 3 resolved trades, all losers, totaling -39.5 bps (mean -13.2 bps each). The broader 10-bet window is net -2.9 bps (gross +0.095 bps, assuming 3.0 bps cost), with a 50% win rate. No new resolved trades since last time.
 
-**What the numbers do and don't tell us:** They do confirm the honest prior warning: this signal was only ever marginal (~4 bps gross edge vs ~3.9 bps breakeven cost), so it was never expected to reliably clear real trading costs. What they absolutely do NOT tell us is whether the edge has 'broken' — 3 trades (and even 10 bets) is pure noise. A single -22.8 bps trade dominates the tally. You cannot distinguish bad luck from a dead edge at this size; you'd need dozens of resolved trades.
+**What the numbers tell us — and don't.** They tell us the handful of live trades so far have lost money. They do NOT tell us the edge is broken. Three trades is statistically meaningless: one bad -22.8 bps and one -13.0 bps print dominate the total, exactly the kind of variance you'd expect from noise. Even the 10-bet window is far too small to distinguish a real edge from randomness. Recall this signal's validated edge was only ~4 bps gross vs a ~3.9 bps breakeven cost — marginal by design, and likely not net-profitable after realistic costs.
 
-**Bottom line:** Too thin to judge, and by design this is a marginal signal that is likely not net-profitable after realistic costs. No alert — the losses so far are consistent with small-sample noise, not evidence of degradation. Keep collecting data; don't read anything into these three reds.
+**Bottom line.** No cause for alarm and no cause for celebration. Results are negative but the sample is nowhere near large enough to judge. Edge-search survivors remain 0, consistent with this being a marginal, not clearly profitable, candidate. Keep collecting data; don't act on 3-10 observations. This is not a promise of future profit — it's a wait-and-see.
