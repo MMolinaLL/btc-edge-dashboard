@@ -90,3 +90,4 @@
 {"t": "2026-07-20 23:01 UTC", "headline": "Signal flat (0); 3 live trades all red (-39.5 bps), 10-bet window net -3.9 bps \u2014 sample far too thin to judge; BTC ~$65.1k", "alert_level": "none"}
 {"t": "2026-07-21 08:30 UTC", "headline": "Signal flat (0); 3 live trades all red (-39.5 bps), 10-bet window net -2.9 bps \u2014 sample far too thin to judge; BTC ~$66.2k", "alert_level": "none"}
 {"t": "2026-07-21 15:44 UTC", "headline": "Signal flat (0); 3 live trades all red (-39.5 bps), 7-bet window net -2.7 bps \u2014 sample far too thin to judge; BTC ~$66.6k", "alert_level": "none"}
+{"t": "2026-07-21 22:57 UTC", "headline": "Signal flat (0); still only 3 resolved trades (all red, -39.5 bps) \u2014 sample far too thin to judge; BTC ~$66.3k", "alert_level": "none"}
