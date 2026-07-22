@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); still only 3 resolved trades (all red, -39.5 bps) — sample far too thin to judge; BTC ~$66.3k
+# 🟢 Signal flat (0); now 4 resolved trades, all losers (-44.1 bps total) — still far too thin to judge; BTC ~$66.0k
 
-_Updated 2026-07-21 22:57 UTC · model claude-opus-4-8_
+_Updated 2026-07-22 08:30 UTC · model claude-opus-4-8_
 
-**Regime:** Signal currently inactive (signal=0). BTC ~$66,251, roughly flat vs last check (~$66,592). No regime shift flagged; all live samples remain far too small for statistical conclusions.
+**Regime:** Signal currently inactive (signal=0). BTC ~$65,986, roughly flat vs last check (~$66,251). No regime shift flagged; every live sample remains too small for statistical conclusions.
 
-**How it's doing:** Effectively unchanged since last check. The strategy is a selective signal that only fires on ~1-2% of candles, so live data trickles in slowly. Right now the signal is flat (0), meaning it sees no trade to make. BTC sits at ~$66,251, essentially flat from the prior ~$66,592.
+**How it's doing:** The signal is currently idle (signal=0), so no new position is open. Since last time, one more trade resolved (the 2026-07-22 short), bringing the ledger to **4 resolved trades, all losing**, for a mean of **-11.0 bps** and a running total of **-44.1 bps**. Individual losses ranged from small (-3.7, -4.7 bps) to large (-22.8, -13.0 bps).
 
-**The numbers:** The ledger still shows just **3 resolved trades**, all losers, averaging **-13.2 bps** each (-39.5 bps total). The broader 7-bet window is net **-2.7 bps** (gross +0.3 bps, cost 3.0 bps). One trade (-22.8 bps on 2026-07-17) dominates the damage.
+**What changed:** We went from 3 losers (-39.5 bps) to 4 losers (-44.1 bps). The newest loss was small (-4.7 bps).
 
-**What this does and doesn't tell us:** With only 3-7 outcomes, these figures are pure noise — you'd expect swings this large from random chance alone even if the true edge were exactly as modeled. You cannot distinguish 'broken' from 'unlucky' at this size. Note also that the edge was always known to be marginal: ~4 bps gross vs ~3.9 bps breakeven cost, and zero survivors passed the stricter 5-bps dual-venue bar. So even a healthy sample would likely show it hovering around break-even at best.
+**What the numbers do and don't tell us:** Four straight losses looks bad on the surface, but this sample is far too small to mean anything. This strategy's *expected* edge was only ~4 bps gross per bet versus ~3-4 bps cost — i.e. razor-thin and possibly not profitable after costs even in backtest. With an edge that marginal, random price noise on a handful of 5-minute trades completely swamps the signal. A separate 7-bet window even shows a small positive (+1.2 bps net), underlining how noisy things are at this scale. Note also that the independent edge search found **0 survivors** at a stricter 5 bps cost bar.
 
-**Bottom line:** Nothing actionable. The results are consistent with a weak-to-nonexistent net edge, but the sample is far too thin to conclude degradation. No profit is implied or guaranteed. Keep collecting data; revisit once dozens of trades accumulate.
+**Bottom line:** No confirmed edge, no confirmed breakdown — just noise. Four red trades is unlucky, not proof of failure; likewise the marginal design means we should never expect reliable profit. Keep collecting data; I'd want dozens of resolved trades before drawing any conclusion. Not pausing, not celebrating.
