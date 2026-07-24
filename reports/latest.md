@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); 1st live winner logged (+3.1 bps), but 5 trades total still net -41 bps — sample far too thin; BTC ~$65.3k
+# 🟢 Signal flat (0); still only 5 resolved trades (net -41 bps); sample far too thin to judge — BTC ~$64.1k
 
-_Updated 2026-07-24 08:28 UTC · model claude-opus-4-8_
+_Updated 2026-07-24 15:26 UTC · model claude-opus-4-8_
 
-**Regime:** Signal currently inactive (signal=0). One new trade resolved since last check — a modest winner — but nothing suggests a regime shift; the live sample remains far too small for any statistical read.
+**Regime:** Signal is currently inactive (signal=0), and nothing in the data suggests a regime shift. The live sample remains far too small for any statistical conclusion.
 
-**How it's doing:** Still early days, and still not enough data to draw conclusions. The ledger now shows 5 resolved trades (up from 4), with a total of **-41.0 bps** and a mean of **-8.2 bps/trade**. Win rate is 1-in-5 (20%).
+**How it's doing:** No real change since last check. The signal is currently idle (signal=0), so no new position is open. The strategy has logged just **5 resolved trades**, netting **-41 bps total** (mean -8.2 bps/trade, 1 win in 5). A slightly broader window shows **11 bets, 54.5% win rate, -1.94 bps net** after 3 bps cost.
 
-**What changed vs last time:** One new trade resolved (2026-07-24 07:10) and it was the **first live winner: +3.1 bps net**. That nudged the running total from -44.1 to -41.0 bps. The signal is currently flat (signal=0), BTC roughly unchanged at ~$65.3k.
+**What changed:** Essentially nothing meaningful. The prior report already noted the first live winner (+3.1 bps on 2026-07-24). Numbers are static — no new resolved trades appear versus last time.
 
-**What the numbers do and don't tell us:** They tell us live results so far are negative — but with only 5 trades this is *noise, not signal*. Remember the strategy's expected edge is tiny (~4 bps gross vs ~3.9 bps breakeven cost), so it was always likely to be marginal-to-unprofitable after costs. The individual trades swing wildly (from -22.8 to +3.1 bps), which is exactly why a handful of bets can't distinguish 'broken' from 'unlucky'. The separate 9-bet window (net -1.1 bps) is similarly inconclusive. Notably, the broader edge-search found **zero survivors** clearing a positive-net bar at 5 bps cost on both venues — consistent with a fragile, probably-not-net-profitable edge.
+**What the numbers do and don't tell us:** They do NOT tell us the edge is broken. With only 5–11 samples, results are dominated by noise: a single -22.8 bps loss (2026-07-17) and a -13.0 bps loss (2026-07-06) drag the average down disproportionately. You'd need *dozens* of trades before the net figure means anything statistically. The recorded 3 bps cost is also below the ~3.9 bps breakeven the backtest implied, so real-world net would be worse still.
 
-**Bottom line:** No alert. The data is too thin to judge, results are mildly negative as one might expect for a marginal signal, and no degradation beyond that can be asserted. Keep watching; no profit is implied or guaranteed.
+**Honest bottom line:** This was always a *marginal* candidate — ~4 bps gross edge against ~3.9 bps breakeven cost — likely not net-profitable after realistic fees. The live sample is far too thin to confirm or reject that. Note also `edge_search_survivors: 0`: no strategy currently clears the stricter 5 bps two-venue bar. Keep watching, keep expectations low, and don't read anything into 5 trades. No action warranted.
