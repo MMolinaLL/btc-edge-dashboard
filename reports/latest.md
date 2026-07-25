@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); ~5-10 live trades, net negative but sample far too thin to judge — BTC ~$64.1k
+# 🟢 Signal flat (0); ~5-10 live trades net negative but sample far too thin to conclude \u2014 BTC ~$64.4k
 
-_Updated 2026-07-25 15:03 UTC · model claude-opus-4-8_
+_Updated 2026-07-25 22:56 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently inactive (signal=0) with no evidence of a regime shift. The live sample remains far too small to separate genuine degradation from ordinary noise.
+**Regime:** Signal is currently inactive (signal=0) and there's no sign of a distinct regime shift. The live sample is still far too small to separate genuine degradation from ordinary noise.
 
-**How it's doing.** The strategy is quiet right now (signal=0, no open position). The live track record is still tiny: the ledger shows just 5 resolved trades and the rolling window covers 10 bets. Both are net-negative — the ledger averages about -8.2 bps/trade (-41 bps total, only 1 of 5 winners), and the 10-bet window is -3.0 bps net (gross ~0.0 bps, cost 3.0 bps). At face value that looks bad.
+**How it's doing.** The strategy is quiet right now (signal=0, no open position), with BTC around $64,351. Over the resolved ledger of just **5 trades**, results are negative: only **1 win (20%)**, averaging **-8.2 bps/trade** for **-41 bps** total. A slightly wider window of **10 bets** shows **40% wins** and **-3.5 bps net** (-0.5 bps gross before the 3 bps cost assumption).
 
-**What changed vs last time.** Very little. We picked up one more resolved trade (the 2026-07-24 short, which actually made +3.1 bps net). The picture is essentially unchanged: negative numbers on a sample far too small to interpret.
+**What changed vs last time.** Essentially nothing material. Sample nudged up but is still in the single-digit-to-ten range \u2014 the same too-thin territory flagged before. The most recent trade (Jul 24) actually cleared a small **+3.1 bps net**, while the worst (Jul 17) lost **-22.8 bps**. That spread across five trades is exactly the kind of noise you'd expect.
 
-**What the numbers do and don't tell us.** Remember this signal is expected to be *marginal* — roughly 4 bps gross edge against a ~3.9 bps breakeven cost, meaning it may not be net-profitable even when working as designed. With only 5-10 trades, a single bad bet (e.g. the -22.8 bps loss on 2026-07-17) dominates the average. That kind of swing is exactly what noise looks like at this size; it neither confirms nor refutes an edge. The offline edge search still finds 0 survivors clearing a positive-net bar on both venues — a reminder the edge is fragile, not proof of live failure.
+**What the numbers do and don't tell us.** They confirm the strategy is behaving selectively as designed (very few trades). They do **not** tell us whether the edge is broken. With this validated edge being only ~4 bps gross against a ~3.9 bps breakeven cost, individual trades are dominated by luck; you'd need dozens of resolved trades before a negative streak means anything. Also note `edge_search_survivors = 0`, consistent with the prior view that this signal is marginal and probably not net-profitable after realistic costs.
 
-**Bottom line.** Too thin to judge. Results lean negative, but that's consistent with both bad luck and a genuinely weak edge. No action warranted — keep collecting trades before drawing conclusions. No profit is implied or guaranteed.
+**Bottom line.** Too early to judge, and no action warranted. The live results lean negative but are well within noise for a five-trade sample. No profit is implied or expected here \u2014 keep collecting data before drawing conclusions.
