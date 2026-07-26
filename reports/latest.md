@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); ~5-10 live trades net negative but sample far too thin to conclude \u2014 BTC ~$64.4k
+# 🟢 Signal flat (0); live sample still tiny (~5-12 trades) and net negative, but too thin to judge — BTC ~$64.3k
 
-_Updated 2026-07-25 22:56 UTC · model claude-opus-4-8_
+_Updated 2026-07-26 08:27 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently inactive (signal=0) and there's no sign of a distinct regime shift. The live sample is still far too small to separate genuine degradation from ordinary noise.
+**Regime:** Signal is currently inactive (signal=0), with no clear regime shift. The live sample remains far too small to separate real degradation from ordinary noise.
 
-**How it's doing.** The strategy is quiet right now (signal=0, no open position), with BTC around $64,351. Over the resolved ledger of just **5 trades**, results are negative: only **1 win (20%)**, averaging **-8.2 bps/trade** for **-41 bps** total. A slightly wider window of **10 bets** shows **40% wins** and **-3.5 bps net** (-0.5 bps gross before the 3 bps cost assumption).
+**How it's doing:** The signal is idle right now (signal=0), which is normal — this strategy only trades ~1-2% of candles, so live data accumulates slowly. The trades that have resolved are running negative: the ledger shows 5 resolved trades averaging **-8.2 bps net** (-41 bps total, 1 of 5 winners), and the broader window counts 12 bets at **-4.9 bps net** (-1.9 bps gross, before its 3 bps cost assumption).
 
-**What changed vs last time.** Essentially nothing material. Sample nudged up but is still in the single-digit-to-ten range \u2014 the same too-thin territory flagged before. The most recent trade (Jul 24) actually cleared a small **+3.1 bps net**, while the worst (Jul 17) lost **-22.8 bps**. That spread across five trades is exactly the kind of noise you'd expect.
+**What changed vs last time:** Essentially nothing material. Numbers are in the same ballpark as the prior read. The most recent trade (Jul 24) was actually a small winner at +3.1 bps net, but two large losers (-13 and -22.8 bps) dominate the tiny sample.
 
-**What the numbers do and don't tell us.** They confirm the strategy is behaving selectively as designed (very few trades). They do **not** tell us whether the edge is broken. With this validated edge being only ~4 bps gross against a ~3.9 bps breakeven cost, individual trades are dominated by luck; you'd need dozens of resolved trades before a negative streak means anything. Also note `edge_search_survivors = 0`, consistent with the prior view that this signal is marginal and probably not net-profitable after realistic costs.
+**What the numbers do and don't tell us:** With only 5-12 trades, this tells us almost nothing statistically. The validated edge was only ~4 bps/bet gross against a ~3.9 bps breakeven cost — marginal by design, and *likely not net-profitable after realistic costs*. A run of a few losers is fully consistent with both a dead edge and normal variance around a razor-thin one. You cannot distinguish those yet. Separately, `edge_search_survivors=0` is a standing reminder that nothing cleared the stricter 5 bps two-venue bar.
 
-**Bottom line.** Too early to judge, and no action warranted. The live results lean negative but are well within noise for a five-trade sample. No profit is implied or expected here \u2014 keep collecting data before drawing conclusions.
+**Bottom line:** No alert. Results are soft but the sample is too thin to conclude degradation. Keep collecting; revisit once several dozen resolved trades exist. Do not expect this to be a money-maker.
