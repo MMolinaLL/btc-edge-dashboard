@@ -1,26 +1,13 @@
-# 🟢 Signal flat (0); live sample still tiny (5-10 trades), net slightly negative but too thin to judge — BTC ~$64.6k
+# 🟢 Signal flat (0); tiny live sample (5-12 trades) running negative but far too thin to judge — BTC ~$65.3k
 
-_Updated 2026-07-26 15:06 UTC · model claude-opus-4-8_
+_Updated 2026-07-26 22:59 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently inactive (signal=0) with no clear regime shift. The live sample is far too small to distinguish real edge decay from ordinary noise.
+**Regime:** Signal is currently inactive (signal=0). Recent activity is sparse and the sample remains too small to separate genuine edge decay from ordinary noise.
 
-## How it's doing
+**How it's doing:** No new signal right now (signal=0). BTC sits at ~$65,336. The live tallies are still slightly negative: the rolling window shows **12 bets, 41.7% win, -3.7 bps net** (-0.7 bps gross before the 3 bps cost assumption), and the confirmed ledger shows **5 resolved trades, 20% win, -8.2 bps mean, -41 bps total**.
 
-The signal is currently **inactive** (signal=0), so nothing is being traded right now. BTC sits near **$64,645**.
+**What changed vs last time:** Very little. Price ticked up (~$64.6k → ~$65.3k), the resolved ledger is basically the same handful of trades, and the strategy remains inactive. Encouragingly, the most recent resolved trade (2026-07-24) was a small winner at **+3.1 bps net**, but that's one data point.
 
-The live track record is still tiny. The rolling window shows **10 bets, 50% win rate, gross +0.08 bps, net -2.9 bps** (at an assumed 3.0 bps cost). The resolved ledger holds just **5 trades, 20% wins, averaging -8.2 bps each (-41 bps total)**. Two losers dominate: -13.0 bps (2026-07-06) and -22.8 bps (2026-07-17). The most recent trade (2026-07-24) was a rare winner at +3.1 bps net.
+**What the numbers do and don't tell us:** They confirm the strategy is genuinely selective — only a trickle of trades over three weeks. With just 5–12 outcomes, the negative averages are dominated by one or two bad prints (e.g. the -22.8 bps trade on 2026-07-17). This is exactly the sample size where randomness, not skill or breakdown, drives the headline number. You cannot conclude the edge is gone, nor that it works.
 
-## What changed vs last time
-
-Essentially nothing material. Same flat signal, same too-thin sample. The prior read (none) still holds.
-
-## What the numbers do and don't tell us
-
-- **Do:** Recent live results have been negative, consistent with a strategy whose gross edge (~4 bps) barely clears its ~3.9 bps breakeven cost. It is marginal by design.
-- **Don't:** With only 5-10 resolved trades, the numbers carry no statistical weight. One or two large moves swing the whole average. This is squarely in noise territory — you cannot conclude the edge is broken, nor that it works.
-
-Separately, `edge_search_survivors=0` is a reminder that no variant cleared the stricter dual-venue 5 bps bar — this was never a confident money-maker.
-
-## Bottom line
-
-Too thin to judge. Results lean negative but are well within noise for such a small sample. Keep collecting data; no action warranted. Do not expect reliable profit from this marginal signal.
+**Honest bottom line:** This was always a marginal candidate — ~4 bps gross edge against a ~3.9 bps breakeven cost — meaning it is probably **not net-profitable after realistic costs** even if the signal is real. The live results so far are unremarkable and statistically uninformative. No action warranted; keep collecting data. Note that a separate edge search still finds **zero survivors** at a 5 bps cost bar, reinforcing skepticism.
