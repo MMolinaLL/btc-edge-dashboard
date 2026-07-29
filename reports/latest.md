@@ -1,13 +1,13 @@
-# 🟢 Flat now (signal=0); 6 resolved live bets run net ~-9.9 bps, but sample still far too thin to judge — BTC ~$64.3k
+# 🟢 Flat now (signal=0); 6 resolved live bets net ~-9.9 bps each, but sample far too thin to judge — BTC ~$63.9k
 
-_Updated 2026-07-29 08:41 UTC · model claude-opus-4-8_
+_Updated 2026-07-29 15:50 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently flat (signal=0). Live results are uniformly negative so far, but with only 6-10 bets this is well within the noise band for a strategy whose expected gross edge is just ~4 bps/bet.
+**Regime:** Signal is currently flat (signal=0). Live results lean negative, but with only 6-10 resolved bets this remains well within the noise band for a strategy whose expected gross edge is just ~4 bps/bet.
 
-**How it's doing:** The strategy is idle right now (signal=0), so it's not exposed. On the small pile of resolved live bets it has been losing: the 6-trade ledger averages **-9.9 bps net** (total -59.3 bps), and the broader 10-bet window is **-12.0 bps net** with only a 20% win rate. Individual losers like the -22.8 and -18.2 bps trades dominate the tally.
+**How it's doing.** The strategy is currently sitting out (signal = 0), so no new position is open. Across the 6 resolved live bets, the average result is about **-9.9 bps per bet** (total ~-59 bps), winning only 1 of 6. The slightly wider 10-bet window shows **-12.0 bps net** (-9.0 gross + 3.0 cost) with a 20% win rate.
 
-**What changed vs last time:** Essentially nothing material. We've added a couple of bets, and one trade (2026-07-24) actually came in **positive at +3.1 bps net** — the first winner on record. The overall picture is unchanged: small sample, negative so far.
+**What changed vs last time.** Essentially nothing material — same flat signal, same handful of trades, same uniformly weak tone. No new resolved bets have shifted the picture.
 
-**What the numbers do and don't tell us:** They do NOT tell us the edge is broken. Remember the design: expected gross edge is only ~4 bps/bet with a ~3.9 bps breakeven cost, so this was always a marginal, likely-not-net-profitable signal. With only 6-10 trades, a run of losses is statistically ordinary — a few big moves in the wrong direction swamp everything. You need dozens of resolved trades before any conclusion is credible. Separately, `edge_search_survivors=0` is a standing reminder that nothing cleared the stricter 5-bps two-venue bar.
+**What the numbers do and don't tell us.** They do show that live results so far are negative, driven by a couple of larger losers (-22.8 and -18.2 bps on individual trades). But they **do not** tell us the edge is broken. With only 6 bets and an expected gross edge of just ~4 bps, the outcome distribution is extremely wide — a run of losers like this is entirely consistent with pure noise. You'd need dozens of trades before the average carries any statistical weight.
 
-**Honest bottom line:** Losing so far, but the sample is too thin to distinguish 'no edge' from bad luck. No action warranted; keep collecting data and re-evaluate once the trade count reaches the dozens. No profit is implied or expected.
+**Honest bottom line.** This was always a marginal candidate: ~4 bps gross edge against a ~3.9 bps breakeven cost, and the broader edge search currently has **0 survivors** at a 5-bps bar. Live data isn't proving it works and isn't proving it's dead — the sample is simply too thin to conclude. No action warranted yet; keep collecting and reassess once the trade count grows meaningfully. This is not, and may never be, a reliably net-profitable strategy.

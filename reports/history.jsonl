@@ -113,3 +113,4 @@
 {"t": "2026-07-28 16:05 UTC", "headline": "Flat now (signal=0); ~6-10 bet sample runs net ~-10 bps, still too thin to judge \u2014 BTC ~$63.8k", "alert_level": "none"}
 {"t": "2026-07-28 23:00 UTC", "headline": "Flat now (signal=0); 6-10 live bets run net ~-10 bps, but sample still too thin to conclude \u2014 BTC ~$63.7k", "alert_level": "none"}
 {"t": "2026-07-29 08:41 UTC", "headline": "Flat now (signal=0); 6 resolved live bets run net ~-9.9 bps, but sample still far too thin to judge \u2014 BTC ~$64.3k", "alert_level": "none"}
+{"t": "2026-07-29 15:50 UTC", "headline": "Flat now (signal=0); 6 resolved live bets net ~-9.9 bps each, but sample far too thin to judge \u2014 BTC ~$63.9k", "alert_level": "none"}
