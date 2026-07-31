@@ -1,15 +1,13 @@
-# 🟢 Signal flat (0); ledger of 6 resolved trades runs net -9.9 bps/bet, but sample far too thin to conclude — BTC ~$64.9k
+# 🟢 Signal flat (0); 6-trade live ledger runs net -9.9 bps/bet, but sample far too thin to judge — BTC ~$63.8k
 
-_Updated 2026-07-30 23:08 UTC · model claude-opus-4-8_
+_Updated 2026-07-31 08:50 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently flat (signal=0). The resolved ledger leans clearly negative, but with only 6 trades this is well inside the noise band for a strategy whose expected gross edge is just ~4 bps/bet.
+**Regime:** Signal is currently flat (signal=0), so no new exposure. The resolved live ledger leans clearly negative, but 6 trades is well inside the noise band for a strategy whose expected gross edge is only ~4 bps/bet.
 
-**How it's doing:** No trade is live right now (signal=0). The resolved ledger shows **6 trades, only 1 winner (16.7% win rate), averaging -9.9 bps/bet after a 3 bps cost, for -59.3 bps total.** On paper that looks bad — but 6 trades is nowhere near enough to mean anything.
+**How it's doing.** The signal is flat right now (signal=0), so nothing new is being traded. The live out-of-sample ledger shows **6 resolved trades**, of which only **1 was a winner (16.7%)**, averaging **-9.9 bps/bet** for a cumulative **-59.3 bps**. Individual losers include -22.8, -18.2 and -13.0 bps — a rough run.
 
-**What changed vs last time:** Little. Last check flagged a tiny (6–11 bet) sample leaning negative; that's still the picture. The ledger's biggest losers (-22.8 and -18.2 bps) are single 5-minute moves that went against the fade — exactly the kind of noise a handful of trades can produce.
+**What changed vs last time.** Essentially nothing. Same 6-trade ledger, same flat signal, same honest conclusion: too thin to judge. No new resolved trades have arrived since the prior check.
 
-**A caveat on the numbers:** The two panels disagree. The 'window' block reports 6 bets at 83% win / +5.6 bps net, while the 'ledger' reports 6 trades at 17% win / -9.9 bps. The trade-by-trade detail supports the *negative* ledger view (5 of 6 losers). Treat the rosy 'window' figure with suspicion.
+**What the numbers do and don't tell us.** They do confirm the strategy is *selective* (it trades rarely, so the sample grows slowly) and that recent bets have lost money. They do **not** establish that the edge has broken — 6 trades is far too small to distinguish a genuine breakdown from ordinary bad luck around a wafer-thin ~4 bps expected edge. Note the internal `window` block (9 bets, +5.6 bps net) tells a rosier story than the live ledger; treat both as noise at this size. Separately, the edge search found **0 survivors** at a 5 bps cost bar — a reminder that even the best candidate is marginal at best.
 
-**What this does and doesn't tell us:** With ~1–2% of candles trading, samples grow slowly; 6 outcomes can't separate a real edge from luck either way. Separately, the broad edge search now has **0 survivors** at a 5 bps cost bar — consistent with this being a marginal, likely-not-net-profitable signal.
-
-**Bottom line:** Too thin to judge. Don't act on the negative streak yet, but don't expect reliable profit — this edge was marginal to begin with. Keep collecting data.
+**Bottom line.** No action warranted, but no reassurance either. This was already flagged as likely *not* net-profitable after realistic costs, and the early live results are consistent with a marginal-to-negative edge. Keep collecting data; only after dozens of trades will negativity mean something. No profit is implied or guaranteed.
