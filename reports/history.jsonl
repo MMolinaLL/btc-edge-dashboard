@@ -122,3 +122,4 @@
 {"t": "2026-07-31 16:02 UTC", "headline": "Signal flat (0); 7-trade ledger now net -17 bps/bet after a -61 bps outlier, but sample still too thin \u2014 BTC ~$62.7k", "alert_level": "none"}
 {"t": "2026-07-31 23:02 UTC", "headline": "Signal flat (0); ledger still 7 trades at -17 bps/bet, dominated by a -61 bps loser \u2014 too thin to judge; BTC ~$62.9k", "alert_level": "none"}
 {"t": "2026-08-01 08:22 UTC", "headline": "Signal flat (0); ledger unchanged at 7 trades, -17 bps/bet \u2014 too thin to judge; BTC ~$63.0k", "alert_level": "none"}
+{"t": "2026-08-01 15:01 UTC", "headline": "Signal flat (0); ledger still 7 trades at -17 bps/bet \u2014 too thin to judge; BTC ~$63.1k", "alert_level": "none"}
