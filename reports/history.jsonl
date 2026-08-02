@@ -124,3 +124,4 @@
 {"t": "2026-08-01 08:22 UTC", "headline": "Signal flat (0); ledger unchanged at 7 trades, -17 bps/bet \u2014 too thin to judge; BTC ~$63.0k", "alert_level": "none"}
 {"t": "2026-08-01 15:01 UTC", "headline": "Signal flat (0); ledger still 7 trades at -17 bps/bet \u2014 too thin to judge; BTC ~$63.1k", "alert_level": "none"}
 {"t": "2026-08-01 22:56 UTC", "headline": "Signal flat (0); ledger unchanged at 7 trades, -17 bps/bet \u2014 still too thin to judge; BTC ~$62.8k", "alert_level": "none"}
+{"t": "2026-08-02 08:25 UTC", "headline": "Signal flat (0); ledger still 7 trades at -17 bps/bet \u2014 sample too thin to judge; BTC ~$63.4k", "alert_level": "none"}

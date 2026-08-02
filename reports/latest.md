@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); ledger unchanged at 7 trades, -17 bps/bet — still too thin to judge; BTC ~$62.8k
+# 🟢 Signal flat (0); ledger still 7 trades at -17 bps/bet — sample too thin to judge; BTC ~$63.4k
 
-_Updated 2026-08-01 22:56 UTC · model claude-opus-4-8_
+_Updated 2026-08-02 08:25 UTC · model claude-opus-4-8_
 
-**Regime:** Signal is currently flat (signal=0), so there's no live exposure right now. The ledger remains negative but rests on only 7 resolved trades — well inside the noise band for a strategy whose expected gross edge is just ~4 bps/bet.
+**Regime:** Signal is currently flat (signal=0), so there is no live exposure. Results remain negative but rest on a handful of trades — well inside the noise band for a strategy whose expected gross edge is only ~4 bps/bet.
 
-**Where things stand.** No new resolved trades since last check — the ledger is still 7 trades, all in July, with a mean of **-17.2 bps** and a running total of **-120.2 bps**. The broader rolling window shows 17 bets at **-4.5 bps net** (gross -1.5 bps at 3 bps cost). The signal is currently **flat (0)**, so nothing is at risk this moment. BTC prints ~$62,777.
+**How it's doing.** The strategy is sitting on the sidelines right now (signal = 0), so no new risk is on. Nothing material has changed since last time: the trade ledger is still **7 resolved trades**, with **1 win (14%)**, a mean of **-17.2 bps/trade** and a running total of **-120 bps**. A separate rolling window shows **15 bets, 60% wins, -5.7 bps net** (-2.7 gross at 3 bps cost).
 
-**What changed vs last time.** Essentially nothing — same 7-trade ledger, same honest verdict. Prior assessment already flagged this as too thin.
+**What changed.** Effectively nothing versus the prior read — same 7-trade ledger, BTC drifted from ~$62.8k to ~$63.4k. The window's higher win rate (60%) but still-negative net is a reminder that a couple of large losers dominate: one -57.9 bps gross trade on 2026-07-31 alone accounts for roughly half the ledger's total loss.
 
-**What the numbers do and don't tell us.** They look ugly: only 1 of 7 ledger trades won, dragged by a **-60.9 bps** loser on 2026-07-31 and a -22.8 bps loss on 7/17. But 7 trades is *far* too few to distinguish a broken edge from ordinary bad luck. For a signal whose *expected* edge is only ~4 bps/bet — below its ~3.9 bps breakeven cost — a handful of losers this size is entirely consistent with random variation. The single 60 bps loss alone accounts for half the total drawdown.
+**What the numbers do and don't tell us.** They do show that live results are negative so far. They do **not** tell us the edge is broken. With only 7 trades and an expected gross edge of just ~4 bps, a string like this is fully consistent with normal noise — a single 58 bps outlier can swamp everything. This strategy was always flagged as marginal and likely **not** net-profitable after realistic costs; the edge search still has **0 survivors**.
 
-**Honest bottom line.** This strategy was always marginal and likely **not net-profitable after realistic costs** — that hasn't changed. Live results are negative but the sample is nowhere near enough to conclude degradation, and the edge-search still finds **zero** survivors clearing the bar on both venues. No action warranted; keep accumulating trades before drawing conclusions. No profit is implied or guaranteed.
+**Bottom line.** Too thin to conclude anything. No exposure now, no action needed. Keep collecting trades; I'd want dozens of resolved bets before treating persistent negativity as real degradation rather than variance. No implication of future profit here.
