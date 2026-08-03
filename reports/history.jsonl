@@ -129,3 +129,4 @@
 {"t": "2026-08-02 22:57 UTC", "headline": "Signal flat (0); 7 resolved trades net -17 bps/bet and gross negative too \u2014 sample far too thin to judge; BTC ~$63.4k", "alert_level": "none"}
 {"t": "2026-08-03 09:47 UTC", "headline": "Signal flat (0); still only 7-18 live trades, net negative but sample far too thin to judge; BTC ~$62.6k", "alert_level": "none"}
 {"t": "2026-08-03 16:26 UTC", "headline": "Signal flat (0); still tiny live sample (7-14 trades), net negative but dominated by noise/outliers; BTC ~$63.9k", "alert_level": "none"}
+{"t": "2026-08-03 23:02 UTC", "headline": "Signal flat (0); live sample still tiny (7 resolved trades) and net negative, but dominated by 1-2 outliers; BTC ~$63.5k", "alert_level": "none"}
