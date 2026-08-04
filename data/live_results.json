@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-03 23:01 UTC",
+  "updated": "2026-08-04 08:37 UTC",
   "source": "Coinbase",
-  "price": 63505.76,
+  "price": 63500.01,
   "signal": 0,
   "window": {
-    "bets": 15,
-    "win": 0.6667,
-    "net_bps": -2.569,
-    "gross_bps": 0.431,
+    "bets": 16,
+    "win": 0.625,
+    "net_bps": -2.951,
+    "gross_bps": 0.049,
     "cost_bps": 3.0
   },
   "ledger": {
-    "trades": 7,
-    "resolved": 7,
-    "win": 0.1429,
-    "net_bps_mean": -17.165,
-    "total_bps": -120.2
+    "trades": 8,
+    "resolved": 8,
+    "win": 0.125,
+    "net_bps_mean": -15.188,
+    "total_bps": -121.5
   },
   "recent_trades": [
     {
@@ -86,6 +86,16 @@
       "resolve_price": 62573.85,
       "gross_bps": -57.89801909014014,
       "pnl_bps": -60.89801909014014,
+      "source": "Coinbase"
+    },
+    {
+      "entry_time": "2026-08-04 07:15:00+00:00",
+      "resolve_time": "2026-08-04 07:20:00+00:00",
+      "signal": 1,
+      "entry_price": 63475.96,
+      "resolve_price": 63486.46,
+      "gross_bps": 1.65416954702291,
+      "pnl_bps": -1.34583045297709,
       "source": "Coinbase"
     }
   ]
