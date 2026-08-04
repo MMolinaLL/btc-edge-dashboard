@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); 8 resolved trades net -121.5 bps, but one -61 bps loser dominates — still too thin to judge. BTC ~$64.0k
+# 🟢 Signal flat (0); still just 8 resolved trades, net -121.5 bps but dominated by one -61 bps loser — too thin to judge. BTC ~$64.2k
 
-_Updated 2026-08-04 16:12 UTC · model claude-opus-4-8_
+_Updated 2026-08-04 23:04 UTC · model claude-opus-4-8_
 
-**Regime:** No live exposure right now (signal=0). This marginal mean-reversion fade has a ~4 bps expected gross edge that is dwarfed by single-trade swings of 20-60 bps, so a handful of losers can't yet be distinguished from noise.
+**Regime:** No live exposure right now (signal=0). This marginal fade has a ~4 bps expected gross edge that is swamped by single-trade swings of 20-60 bps, so 8 trades can't yet be distinguished from noise.
 
-**How it's doing.** The signal is currently flat (no position). The live ledger has 8 resolved trades, of which only 1 won (12.5% win rate), for a cumulative -121.5 bps and a mean of -15.2 bps/trade. On the surface that looks ugly, but the result is heavily distorted by a single -60.9 bps trade on 2026-07-31 — remove it and the other 7 trades sum to roughly -60.6 bps, still negative but far less dramatic.
+**How it's doing:** Currently no position (signal=0), so nothing is at risk this moment. The live ledger is essentially unchanged from last check: **8 resolved trades**, only 1 winner (12.5% win rate), for a cumulative **-121.5 bps** (mean -15.2 bps/trade).
 
-**What changed vs last time.** Essentially nothing. Same 8 resolved trades, same dominant outlier, signal still 0. The separate rolling 'window' stat (13 bets) shows gross +0.46 bps and net -2.54 bps after 3 bps cost — i.e. gross edge near zero, consistent with a marginal strategy losing to costs.
+**What changed vs last time:** Effectively nothing — same 8 trades, same headline losers. No new resolved trades have arrived, which is expected given the strategy only fires on ~1-2% of candles.
 
-**What the numbers do and don't tell us.** With only 8-13 observations and per-trade swings of 20-60 bps against a claimed ~4 bps edge, this sample has almost no statistical power. A run of losers this size is entirely compatible with either genuine degradation or plain bad luck. We simply cannot separate the two yet. Separately, the edge search found **0 survivors** at a 5 bps cost bar — a reminder this was marginal from the start.
+**What the numbers do and don't tell us:** On paper -15 bps/trade looks ugly versus the ~4 bps gross edge we hoped for. But the loss is heavily concentrated: a single **-61 bps** trade (2026-07-31) and two more near -20 bps account for most of the damage. Strip those and the picture is just noisy. With only 8 trades, one or two outliers dominate the average, so this sample **cannot** confirm the edge is gone — nor can it confirm the edge exists. The wider 12-bet window (net -2.7 bps, 58% win) is milder and reinforces that these are two small, conflicting readings.
 
-**Bottom line.** Discouraging but inconclusive. No evidence of profit, no confirmed breakdown. Keep collecting data; do not act on this sample. This strategy was never expected to be reliably net-profitable after costs.
+**Bottom line:** Too thin to judge, honestly. This was always a marginal strategy (breakeven cost ~3.9 bps, and the independent edge search found **0 survivors** net-positive at 5 bps cost), so expect it to be roughly break-even-to-losing after costs. I'm holding at **none** rather than crying wolf, but the early tilt is unfavorable — worth revisiting once we have several dozen trades.
