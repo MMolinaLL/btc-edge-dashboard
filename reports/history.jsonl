@@ -134,3 +134,4 @@
 {"t": "2026-08-04 16:12 UTC", "headline": "Signal flat (0); 8 resolved trades net -121.5 bps, but one -61 bps loser dominates \u2014 still too thin to judge. BTC ~$64.0k", "alert_level": "none"}
 {"t": "2026-08-04 23:04 UTC", "headline": "Signal flat (0); still just 8 resolved trades, net -121.5 bps but dominated by one -61 bps loser \u2014 too thin to judge. BTC ~$64.2k", "alert_level": "none"}
 {"t": "2026-08-05 08:38 UTC", "headline": "Signal flat (0); still 8 resolved trades, net -121.5 bps but skewed by one -61 bps loser \u2014 too thin to judge. BTC ~$64.2k", "alert_level": "none"}
+{"t": "2026-08-05 16:01 UTC", "headline": "Signal flat (0); 8 resolved trades still net -121.5 bps but sample far too thin to judge. BTC ~$64.3k", "alert_level": "none"}
