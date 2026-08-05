@@ -1,13 +1,15 @@
-# 🟢 Signal flat (0); 8 resolved trades still net -121.5 bps but sample far too thin to judge. BTC ~$64.3k
+# 🟢 Signal flat (0); ledger still net -121.5 bps over 8 trades, but sample far too thin to judge. BTC ~$64.6k
 
-_Updated 2026-08-05 16:01 UTC · model claude-opus-4-8_
+_Updated 2026-08-05 23:00 UTC · model claude-opus-4-8_
 
-**Regime:** No live exposure right now (signal=0). With a ~4 bps expected gross edge, single trades swinging 20-60 bps mean 8 fills can't be distinguished from noise.
+**Regime:** No live exposure right now (signal=0). With an expected gross edge near 4 bps but single trades swinging 20-60 bps, 8 fills can't be statistically distinguished from noise.
 
-**Status unchanged since last check.** No new resolved trades have arrived — still 8 in the ledger — and the signal is currently flat (0), so there's no live position. BTC sits around $64.3k.
+**Status:** No position right now (signal = 0), BTC ~$64,577. Nothing has materially changed since last check.
 
-**What the numbers say.** The 8-trade ledger is ugly on its face: only 1 winner (12.5% win rate), mean -15.2 bps/trade, total -121.5 bps. But this is dominated by tails — a single -60.9 bps loss (2026-07-31) and a -22.8 bps loss account for the bulk of the damage. The broader 12-bet window is milder: gross -0.33 bps, net -3.33 bps after 3 bps costs.
+**The numbers:** The full ledger shows 8 resolved trades, 1 win / 7 losses (12.5% win rate), averaging -15.2 bps each for -121.5 bps total. A separate rolling window of 12 bets is net -3.33 bps (gross -0.33, cost 3.0). On the surface that looks bad — but read it carefully.
 
-**What they don't tell us.** This strategy's edge was only ~4 bps/bet gross against a ~3.9 bps breakeven — marginal by design and possibly not net-profitable after real costs. To detect a 4 bps signal buried under 20-60 bps single-trade swings you need *dozens to hundreds* of trades. Eight is nowhere near that. The current losses are fully consistent with normal variance around a tiny-or-zero edge; they are not proof of breakdown.
+**What it does and doesn't tell us:** This strategy was only ever expected to earn ~4 bps gross per bet, sitting right at its ~3.9 bps breakeven cost — i.e. marginal and probably not profitable after realistic fees. Against that backdrop, individual trades swinging -60, -23, -18 bps completely dominate an 8-trade sample. One trade alone (-60.9 bps on 2026-07-31) accounts for half the total loss. With only 8 resolutions, the outcome is statistically indistinguishable from random noise — you'd need dozens of trades before a negative streak means anything real.
 
-**Bottom line.** Too thin to judge, and I won't cry wolf. The results lean negative and warrant no enthusiasm — the strategy was never expected to reliably clear costs. Keep collecting data; I'll escalate to 'watch' if the net stays clearly negative once the sample reaches a couple dozen resolved trades. Note the edge-search survivor count is 0: nothing has cleared the 5 bps bar on both venues.
+**What changed:** Essentially nothing since the prior read; the ledger is unchanged at 8 trades, signal still flat.
+
+**Bottom line:** The live results are unappealing but the sample is genuinely too thin to conclude the edge has broken. No exposure currently, and this was already flagged as likely-not-net-profitable, so there's nothing urgent to act on. Keep collecting trades before drawing conclusions — no alert warranted yet.
