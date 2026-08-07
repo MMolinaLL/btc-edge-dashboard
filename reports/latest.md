@@ -1,13 +1,13 @@
-# 🟢 Signal flat (0); ledger unchanged at -121.5 bps over 8 trades — poor but far too thin to judge. BTC ~$64.4k
+# 🟢 Signal flat (0), no new fills; ledger still -121.5 bps over just 8 trades — poor but far too thin. BTC ~$64.3k
 
-_Updated 2026-08-07 01:30 UTC · model claude-opus-4-8_
+_Updated 2026-08-07 07:16 UTC · model claude-opus-4-8_
 
-**Regime:** No live exposure right now (signal=0). With expected gross edge only ~4 bps/bet, single fills swinging from -61 to +6 bps mean 8 trades are dominated by noise, not signal.
+**Regime:** No live exposure right now (signal=0). With expected gross edge only ~4 bps/bet, a single trade swinging from -61 to +6 bps means 8 fills are dominated by noise, not signal.
 
-**What's happening:** No position on right now (signal=0), BTC ~$64,371. Nothing material changed since last check — the ledger still shows the same 8 resolved trades totaling **-121.5 bps** (mean -15.2 bps/trade, only 1 of 8 winners). No new fills have resolved.
+**What changed:** Nothing material since last check. Price is ~$64,286, the signal is flat (0), so there's no live position, and no new trades have resolved. The ledger is unchanged at 8 resolved trades.
 
-**What the numbers do tell us:** On paper this is ugly — a 12.5% win rate and a big cumulative loss. But almost all the damage comes from one -60.9 bps outlier (2026-07-31) plus two more ~-18 to -23 bps losers. Strip those and you're back to coin-flip territory.
+**The numbers:** Across those 8 trades the strategy is net **-121.5 bps total** (mean **-15.2 bps/trade**) with only **1 of 8 winning (12.5%)**. That looks ugly, but note how lopsided it is: one trade lost -60.9 bps and another -22.8 bps, dragging the whole set down. The embedded 'window' stat (8 bets, +1.8 net bps) counts things differently and shouldn't be over-read either.
 
-**What they don't tell us:** With just 8 trades, this sample says essentially nothing. The strategy's expected gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — a tiny signal that needs *hundreds* of trades to distinguish from zero. Individual fills swing by 60+ bps, so 8 bets are pure noise. Note also the separate 9-bet rolling window shows +1.4 bps net; the two views disagree, which is exactly what you'd expect when n is this small.
+**What this does and doesn't tell us:** With a gross edge of only ~4 bps/bet and a breakeven cost near 3.9 bps, this strategy was always marginal — likely *not* net-profitable after realistic fees. A handful of trades cannot confirm or reject a 4-bps edge; the outcome here is dominated by one or two large adverse fills, i.e. noise. It is genuinely too thin to judge. Separately, the fresh edge-search found **0 survivors** at the 5-bps, both-venues, no-look-ahead bar — a reminder the underlying edge is fragile.
 
-**Bottom line:** Marginal strategy, thin data, no verdict possible yet — and separately, the edge search found **zero survivors** clearing a positive-net bar on both venues. This was never expected to be reliably net-profitable after costs. Keep collecting; don't act on 8 trades either way.
+**Bottom line:** No action; no live exposure anyway. Results are weak-to-negative but statistically meaningless at n=8. Keep collecting data — I'd want dozens of trades before drawing conclusions, and even then expect this to be, at best, a marginal edge. No guarantee of profit.
