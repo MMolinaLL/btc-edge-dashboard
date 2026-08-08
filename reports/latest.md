@@ -1,15 +1,13 @@
-# 🟢 No live signal now; one new fill (+10.2 bps) trimmed ledger to -111.3 bps over 9 trades — still far too thin. BTC ~$65.1k
+# 🟢 No live signal now; ledger unchanged at -111.3 bps over 9 resolved trades — still far too thin to judge. BTC ~$64.9k
 
-_Updated 2026-08-08 14:32 UTC · model claude-opus-4-8_
+_Updated 2026-08-08 22:30 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ranging in the low-to-mid $60k band; signal currently flat (0), so nothing new is firing this cycle.
+**Regime:** BTC ranging in the mid-$60k band; the signal is flat (0) this cycle, so nothing new is firing.
 
-**What changed:** One trade resolved since last check (the 08-08 12:05 long, +10.2 bps net). That nudged the live ledger from -121.5 to **-111.3 bps total** across **9 resolved trades**, with a **22% win rate** and mean **-12.4 bps/trade**. So a small improvement, but the cumulative picture is still poor.
+**What's happening:** No trade fired this cycle (`signal = 0`), and the ledger is unchanged from last time — 9 resolved live trades, cumulative **-111.3 bps**, mean **-12.4 bps/trade**, win rate just **22%**. BTC sits around $64.9k, still ranging in the mid-$60k band.
 
-**What the numbers do say:** On the live fills the strategy has been losing, driven mostly by two bad trades (-60.9 and -22.8 bps). That's not what you want to see.
+**What changed vs last time:** Effectively nothing. The most recent fill (2026-08-08, +10.2 bps) was already reflected last cycle. No new resolutions since.
 
-**What they don't say:** Nine trades is far too few to conclude anything — with a signal that only fires ~1-2% of the time, this is exactly the tiny-sample regime where a couple of bad candles dominate. Note the reported rolling **window (11 bets)** actually shows a slightly *positive* net of +1.2 bps at 3 bps cost, which conflicts with the ledger. That divergence is itself a sign the sample is too small and noisy to trust either way.
+**What the numbers do and don't tell us:** Two different tallies appear. The rolling `window` (11 bets) shows a slightly positive **+1.2 bps net** at 3 bps cost; the live `ledger` (9 trades) shows a clearly negative **-12.4 bps mean**. Both samples are tiny. A single trade (2026-07-31, -60.9 bps) accounts for over half the ledger's losses — that's exactly the kind of noise that dominates when you have fewer than a dozen data points. With a modeled edge of only ~4 bps/bet against a ~3.9 bps breakeven cost, this strategy was always marginal and likely not net-profitable after realistic costs. Nine trades cannot confirm or refute that.
 
-**Reality check on the edge:** Even in validation the gross edge was only ~4 bps/bet against a ~3.9 bps breakeven — marginal, and likely not net-profitable after real costs. The edge search still shows **0 survivors** at the 5 bps bar.
-
-**Bottom line:** Live results are unimpressive but statistically inconclusive. No action warranted yet; keep collecting. If losses keep compounding over several dozen trades, that would justify a 'watch' or pause. No guarantee of profit here — treat as research.
+**Bottom line:** Too thin to judge, and I won't cry wolf on a handful of trades — hence no alert. But note the live ledger is running negative and the broader edge search still has **zero survivors** at the stricter 5 bps two-venue bar. No evidence of a reliable edge here. Keep accumulating trades before drawing any conclusion; expect this to be marginal at best.
