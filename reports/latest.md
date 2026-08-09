@@ -1,15 +1,13 @@
-# 🟢 No live signal now; ledger slipped to -114.5 bps over 10 resolved trades (was -111.3/9) — still too thin to judge. BTC ~$64.8k
+# 🟢 No live signal; ledger -114.5 bps over 10 trades (2/10 wins), gross also negative — but still too thin to judge. BTC ~$65.2k
 
-_Updated 2026-08-09 06:57 UTC · model claude-opus-4-8_
+_Updated 2026-08-09 14:35 UTC · model claude-opus-4-8_
 
-**Regime:** BTC continues to range in the mid-$60k band and the signal is flat (0) this cycle, so nothing new is firing. Nothing regime-unusual to flag.
+**Regime:** BTC is holding the mid-$60k range and the signal is flat (0) this cycle, so nothing new is firing. No regime anomaly, though the small live sample skews slightly toward the long side.
 
-**What changed:** One new trade resolved since last check (10 vs 9). It was a small loser (-3.19 bps), nudging the ledger from -111.3 to **-114.5 bps total** (mean **-11.45 bps/trade**, win rate **20%**). No signal is active right now.
+**What changed vs last time:** One new resolved trade was added (10 vs 9). The ledger slipped from -111.3 to **-114.5 bps total**, with mean **-11.45 bps/trade** and just **2 wins out of 10**. The newest trade (2026-08-08) lost -3.2 bps. No signal is active right now.
 
-**What the numbers say:** On paper this looks bad — every trade near or below breakeven, with a 20% hit rate. But the average is badly distorted by a single -60.9 bps outlier (2026-07-31); strip it out and the rest cluster near -1 to -4 bps, roughly the ~3 bps cost drag on tiny gross moves. That's exactly what you'd expect from a marginal strategy whose gross edge (~4 bps) barely clears cost (~3.9 bps breakeven).
+**What the numbers say:** On paper this strategy expects a *tiny* ~4 bps gross edge against a ~3.9 bps breakeven cost — marginal at best. Live, it's running **negative even before costs**: total net -114.5 bps implies gross ~-84 bps over 10 trades (mean ~-8 bps gross). The rolling 15-bet window is also soft (40% win, -3.7 bps net).
 
-**What they don't say:** With only **10 resolved trades**, this sample tells us almost nothing statistically. One or two prints swing the whole picture. This is far below the dozens-to-hundreds needed to distinguish a real breakdown from noise. So no alert.
+**What they don't tell us:** This is a very small, noisy sample. A single outlier (the 2026-07-31 trade at -60.9 bps) accounts for over half the losses; strip it and the picture is much closer to flat-but-negative. With only ~1-2% of candles trading, 10-15 resolved trades cannot distinguish a broken edge from bad luck. The edge search still finds **0 survivors** at a 5 bps cost bar — consistent with this being marginal all along.
 
-**Also worth noting:** the offline edge search currently has **0 survivors** passing the bar (net positive on both venues at 5 bps cost) — consistent with the honest prior that this strategy is marginal and likely not net-profitable after realistic costs.
-
-**Bottom line:** Underwater so far, but on a sample too small to conclude anything, and dominated by one outlier. No guaranteed profit here — expectations should stay low. Keep collecting data; revisit once the sample reaches a few dozen trades.
+**Bottom line:** Numbers lean unfavorable and there is no evidence of net profitability, but the sample is too thin to declare degradation. No action beyond continued monitoring; watch whether losses persist as the count grows past a few dozen. No profit is implied or guaranteed.
