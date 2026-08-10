@@ -1,13 +1,13 @@
-# 🟢 Signal flat; ledger -114.5 bps over 10 trades (2/10 wins), gross also negative — but sample far too thin to judge. BTC ~$65.3k
+# 🟢 Signal flat; 10-trade ledger -114.5 bps (2/10 wins) with gross negative too — but sample far too thin to conclude. BTC ~$64.6k
 
-_Updated 2026-08-10 07:42 UTC · model claude-opus-4-8_
+_Updated 2026-08-10 14:59 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is holding the mid-$60k range and the live signal is currently flat (0), so nothing new is firing. No regime anomaly; the tiny sample is long-skewed and dominated by one outsized loser.
+**Regime:** BTC is chopping in the mid-$60k range and the live signal is currently flat (0), so nothing is firing right now. No clear regime anomaly; the small live sample remains long-skewed and dominated by a couple of outsized losers.
 
-**How it's doing.** No change since last check — the signal is flat (0) right now, so no new trades fired. The live ledger still shows 10 resolved trades, 2 winners (20%), averaging **-11.45 bps** each for a cumulative **-114.5 bps**. The broader window (14 bets) is **-3.41 bps net**, and notably **-0.41 bps even gross**, before the assumed 3 bps cost.
+**How it's doing.** Still underwater, still too early to judge. The resolved ledger shows 10 trades, 2 wins (20%), averaging **-11.45 bps** (total **-114.5 bps**). The broader 17-bet window is milder: **-3.614 bps** net, **-0.614 bps** gross at 3.0 bps assumed cost, 35.3% win rate.
 
-**What the numbers do tell us.** On this handful of trades the strategy is underwater, and the gross figure being slightly negative is a mild concern — the expected edge was ~+4 bps gross. Losses are concentrated: a single **-60.9 bps** trade (2026-07-31) and a **-22.8 bps** trade dominate the tally. Strip those and the picture is far less dramatic. Recent action is mixed (last four: -1.3, +10.2, -3.2 bps).
+**What changed vs last time.** Essentially nothing material. Two more trades resolved since the prior read — one nice winner (**+10.2 bps** on Aug 8) and one tiny loser (**-3.2 bps**). The headline ledger loss is unchanged in character: it is still driven by a handful of outliers, especially the **-60.9 bps** trade on Jul 31 and **-22.8 bps** on Jul 17. Strip those and the picture is far less dramatic.
 
-**What they don't tell us.** With only 10-14 trades, this is statistically meaningless — one or two big candles swing the whole average. This was always a marginal strategy (~4 bps gross edge vs ~3.9 bps breakeven cost), likely not net-profitable after realistic costs. We flagged this. A run this small cannot confirm either an edge or a breakdown.
+**What the numbers do and don't tell us.** They tell us the live run has been unlucky and that gross returns are *not yet* showing the hoped-for ~4 bps/bet edge. They do **not** tell us the edge is broken: 10 resolved trades (17 bets) is statistically tiny, and a single fat-tailed loss dominates the mean. That is exactly the kind of small-sample noise we agreed not to overreact to.
 
-**Bottom line.** Too thin to judge — no alert warranted, but no reason for optimism either. This remains a marginal-at-best signal. Keep accumulating trades; revisit seriously only once we have several dozen. No implication of future profit.
+**Bottom line.** No alert. Remember this signal was always marginal — ~4 bps gross edge against a ~3.9 bps breakeven cost, so it was never expected to be a reliable money-maker net of costs. Nothing here proves profit or ruin. Keep collecting data; a verdict needs dozens more resolved trades.
