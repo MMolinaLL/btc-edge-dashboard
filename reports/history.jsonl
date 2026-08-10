@@ -147,3 +147,4 @@
 {"t": "2026-08-09 06:57 UTC", "headline": "No live signal now; ledger slipped to -114.5 bps over 10 resolved trades (was -111.3/9) \u2014 still too thin to judge. BTC ~$64.8k", "alert_level": "none"}
 {"t": "2026-08-09 14:35 UTC", "headline": "No live signal; ledger -114.5 bps over 10 trades (2/10 wins), gross also negative \u2014 but still too thin to judge. BTC ~$65.2k", "alert_level": "none"}
 {"t": "2026-08-09 22:32 UTC", "headline": "Flat signal now; ledger still -114.5 bps over 10 trades (2/10 wins) and gross negative too, but sample too thin to judge. BTC ~$65.2k", "alert_level": "none"}
+{"t": "2026-08-10 07:42 UTC", "headline": "Signal flat; ledger -114.5 bps over 10 trades (2/10 wins), gross also negative \u2014 but sample far too thin to judge. BTC ~$65.3k", "alert_level": "none"}
