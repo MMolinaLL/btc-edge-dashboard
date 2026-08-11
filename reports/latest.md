@@ -1,13 +1,13 @@
-# 🟢 Signal flat; 17-bet window net -3.3 bps (gross -0.25), 10-trade ledger -114.5 bps — sample still too thin to judge. BTC ~$63.9k
+# 🟢 Signal firing (1); 18-bet window net -4.0 bps (gross -1.0), 10-trade ledger -11.5 bps/trade — still too thin to judge. BTC ~$63.7k
 
-_Updated 2026-08-11 07:08 UTC · model claude-opus-4-8_
+_Updated 2026-08-11 14:58 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is chopping in the low-to-mid $60k range and the live signal is currently flat (0), so nothing is firing right now. No clear regime anomaly; the small live sample stays long-skewed and dominated by a few outsized losers.
+**Regime:** BTC is chopping in the low-to-mid $60k range; the signal is currently active (long). No clear regime anomaly, but the small live sample remains dominated by a few outsized losers.
 
-**How it's doing.** Quiet. The signal is flat (0) right now, so no new position. The rolling 17-bet window shows gross **-0.25 bps** and net **-3.25 bps** (win rate 41%), while the separate 10-trade resolved ledger is running **-11.45 bps/trade (-114.5 bps total)** with a rough 20% win rate.
+**How it's doing:** Still marginal-to-poor on a tiny sample. The rolling 18-bet window is net **-4.0 bps** per bet (gross **-1.0 bps** before the assumed 3 bps cost), with a 38.9% win rate. The resolved trade ledger (10 trades) is worse at **-11.5 bps/trade** on average, dragged down by a handful of big losers — notably a **-60.9 bps** hit on 2026-07-31 and **-22.8 / -18.2 bps** clips. Winners exist (+10.2, +3.1 bps) but are smaller and rarer.
 
-**What changed vs last time.** Barely anything. The window shrank from 19 to 17 bets and gross ticked from about +0.06 to -0.25 bps. The ledger is unchanged at 10 trades / -114.5 bps — no new resolved trades since the prior read.
+**What changed vs last time:** Almost nothing meaningful — one more bet (17→18), and gross drifted slightly more negative (-0.25 → -1.0 bps). This is noise, not a trend.
 
-**What the numbers do and don't tell us.** Recall the *expected* edge is only ~4 bps gross against a ~3.9 bps breakeven cost — this was always a marginal, likely-not-net-profitable candidate. A gross figure hovering around zero on 17 bets is fully consistent with both a tiny real edge and with noise; we cannot distinguish them yet. The ledger's ugly -114.5 bps is driven by a handful of large losers (one -60.9 bps, plus -22.8 and -18.2), not a broad pattern. With only 10-17 data points, one or two trades swing everything. This is far too small a sample to conclude the edge has broken.
+**What the numbers do and don't tell us:** With only ~10-18 resolved trades, results are dominated by one or two outliers, so we genuinely **cannot distinguish 'no edge' from 'bad luck' yet**. Recall the validated backtest edge was only ~4 bps gross against a ~3.9 bps breakeven — i.e., marginal and likely not net-profitable after real costs even in the best case. The separate edge search found **0 survivors** at a 5 bps cost bar, reinforcing that a durable net edge is unproven.
 
-**Bottom line.** No action. Results are weak-to-flat but within noise for a strategy this marginal and selective. Keep collecting trades; we need dozens more before either confirming an edge or calling degradation. No profit is implied or guaranteed here.
+**Bottom line:** Live results are underwhelming but the sample is too thin to conclude the edge has broken. No action — keep collecting data. If dozens of trades stay net-negative beyond cost, that would warrant escalation. No profit is implied or guaranteed here.
