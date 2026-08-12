@@ -153,3 +153,4 @@
 {"t": "2026-08-11 07:08 UTC", "headline": "Signal flat; 17-bet window net -3.3 bps (gross -0.25), 10-trade ledger -114.5 bps \u2014 sample still too thin to judge. BTC ~$63.9k", "alert_level": "none"}
 {"t": "2026-08-11 14:58 UTC", "headline": "Signal firing (1); 18-bet window net -4.0 bps (gross -1.0), 10-trade ledger -11.5 bps/trade \u2014 still too thin to judge. BTC ~$63.7k", "alert_level": "none"}
 {"t": "2026-08-11 22:42 UTC", "headline": "Flat now (signal 0); 17-bet window net -3.6 bps (gross -0.6), 11-trade ledger -10.3 bps/trade \u2014 still too thin to judge. BTC ~$63.6k", "alert_level": "none"}
+{"t": "2026-08-12 07:25 UTC", "headline": "Flat now (signal 0); 16-bet window net -3.7 bps (gross -0.7), 11-trade ledger -10.3 bps/trade \u2014 sample still too thin. BTC ~$63.7k", "alert_level": "none"}
