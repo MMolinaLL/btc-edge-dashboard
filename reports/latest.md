@@ -1,13 +1,15 @@
-# 🟢 Flat (signal 0); 12-trade ledger avg -10 bps, 9-bet window net -2.3 bps — still too thin to judge. BTC ~$63.8k
+# 🟢 Flat (signal 0); 13-trade ledger nets -8.9 bps/bet, 11-bet window gross ~0 bps — still too thin to judge. BTC ~$63.5k
 
-_Updated 2026-08-13 14:58 UTC · model claude-opus-4-8_
+_Updated 2026-08-13 22:42 UTC · model claude-opus-4-8_
 
-**Regime:** BTC keeps chopping in the low-to-mid $60k range with no signal currently active. Losses stay concentrated in a handful of large outliers rather than a confirmed, broad-based edge breakdown.
+**Regime:** BTC keeps chopping in the low-to-mid $60k range with no signal active right now. Losses remain driven by a few large outlier trades rather than a broad, confirmed edge breakdown.
 
-**Where things stand.** No trade is live right now (signal 0), price ~$63.8k. The full ledger holds 12 resolved trades: 25% win rate, averaging **-10.0 bps** net per trade (-120 bps total). The rolling 9-bet window looks milder: **+0.67 bps gross**, **-2.33 bps net** after 3 bps costs, 44% wins.
+**Status: idle.** No signal is firing right now (`signal 0`), and the strategy trades rarely by design (~1–2% of candles), so the live sample grows slowly.
 
-**What changed vs last time.** Very little. One new losing trade (-7.2 bps on 08-12) was added; the picture is essentially the same thin, slightly-negative dataset. Alert stays **none**.
+**The numbers.** The full ledger now has 13 resolved trades: win rate 31%, mean **-8.9 bps/bet**, cumulative **-115 bps**. The rolling 11-bet window looks less grim — gross **-0.08 bps** (essentially breakeven before costs), net **-3.1 bps** after an assumed 3 bps cost. That gap tells the real story: the strategy's *gross* result is roughly flat-to-slightly-negative, and the modeled trading cost is what pushes it into the red — consistent with the pre-validated view that this signal is marginal and probably not net-profitable after realistic costs.
 
-**What the numbers do and don't tell us.** The headline -10 bps/trade looks ugly, but it's dominated by a few outliers — a single -58 bps trade (07-31) and two more near -19/-18 bps account for most of the -120 bps. Strip those and the rest is small chop, consistent with a marginal signal. Recall the validated edge is only ~4 bps gross with a ~3.9 bps breakeven — this was never expected to be a clear money-maker net of costs. With just 12 resolved trades, sampling noise easily swamps any true 4-bps signal; you cannot distinguish 'broken' from 'unlucky' here.
+**What changed.** One more trade since last time, plus a couple of recent small wins (+10.2, +5.0, +1.5 bps). The ugly ledger average is still dominated by a handful of outliers — a single -60.9 bps trade (2026-07-31) plus -22.8 and -18.2 — not a steady bleed.
 
-**Bottom line.** Too thin to judge, and the marginal design means even a working version would look shaky at this sample size. No profit is implied or guaranteed. Watch for the outlier losses to keep piling up: if dozens of trades settle materially below breakeven, that would justify a 'watch' or pause. For now, keep collecting data and don't over-read the red numbers.
+**What this does and doesn't tell us.** With only 13 trades, results are noise-dominated; a couple of outliers swing the average wildly. This is far too small to confirm either edge or breakdown. Separately, the edge-search found **0 survivors** clearing the honest bar (net positive on both venues at 5 bps cost).
+
+**Bottom line.** No cause to pause, but no evidence of profitable edge either. Marginal-at-best, sample-too-thin. Keep collecting data; don't over-read early losses.
