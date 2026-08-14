@@ -160,3 +160,4 @@
 {"t": "2026-08-13 14:58 UTC", "headline": "Flat (signal 0); 12-trade ledger avg -10 bps, 9-bet window net -2.3 bps \u2014 still too thin to judge. BTC ~$63.8k", "alert_level": "none"}
 {"t": "2026-08-13 22:42 UTC", "headline": "Flat (signal 0); 13-trade ledger nets -8.9 bps/bet, 11-bet window gross ~0 bps \u2014 still too thin to judge. BTC ~$63.5k", "alert_level": "none"}
 {"t": "2026-08-14 07:25 UTC", "headline": "Flat (signal 0); 13-trade ledger nets -8.9 bps/bet, gross negative too \",k. Still too thin to judge.", "alert_level": "none"}
+{"t": "2026-08-14 14:52 UTC", "headline": "Flat (signal 0); 13-trade ledger nets -8.9 bps/bet, gross ~flat. Sample still too thin to judge.", "alert_level": "none"}
