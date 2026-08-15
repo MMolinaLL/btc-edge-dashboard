@@ -1,13 +1,13 @@
-# 🟢 Flat (signal 0); 13-trade ledger running below the ~4 bps hoped-for gross edge, but sample far too thin to judge.
+# 🟢 Flat (signal 0); 13-trade ledger net -8.9 bps/trade, but one outlier dominates and sample is far too thin to judge.
 
-_Updated 2026-08-15 06:38 UTC · model claude-opus-4-8_
+_Updated 2026-08-15 14:22 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is chopping in the low-to-mid $60k range with no signal currently active. With an expected gross edge of only ~4 bps, a single outlier trade can swamp the entire live sample.
+**Regime:** BTC is chopping around $63k with no signal currently active. At an expected gross edge of only ~4 bps, a single outlier trade can dominate the entire live sample.
 
-**How it's doing:** No position right now (signal 0), BTC ~$62,991. The live ledger has just **13 resolved trades** — a very small sample. Over the most recent 12-bet window, gross edge is **+0.5 bps/bet** (below the ~4 bps we'd hoped for) and, after an assumed 3 bps cost, net is **-2.5 bps/bet**. Across all 13 ledger trades the mean net is **-8.9 bps** (total -115 bps), win rate 31%.
+**How it's doing:** The strategy is flat right now (no position). Across all 13 resolved live trades, the average result is **-8.9 bps** and the cumulative tally is **-115 bps**. That looks bad on the surface, but almost all of it comes from a handful of large losers — one trade alone lost **-58 bps** (gross), and two others lost ~18-23 bps. The most recent 10-bet window is much tamer: **-0.4 bps gross**, roughly break-even before costs, and -3.4 bps after an assumed 3 bps cost.
 
-**What changed vs last time:** Very little. Still flat, still too thin to judge. The headline ledger number looks ugly, but it is heavily distorted by **one trade on 2026-07-31 that lost -58 bps gross**. Strip that single outlier and the picture is roughly flat-to-slightly-negative — exactly what you'd expect from a marginal strategy paying costs.
+**What changed vs last time:** Little of substance. A few new trades resolved (some small winners in August), nudging the recent window closer to flat. The overall verdict is unchanged.
 
-**What the numbers do and don't tell us:** They confirm the strategy is *selective* (trades rarely) and *marginal* (tiny edge, ~3.9 bps breakeven). They do **not** tell us the edge is broken — 13 trades cannot distinguish a small real edge from noise, especially with one dominant outlier. Separately, the edge-search found **0 survivors** at the 5 bps bar, consistent with 'likely not net-profitable after realistic costs.'
+**What the numbers tell us — and don't:** With only 13 trades, this is statistically meaningless. The hoped-for edge is ~4 bps gross against a ~3.9 bps breakeven cost, so it was always marginal and probably not net-profitable. A single fat-tailed loss swamps the whole sample, which is exactly what we're seeing. We cannot distinguish 'the edge is gone' from 'ordinary bad luck' here. Separately, the offline edge search still returns **0 survivors** — a standing reminder that no variant clears a realistic cost bar.
 
-**Bottom line:** Performing about as expected for a marginal signal: not clearly profitable, not clearly broken. Sample is too small to conclude anything. No action; keep collecting data. No profit is implied or guaranteed.
+**Bottom line:** Too thin to conclude anything. No breakdown alert warranted, but keep expectations low — this was never a confirmed money-maker. Wait for dozens more trades before drawing conclusions.
