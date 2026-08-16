@@ -1,13 +1,13 @@
-# 🟢 Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but one -61 bps outlier dominates and sample stays too thin to judge.
+# 🟢 Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but last 7 bets gross-positive (+1.4 bps) — sample still too thin to judge.
 
-_Updated 2026-08-16 06:40 UTC · model claude-opus-4-8_
+_Updated 2026-08-16 14:22 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is chopping near $63k with no position currently open. With an expected gross edge of only ~4 bps/bet, a single outlier trade can still swamp the entire live record.
+**Regime:** BTC is chopping near $63k with no position open. At an expected gross edge of only ~4 bps/bet, a single outlier can still dominate the entire live record.
 
-**How it's doing.** No signal is active right now (price ~$62,992). The lifetime paper ledger is now 14 resolved trades, mean **-8.4 bps/trade** (total -116.9 bps), win rate 28.6%. On its face that looks bad — but read the fine print.
+**How it's doing.** No trade is open right now (signal 0). The full live ledger stands at 14 resolved trades, averaging **-8.4 bps/trade** (-116.9 bps total, 28.6% win rate). On paper that looks bad — but it is heavily distorted by one **-60.9 bps** loss on 2026-07-31. Strip that single trade and the remaining 13 average roughly **-4.3 bps** — still negative, but well inside the noise band for a strategy whose entire expected edge is only ~4 bps gross.
 
-**What changed vs last time.** One new trade resolved (2026-08-15, short, -1.7 bps). Nothing material moved; the ledger went from 13 to 14 trades and the picture is essentially unchanged.
+**What changed vs last time.** The recent rolling window of the last 7 bets is actually the encouraging part: **85.7% wins** and **+1.4 bps gross**, which only turns slightly negative (-1.6 bps) after applying a 3 bps cost. That is exactly what a marginal-edge, barely-net-profitable signal is supposed to look like — tiny gross edge that costs can eat. Nothing here signals a fresh breakdown.
 
-**What the numbers do and don't tell us.** The headline loss is dominated by a single trade: the 2026-07-31 long lost **-60.9 bps** by itself. Strip that one out and the remaining 13 trades average roughly -1.3 bps gross — i.e. hovering around break-even before costs, not collapsing. The more recent 9-bet window backs this up: gross is basically flat (-0.3 bps) and the net -3.3 bps is almost entirely the assumed 3 bps cost. That is exactly the 'marginal, probably not net-profitable after costs' story we validated up front — not evidence of a new breakdown.
+**What the numbers do and don't tell us.** With just 14 lifetime trades, and one outlier driving most of the loss, we cannot statistically distinguish 'broken' from 'normal bad luck.' Meanwhile the offline edge search still shows **0 survivors** clearing the strict bar (positive net on both venues at 5 bps cost) — a reminder this signal was never confirmed net-profitable.
 
-**Honest bottom line.** 14 trades is far too few to conclude anything, and the record is skewed by one outlier. There's no sign the edge is *worse* than its already-marginal expectation, and no sign it's reliably profitable either. The edge-search still shows **0 survivors** clearing the bar. Keep collecting data; do not fund this on the current sample. No profit is implied or guaranteed.
+**Bottom line.** Too thin to judge, and consistent with a marginal, likely-not-net-profitable edge. No action warranted; keep accumulating trades. No profit is implied or guaranteed.
