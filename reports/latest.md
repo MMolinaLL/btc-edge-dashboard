@@ -1,13 +1,13 @@
-# 🟢 Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but one -58 bps outlier dominates and last-6 window is near gross-flat — too thin to judge.
+# 🟢 Flat (signal 0); 15-trade ledger at -7.9 bps/trade, but two big losers dominate and last-7 window is near gross-flat — still too thin to judge.
 
-_Updated 2026-08-17 06:56 UTC · model claude-opus-4-8_
+_Updated 2026-08-17 14:28 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is chopping near $63.5k with no position open. At an expected gross edge of only ~4 bps/bet, a single outlier trade can still swamp the entire live record.
+**Regime:** BTC is chopping around $63.5k with no position currently open. With an expected gross edge of only ~4 bps/bet, one or two outlier trades can swamp the entire live record.
 
-**How it's doing.** No position right now (signal 0). The full live ledger is 14 resolved trades averaging **-8.35 bps net** (-116.9 bps total), with only 29% winners. On the surface that looks bad — but the number is heavily distorted by one trade on 2026-07-31 that lost **-60.9 bps** (a -57.9 bps gross move). Strip that single outlier and the remaining 13 trades gross roughly **-1.3 bps each**, i.e. slightly negative but well inside noise.
+**Current state:** No position open (signal 0), BTC ~$63,554. Since last check one new trade resolved (Aug 17, -2.1 bps), bringing the ledger to 15 trades, all resolved.
 
-**What changed vs last time.** Essentially nothing structural — one new small trade (-1.7 bps) was added. The recent 6-bet window is gross **-1.03 bps** (net -4.03 after 3 bps cost), so recent behavior is roughly flat, not accelerating downward.
+**What the numbers say:** The full ledger looks ugly on the surface — win rate 26.7%, mean -7.9 bps/trade, cumulative -119 bps. But this is dominated by tails: a single -60.9 bps trade (Jul 31) plus two more (-22.8, -18.2) account for the bulk of the loss. Strip the worst one and the average per-trade loss shrinks to roughly -1 bp gross — statistically indistinguishable from zero at this size. The more recent 7-bet window is net -3.5 bps but gross only -0.5 bps, i.e. costs, not signal decay, are doing the damage.
 
-**What the numbers do and don't tell us.** They do confirm the strategy is behaving as a *marginal* signal: gross returns are hovering around zero, consistent with the validated ~4 bps expected edge against a ~3.9 bps breakeven cost. They do **not** let us conclude the edge is broken — 14 trades is far too few, and the record is dominated by a single tail loss. The edge-search still finds **0 survivors** at the strict 5 bps/dual-venue bar, so we never expected reliable net profit here.
+**What it does NOT tell us:** 15 trades is far too few to confirm or reject a ~4 bps/bet edge. At this sample the confidence interval easily spans both meaningfully positive and meaningfully negative. Outliers, not a persistent pattern, drive the headline number.
 
-**Bottom line.** Too thin and too outlier-driven to declare degradation. No profit is implied or guaranteed; treat this as a marginal, likely-not-net-profitable signal. Keep watching as the sample grows.
+**Bottom line:** Consistent with the prior honest read — this signal was always marginal (breakeven cost ~3.9 bps) and likely not net-profitable after realistic costs. Nothing here is a clean breakdown warranting a pause, but nothing rescues it either. Keep logging; don't infer profit or failure yet. The zero edge-search survivors remain a sober reminder that no candidate cleared the bar.
