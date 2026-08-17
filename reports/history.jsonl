@@ -167,3 +167,4 @@
 {"t": "2026-08-16 06:40 UTC", "headline": "Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but one -61 bps outlier dominates and sample stays too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-16 14:22 UTC", "headline": "Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but last 7 bets gross-positive (+1.4 bps) \u2014 sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-16 22:21 UTC", "headline": "Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but last-10 window is gross-flat (-0.03) \u2014 sample still too thin to judge.", "alert_level": "none"}
+{"t": "2026-08-17 06:56 UTC", "headline": "Flat (signal 0); 14-trade ledger at -8.4 bps/trade, but one -58 bps outlier dominates and last-6 window is near gross-flat \u2014 too thin to judge.", "alert_level": "none"}
