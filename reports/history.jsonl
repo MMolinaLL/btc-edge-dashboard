@@ -172,3 +172,4 @@
 {"t": "2026-08-17 22:25 UTC", "headline": "Flat (signal 0); 15-trade ledger at -7.9 bps/trade, but 2-3 tail losses dominate and last-8 window is ~gross-flat \u2014 still too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-18 06:43 UTC", "headline": "Flat (signal 0); 16-trade ledger at -8.3 bps/trade, but a handful of tail losses dominate and last-9 window is ~gross-flat \u2014 still too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-18 14:34 UTC", "headline": "Signal -1 active; 17-trade ledger at -7.9 bps/trade but tail-loss-driven, recent 13-window near gross-flat \u2014 still too thin to judge.", "alert_level": "none"}
+{"t": "2026-08-18 22:24 UTC", "headline": "No signal live; 18-trade ledger at -6.0 bps/trade (gross ~-3 bps) \u2014 negative but tail-driven, sample still thin.", "alert_level": "watch"}
