@@ -1,15 +1,13 @@
-# 🟢 Flat (signal 0); 16-trade ledger at -8.3 bps/trade, but a handful of tail losses dominate and last-9 window is ~gross-flat — still too thin to judge.
+# 🟢 Signal -1 active; 17-trade ledger at -7.9 bps/trade but tail-loss-driven, recent 13-window near gross-flat — still too thin to judge.
 
-_Updated 2026-08-18 06:43 UTC · model claude-opus-4-8_
+_Updated 2026-08-18 14:34 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is chopping around $64.4k with no position open. With an expected gross edge of only ~4 bps/bet, one or two trend-day losses can dwarf the entire live record.
+**Regime:** BTC chopping around $64.8k with a short (fade) signal live. With only ~4 bps expected gross edge per bet, one or two trend-day losses can swamp the entire live record.
 
-**Status:** No position right now (signal 0). Price ~$64,395, still range-bound.
+**How it's doing:** The full live ledger now shows 17 resolved trades averaging **-7.9 bps** (total -134 bps), which looks bad on the surface. But this is dominated by a handful of tail losses: a single -60.9 bps trade (2026-07-31), plus -22.8, -18.2, -15.2 and two -13 bps trades. Strip the one worst trade and the average roughly halves. This is exactly the failure mode we warned about — a selective mean-reversion fade gets caught on a trend day and gives back many bets' worth of edge at once.
 
-**The ledger looks ugly, but read it carefully.** Across all 16 resolved trades the mean is **-8.3 bps** and the cumulative total is **-132 bps**, with only 25% winners. That sounds alarming, but the loss is heavily concentrated in a few tail events: a single **-60.9 bps** trade (2026-07-31), plus **-22.8** and **-18.2** bps. Strip those three and the rest are a cluster of small wins and small losses — exactly the marginal, cost-sensitive profile we expected.
+**What changed vs last time:** One more trade resolved. The rolling 13-bet window is **gross -1.8 bps** (net -4.8 bps after 3 bps cost) — essentially *gross-flat*, not clearly bleeding. Most recent trades have small positive gross that gets eaten by cost, consistent with a marginal edge, not a collapse.
 
-**What changed vs last time:** One new trade resolved (2026-08-17, signal -1, **-13.2 bps**), nudging the ledger from 15 to 16 trades and the mean slightly more negative. The rolling **last-9 window is gross -0.56 bps** (net -3.56 after 3 bps cost) — essentially gross-flat, which is what a ~4 bps/bet edge looks like drowned in noise at this sample size.
+**What the numbers do and don't tell us:** With only 17 trades, and results driven by 1-2 tail events, this sample **cannot** confirm or reject the edge. The two win-rate figures (23% ledger vs 69% window) differ because tail-loss magnitude, not frequency, drives P&L. Note also `edge_search_survivors: 0` — nothing cleared the stricter 5 bps/dual-venue bar, reinforcing that this was always marginal.
 
-**What the numbers do and don't tell us:** With only 16 lifetime trades and ~1-2% of candles trading, this is far too thin to confirm or reject the edge. The overall negative is consistent with either (a) the strategy being marginally unprofitable after costs (which we already warned was likely) or (b) ordinary tail-loss noise. We cannot distinguish these yet.
-
-**Bottom line:** Nothing new to panic about; no guarantee of profit either. Tail losses are eating a thin edge, as forecast. Keep accumulating trades before drawing conclusions.
+**Bottom line:** No profit is demonstrated, and none should be expected net of realistic costs. But the recent window is near gross-flat and losses are tail-driven, so this is not a confirmed breakdown either. Too thin to act — keep monitoring; watch for repeated trend-day losses.
