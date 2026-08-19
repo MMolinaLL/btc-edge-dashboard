@@ -175,3 +175,4 @@
 {"t": "2026-08-18 22:24 UTC", "headline": "No signal live; 18-trade ledger at -6.0 bps/trade (gross ~-3 bps) \u2014 negative but tail-driven, sample still thin.", "alert_level": "watch"}
 {"t": "2026-08-19 06:43 UTC", "headline": "No live signal; 18-trade ledger at -6.0 bps/trade net (~-3 bps gross) \u2014 weak vs +4 bps hope, but tail-driven and thin.", "alert_level": "watch"}
 {"t": "2026-08-19 14:34 UTC", "headline": "No live signal; 19-trade ledger at -6.3 bps/trade net (~-3 bps gross) \\u2014 weak vs +4 bps hoped, but tail-driven and thin.", "alert_level": "watch"}
+{"t": "2026-08-19 22:25 UTC", "headline": "No live signal; 20-trade ledger now -7.4 bps/trade net (~-4 bps gross) \u2014 below the +4 bps hoped, still thin and tail-heavy.", "alert_level": "watch"}
