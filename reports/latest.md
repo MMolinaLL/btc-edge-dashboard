@@ -1,17 +1,15 @@
-# 🟡 No live signal; 20-trade ledger at -7.4 bps/trade net (~-4 bps gross) — below the hoped +4 bps, still thin and tail-heavy.
+# 🟡 No open signal; 20-trade ledger at -7.4 bps/trade net (gross ~-4 bps), below the hoped +4 bps but still thin and tail-driven.
 
-_Updated 2026-08-20 06:46 UTC · model claude-opus-4-8_
+_Updated 2026-08-20 14:36 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross result is negative on 20 trades, not just eaten by costs — worth monitoring, but sample is still too small to conclude breakdown.
+> **WATCH:** Rolling net clearly negative (-22 bps over 17 bets, -7.4 bps/trade over 20) and gross is negative, not just below target — keep flat and keep watching, but sample too small to pause definitively.
 
-**Regime:** BTC has chopped around $63k-$66k with occasional sharp momentum bursts; no position is open now. Selective mean-reversion signals bleed when short trends overrun the fade.
+**Regime:** BTC has chopped roughly $63k-$66k with sharp momentum bursts that overrun the fade; no position is open now. These short trend bursts are exactly what hurts a selective mean-reversion signal.
 
-**Status:** No trade is open right now (signal = 0). The strategy has now logged **20 resolved trades**, averaging **-7.4 bps net** (about **-4 bps gross**, before the assumed 3 bps cost). The most recent 17-bet window is worse: **-21.7 bps net, -18.7 bps gross**, with wins on only ~29% of trades.
+**How it's doing:** Still no live signal (`signal=0`). Across 20 resolved trades the ledger is **-7.4 bps/trade net, -147 bps total, 25% win rate**. The recent rolling window (17 bets) is **-22.1 bps net**. Stripping the 3 bps cost, gross is about **-4 bps/trade** — meaning the raw edge is currently negative, not merely below the hoped +4 bps.
 
-**What changed vs last time:** Little. We're at the same 20-trade ledger; the picture remains negative and, importantly, **negative even before costs** — the hoped-for edge was roughly +4 bps gross, and live is running the wrong side of that.
+**What changed vs last time:** Little. We stay at **watch**. The picture is consistent with the prior read: marginal-to-negative, thin, tail-heavy.
 
-**What the numbers do tell us:** The signal is not currently showing the small positive gross edge it needs. Results are dominated by a few big losers — a single -61 bps trade (2026-07-31) and a -28 bps trade skew the total heavily; the one clear win (+25 bps on 2026-08-18) doesn't offset them.
+**What the numbers do and don't tell us:** 20 trades is still far too few to conclude the edge is broken. The result is dominated by a handful of tail losses — a single -60.9 bps trade plus -28.1 and -22.8 bps entries account for most of the damage. Remove the worst one and the average is still modestly negative, so it's not one fluke, but confidence intervals at this sample are wide. Note the separate edge search found **0 survivors** at a 5 bps cost bar on both venues — an independent hint the edge is fragile.
 
-**What they don't tell us:** 20 trades is far too few to declare the edge dead. With a marginal ~4 bps signal and fat-tailed 5-minute moves, a run this bad is entirely possible from noise alone. Separately, the edge-search found **0 survivors** at a 5 bps cost bar — a reminder this candidate was always marginal.
-
-**Bottom line:** Discouraging but not conclusive. Keep it paused/paper-only; this was never expected to be reliably net-profitable after realistic costs. Staying on **watch**, not alert, until the sample is larger.
+**Honest bottom line:** This was always a marginal candidate (gross ~4 bps vs ~3.9 bps breakeven). Live data so far is running negative, not positive, but the sample is too small to declare a definitive breakdown. Stay flat, do not deploy real capital, and keep logging. No profit is implied or guaranteed.
