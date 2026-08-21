@@ -1,43 +1,23 @@
 {
-  "updated": "2026-08-21 14:35 UTC",
+  "updated": "2026-08-21 22:25 UTC",
   "source": "Coinbase",
-  "price": 77016.76,
+  "price": 78545.96,
   "signal": 0,
   "window": {
-    "bets": 18,
-    "win": 0.2778,
-    "net_bps": -17.824,
-    "gross_bps": -14.824,
+    "bets": 20,
+    "win": 0.35,
+    "net_bps": -12.797,
+    "gross_bps": -9.797,
     "cost_bps": 3.0
   },
   "ledger": {
-    "trades": 20,
-    "resolved": 20,
-    "win": 0.25,
-    "net_bps_mean": -7.352,
-    "total_bps": -147.0
+    "trades": 22,
+    "resolved": 22,
+    "win": 0.3182,
+    "net_bps_mean": -3.734,
+    "total_bps": -82.1
   },
   "recent_trades": [
-    {
-      "entry_time": "2026-07-06 15:50:00+00:00",
-      "resolve_time": "2026-07-06 15:55:00+00:00",
-      "signal": -1,
-      "entry_price": 63437.94,
-      "resolve_price": 63501.46,
-      "gross_bps": -10.012935476781948,
-      "pnl_bps": -13.012935476781948,
-      "source": "Coinbase"
-    },
-    {
-      "entry_time": "2026-07-16 08:10:00+00:00",
-      "resolve_time": "2026-07-16 08:15:00+00:00",
-      "signal": 1,
-      "entry_price": 63888.65,
-      "resolve_price": 63884.4,
-      "gross_bps": -0.6652198786483154,
-      "pnl_bps": -3.665219878648315,
-      "source": "Coinbase"
-    },
     {
       "entry_time": "2026-07-17 13:30:00+00:00",
       "resolve_time": "2026-07-17 13:35:00+00:00",
@@ -216,6 +196,26 @@
       "resolve_price": 66055.01,
       "gross_bps": -25.090420064199925,
       "pnl_bps": -28.090420064199925,
+      "source": "Coinbase"
+    },
+    {
+      "entry_time": "2026-08-21 21:30:00+00:00",
+      "resolve_time": "2026-08-21 21:35:00+00:00",
+      "signal": -1,
+      "entry_price": 78413.14,
+      "resolve_price": 78007.57,
+      "gross_bps": 51.72219860089644,
+      "pnl_bps": 48.72219860089644,
+      "source": "Coinbase"
+    },
+    {
+      "entry_time": "2026-08-21 21:50:00+00:00",
+      "resolve_time": "2026-08-21 21:55:00+00:00",
+      "signal": -1,
+      "entry_price": 78646.16,
+      "resolve_price": 78495.4,
+      "gross_bps": 19.169403820861184,
+      "pnl_bps": 16.169403820861184,
       "source": "Coinbase"
     }
   ]

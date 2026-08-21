@@ -181,3 +181,4 @@
 {"t": "2026-08-20 22:28 UTC", "headline": "No open signal; 20-trade ledger at -7.4 bps/trade net (gross ~-4 bps), and the last 15 bets are worse \u2014 still thin but trending wrong.", "alert_level": "watch"}
 {"t": "2026-08-21 06:47 UTC", "headline": "No open signal; 20-trade ledger at -7.4 bps/trade net (gross ~-4.4 bps vs +4 expected) \u2014 thin but consistently on the wrong side.", "alert_level": "watch"}
 {"t": "2026-08-21 14:35 UTC", "headline": "No open signal; 20-trade ledger at -7.4 bps/trade net, gross ~-4.4 bps vs +4 expected \u2014 thin but wrong-signed edge.", "alert_level": "watch"}
+{"t": "2026-08-21 22:25 UTC", "headline": "No open signal; 22-trade ledger at -3.7 bps/trade net (gross wrong-signed), but last 2 fades won big \u2014 still too thin to judge.", "alert_level": "watch"}
