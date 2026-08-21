@@ -1,15 +1,15 @@
-# 🟡 No open signal; 20-trade ledger at -7.4 bps/trade net (gross ~-4.4 bps vs +4 expected) — thin but consistently on the wrong side.
+# 🟡 No open signal; 20-trade ledger at -7.4 bps/trade net, gross ~-4.4 bps vs +4 expected — thin but wrong-signed edge.
 
-_Updated 2026-08-21 06:47 UTC · model claude-opus-4-8_
+_Updated 2026-08-21 14:35 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross returns negative over 20 trades, opposite of the ~+4 bps expected edge. Sample still small, but no sign of the edge showing up. Keep close watch; pause if the next batch stays negative.
+> **WATCH:** Gross edge has flipped negative over 20 trades during a strong uptrend; keep sizing minimal and reassess as sample grows toward ~40-50 trades.
 
-**Regime:** BTC has trended sharply higher, now ~$75.3k after the ~$63-66k chop earlier in the ledger; strong directional momentum is exactly the regime that hurts a selective mean-reversion fade. No position open.
+**Regime:** BTC has trended sharply higher to ~$77k from the $63-66k chop that dominates the ledger; sustained directional momentum is exactly the regime that punishes a selective mean-reversion fade. No position open.
 
-**How it's doing:** Poorly, but on a small sample. The full ledger is 20 resolved trades averaging **-7.4 bps each** (total **-147 bps**), with only **25% wins**. Strip out the assumed 3 bps cost and the *gross* result is still about **-4.4 bps/trade** — the opposite sign of the ~+4 bps gross edge we expected. The recent 18-bet window is worse: **-16.4 bps gross, -19.4 bps net**.
+**How it's doing:** Still underwater. Across the full 20-trade ledger the strategy is averaging **-7.4 bps/trade** (total **-147 bps**), with only a **25% win rate**. Even stripping out the ~3 bps cost, the *gross* result is about **-4.4 bps/trade** — the opposite sign of the ~+4 bps we expected. The most recent 18-bet window is worse: **-17.8 bps net / -14.8 bps gross**.
 
-**What changed vs last time:** Little in substance — still no open signal, still a ~20-trade ledger trending the wrong way. The main backdrop shift is price: BTC has pushed to ~$75.3k, extending the strong up-move. That sustained momentum is precisely what punishes a fade signal, and it shows in the tape (e.g., the -60.9 bps and -28.1 bps losers).
+**What changed vs last time:** Little improvement. Price has climbed further (now ~$77k) and the picture is unchanged: a mean-reversion fade getting run over in a persistent uptrend. A few winners (+25, +10 bps) exist, but they're outweighed by large losers (-61, -28, -23 bps).
 
-**What the numbers do and don't tell us:** They tell us the edge is *not visibly present* live — even before costs it's underwater. They do **not** yet prove the strategy is broken: 20 trades is too few to distinguish a real breakdown from an unlucky momentum regime, and a couple of big losers dominate the total. A handful more resolutions could move the mean materially.
+**What the numbers do and don't tell us:** With only 20 resolved trades, this is still a **small sample** — a handful of big losses can dominate, and a 20-trade streak can happen by chance even for a real edge. So we *cannot* conclude the edge is dead. What is notable, and worse than pure cost drag, is that the **gross** edge is negative, not just eroded by fees. Separately, the edge search found **0 survivors** at the 5 bps bar — consistent with a marginal-at-best signal.
 
-**Bottom line:** This was always a marginal, likely-not-net-profitable strategy (breakeven cost ~3.9 bps). Live data so far is discouraging but not yet conclusive. No profit is implied or expected. Stay on **watch**; if the next dozen trades remain negative gross, escalate to pausing.
+**Bottom line:** Honestly, this looks marginal and is currently losing, likely because the regime (strong trend) is hostile to fading. Not yet a definitive breakdown given the thin sample, but clearly not earning its keep. Keep it minimal/paper and re-judge near ~40-50 trades. No guarantee of profit.
