@@ -1,15 +1,13 @@
-# 🟡 No live signal; 22-trade ledger at -3.7 bps/trade net (gross also negative), but last 2 fades won big — sample still thin.
+# 🟢 No live signal; full 22-trade ledger at -3.7 bps/trade net, but recent 11-bet window turned positive (+6.0 bps) on 2 big wins. Sample tiny.
 
-_Updated 2026-08-22 06:40 UTC · model claude-opus-4-8_
+_Updated 2026-08-22 14:22 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross PnL is wrong-signed over 22 trades (-9.8 bps on last 20), below the ~4 bps expected edge; keep monitoring but sample too small to pause.
+**Regime:** BTC has spiked to ~$77k from the $63-66k range that dominates the ledger; the two most recent shorts (Aug 21) caught sharp pullbacks and won big (+48.7, +16.2 bps), flipping the rolling window positive. Directional volatility usually cuts both ways for this fade.
 
-**Regime:** BTC has jumped to ~$77.5k from the $63-66k range that dominates the ledger; sharp directional moves usually hurt this mean-reversion fade, though the two most recent shorts caught pullbacks and won handsomely.
+**How it's doing.** No trade is open right now (signal 0). Across the full ledger of 22 resolved trades the strategy is net **-3.7 bps/trade** (about -82 bps total) with a 32% win rate. Subtracting the 3 bps cost, even the *gross* return is roughly -0.7 bps — i.e. no measurable edge yet. However, the most recent 11-bet window is net **+6.0 bps** (gross +9.0) with a 55% win rate.
 
-**How it's doing.** Right now there's no open signal. Across the full live ledger of 22 resolved trades, the strategy is losing about **-3.7 bps per trade** on average (**-82 bps total**), winning only **32%** of the time. The most recent 20-trade window is worse: **-12.8 bps net**, with **gross** returns of **-9.8 bps** — meaning the raw signal (before costs) is currently pointed the *wrong way* versus the ~+4 bps gross edge we expected.
+**What changed vs last time.** Last check flagged 'watch' with the ledger net negative. Since then two recent shorts during BTC's jump toward $78k landed big (+48.7 and +16.2 bps), pulling the rolling window into positive territory. That's why I'm easing back to 'none' — the fresh data does not confirm ongoing degradation.
 
-**What changed vs last time.** Little has changed in the verdict. The two big recent winners flagged last time (+48.7 and +16.2 bps shorts during the spike to ~$78k) are still the bright spot, but they haven't rescued the ledger. Price has stayed elevated (~$77.5k) well outside the $63-66k range where most trades were taken.
+**What the numbers do and don't tell us.** They don't tell us much with confidence. 22 trades is far too few to distinguish skill from luck, and the recent positive window rests heavily on two outlier wins — remove those and it's roughly flat-to-negative. Big single losers (e.g. -60.9 bps on Jul 31) show the same fragility on the downside.
 
-**What the numbers do and don't tell us.** They tell us this stretch has been unprofitable and choppy. They do **not** tell us the edge is broken: 22 trades is a tiny sample, and this strategy only trades ~1-2% of candles. Outcomes here are dominated by a handful of large moves (one -58 bps loss, one +49 bps win), so the average is noisy.
-
-**Bottom line.** Honestly marginal-to-poor so far, consistent with a strategy whose gross edge (~4 bps) barely clears costs (~3.9 bps). No profit is implied or guaranteed. Not enough evidence to pause, but the wrong-signed gross return keeps this on **watch**.
+**Bottom line.** This remains a marginal, unproven signal (~4 bps gross edge vs ~3.9 bps breakeven cost), and independent edge-search found **zero survivors** at 5 bps cost. Nothing here proves it works or that it's broken — the sample is simply too thin. No action; keep accumulating trades. Do not expect reliable profit.
