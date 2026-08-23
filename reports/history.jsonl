@@ -185,3 +185,4 @@
 {"t": "2026-08-22 06:40 UTC", "headline": "No live signal; 22-trade ledger at -3.7 bps/trade net (gross also negative), but last 2 fades won big \u2014 sample still thin.", "alert_level": "watch"}
 {"t": "2026-08-22 14:22 UTC", "headline": "No live signal; full 22-trade ledger at -3.7 bps/trade net, but recent 11-bet window turned positive (+6.0 bps) on 2 big wins. Sample tiny.", "alert_level": "none"}
 {"t": "2026-08-22 22:22 UTC", "headline": "No live signal. Full 22-trade ledger still net-negative (-3.7 bps/trade); rolling 11-bet window positive (+6.0 bps) but sample is tiny.", "alert_level": "none"}
+{"t": "2026-08-23 06:41 UTC", "headline": "No live signal. Full 22-trade ledger net-negative (-3.7 bps/trade); rolling 10-bet window positive (+9.9 bps) but driven by 2 lucky shorts.", "alert_level": "none"}
