@@ -1,15 +1,15 @@
-# 🟢 No live signal. Full 22-trade ledger net-negative (-3.7 bps/trade); rolling 10-bet window positive (+9.9 bps) but driven by 2 lucky shorts.
+# 🟢 No live signal now. Full 23-trade ledger still net-negative (-3.0 bps/trade); rolling 13-bet window positive (+10.1 bps) but short-driven.
 
-_Updated 2026-08-23 06:41 UTC · model claude-opus-4-8_
+_Updated 2026-08-23 14:23 UTC · model claude-opus-4-8_
 
-**Regime:** BTC is holding ~$76k, far above the $63-66k range that generated most of the ledger; a sharp Aug 21 pullback produced two outsized winning shorts that dominate the rolling window. That's regime luck on a tiny sample, not demonstrated edge.
+**Regime:** BTC has re-rated to ~$77k from the $63-66k range that generated most of the ledger; a cluster of successful shorts around the Aug 21-23 pullback dominates the rolling window. That's regime-favorable luck on a thin sample, not proven edge.
 
-**Status: quiet, inconclusive.** No signal is firing right now (`signal=0`), so nothing to act on.
+**How it's doing:** No trade is live right now (signal 0, BTC ~$77,456). One new trade has resolved since last check (23 vs 22): a short on Aug 23 that won +13.0 bps.
 
-**What the numbers say.** The full live ledger is 22 trades, and it's net-negative: -3.7 bps per trade on average, -82.1 bps total, winning only 31.8% of the time. The rolling 10-bet window looks good (+9.9 bps net, 70% wins), but that is almost entirely two shorts on Aug 21 (+48.7 and +16.2 bps) that caught a sharp drop from ~$78k. Strip those out and the recent run is unremarkable.
+**The two views disagree — on purpose.** The full ledger of 23 trades is still net-negative: 34.8% win rate, **-3.0 bps/trade**, -69.2 bps cumulative. The rolling 13-bet window looks great: 76.9% wins, **+10.1 bps net**. Both are 'true' but measure different things. The rolling window is flattered by a handful of oversized shorts during the Aug 21-23 pullback (+48.7, +16.2, +13.0 bps) as price jumped into the high-$70ks. Strip those and the picture is far less rosy.
 
-**What changed vs last time.** Essentially nothing. Last check the rolling window was +6.0 bps and the full ledger negative; now it's +9.9 bps and the full ledger is still negative. Same story, same caveats.
+**What the numbers don't tell us:** With only ~13-23 resolved trades, neither view is statistically meaningful. The strategy's validated gross edge is ~4 bps/bet against a ~3.9 bps breakeven cost — marginal by design, and likely not net-profitable after realistic costs. A dozen trades can't confirm or reject that; a few big winners or losers swamp everything.
 
-**What this does and doesn't tell us.** 22 trades is far too few to judge a strategy whose expected edge is only ~4 bps/bet against a ~3.9 bps breakeven cost — the noise per trade (individual results swing from -61 to +49 bps) dwarfs the signal. We cannot conclude the edge is holding, nor that it's broken. Also note the edge re-search found **0 survivors** at a stricter 5-bps, two-venue bar.
+**What changed:** Essentially nothing structural — one more winning short, extending a favorable short streak that coincides with a sharp regime shift out of the old range.
 
-**Bottom line.** Marginal strategy, thin data, no signal live. Nothing here warrants excitement or alarm. Treat the recent green window as regime luck until a much larger sample says otherwise. No implied profit.
+**Bottom line:** Too thin to celebrate or panic. The recent hot streak is plausibly regime luck, not demonstrated edge; the full-sample math remains underwater. Keep logging, don't extrapolate, and expect this to behave like a marginal, cost-sensitive strategy.
