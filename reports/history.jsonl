@@ -188,3 +188,4 @@
 {"t": "2026-08-23 06:41 UTC", "headline": "No live signal. Full 22-trade ledger net-negative (-3.7 bps/trade); rolling 10-bet window positive (+9.9 bps) but driven by 2 lucky shorts.", "alert_level": "none"}
 {"t": "2026-08-23 14:23 UTC", "headline": "No live signal now. Full 23-trade ledger still net-negative (-3.0 bps/trade); rolling 13-bet window positive (+10.1 bps) but short-driven.", "alert_level": "none"}
 {"t": "2026-08-23 22:22 UTC", "headline": "No live signal. Full 24-trade ledger still net-negative (-2.7 bps/trade); rolling 13-bet window positive (+9.5 bps) on recent shorts.", "alert_level": "none"}
+{"t": "2026-08-24 06:59 UTC", "headline": "No live signal. 24-trade ledger still net -2.7 bps/trade (-64.4 total); rolling 9-bet window +13.7 bps on recent shorts.", "alert_level": "none"}
