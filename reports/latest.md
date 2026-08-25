@@ -1,15 +1,13 @@
-# 🟢 No live signal. Full 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 15-bet window +6.5 bps on regime-favorable shorts. Too thin to conclude.
+# 🟢 No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 15-bet window +6.5 bps. Still too thin to judge.
 
-_Updated 2026-08-25 14:45 UTC · model claude-opus-4-8_
+_Updated 2026-08-25 22:27 UTC · model claude-opus-4-8_
 
-**Regime:** BTC has jumped to ~$79.2k, far above the $63-66k range that generated most of the ledger. The recent win streak is a cluster of shorts fired into the Aug 21-23 pullback — good timing in a fast, volatile regime, not evidence of durable edge.
+**Regime:** BTC sits near $78.7k, well above the $63-66k range that generated most of the ledger. The recent positive window is a cluster of shorts fired into the Aug 21-23 pullback — good timing in a fast, volatile regime, not proof of durable edge.
 
-**Status: no active trade right now (signal = 0).**
+**How it's doing.** No trade is live right now (signal = 0). Nothing material has changed since the last check — same 24 resolved trades, same recent window.
 
-**The numbers, honestly.** The full live ledger is 24 resolved trades, winning just 37.5% of the time, averaging **-2.7 bps per trade** for a cumulative **-64.4 bps**. That's negative — but it's dominated by a few large losers (e.g. -60.9 and -28.1 bps) during the $62-66k chop. The more recent 15-bet window looks much better: 86.7% wins and **+6.5 bps net** per bet. Those two pictures conflict, which is exactly what you'd expect from a tiny sample.
+**The numbers.** The full ledger of 24 trades averages **-2.7 bps/trade** (-64.4 bps cumulative) with a weak 37.5% win rate. That looks bad, but the total is dominated by a couple of large losers (e.g. -60.9 and -28.1 bps). The rolling 15-bet window tells the opposite story: **+6.5 bps net** (86.7% wins) — but that streak is almost entirely shorts that happened to catch the Aug 21-23 dip. Two of those (+48.7, +16.2 bps) carry the window.
 
-**What changed vs last time.** Very little. Since the prior note, a few more shorts resolved profitably (+48.7, +16.2, +13.0, +4.7 bps) as BTC pulled back around Aug 21-23. This extends the favorable streak but adds only a handful of trades.
+**What this does and doesn't tell us.** With only 24 lifetime trades, neither number is statistically meaningful. Recall the validated edge is ~4 bps gross against a ~3.9 bps breakeven cost — a coin-flip margin by design. A handful of big-move wins or losses swamps that thin edge, so both the -2.7 and the +6.5 are mostly noise plus regime luck. Also worth noting: the current edge-search found **zero survivors** at a 5 bps cost bar.
 
-**What this does and doesn't tell us.** Remember the strategy's *modeled* edge is only ~4 bps gross against a ~3.9 bps breakeven — marginal by design. A dozen-odd recent wins can't confirm an edge that thin; the recent streak is one clustered regime bet (shorts into a sharp drop), not proof. Note also `edge_search_survivors = 0`: no variant clears the stricter 5 bps two-venue bar.
-
-**Bottom line.** Sample is still too thin to judge, and no clear breakdown warrants action. Neither profitable nor failing on this evidence — keep logging, don't hype. No guarantee of profit.
+**Bottom line.** Too thin to conclude anything, and the strategy was always expected to be marginal-to-unprofitable after realistic costs. No degradation alert warranted, but no evidence of durable edge either. Keep accumulating trades; don't read profit into the recent streak.
