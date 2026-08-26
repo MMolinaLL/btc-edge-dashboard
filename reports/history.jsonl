@@ -195,3 +195,4 @@
 {"t": "2026-08-25 14:45 UTC", "headline": "No live signal. Full 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 15-bet window +6.5 bps on regime-favorable shorts. Too thin to conclude.", "alert_level": "none"}
 {"t": "2026-08-25 22:27 UTC", "headline": "No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 15-bet window +6.5 bps. Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-26 06:51 UTC", "headline": "No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 13-bet window +5.5 bps net. Sample still too thin to judge.", "alert_level": "none"}
+{"t": "2026-08-26 14:44 UTC", "headline": "No live signal. Full 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 12-bet window +5.2 bps net. Too thin to judge.", "alert_level": "none"}
