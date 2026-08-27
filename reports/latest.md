@@ -1,15 +1,13 @@
-# 🟢 No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); recent 9-bet window +5.8 bps. Sample too thin to judge.
+# 🟢 No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); last 10 bets +5.8 bps net. Still too thin to judge.
 
-_Updated 2026-08-27 02:58 UTC · model claude-opus-4-8_
+_Updated 2026-08-27 17:24 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$78.7k, far above the $63-66k range where most ledger trades sat. Recent gains are shorts fired into the Aug 21-23 pullback — good regime timing in a fast tape, not proof of durable edge.
+**Regime:** BTC ~$80.7k, well above the $63-66k range where most ledger trades were placed. Recent wins are shorts fired into the Aug 21-23 pullback — good timing in a fast tape, not proof of a durable edge.
 
-**Status: no active signal.** The strategy is doing roughly what we'd expect from a marginal, selective edge — and the data is still too thin to draw firm conclusions.
+**How it's doing.** The strategy is flat right now (no signal). The full live ledger stands at 24 trades, winning just 37.5% and losing about **2.7 bps per trade (-64.4 bps total)**. That's below breakeven. But the most *recent* 10-bet window looks better: 80% wins and **+5.8 bps net** after a 3 bps cost assumption.
 
-**The numbers.** The full ledger of 24 resolved trades averages **-2.7 bps/trade (-64.4 bps total)** at an assumed 3 bps cost. That's negative, but unsurprising: we already knew the gross edge (~4 bps) barely clears the ~3.9 bps breakeven, so this candidate was flagged as likely *not* net-profitable. A handful of big losers (e.g. -60.9 and -28.1 bps in July/mid-Aug) dominate the total.
+**What changed vs last time.** Little of substance. Price drifted from ~$78.7k to ~$80.7k. The headline ledger numbers and the recent positive window are essentially unchanged from the prior read.
 
-**What changed vs last time.** Essentially nothing — no new trades have resolved since the prior check. The rolling window is now 9 bets at **+5.8 bps net, 78% wins**. That looks good, but it's almost entirely shorts that happened to fire into the Aug 21-23 drop (+48.7, +16.2, +13.0, +4.7 bps). That's favorable regime timing over a tiny sample, not evidence the edge is real.
+**What the numbers do and don't tell us.** The reason for the split is timing: the big recent winners (+48.7, +16.2, +13.0, +12.9 bps) are all shorts placed into the Aug 21-23 selloff. That's the signal doing what it's designed to do — fading extreme moves — but a handful of well-timed shorts in one volatile stretch is not evidence of a repeatable edge. The earlier losers include a brutal -60.9 bps. With only ~24 resolved trades and this much variance, neither the negative lifetime figure nor the positive recent window is statistically meaningful.
 
-**What the numbers don't tell us.** With only 24 lifetime trades and 9 in the window, both the negative total and the positive recent streak are well within noise. A single big move swings everything. The independent edge search still shows **0 survivors** at the 5 bps bar.
-
-**Bottom line.** No degradation alarm and no reason to hype. The edge remains marginal-to-nonexistent after realistic costs; keep collecting data before any conclusion.
+**Honest bottom line.** This remains a marginal, unproven signal — remember the validated gross edge is only ~4 bps against a ~3.9 bps breakeven, and the independent edge search produced **zero survivors**. The sample is still too thin to conclude anything, so no alert. Keep logging; don't read the recent green as profit.
