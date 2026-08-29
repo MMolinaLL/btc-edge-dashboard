@@ -1,13 +1,13 @@
-# 🟢 No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); rolling-10 window -2.6 bps. Still too thin to judge.
+# 🟢 No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); rolling-10 also -2.6 bps. Still too thin to conclude.
 
-_Updated 2026-08-29 17:32 UTC · model claude-opus-4-8_
+_Updated 2026-08-29 23:55 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$78k, well above the $63-66k range where most ledger trades were placed. The recent winning shorts came from fading the Aug 21-23 spike into the mid-$70ks — good timing in a fast tape, not proof of durable edge.
+**Regime:** BTC ~$78k, far above the $63-66k range where most ledger trades were placed; recent winning shorts came from fading the Aug 21-23 spike into the mid-$70ks. That's good timing in a fast tape, not proof of a durable edge.
 
-**How it's doing.** No trade signal right now (`signal=0`). The full ledger stands at 24 resolved trades, winning 37.5% and averaging **-2.7 bps/trade** (-64.4 bps cumulative). The rolling last-10 window is net **-2.6 bps** with a 50% win rate; its gross edge is just **+0.39 bps**, far short of the ~3.9 bps needed to cover realistic costs.
+**How it's doing.** No trade is open right now (signal 0). Across all 24 resolved trades the strategy has lost about **-2.7 bps per trade** (-64.4 bps total), and the last 10 trades are similar at **-2.6 bps** each. Hit rate is 37.5% overall (5/10 recently).
 
-**What changed vs last time.** Essentially nothing — same 24-trade ledger, same broad picture. Price is ~$78k, roughly where it was last check.
+**What changed vs last time.** Essentially nothing. The ledger is unchanged at 24 trades and the numbers are within noise of the prior read. The most recent handful of shorts (Aug 21-23) were winners of +49, +16, +13, +5 bps, which cushioned the tally, but a couple of earlier losers (-61, -28 bps) dominate the total.
 
-**What the numbers do and don't tell us.** They confirm what backtesting warned: this signal is marginal, and net-of-cost results are negative so far. But 24 trades is a *tiny* sample — a few outliers dominate. Two big losers (-61 and -28 bps in fast trends) and a couple of big winners (+49, +25 bps fading the Aug spike) swing the whole tally. That's exactly the noise you'd expect at this size; it is not enough to prove the edge is broken *or* intact.
+**What the numbers do and don't tell us.** They tell us live results are *not positive so far* — but that was the expected outcome: gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost (here modeled at 3.0 bps). A slightly negative net on a marginal signal is exactly what thin, unlucky sampling can produce. With only 24 trades, single outliers swing the average by bps, so this **cannot distinguish 'no edge' from 'small edge plus bad luck.'** Note also the broader edge search found **zero survivors** clearing a 5 bps cost bar on both venues.
 
-**Bottom line.** Consistent with expectations for a strategy whose gross edge (~4 bps) barely beats its breakeven cost (~3.9 bps): likely not net-profitable, and the live data can't yet confirm otherwise. No degradation *beyond* what was already known, so no alert — but no evidence of a live money-making edge either. Keep accumulating trades before drawing conclusions. Note: the independent edge search still finds **zero survivors** at a 5 bps cost bar.
+**Bottom line.** Behaving like the marginal, probably-not-net-profitable signal we already believed it was. Not a breakdown worth pausing over, but no evidence of live profit either. Keep collecting trades — dozens more are needed before any verdict. No guarantee of profitability.
