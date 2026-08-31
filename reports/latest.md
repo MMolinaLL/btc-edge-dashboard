@@ -1,13 +1,13 @@
-# 🟢 No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Sample too thin to judge; no new fills since last update.
+# 🟢 No live signal. Ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Sample still too thin to judge.
 
-_Updated 2026-08-31 00:14 UTC · model claude-opus-4-8_
+_Updated 2026-08-31 12:55 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$77.7k, still well above the $63-66k band where most ledger trades were struck; the only clear wins came from fading the late-August spike into the mid-$70ks. No new trades have printed, so nothing has changed since the prior read.
+**Regime:** BTC ~$77.8k, still well above the $63-66k band where most ledger trades were struck; the standout wins came from fading the late-August spike into the mid-$70ks. No new fills since last update, so nothing has materially changed.
 
-**How it's doing:** Flat. No new trades since the last update — the ledger still shows 24 resolved trades, win rate 37.5%, averaging **-2.7 bps/trade** for **-64.4 bps total**. The trailing 8-bet window is **-5.6 bps net** and, notably, **-2.6 bps gross** (before the assumed 3 bps cost), meaning recent bets have been slightly unprofitable even ignoring fees.
+**What's happening:** The strategy is flat right now (signal = 0), and the ledger is unchanged from last time: 24 resolved trades, 37.5% win rate, averaging **-2.7 bps per trade** (-64.4 bps cumulative). No new fills have printed, so this is the same picture as the prior read.
 
-**What changed vs last time:** Essentially nothing. Same trade count, same signal (0 = flat), price drifted from ~$79k to ~$77.7k. This is a continuation, not a new data point.
+**What changed:** Nothing meaningful. The recent rolling window (5 bets, +0.6 bps net) looks slightly positive, but that's just a handful of the late-August short trades — Aug 21-23 fades of the spike into the mid-$70ks booked +48.7, +16.2, +13.0, +4.7 bps. Those are the standout winners and they're doing the heavy lifting; the rest of the ledger is dominated by losers like the -60.9 and -28.1 bps hits.
 
-**What the numbers do and don't tell us:** With only 24 lifetime trades and 8 in the window, this is far too thin to conclude the edge is broken. Remember the validated edge was tiny to begin with (~4 bps gross, ~3.9 bps breakeven) — likely not net-profitable after realistic costs. So a modestly negative live tally is entirely consistent with a marginal-or-no edge; it neither confirms nor refutes degradation. The wins are dominated by a couple of large fades of the Aug 21 spike (+49, +16 bps), which is timing luck in a fast tape, not proof of durability. Also worth noting: the offline edge search now has **0 survivors** at a 5 bps cost bar.
+**What the numbers do and don't tell us:** 24 trades is far too few to conclude the edge is broken. The expected gross edge was only ~4 bps/bet against a ~3.9 bps breakeven — razor-thin by design — so a small run of bad luck easily swamps it. A cumulative -64 bps over two dozen selective trades is disappointing but well within noise for a marginal signal. Note also the offline edge search found **0 survivors** clearing the bar on both venues.
 
-**Bottom line:** No action. Results are weak but within noise for a strategy that was always marginal. Keep collecting trades; don't expect this to be net-profitable. No guaranteed profit here.
+**Bottom line:** Honestly, this was never expected to be reliably net-profitable after costs, and nothing here changes that. Not degraded enough to alert, not proven enough to trust. Keep watching; don't hype it.
