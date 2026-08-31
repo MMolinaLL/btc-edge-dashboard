@@ -1,13 +1,13 @@
-# 🟢 No live signal. Ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Gross barely negative; sample too thin to judge.
+# 🟢 No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Sample too thin to judge; no new fills since last update.
 
-_Updated 2026-08-30 17:57 UTC · model claude-opus-4-8_
+_Updated 2026-08-31 00:14 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$79k, far above the $63-66k range where most ledger trades were struck; the strategy's only clear wins came from fading the Aug 21-23 spike into the mid-$70ks. That's good timing in a fast tape, not proof of a durable edge, and no new trades have printed since the last update.
+**Regime:** BTC ~$77.7k, still well above the $63-66k band where most ledger trades were struck; the only clear wins came from fading the late-August spike into the mid-$70ks. No new trades have printed, so nothing has changed since the prior read.
 
-**What's happening:** No trade signal right now (`signal=0`), and nothing has changed since the prior update — the ledger still shows 24 resolved trades, a 37.5% win rate, and -2.7 bps average per trade (-64.4 bps cumulative). This remains a small, stale sample.
+**How it's doing:** Flat. No new trades since the last update — the ledger still shows 24 resolved trades, win rate 37.5%, averaging **-2.7 bps/trade** for **-64.4 bps total**. The trailing 8-bet window is **-5.6 bps net** and, notably, **-2.6 bps gross** (before the assumed 3 bps cost), meaning recent bets have been slightly unprofitable even ignoring fees.
 
-**What the numbers say:** On paper the live results look poor: negative net *and* slightly negative gross (-2.5 bps on the 9-bet rolling window). But remember the validated edge was tiny to begin with (~4 bps gross, ~3.9 bps breakeven cost). With only 24 trades, the outcome is dominated by a handful of large moves — e.g. a single -60.9 bps loser (Jul 31) and a +48.7 bps winner (Aug 21). A few dozen trades cannot distinguish 'no edge' from 'marginal edge plus noise.'
+**What changed vs last time:** Essentially nothing. Same trade count, same signal (0 = flat), price drifted from ~$79k to ~$77.7k. This is a continuation, not a new data point.
 
-**What they don't say:** This is *not* evidence of a sudden breakdown, nor evidence the strategy works. It's simply too thin to conclude either way. The independent edge search still finds **zero survivors** at a realistic 5 bps cost on both venues — consistent with the honest prior view that this signal is likely not net-profitable after costs.
+**What the numbers do and don't tell us:** With only 24 lifetime trades and 8 in the window, this is far too thin to conclude the edge is broken. Remember the validated edge was tiny to begin with (~4 bps gross, ~3.9 bps breakeven) — likely not net-profitable after realistic costs. So a modestly negative live tally is entirely consistent with a marginal-or-no edge; it neither confirms nor refutes degradation. The wins are dominated by a couple of large fades of the Aug 21 spike (+49, +16 bps), which is timing luck in a fast tape, not proof of durability. Also worth noting: the offline edge search now has **0 survivors** at a 5 bps cost bar.
 
-**Bottom line:** Unchanged and inconclusive. The strategy is marginal by design and the live sample is too small to judge. No degradation alert warranted, but no confirmation of profit either. Keep accumulating trades before drawing conclusions.
+**Bottom line:** No action. Results are weak but within noise for a strategy that was always marginal. Keep collecting trades; don't expect this to be net-profitable. No guaranteed profit here.

@@ -206,3 +206,4 @@
 {"t": "2026-08-29 23:55 UTC", "headline": "No live signal. 24-trade ledger nets -2.7 bps/trade (-64.4 total); rolling-10 also -2.6 bps. Still too thin to conclude.", "alert_level": "none"}
 {"t": "2026-08-30 11:25 UTC", "headline": "No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Gross barely positive; sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-08-30 17:57 UTC", "headline": "No live signal. Ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Gross barely negative; sample too thin to judge.", "alert_level": "none"}
+{"t": "2026-08-31 00:14 UTC", "headline": "No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Sample too thin to judge; no new fills since last update.", "alert_level": "none"}
