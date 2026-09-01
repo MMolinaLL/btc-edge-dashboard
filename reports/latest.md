@@ -1,13 +1,13 @@
-# 🟢 No live signal. Ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Sample still too thin to judge.
+# 🟢 No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Sample still too thin to judge.
 
-_Updated 2026-09-01 11:14 UTC · model claude-opus-4-8_
+_Updated 2026-09-01 17:39 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$77.9k, well above the $63-66k band where most ledger trades were struck; the best wins came from fading the late-August spike into the mid-to-high $70ks. No new fills since last update.
+**Regime:** BTC ~$77.6k, well above the $63-66k band where most ledger trades were struck; the strongest wins came from fading the late-August spike into the mid-to-high $70ks. No new fills since last update.
 
-**What changed:** Nothing material. No live signal right now (`signal: 0`), and the ledger is unchanged from last time — still 24 resolved trades, averaging **-2.7 bps/trade** for a cumulative **-64.4 bps**. Win rate sits at 37.5%.
+**Status: quiet, unchanged.** No trade signal right now (`signal=0`), and the ledger is identical to last check — 24 resolved trades, 37.5% win rate, averaging **-2.7 bps per trade** for **-64.4 bps total**. No new fills have landed, so nothing genuinely new to score.
 
-**What the numbers say:** On paper this looks negative, but read it carefully. This strategy was only ever expected to earn ~4 bps/bet gross against a ~3.9 bps breakeven cost — i.e. marginal and probably not net-profitable after realistic fees. Here we're modeling 3.0 bps cost, so even a small gross edge gets eaten. A 24-trade sample is far too small to distinguish 'no edge' from 'normal bad luck.' The result is dominated by a handful of outliers: two big losers (-61 and -28 bps) versus two big winners (+49 and +16 bps from fading the late-August spike). Remove any one of those and the average swings meaningfully.
+**What the numbers say — and don't.** On paper the strategy is running behind: net is negative and win rate is below half. But this was expected to be a marginal edge (~4 bps gross vs ~3.9 bps breakeven cost), so it is fragile by design. More importantly, **24 trades is far too small a sample to conclude the edge is broken.** The result is dominated by a handful of outliers: two big losers (-61 and -28 bps) and two big winners (+49 and +16 bps). With that much dispersion over so few bets, the -64 bps total is well within noise — it neither proves nor disproves an edge.
 
-**What they don't say:** We cannot conclude the edge is broken. We also cannot claim it works. Independently, the edge search found **0 survivors** meeting the bar (net-positive on both venues at 5 bps cost) — consistent with the honest prior that this signal is marginal at best.
+**Context worth noting.** BTC now trades near $77.6k, well above the $63-66k zone where most ledger entries occurred. The best recent wins came from fading spikes into the $77-78k area, so the signal isn't obviously failing in the current regime — it's just idle. Separately, the broader edge search still shows **0 survivors** meeting the strict bar (net-positive on both venues at 5 bps cost), a standing reminder this candidate is not a proven money-maker.
 
-**Bottom line:** Too thin to judge, leaning cautious. Keep logging, don't size up, and expect this to be, at best, a coin-flip after costs. No guarantee of profit.
+**Bottom line:** No action needed. Not net-profitable so far, but the sample is too thin to call degradation. Keep collecting fills; no profit is implied or guaranteed.
