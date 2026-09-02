@@ -213,3 +213,4 @@
 {"t": "2026-09-01 11:14 UTC", "headline": "No live signal. Ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-09-01 17:39 UTC", "headline": "No live signal. Ledger unchanged at 24 trades, -2.7 bps/trade (-64.4 total). Sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-09-01 23:50 UTC", "headline": "No new fills; ledger flat at 24 trades, -2.7 bps/trade (-64.4 total). Sample too thin to judge.", "alert_level": "none"}
+{"t": "2026-09-02 10:47 UTC", "headline": "Still 24 trades, -2.7 bps/trade (-64.4 total); no new fills. Sample too thin to judge.", "alert_level": "none"}
