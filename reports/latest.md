@@ -1,13 +1,13 @@
-# 🟢 Unchanged: 24 resolved trades, -2.7 bps/trade (-64.4 total); still too thin to judge. Signal flat.
+# 🟢 Unchanged: 24 resolved trades, -2.7 bps/trade (-64.4 total); sample still too thin to judge. Signal flat.
 
-_Updated 2026-09-02 23:53 UTC · model claude-opus-4-8_
+_Updated 2026-09-03 10:48 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$77.3k, still well above the $63-66k band where most ledger trades were struck; no new fills since last update and the signal is currently flat (0).
+**Regime:** BTC ~$77.5k, still well above the $63-66k band where most ledger trades were struck; no new fills since last update and the signal is currently flat (0).
 
-**What changed:** Essentially nothing since last update. The ledger still shows 24 resolved trades, mean **-2.7 bps/trade** and **-64.4 bps** cumulative. The rolling 9-bet window is **-7.6 bps net** (-4.6 gross at 3 bps cost). No new fills have landed and the live signal reads flat (0).
+**What changed:** Essentially nothing since the last check. The ledger still shows **24 resolved trades**, a **37.5% win rate**, and a mean of **-2.685 bps/trade (-64.4 bps cumulative)**. No new fills have landed; BTC drifted from ~$77.3k to **~$77.5k** and the signal is currently **flat (0)**.
 
-**What the numbers do tell us:** So far the live results are underwater, not the ~4 bps gross edge we hoped for. But the total is dominated by a handful of outliers — big losers like -60.9, -28.1 and -25.1 bps, offset by big winners like +48.7, +25.3 and +16.2 bps. That is high per-trade variance on a tiny count.
+**What the numbers say:** On paper the live results are slightly negative. At the 3 bps cost assumed here, a -2.685 bps net average implies gross of only ~+0.3 bps/bet — below the ~4 bps gross edge we expected in validation, and below the ~3.9 bps breakeven cost. So live performance is *soft*.
 
-**What they don't tell us:** With only 24 trades, this is nowhere near enough to distinguish a broken edge from ordinary bad luck. A single 60-bps loser swings the whole average. The confidence interval around -2.7 bps easily spans zero and beyond in both directions. We genuinely cannot conclude the edge is gone.
+**What they don't say:** With just 24 trades, this is far too thin to conclude the edge is broken. A couple of large losers (e.g. -60.9 and -28.1 bps) dominate the total, while a few big winners (+48.7, +25.3 bps) offset. That is exactly the high-variance, small-sample picture we warned about. The recent -7.6 bps over 9 bets is likewise noise-dominated.
 
-**Honest bottom line:** This was always a marginal candidate — ~4 bps gross versus ~3.9 bps breakeven cost, and the broader edge search left **zero survivors** at a stricter 5 bps bar. Live P&L is negative but on far too few trades to act on. No alert; we keep watching and let the sample grow. Do not expect this to be reliably profitable after realistic costs.
+**Bottom line:** This strategy was always marginal — best candidate found, but likely **not net-profitable after realistic costs** (note: `edge_search_survivors` = 0 at the 5 bps bar). Live data so far is mildly disappointing but statistically inconclusive. No alert warranted; keep collecting trades before drawing any conclusion. No profit is implied or guaranteed.
