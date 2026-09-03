@@ -218,3 +218,4 @@
 {"t": "2026-09-02 23:53 UTC", "headline": "Unchanged: 24 resolved trades, -2.7 bps/trade (-64.4 total); still too thin to judge. Signal flat.", "alert_level": "none"}
 {"t": "2026-09-03 10:48 UTC", "headline": "Unchanged: 24 resolved trades, -2.7 bps/trade (-64.4 total); sample still too thin to judge. Signal flat.", "alert_level": "none"}
 {"t": "2026-09-03 17:34 UTC", "headline": "25 resolved trades, -1.5 bps/trade (-38.6 total); one recent winner improved the tally but sample still too thin. Signal flat.", "alert_level": "none"}
+{"t": "2026-09-03 23:49 UTC", "headline": "25 resolved trades at -1.5 bps each (-38.6 bps total); recent shorts near highs won, but sample far too thin to judge. Signal flat.", "alert_level": "none"}
