@@ -224,3 +224,4 @@
 {"t": "2026-09-04 23:47 UTC", "headline": "25 resolved trades, mean -1.5 bps (-38.6 bps total); marginal edge, sample still too thin to judge. Signal flat, BTC ~$79.7k.", "alert_level": "none"}
 {"t": "2026-09-05 10:04 UTC", "headline": "25 resolved trades, mean -1.5 bps (-38.6 bps total); still marginal and sample too thin to judge. Signal flat, BTC ~$79.6k.", "alert_level": "none"}
 {"t": "2026-09-05 16:34 UTC", "headline": "25 resolved trades, mean -1.5 bps net (-38.6 bps total); still marginal and too thin to judge. Signal flat, BTC ~$80.0k.", "alert_level": "none"}
+{"t": "2026-09-05 23:35 UTC", "headline": "25 resolved trades, mean -1.5 bps net (-38.6 bps total); marginal and too thin to judge. Signal flat, BTC ~$79.8k.", "alert_level": "none"}
