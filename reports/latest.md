@@ -1,13 +1,19 @@
 # 🟢 25 resolved trades, mean -1.5 bps net (-38.6 bps total); sample still too thin to judge. Signal flat, BTC ~$78.6k.
 
-_Updated 2026-09-08 10:45 UTC · model claude-opus-4-8_
+_Updated 2026-09-08 17:47 UTC · model claude-opus-4-8_
 
-**Regime:** BTC near $78.6k, well above the $63-66k band where most ledger trades were struck; the strategy's most recent short signals into the late-Aug/early-Sep run-up worked well, and the live signal is currently flat (0).
+**Regime:** BTC trades near $78.6k, well above the $63-66k band where most of the ledger was struck; recent short signals into the late-Aug/early-Sep rally resolved well, and the live signal is currently flat (0).
 
-**How it's doing.** The full live ledger now stands at 25 resolved trades, winning 40% with a mean of **-1.5 bps** per bet and **-38.6 bps** cumulative. That is modestly negative, but on 25 bets it tells us almost nothing — this is exactly the small-sample noise we were warned to expect from a signal that only trades ~1-2% of candles.
+## How it's doing
+The live ledger holds 25 resolved trades averaging **-1.54 bps net per trade** (**-38.6 bps total**), win rate 40%. That's negative, but on a tiny sample it tells us very little. Nothing material changed since last update — same trade count and roughly the same running total.
 
-**What changed vs last time.** Effectively nothing: same 25 resolved trades, same headline numbers, signal still flat (0). No new resolved bets have landed since the prior check.
+## What the numbers do and don't say
+This strategy was always marginal: gross edge ~4 bps/bet against a ~3.9 bps breakeven cost, so it was flagged as likely **not net-profitable** after costs. A -1.5 bps mean over 25 bets is fully consistent with either "no real edge" or "tiny edge buried in noise" — 25 samples can't separate those. Single trades swing wildly (from -61 bps to +49 bps), which dominates the average.
 
-**What the numbers do and don't tell us.** The recent-trade list is actually a mix: several big winners in late August and early September (+48.7, +25.9, +25.3, +16.2 bps) offset earlier losers (-60.9, -28.1, -18.2 bps). A handful of large moves dominate the total, which is why the mean is fragile. The tiny 3-bet rolling window (+4.2 bps net) is far too small to read as a recovery. Remember the validated backstory: gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost, so this was never expected to be reliably net-profitable. The edge-search rerun found **0 survivors** clearing the stricter two-venue, 5 bps bar.
+Encouragingly, the **most recent stretch** looks healthier: several late-Aug/early-Sep short signals (+48.7, +16.2, +13.0, +25.9 bps) landed as BTC ran up, so the newest resolved trades are net positive even after cost. That's a small bright spot, not evidence of a durable edge.
 
-**Bottom line.** No degradation signal and no proof of edge — the data remains too thin to conclude either way. Slightly negative cumulative PnL is consistent with a marginal, likely-not-net-profitable strategy. Keep collecting; no action warranted.
+## Context
+The live signal is currently **flat (0)** — no position. Separately, the independent edge search found **0 survivors** at the stricter 5 bps two-venue bar, reinforcing that any edge here is fragile.
+
+## Bottom line
+No alarm and no celebration. The running total is negative but the sample is far too thin (25 trades, ~1-2% of candles trade) to conclude the edge has broken. Keep collecting data; a call needs dozens more resolved trades. Treat expectations as break-even at best, not profitable.
