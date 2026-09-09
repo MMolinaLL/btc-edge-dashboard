@@ -1,13 +1,13 @@
-# 🟢 25 resolved trades, mean -1.5 bps net (-38.6 bps total); still too thin to judge. Signal flat, BTC ~$78.8k.
+# 🟢 25 resolved trades, mean -1.5 bps net (-38.6 bps total); still too thin to judge. Signal flat, BTC ~$78.2k.
 
-_Updated 2026-09-09 17:37 UTC · model claude-opus-4-8_
+_Updated 2026-09-09 23:51 UTC · model claude-opus-4-8_
 
-**Regime:** BTC trades near $78.8k, well above the $63-66k band where most of the ledger was built. The most recent short signals into strength (late-Aug/early-Sep) resolved profitably, and the live signal is currently flat (0).
+**Regime:** BTC sits near $78.2k, far above the $63-66k band where most of the ledger's losing trades were logged. Recent short signals into strength (mid-Aug through early-Sep) resolved profitably, and the live signal is currently flat (0).
 
-**How it's doing.** The strategy has logged 25 resolved trades since going live. Net of assumed 3 bps cost, the average trade is **-1.5 bps** (total **-38.6 bps**), win rate 40%. That's below the ~4 bps gross edge we hoped for — but this is expected noise territory, not evidence of a broken edge.
+**How it's doing.** Over the full live ledger of 25 resolved trades, the strategy is slightly underwater: an average of **-1.5 bps per trade** (**-38.6 bps total**) at an assumed 3 bps cost, winning just **40%** of the time. The most recent window (5 trades) looks better — **+7.5 bps net, 60% wins** — but that's five trades and means little on its own.
 
-**What changed vs last time.** Effectively nothing: same 25 trades, same numbers, signal still flat (0). No new resolved bets since the prior check, so there's no new information to move the needle.
+**What changed vs last time.** Essentially nothing material. Same 25-trade ledger, same flat signal, price roughly unchanged near $78k. The last stretch of trades (late Aug–early Sep) were mostly winners: several shorts into strength returned +13 to +49 bps. That's encouraging but doesn't overturn the earlier cluster of losses.
 
-**What the numbers do and don't tell us.** With only 25 trades, the outcome is dominated by a handful of big moves — e.g. a -60.9 bps loss (Jul 31) and a -28.1 bps loss (Aug 19) drag the mean down, while +48.7 and +25.9 bps winners pull it back up. A single trade can swing the average by several bps. That means the -1.5 bps figure is statistically indistinguishable from zero (and from the modeled ~1 bps net). We genuinely **cannot** conclude the edge is gone — or that it's real.
+**What the numbers do and don't tell us.** They tell us the strategy is trading rarely (as designed) and has not yet demonstrated a positive net edge live. They do **not** tell us it's broken. With only 25 bets, a handful of large moves (e.g. the -61 bps and +49 bps trades) dominate the total, so the average is noise-driven. Recall the validated edge is only ~4 bps gross against a ~3.9 bps breakeven — marginal by design.
 
-**Bottom line.** Honest read: still too thin to judge. Encouragingly, recent shorts fired into strength around $78-81k resolved well, but that's a small streak, not proof. This was always a marginal candidate (~4 bps gross vs ~3.9 bps breakeven), and independent edge-search survivors remain **zero** at 5 bps cost. Keep collecting data; don't scale up, don't expect guaranteed profit.
+**Bottom line.** Too thin to judge, leaning marginal-to-unprofitable, exactly as pre-registered. Note also the edge-search found **zero survivors** at 5 bps cost. No action warranted; keep collecting trades. No guarantee of profit here.
