@@ -1,13 +1,13 @@
-# 🟢 25 resolved trades, mean -1.5 bps net (-38.6 bps total); still too thin to judge. Signal flat, BTC ~$78.4k.
+# 🟢 25 resolved trades, mean -1.5 bps net (-38.6 bps total); sample still too thin to judge. Signal flat, BTC ~$78.9k.
 
-_Updated 2026-09-08 23:53 UTC · model claude-opus-4-8_
+_Updated 2026-09-09 10:52 UTC · model claude-opus-4-8_
 
-**Regime:** BTC trades near $78.4k, well above the $63-66k band where most of the ledger was built; late-Aug/early-Sep short signals into strength resolved well, and the live signal is currently flat (0).
+**Regime:** BTC trades near $78.9k, well above the $63-66k band where most of the ledger was built; recent short signals into strength (late-Aug/early-Sep) resolved well, and the live signal is currently flat (0).
 
-**How it's doing:** Broadly unchanged since last check. The full ledger now shows 25 resolved trades, all resolved, with a win rate of 40% and a mean of **-1.5 bps net per trade** (-38.6 bps cumulative). The most recent rolling window is just 2 bets, essentially flat (-0.05 bps net, +2.9 bps gross vs 3.0 bps cost). The signal is currently **0 (no position)**.
+**How it's doing.** Little has changed since last check. The full live ledger stands at 25 resolved trades averaging **-1.54 bps net** (**-38.6 bps cumulative**), win rate 40%. The most recent short window of 4 bets is marginally positive (**+0.50 bps net**, gross 3.5 bps at 3 bps cost), and the last several early-Sep/late-Aug shorts into strength (+48.7, +19.2, +16.0, +25.9 bps) resolved well. The live signal is currently flat (0), so no new position is open.
 
-**What changed vs last time:** Effectively nothing — same trade count, same totals, no new resolved trades since the prior note. This is expected: the strategy is highly selective (~1-2% of candles), so the sample grows slowly.
+**What the numbers do and don't tell us.** They do tell us live results are in the expected ballpark for a *marginal* strategy: gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost, so even a small negative net average is fully consistent with the pre-registered thesis that this is likely **not net-profitable after realistic costs**. What they do **not** tell us is anything statistically firm. With just 25 trades, the -38.6 bps total is dominated by a couple of large losers (e.g. -60.9, -28.1 bps) and could flip with a handful of prints. This is noise, not signal.
 
-**What the numbers do and don't tell us:** 25 trades is far too few to distinguish a real edge from noise, especially for a signal whose *validated* gross edge is only ~4 bps against a ~3.9 bps breakeven cost — marginal by design. The recent trades are noisy in both directions: big winners (+48.7, +25.9, +25.3 bps) offset by big losers (-60.9, -28.1 bps). A running mean of -1.5 bps net is consistent with either a truly break-even/negative strategy OR normal small-sample scatter around a tiny edge. We cannot tell which yet. Note also `edge_search_survivors: 0` — no candidate cleared the stricter 5 bps two-venue bar.
+**Caveats.** Most of the ledger was built in a $63-66k regime; price is now ~$78.9k, so live conditions differ from history. Separately, the independent edge search still yields **0 survivors** at the stricter 5 bps two-venue bar.
 
-**Bottom line:** No alarm, but no cause for optimism either. The ledger leans slightly negative, exactly as a marginal, likely-not-net-profitable strategy would. Keep collecting data; do not infer profit.
+**Bottom line.** Behaving as a break-even-to-slightly-negative marginal strategy, exactly as forewarned. No degradation alert — but no evidence of a durable edge either. Keep collecting; do not deploy real capital on this.
