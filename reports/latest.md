@@ -1,13 +1,13 @@
-# 🟢 26 trades, mean -2.0 bps net (-51.8 bps total); last 7 bets +8.3 bps net. Still too thin to judge. Signal flat.
+# 🟢 26 trades, mean -2.0 bps net (-51.8 bps total); recent 6-bet window +3.8 bps net. Sample still too thin. Signal flat.
 
-_Updated 2026-09-12 10:13 UTC · model claude-opus-4-8_
+_Updated 2026-09-12 16:47 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$77.4k, well above the $63-66k band where the early losing cluster occurred; trades since late August (higher-price regime) skew positive. Live signal is flat (0) now.
+**Regime:** BTC ~$77.3k, well above the $63-66k band where the early losing cluster hit; trades since late August (higher-price regime) skew positive, but that's only a handful of bets. Live signal is flat (0).
 
-**How it's doing.** Over the full live ledger of 26 resolved trades, the strategy is net *negative*: mean -2.0 bps/bet, -51.8 bps cumulative, winning only 38% of the time. That's below the ~4 bps gross edge we expected and, after costs, unprofitable so far. However, the most recent 7 bets look better: 71% wins, +11.3 bps gross / +8.3 bps net at an assumed 3 bps cost.
+**How it's doing.** Over all 26 resolved trades the strategy is net negative: mean **-1.99 bps/bet**, totaling **-51.8 bps**, with only a **38.5% win rate**. That's below expectations — but the loss is concentrated in an early cluster during the $63-66k regime (e.g. a -60.9 bps hit on 2026-07-31 and -28.1 bps on 08-19). The more recent 6-bet window is positive: **+3.8 bps net, 66.7% win** — roughly in line with the ~4 bps gross edge we validated.
 
-**What changed vs last time.** Very little. The rolling recent window is still modestly positive (was +6.7 bps over 9 bets, now +8.3 over 7), and the full-ledger mean is essentially unchanged. The signal is flat right now.
+**What changed vs last time.** Little of substance. The rolling window is still modestly positive (was +8.3 bps over 7 bets, now +3.8 over 6), but the newest trade (09-11) was a **-13.2 bps** loss, tempering the recent run. Signal remains flat.
 
-**What the numbers do and don't tell us.** They don't tell us much yet — 26 trades is a tiny sample, and the recent gain is driven by a handful of profitable shorts during the late-August/September higher-price regime, including a couple of large winners (+48, +26, +28 bps). The early losses clustered in the $63-66k band. This split could be genuine regime dependence or just noise; we can't distinguish with this few trades. Note the window assumes 3 bps cost, but breakeven is ~3.9 bps, so under realistic costs the recent edge shrinks. Separately, the edge search still finds **zero** survivors passing the 5 bps two-venue bar.
+**What the numbers do and don't tell us.** They do confirm this edge is marginal and cost-sensitive: gross ~4 bps vs ~3.9 bps breakeven. The independent edge search found **0 survivors** meeting the profitability bar on both venues at 5 bps cost — a sober reminder. What they *don't* tell us: whether the recent positive window is real edge or noise. Six, or even 26, trades cannot distinguish skill from luck, and the negative total is dominated by a few large early losses.
 
-**Bottom line.** Marginal at best, cumulatively unprofitable, sample too thin to conclude anything. No degradation alert, but no evidence of durable profit either. Keep monitoring; do not scale up.
+**Bottom line.** No sign of accelerating breakdown, but no proof of a net-profitable edge either. The strategy is doing about what we'd expect from something marginal and likely not net-profitable after costs. Keep monitoring; don't overreact to the small recent uptick.
