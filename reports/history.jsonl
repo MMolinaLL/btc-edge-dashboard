@@ -243,3 +243,4 @@
 {"t": "2026-09-11 10:45 UTC", "headline": "25 trades, mean -1.5 bps net (-38.6 bps total); sample still too thin to judge. Signal flat, BTC ~$77.0k.", "alert_level": "none"}
 {"t": "2026-09-11 17:35 UTC", "headline": "26 trades, mean -2.0 bps net (-51.8 bps total); still too thin to judge. Signal flat, BTC ~$77.8k.", "alert_level": "none"}
 {"t": "2026-09-11 23:55 UTC", "headline": "26 trades, mean -2.0 bps net (-51.8 bps total); recent 9 bets +6.7 bps. Still too thin to judge. Signal flat.", "alert_level": "none"}
+{"t": "2026-09-12 10:13 UTC", "headline": "26 trades, mean -2.0 bps net (-51.8 bps total); last 7 bets +8.3 bps net. Still too thin to judge. Signal flat.", "alert_level": "none"}
