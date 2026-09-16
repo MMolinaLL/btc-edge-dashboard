@@ -1,13 +1,13 @@
-# 🟢 27 resolved trades, net -2.1 bps/bet (-56.1 bps total); recent 8-bet window +11.9 bps net. Sample still too thin to judge.
+# 🟢 27 resolved trades, net -2.1 bps/bet (-56.1 bps total); last-8 window +11.9 bps net. Still too thin to judge.
 
-_Updated 2026-09-16 10:58 UTC · model claude-opus-4-8_
+_Updated 2026-09-16 18:00 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$75.8k, holding the higher-price band (~$76-81k) where recent fills skew positive; the deep-losing cluster sits earlier at $63-66k. Signal is currently flat (0).
+**Regime:** BTC ~$75.7k, holding the upper band (~$76-81k) where recent fills skew positive; the worst-losing cluster sits earlier at $63-66k. Signal is flat (0) right now.
 
-**How it's doing.** Over all 27 resolved live trades the strategy is *net negative*: −2.1 bps per bet, −56.1 bps cumulative, winning only 37% of the time. That is worse than the ~4 bps gross edge we expected — but 27 trades is a tiny sample for a signal this noisy, so this number carries huge error bars and shouldn't be read as proof of anything.
+**How it's doing.** Nothing has changed since the last check: still 27 resolved trades, averaging **-2.08 bps per bet** (**-56.1 bps** cumulative), with a low win rate of **37%**. On paper that's slightly worse than the strategy's already-marginal expected edge (~4 bps gross, ~3.9 bps breakeven cost). But the recent rolling window of **8 bets is +11.9 bps net** (62.5% wins), so the short-run picture looks fine.
 
-**What changed vs last time.** Essentially nothing. No new trades resolved since the prior check; the ledger, the −2.1 bps mean, and the flat signal are unchanged. The most recent 8-bet window remains positive (+11.9 bps net, 62.5% wins), consistent with the earlier note that fills in the higher $76–81k band have behaved better than the earlier $63–66k losers.
+**What changed vs last time.** Effectively nothing — same ledger, same price band. This is a continuity read, not new evidence.
 
-**What the numbers do and don't tell us.** They *do* show the live results have been unimpressive and lumpy — a handful of large hits (+49, +25 bps) and misses (−28, −13 bps) dominate, which is exactly what tiny selective samples look like. They *don't* tell us the edge is broken, because at ~1–2% of candles trading, we can't distinguish a marginal edge from zero at this size. Note also the standing caveat: gross edge (~4 bps) barely clears breakeven (~3.9 bps), and the broader edge search still finds **0 survivors** at a 5 bps cost bar.
+**What the numbers do and don't tell us.** With only 27 trades, both figures are dominated by a handful of outliers. A few big losers early in the $63-66k range (e.g. -28, -13, -10 bps) drag the average down, while a few big winners in the higher band (+49, +26, +26 bps) pull recent windows up. That much dispersion on such a small sample means the true edge is statistically **indistinguishable from zero** in either direction. You cannot conclude it's broken, and you cannot conclude it works.
 
-**Bottom line.** Marginal, unproven, and likely not net-profitable after realistic costs. Not degrading enough to flag — just too thin to judge. Keep collecting data; do not size up.
+**Honest bottom line.** This remains a marginal, likely-not-net-profitable signal, and the live sample is still far too thin to judge — you'd want dozens more resolved trades. The negative cumulative total is worth watching but is not a breakdown. No action warranted; keep collecting data. Also note the edge search still has **zero survivors** at a 5 bps cost bar, which argues for humility.
