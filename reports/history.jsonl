@@ -259,3 +259,4 @@
 {"t": "2026-09-16 18:00 UTC", "headline": "27 resolved trades, net -2.1 bps/bet (-56.1 bps total); last-8 window +11.9 bps net. Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-09-17 00:10 UTC", "headline": "27 trades net -2.1 bps/bet (-56.1 bps total); last-7 window +14 bps net. Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-09-17 11:08 UTC", "headline": "27 trades net -2.1 bps/bet (-56.1 bps total); last-7 window +14 bps net. Still too thin to judge.", "alert_level": "none"}
+{"t": "2026-09-17 17:58 UTC", "headline": "27 trades net -2.1 bps/bet (-56.1 bps total), but recent-11 window +7.6 bps net; sample still too thin to judge.", "alert_level": "none"}
