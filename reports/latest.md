@@ -1,13 +1,13 @@
 # 🟢 27 trades net -2.1 bps/bet (-56.1 bps total); last-7 window +14 bps net. Still too thin to judge.
 
-_Updated 2026-09-17 00:10 UTC · model claude-opus-4-8_
+_Updated 2026-09-17 11:08 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$76.3k, hovering in the upper $76-81k band where recent shorts have filled well; the loss-heavy cluster sits earlier at $63-66k. Signal is flat (0) right now, so nothing is live.
+**Regime:** BTC ~$76.3k, sitting in the upper $76-81k band where recent shorts have resolved well; the loss-heavy cluster sits earlier at $63-66k. Signal is flat (0), so nothing is live right now.
 
-**How it's doing.** Over the full live ledger of 27 resolved trades, the strategy is slightly underwater: **-2.1 bps per bet, -56.1 bps total, 37% win rate**. That is roughly in line with expectations for a signal whose gross edge (~4 bps) barely clears its breakeven cost (~3.9 bps) — this was always a marginal, likely-not-net-profitable candidate, and the live numbers don't contradict that.
+**How it's doing.** Over the full live ledger of 27 resolved trades, the strategy is running slightly *negative*: mean net **-2.08 bps/bet**, totaling **-56.1 bps**, with a 37% win rate. That's below the ~4 bps gross / ~3.9 bps breakeven we already flagged as marginal. But the most recent 7-trade window looks much better: **+14.0 bps net/bet** at 71% wins, driven by a few large winning shorts in the $77-81k band ($21.30/8/23, $9/3: gross up to +51, +29 bps).
 
-**What changed vs last time.** Little of substance. The recent rolling window (last 7 trades) is **+14 bps net at 71% wins**, echoing last update's positive short window. But that's driven by a few big winners (+48.7, +25.9, +25.3 bps) in the upper price band — a handful of trades, not a trend.
+**What changed vs last time.** Nothing material — the numbers are identical to the prior read. No new trades have resolved and the signal is flat.
 
-**What the numbers do and don't tell us.** With only 27 total (and 7 in the window), this is *well below* the sample needed to conclude anything. P&L is dominated by a few large moves in both directions (+51.7 to -28.1 bps), so means are noisy. The full sample being modestly negative and the recent window positive is exactly the kind of coin-flip we'd expect from a marginal edge — neither confirms nor kills it. Note the edge search still shows **0 survivors** at the 5-bps stricter bar.
+**What the numbers do and don't tell us.** With only 27 trades, and a small handful of big moves swinging the total, none of this is statistically meaningful. A single -28 bps or +49 bps outcome dominates the mean. The recent positive window and the earlier negative total are both consistent with *pure noise* around a near-zero true edge. Note also `edge_search_survivors: 0` — no variant cleared the honest bar (net-positive on both venues at 5 bps cost).
 
-**Bottom line.** No alarm, no celebration. Performance is consistent with a weak, possibly-nonexistent net edge. Keep collecting data; don't scale up. No guarantee of profit here.
+**Bottom line.** This is a marginal, likely-not-net-profitable signal being tracked on a sample far too small to judge. No degradation alarm is warranted, but neither is optimism about the recent hot streak. Keep collecting data; don't size up on 7 good trades.
