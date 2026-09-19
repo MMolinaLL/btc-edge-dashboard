@@ -265,3 +265,4 @@
 {"t": "2026-09-18 17:33 UTC", "headline": "29 trades net -1.5 bps/bet (-44.9 total); recent 14-trade window net -14.3 bps (gross -11.3) \u2014 weak but noisy.", "alert_level": "watch"}
 {"t": "2026-09-18 23:55 UTC", "headline": "29 trades net -1.5 bps/bet (-44.9 total); recent 14-trade window gross -11.3 / net -14.3 bps \u2014 weak but thin.", "alert_level": "watch"}
 {"t": "2026-09-19 10:26 UTC", "headline": "29 trades net -1.5 bps/bet (-44.9 total); recent 15-trade window gross -9.0 / net -12.0 bps \u2014 weak but still thin.", "alert_level": "watch"}
+{"t": "2026-09-19 17:01 UTC", "headline": "29 trades net -1.5 bps/bet (-44.9 total); latest 18-bet window gross -7.4 / net -10.4 bps \u2014 weak but still thin.", "alert_level": "watch"}
