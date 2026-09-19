@@ -1,15 +1,15 @@
-# 🟡 29 trades net -1.5 bps/bet (-44.9 total); latest 18-bet window gross -7.4 / net -10.4 bps — weak but still thin.
+# 🟡 29 trades net -1.5 bps/bet (-44.9 total); 19-bet window gross -7.0 / net -10.0 bps — weak but still thin. Flat now.
 
-_Updated 2026-09-19 17:01 UTC · model claude-opus-4-8_
+_Updated 2026-09-19 23:56 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window gross-negative and below expected +4 bps edge, but sample (18-29 trades) is too small to be conclusive; keep monitoring, don't scale up.
+> **WATCH:** Rolling window gross is negative (-7 bps) over 19 bets, below the ~+4 bps we'd hope for — early degradation signal, but sample too small to confirm.
 
-**Regime:** BTC ~$81.8k, near the top of the recent $76-82k range; signal is currently flat (0), so nothing is live. Sample spans a regime shift from the $63-66k cluster (mostly losers) into the $77-82k cluster (mixed).
+**Regime:** BTC ~$81.3k, near the top of the recent $76-82k range; signal is currently flat (0), so nothing is live. Sample spans a regime shift from the $63-66k cluster (mostly losers) into the $77-82k cluster (more mixed).
 
-**How it's doing.** Still underwater. Across all 29 resolved trades the strategy averages **-1.5 bps/bet** (-44.9 bps cumulative) with a **37.9% win rate**. The most recent 18-bet window is **gross -7.4 bps** and **net -10.4 bps** (at an assumed 3.0 bps cost). Note the gross figure is negative — that means the raw signal, before any trading cost, has not paid off in this window.
+**How it's doing.** Little has changed since last check. The full ledger now shows **29 resolved trades averaging -1.5 bps each (-44.9 bps total)** with a **37.9% win rate**. The most recent rolling window covers **19 bets, gross -7.0 bps and net -10.0 bps after 3 bps cost**, with a 42% win rate. Right now the signal is **flat (0)** — no position is live.
 
-**What changed vs last time.** Marginally less bad. The prior 15-trade window was gross -9.0 / net -12.0; the current 18-trade window is gross -7.4 / net -10.4. Direction unchanged, still negative.
+**What changed vs last time.** Essentially nothing: the window ticked from 18 to 19 bets and the numbers are within noise of the prior read. This is *not* new information confirming a breakdown — it's the same thin picture.
 
-**What the numbers do and don't tell us.** They confirm the strategy has *not* shown its expected ~+4 bps gross edge live — if anything it's slightly negative. But the sample is genuinely thin and noisy: individual trades range from -28 to +51 bps, so a handful of outcomes swing the average. 18-29 trades cannot distinguish 'broken' from 'unlucky.' Separately, the edge re-search found **0 survivors** clearing net-positive at 5 bps cost on both venues — consistent with this being a marginal, likely-not-net-profitable idea.
+**What the numbers do and don't tell us.** The concerning part is that live **gross** returns are negative, whereas the validated expectation was only ~+4 bps gross — a marginal edge that likely doesn't survive real costs anyway. But 19-29 trades is far too few to distinguish a broken signal from ordinary variance; a couple of the big winners (+49, +29 bps) and losers (-28 bps) dominate the totals. Also note `edge_search_survivors: 0` — no variant cleared the strict profitability bar, consistent with this being marginal-to-unprofitable from the start.
 
-**Bottom line.** Weak and drifting the wrong way, but not yet a statistically clear breakdown. This remains a **watch**, not an alert. There is no evidence of reliable profit here — do not deploy real capital or scale up on this data.
+**Bottom line.** Keep on **watch**, not alert. The live results lean weak and offer no evidence of a profitable edge, but the sample is too small to justify a firm 'broken' verdict. Do not expect net profit here; let more trades accumulate before drawing conclusions.
