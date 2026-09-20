@@ -1,15 +1,15 @@
-# 🟡 29 trades, net -1.5 bps/bet (-44.9 total); 18-bet window gross -5.7 / net -8.7 bps — weak but thin. Flat now.
+# 🟡 29 trades, net -1.5 bps/bet (-44.9 total); recent 14-bet window gross -5.6/net -8.6 bps — weak but thin. Flat now.
 
-_Updated 2026-09-20 17:19 UTC · model claude-opus-4-8_
+_Updated 2026-09-20 23:54 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window is negative even gross (-5.7 bps over 18 bets); watch, but sample is too small to conclude breakdown.
+> **WATCH:** Rolling window net clearly negative; sample still small, so treat as an early caution, not a verdict.
 
-**Regime:** BTC ~$81.2k, near the top of the recent $76–82k range; signal is flat (0) so nothing is live. Sample spans a regime shift from the $63–66k cluster (mostly losers) into the $77–82k cluster (more mixed).
+**Regime:** BTC ~$81.1k, near the top of the recent $76–82k range; signal is flat (0), so nothing is live right now. The ledger spans a regime shift from the $63–66k cluster (mostly losers) into the $77–82k cluster (more mixed, some large winners).
 
-**How it's doing.** Still underwater, and essentially unchanged from last check. Across all 29 resolved trades the strategy averages **-1.5 bps/bet** (-44.9 bps cumulative) with a **37.9% win rate**. The most recent 18-bet window is **-8.7 bps net**, and notably **-5.7 bps gross** — i.e. negative even before the ~3 bps cost assumption. Right now the signal is flat (0), so no position is live.
+**How it's doing.** Across all 29 resolved trades, the strategy averages **-1.5 bps/bet** net (**-44.9 bps** total), with a 38% win rate. The most recent 14-bet window is softer: **-5.6 bps gross, -8.6 bps net** per bet, even though win rate there is 57% — meaning the losers are bigger than the winners. Right now the signal is 0, so no position is open.
 
-**What changed vs last time.** Nothing material — the numbers match the prior assessment. No new alarming move, no recovery either.
+**What changed vs last time.** Little of substance. The rolling window shrank (18→14 bets) and stayed negative. No new edge-search survivors (0 pass the >0 net on both venues at 5 bps bar).
 
-**What the numbers do and don't tell us.** Remember the validated baseline: this signal's edge was only ~4 bps/bet gross against a ~3.9 bps breakeven — marginal and probably not net-profitable after real costs. So a modest negative run is *within the range of noise* for such a thin edge. The P&L is also dominated by a handful of outliers (e.g. +49, +26, +28 bps wins vs -28, -13 bps losses); with only 29 trades, one or two candles swing the whole average. A gross-negative window is a mild yellow flag, but 18–29 trades is far too few to declare the edge dead.
+**What the numbers do and don't tell us.** Recall this signal was only ever *marginal*: ~4 bps gross edge against a ~3.9 bps breakeven cost. So it was always expected to be roughly flat-to-slightly-negative after realistic costs, and the live results are consistent with that — not proof of a fresh breakdown. Interestingly, ledger *gross* is still mildly positive (~+1.5 bps/bet); it's the ~3 bps cost that pushes net below zero. With only 29 trades (and this signal trading ~1–2% of candles), a handful of big moves (e.g. the +48.7 and -28.1 bps outliers) dominate — far too few to conclude anything firmly.
 
-**Bottom line.** Weak and slightly discouraging, but not a confirmed breakdown. Staying at **watch**: keep logging, don't add size, and don't read guaranteed profit — or guaranteed failure — into this small sample. Also note the edge re-search found **0 survivors**, reinforcing that no robust net-positive variant exists yet.
+**Bottom line.** Behaving about as feared: marginal, likely not net-profitable after costs, with no live edge in the recent window. Nothing here justifies pausing yet, but nothing justifies conviction either. Keep watching; do not expect profit.
