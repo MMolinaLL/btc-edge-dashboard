@@ -1,15 +1,15 @@
-# 🟡 29 trades, net -1.5 bps/bet (-44.9 total); latest 13-bet window gross -3.0/net -6.0 bps — weak but still thin. Flat now.
+# 🟡 29 trades, net -1.5 bps/bet (gross ~+1.5 vs ~+4 expected); latest 15-bet window net -4.1/gross -1.1. Still thin. Flat now.
 
-_Updated 2026-09-21 12:11 UTC · model claude-opus-4-8_
+_Updated 2026-09-21 19:06 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling net negative over a small-but-nontrivial sample; edge running below the ~4 bps gross needed. Keep monitoring, not yet a clear breakdown.
+> **WATCH:** Live gross edge (~1.5 bps) running below the ~4 bps expected and net stays negative, but sample (29) is too small to be conclusive.
 
-**Regime:** BTC ~$85.0k, pushing above the recent $76–82k range highs. Signal is flat (0), so nothing is live right now.
+**Regime:** BTC ~$86.0k, holding above the prior $76–82k range — a trending/breakout backdrop that is generally unfavorable for a mean-reversion fade. Signal is flat (0), so nothing is live now.
 
-**How it's doing.** Across all 29 resolved trades, the strategy is net **-1.5 bps per bet** (-44.9 bps total after ~3 bps costs). Gross (pre-cost) that's roughly **+1.5 bps/bet** — positive, but well short of the ~4 bps gross the strategy needs just to cover realistic costs. The most recent 13-bet window is worse: **gross -3.0, net -6.0 bps**, win rate 53.8%.
+**How it's doing.** Across all 29 resolved trades the strategy is net **-1.5 bps/bet** (-44.9 bps total) with a 37.9% win rate. The most recent 15-bet window is net **-4.1 bps**, and critically its **gross** result (before costs) is **-1.1 bps** — meaning even ignoring the assumed 3.0 bps cost, that recent slice made no money. Back out costs across all trades and gross edge is roughly **+1.5 bps/bet**, well short of the ~4 bps the backtest suggested and below the ~3.9 bps breakeven cost.
 
-**What changed vs last time.** Very little. The ledger is unchanged at 29 trades, and the rolling window shifted from 14 to 13 bets with essentially the same weak, slightly-negative picture. BTC has drifted up to ~$85.0k, a bit above the prior $81.1k and near/above recent range highs. No new signal has fired — we're flat.
+**What changed vs last time.** Very little. Ledger is unchanged at 29 trades; the rolling window ticked from 13 to 15 bets and its win rate improved to 60%, yet the window still lost money. Nothing traded in the current flat regime.
 
-**What the numbers do and don't tell us.** They confirm the pre-launch warning: this edge is marginal and probably not net-profitable after costs. The live results are consistent with that — but 29 trades (and a 13-bet window) is far too small to distinguish 'no edge' from 'small edge plus noise.' Note the P&L is lumpy: a few big winners (+49, +26, +25 bps) offset many small losers, so a single trade swings the totals a lot. Separately, the offline edge search now finds **0 survivors** clearing the stricter two-venue/5-bps bar.
+**What the numbers do and don't tell us.** 29 trades is a small sample — a couple of the big winners (+48, +26 bps) and losers (-28 bps) dominate the total. The distribution is wide, so the net figure carries large error bars; this is *not* enough to declare the edge dead. What it does tell us: there's no sign of a strong live edge, consistent with a strategy that was marginal by design.
 
-**Bottom line.** Underwhelming and slightly negative, as expected for a marginal signal — but not a proven breakdown. Watch, don't panic; no guarantee of profit here.
+**Bottom line.** Weak and slightly below expectation, but within noise. This was always a borderline, likely-not-net-profitable candidate. Keep watching; no evidence yet to pause outright, and no basis to expect profit.
