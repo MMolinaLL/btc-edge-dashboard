@@ -1,15 +1,15 @@
-# 🟡 29 trades, net -1.5 bps/bet (gross ~+1.5 vs ~+4 hoped); last 14-bet window net -2.5/gross +0.5. Thin. Flat now.
+# 🟡 29 trades, net -1.5 bps/bet (gross ~+1.5 vs ~+4 hoped); 13-bet window net -2.4/gross +0.6. Thin. Flat now.
 
-_Updated 2026-09-22 11:06 UTC · model claude-opus-4-8_
+_Updated 2026-09-22 17:58 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running ~1.5 bps vs ~4 hoped over a still-thin 29 trades, in a breakout regime unfriendly to mean-reversion. Not a breakdown yet, but keep watching.
+> **WATCH:** Rolling and cumulative net remain negative, but sample is small — monitor, don't act yet.
 
-**Regime:** BTC ~$86k, still holding well above the old $76–82k range — a trending/breakout backdrop that is generally unfavorable for a mean-reversion fade. Signal is flat (0), so nothing is live right now.
+**Regime:** BTC ~$86k, still well above the old $76–82k range: a trending/breakout backdrop that is generally unfavorable for a mean-reversion fade. Signal is flat (0), nothing live now.
 
-**How it's doing.** Over 29 resolved trades the strategy is net **-1.5 bps/bet** (total **-44.9 bps**), winning **37.9%**. Strip out the assumed 3.0 bps cost and the *gross* edge is only about **+1.5 bps/bet** — positive, but well short of the ~4 bps we hoped for. The most recent 14-bet window is net **-2.5 bps** (gross **+0.5**), with a 57% hit rate but a couple of large losers dragging it down.
+**Where things stand.** Little has changed since the last check — the ledger still shows 29 resolved trades, averaging **-1.5 bps per bet** (total **-44.9 bps**), with a win rate of only **38%**. The most recent rolling window (13 bets) is net **-2.4 bps** on gross **+0.6 bps**, meaning the raw signal is barely positive before costs and clearly negative after the assumed ~3 bps cost.
 
-**What changed vs last time.** Essentially nothing material. The ledger is the same 29 trades; the rolling window ticked from 15 to 14 bets and improved marginally (gross went from slightly negative to slightly positive). No new signals have fired — the strategy is flat right now.
+**What changed vs last time.** Essentially nothing: no new trades appear to have resolved, and the signal is currently flat (0), so nothing is at risk right now. The picture is a continuation, not a new development.
 
-**What the numbers do and don't tell us.** They confirm the pre-registered warning: this edge is *marginal* and, after realistic costs, most likely **not net-profitable**. A negative net result is roughly what we'd expect, not proof of failure. But 29 trades is a **small sample** — a handful of outlier moves (one +52, one -28 bps) swing the average heavily, so we can't distinguish 'weak-but-real edge' from 'no edge' here.
+**What the numbers do and don't tell us.** The gross edge (~+1.5 bps realized) is running *below* the ~4 bps we hoped for and near the ~3.9 bps breakeven cost — consistent with the honest prior view that this strategy is marginal and probably not net-profitable after real costs. But 29 trades is a **small sample** dominated by a handful of big winners (+48, +29, +25 bps) and big losers (-28, -13 bps); one or two outcomes swing the average heavily. We cannot statistically distinguish 'no edge' from 'small edge eaten by costs' at this size.
 
-**Bottom line.** No emergency, no reason to celebrate. Gross performance is underwhelming and the trending regime is unhelpful for a fade strategy, so it stays on **watch**. Also note: the broader edge search now has **zero survivors** at the 5 bps bar — a sobering reminder there's no proven money-maker here. Keep collecting data; don't scale up.
+**Bottom line.** Weak and slightly negative, as expected — not a confirmed breakdown. Sample is too thin to justify pausing, and the trending regime is inherently hostile to this fade. Keep watching; no guaranteed profit here.
