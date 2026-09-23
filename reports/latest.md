@@ -1,15 +1,15 @@
-# 🟡 29 trades, net -1.5 bps/bet (gross ~+1.4 vs ~+4 hoped); last-10 gross -2.1. Sample still thin. Flat now.
+# 🟡 29 trades, net -1.5 bps/bet (gross ~+1.4 vs ~+4 hoped); last-13 gross +0.2. Still thin. Flat now.
 
-_Updated 2026-09-23 10:55 UTC · model claude-opus-4-8_
+_Updated 2026-09-23 18:17 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running ~+1.4 bps, below the ~4 bps expected, and last-10 window gross is negative. Watch, not pause — sample is still modest.
+> **WATCH:** Rolling net negative on a small sample and gross running below the hoped ~4 bps; keep monitoring, not yet actionable.
 
-**Regime:** BTC ~$86k, well above the old $76-82k range: a trending/breakout backdrop that is generally unfavorable for a mean-reversion fade. Signal is flat (0) right now.
+**Regime:** BTC ~$84k, above the old $76-82k range — a trending/breakout backdrop that is generally unfavorable for a mean-reversion fade. Signal is flat (0) right now.
 
-**How it's doing.** Over 29 resolved trades the strategy is net **-1.5 bps/bet** (total -44.9 bps) with a 37.9% win rate. Backing out the assumed 3.0 bps cost, the *gross* edge is only ~**+1.4 bps** — real but well short of the ~4 bps we hoped for, and below the ~3.9 bps breakeven cost. In plain terms: on this sample it is roughly break-even-to-slightly-negative after costs, consistent with the pre-registered view that this signal is marginal.
+**How it's doing.** Over all 29 resolved live trades the strategy is netting **-1.5 bps per bet** (total **-44.9 bps**), with a **37.9% win rate**. Stripping out the assumed 3.0 bps cost, the *gross* edge is only about **+1.4 bps/bet** — positive, but well short of the ~4 bps we hoped to see, and below the ~3.9 bps needed just to break even after realistic costs.
 
-**What changed vs last time.** Little. Still 29 trades, still net ~-1.5 bps. The last-10 window has slipped to **gross -2.1 bps / net -5.1 bps**, so the most recent activity has been weak rather than degrading sharply. A couple of big winners (+49, +26 bps) are carrying the record; without them it would look worse — that lumpiness is exactly why small samples mislead.
+**What changed vs last time.** Very little. The most recent 13-bet window is roughly flat gross (**+0.2 bps**, -2.8 net) rather than negative, so there's no fresh evidence of a sharp break — but no recovery toward the target edge either. We stay at **watch**.
 
-**What the numbers do and don't tell us.** 29 trades is too few to distinguish 'no edge' from 'small edge plus noise.' The wide per-trade spread (-28 to +49 bps) means confidence intervals are large. We can't yet conclude the edge is broken, nor that it's alive.
+**What the numbers do and don't tell us.** They tell us the live results are consistent with a *marginal-to-nonexistent* net edge — exactly what backtests warned about. They do **not** prove the edge is dead. 29 trades is a tiny sample, and outcomes are wildly dispersed (individual bets range from **+51.7 to -28.1 bps**), so the average is dominated by a handful of moves. A run like this can happen by chance even for a real small edge.
 
-**Bottom line.** Marginal candidate performing marginally, in a trending regime that disfavors it. No signal is live. This is a 'keep watching,' not a 'pause.' No profit is implied or guaranteed.
+**Bottom line.** No surprises: the strategy is behaving like the marginal, probably-not-net-profitable signal it was flagged as. Gross is below hopes and net is slightly negative, but the sample is too thin to declare breakdown. Independent edge-search still finds **zero survivors** at a 5 bps bar. Keep it in observation, don't scale it, don't expect profit.
