@@ -1,13 +1,13 @@
-# 🟢 29 trades net -1.5 bps/bet (total -44.9); recent 7-bet window +8.4 net but tiny. Marginal as expected. Short signal live.
+# 🟢 30 trades net -1.0 bps/bet (total -31.3); latest bet +13.7 improved the tally. Marginal as expected; signal flat.
 
-_Updated 2026-09-25 11:20 UTC · model claude-opus-4-8_
+_Updated 2026-09-25 18:16 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$85.1k in an elevated, choppy regime that is not especially friendly to a mean-reversion fade. Signal is currently -1 (a live short/fade position).
+**Regime:** BTC ~$84.0k in a choppy, still-elevated regime; the mean-reversion fade has caught some good short-side snaps but the overall sample is small. Signal is currently 0 (no live position).
 
-**How it's doing.** Over the full live ledger, 29 resolved trades average **-1.5 bps/bet** (total **-44.9 bps**) with a **37.9%** win rate. The most recent 7-bet window looks better — **+8.4 bps/bet net**, 71% wins — but that's only seven trades and is dominated by a couple of large winners (e.g. +48.7 and +25.9 bps). Single outliers swing these averages hard.
+**How it's doing.** Over 30 resolved trades the strategy is running slightly negative: about **-1.0 bps per bet** (total **-31.3 bps**), with a **40% win rate**. That is roughly what we'd expect from a marginal edge — gross edge was only ~4 bps/bet against a ~3.9 bps breakeven cost, so net losses in this range are noise, not proof of a broken signal.
 
-**What changed vs last time.** Essentially nothing material. Total net moved from -44.9 to... still -44.9; the recent-window net ticked up as the reported cost assumption dropped to 3.0 bps. The strategy is now showing a live **short (signal -1)** rather than sitting flat.
+**What changed vs last time.** One new trade landed since the prior check (a short on 09-25 that made **+13.7 bps net**). That nudged the cumulative total up from **-44.9** to **-31.3 bps** and improved the per-bet mean from **-1.5** to **-1.0 bps**. The much-cited recent 7-bet window shows **+8.4 net**, but seven bets tells us almost nothing.
 
-**What the numbers do and don't tell us.** They confirm the prior finding: this is a **marginal** signal. Gross edge was only ~4 bps/bet in validation against a ~3.9 bps breakeven, so a slightly-negative live net is exactly what you'd expect from a strategy that probably doesn't clear realistic costs. Crucially, ~29 trades is **far too few** to distinguish 'no edge' from 'small edge plus noise' — the win rate and P&L are both within normal small-sample scatter. Note also **edge_search_survivors = 0**: nothing cleared the stricter 5-bps two-venue bar.
+**What the numbers do and don't tell us.** With only 30 trades and a wild spread (single bets ranging from -28 to +52 bps), the confidence interval around that -1 bps mean easily straddles zero. We genuinely cannot distinguish 'slightly unprofitable' from 'break-even' at this sample size. The 40% win rate is normal for a fader that occasionally catches large reversions.
 
-**Bottom line.** No new alarm and no cause for excitement. Performance is consistent with a marginal, likely-not-net-profitable signal. Keep logging; do not scale up. There is **no evidence of guaranteed profit** here.
+**Bottom line.** No degradation alert warranted — results are consistent with a marginal, likely-not-net-profitable-after-costs signal, exactly as validated. Note the independent edge search still found **zero survivors** at 5 bps cost. Do not treat recent green trades as an edge; keep sizing minimal and keep gathering data.
