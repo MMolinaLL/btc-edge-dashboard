@@ -289,3 +289,4 @@
 {"t": "2026-09-26 17:38 UTC", "headline": "30 resolved trades, net -1.0 bps/bet (total -31.3); unchanged vs last check. Marginal as expected, signal flat at 0.", "alert_level": "none"}
 {"t": "2026-09-27 00:19 UTC", "headline": "30 resolved trades, net -1.0 bps/bet (total -31.3); recent 7-bet window net +7.65 bps. Signal flat at 0.", "alert_level": "none"}
 {"t": "2026-09-27 11:33 UTC", "headline": "30 resolved trades, net -1.0 bps/bet (total -31.3); tiny recent 4-bet window +5.8 bps. Signal flat at 0.", "alert_level": "none"}
+{"t": "2026-09-27 18:04 UTC", "headline": "30 resolved trades, net -1.0 bps/bet (total -31.3); signal flat at 0. Sample still too thin to judge.", "alert_level": "none"}

@@ -1,13 +1,13 @@
-# 🟢 30 resolved trades, net -1.0 bps/bet (total -31.3); tiny recent 4-bet window +5.8 bps. Signal flat at 0.
+# 🟢 30 resolved trades, net -1.0 bps/bet (total -31.3); signal flat at 0. Sample still too thin to judge.
 
-_Updated 2026-09-27 11:33 UTC · model claude-opus-4-8_
+_Updated 2026-09-27 18:04 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$84.9k, still elevated after the mid-August jump from the low-$63k area; price action remains choppy and high-vol. Signal is 0, so no live position right now.
+**Regime:** BTC ~$84.5k, still elevated after the mid-August surge from the low-$63k area; action remains choppy and high-vol. Signal is 0, so no live position right now.
 
-**How it's doing.** Over 30 resolved live trades the strategy averages **-1.0 bps per bet** (cumulative **-31.3 bps**), with a 40% win rate. The most recent 4-bet window is **+5.8 bps net** (at an assumed 3 bps cost), but four bets is essentially noise and shouldn't move your view. No new trades since the prior check; the signal is currently **0** (flat, no position).
+**Where things stand.** Over 30 resolved live trades the strategy is averaging **-1.0 bps per bet** (total **-31.3 bps**), with a 40% win rate. The most recent 4-bet window is slightly positive (+5.8 bps net), but four trades tells us essentially nothing. No new trades have resolved since last check, so the picture is unchanged.
 
-**What changed vs last time.** Very little. Same 30-trade ledger, same slightly-negative running total. The 'recent window' now shows 4 bets instead of 7, still positive but tiny.
+**What changed vs last time.** Nothing material. The signal is still flat (0), so we're not in a position, and the ledger numbers are identical to the prior read.
 
-**What the numbers do and don't tell us.** They confirm what validation warned: this is a **marginal** signal — gross edge ~4 bps against a ~3.9 bps breakeven cost. A -1 bps/bet result over 30 trades is entirely consistent with 'roughly zero net edge plus costs,' not proof of a broken strategy. Individual trades swing wildly (from -28 to +49 bps), so 30 samples can't distinguish a small real edge from zero. Notably, the offline **edge search found 0 survivors** that clear a stricter 5 bps two-venue bar — a reason for skepticism, not panic.
+**What the numbers do and don't tell us.** This was always a *marginal* signal: validated gross edge ~4 bps/bet against a ~3.9 bps breakeven cost — i.e. probably not net-profitable after realistic fees. A 30-trade sample is far too small to distinguish a real -1 bps drag from ordinary noise; individual bets swing from +49 to -28 bps, so the standard error on the mean is large. The slightly-negative net is fully consistent with either 'no edge survives costs' or 'roughly break-even, unlucky.' Separately, the offline edge search now finds **0 survivors** clearing a 5 bps two-venue bar — a reminder the edge is fragile.
 
-**Bottom line.** Behaving as expected for a marginal, likely-not-net-profitable signal. Sample is still too thin to conclude degradation, so no alert — but there is **no evidence of reliable profit** here. Keep collecting data; reassess around 50-100 trades.
+**Bottom line.** Performing about as expected for a marginal, likely-not-net-profitable signal. No degradation alarm yet, but no evidence of profit either. Keep collecting trades; we need dozens more before drawing conclusions. No guaranteed profit here.
