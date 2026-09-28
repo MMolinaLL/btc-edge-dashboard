@@ -1,13 +1,13 @@
-# 🟢 30 resolved trades, net -1.0 bps/bet (total -31.3); signal flat at 0. Sample still too thin to judge.
+# 🟢 30 resolved trades, net -1.0 bps/bet (total -31.3); signal flat at 0. Sample still too thin to conclude.
 
-_Updated 2026-09-27 18:04 UTC · model claude-opus-4-8_
+_Updated 2026-09-28 00:19 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$84.5k, still elevated after the mid-August surge from the low-$63k area; action remains choppy and high-vol. Signal is 0, so no live position right now.
+**Regime:** BTC ~$84.6k, still elevated after the mid-August jump from the low-$63k area; price action stays choppy and high-vol. Signal is 0, so no live position right now.
 
-**Where things stand.** Over 30 resolved live trades the strategy is averaging **-1.0 bps per bet** (total **-31.3 bps**), with a 40% win rate. The most recent 4-bet window is slightly positive (+5.8 bps net), but four trades tells us essentially nothing. No new trades have resolved since last check, so the picture is unchanged.
+**How it's doing.** Across 30 resolved trades the strategy is net **-1.0 bps/bet** (total **-31.3 bps**), with a **40% win rate** at an assumed **3.0 bps** cost. That's slightly negative — consistent with a marginal signal whose gross edge (~4 bps) barely clears realistic trading costs. Nothing here is surprising given the strategy was flagged as likely *not* net-profitable after costs.
 
-**What changed vs last time.** Nothing material. The signal is still flat (0), so we're not in a position, and the ledger numbers are identical to the prior read.
+**What changed vs last time.** Essentially nothing. Trade count, win rate, and cumulative PnL match the prior read. The most recent 4-bet window shows +5.8 bps net, but four bets is noise, not evidence — a couple of the big winners (e.g. +48.7 and +25.9 bps on short signals) swing the whole tally.
 
-**What the numbers do and don't tell us.** This was always a *marginal* signal: validated gross edge ~4 bps/bet against a ~3.9 bps breakeven cost — i.e. probably not net-profitable after realistic fees. A 30-trade sample is far too small to distinguish a real -1 bps drag from ordinary noise; individual bets swing from +49 to -28 bps, so the standard error on the mean is large. The slightly-negative net is fully consistent with either 'no edge survives costs' or 'roughly break-even, unlucky.' Separately, the offline edge search now finds **0 survivors** clearing a 5 bps two-venue bar — a reminder the edge is fragile.
+**What the numbers do and don't tell us.** They *do* show the live result is negative-to-flat, in line with expectations for a marginal edge. They *don't* let us distinguish 'small real edge' from 'no edge' — the outcome is dominated by a handful of large moves, and 30 trades is far too few to pin down a ~4 bps signal. Confidence intervals here are wide enough to comfortably contain both zero and modestly negative.
 
-**Bottom line.** Performing about as expected for a marginal, likely-not-net-profitable signal. No degradation alarm yet, but no evidence of profit either. Keep collecting trades; we need dozens more before drawing conclusions. No guaranteed profit here.
+**Bottom line.** No degradation alarm and no case for celebration. Performance is roughly as feared: marginal, likely unprofitable after costs, sample too thin to judge firmly. Notably, the broader edge search found **0 survivors** clearing a 5 bps two-venue bar. Keep collecting data; don't scale up.
