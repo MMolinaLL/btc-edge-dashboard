@@ -300,3 +300,4 @@
 {"t": "2026-09-30 12:02 UTC", "headline": "30 resolved trades, net -1.04 bps/bet (total -31.3); rolling 11-bet window -1.2 bps net. Signal flat at 0.", "alert_level": "none"}
 {"t": "2026-09-30 18:51 UTC", "headline": "30 trades, net -1.04 bps/bet (total -31.3); rolling 16-bet gross ~flat at -0.97 bps. Signal flat at 0.", "alert_level": "none"}
 {"t": "2026-10-01 01:07 UTC", "headline": "30 trades, net -1.04 bps/bet (total -31.3); rolling 16-bet gross ~flat at -0.97 bps. Signal flat at 0.", "alert_level": "none"}
+{"t": "2026-10-01 12:35 UTC", "headline": "30 trades, net -1.04 bps/bet (total -31.3); rolling 17-bet gross slipped to -2.39 bps. Signal flat at 0.", "alert_level": "none"}
