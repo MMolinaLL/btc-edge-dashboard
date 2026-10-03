@@ -307,3 +307,4 @@
 {"t": "2026-10-02 19:01 UTC", "headline": "30 resolved trades, net -1.04 bps/bet (-31.3 total); 13-bet window net -5.7 bps. Signal flat at 0. Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-03 00:58 UTC", "headline": "30 resolved trades, net -1.04 bps/bet (-31.3 total); 13-bet window net -5.7 bps. Signal flat at 0. Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-03 11:13 UTC", "headline": "30 trades, net -1.04 bps/bet (-31.3 total); latest 8-bet window -3.04 bps net. Signal flat at 0. Still too thin.", "alert_level": "none"}
+{"t": "2026-10-03 17:49 UTC", "headline": "30 trades, net -1.04 bps/bet (-31.3 total); last 10-bet window -3.67 net (-0.67 gross). Signal flat at 0.", "alert_level": "none"}
