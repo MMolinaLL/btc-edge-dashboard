@@ -1,15 +1,13 @@
-# 🟢 30 trades, net -1.04 bps/bet (-31.3 total); latest 8-bet window -4.9 net / -1.9 gross. Signal flat at 0.
+# 🟢 31 trades, net -1.03 bps/bet (-31.8 total); gross still negative, sample too thin to judge. Signal flat at 0.
 
-_Updated 2026-10-04 18:00 UTC · model claude-opus-4-8_
+_Updated 2026-10-05 00:29 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$85.3k, consolidating after the late-August step-up from the low-$60ks into a choppy, high-variance tape. Signal is currently 0, so there's no live position.
+**Regime:** BTC ~$86.3k, consolidating after the late-August step-up from the low-$60ks into a choppy, high-variance tape. Signal is currently 0, so there is no live position.
 
-**Status:** No position right now (signal = 0), and nothing material has changed since last check — the ledger numbers are identical.
+**How it's doing.** Over all 31 resolved trades, the strategy is net **-1.03 bps per bet** (-31.8 bps total), with a **38.7% win rate**. Gross (before costs) is also slightly negative, which is weaker than the ~4 bps/bet gross edge we hoped to see. The most recent 10-bet window is -7.6 net / -4.6 gross.
 
-**The scoreboard so far:** 30 resolved trades, win rate 40%, averaging **-1.04 bps per trade** (about **-31 bps cumulative**). The most recent 8-bet window is **-4.9 bps net** (-1.9 bps *gross*, before a 3 bps cost assumption). So on live data the strategy is running slightly negative — both after costs and, in the latest short window, marginally negative even before costs.
+**What changed vs last time.** Just **one new trade** since the prior check (30→31): a 5-minute short on 2026-10-04 that was roughly flat (+2.4 gross, -0.6 net after costs). Nothing materially changed; the picture is essentially unchanged.
 
-**What this does and doesn't tell us:** This is exactly the marginal profile we expected. The validated gross edge was only ~4 bps/bet against a ~3.9 bps breakeven cost — razor-thin and probably not net-profitable in reality. Being modestly negative here is consistent with that, not proof of a broken strategy. Crucially, **the sample is still tiny**: 30 trades total (8 in the recent window) is dominated by noise. Individual outcomes swing from +49 bps to -28 bps, so a handful of trades can flip the average either way. We cannot yet distinguish "no edge" from "small edge plus bad luck."
+**What the numbers do and don't tell us.** They do tell us the live sample is **not showing a clear positive edge yet** — but that's expected for a marginal strategy whose entire gross edge (~4 bps) is smaller than one trade's noise. Individual outcomes here swing from **-28 bps to +51 bps**, so a 31-trade average of -1 bps is well inside the range of pure chance. The strategy only trades ~1-2% of candles, so the sample grows slowly; 31 trades is **too thin to conclude** either success or breakdown.
 
-**Also worth noting:** the broader edge search found **zero survivors** at a 5 bps cost bar on both venues — reinforcing that a durable net edge has not been demonstrated.
-
-**Bottom line:** Performing roughly as (modestly) expected for a marginal signal — slightly negative, but the sample is too thin to conclude degradation. No action needed; keep accumulating trades. No profit is implied or expected here.
+**Honest bottom line.** This was always a marginal candidate — gross edge ~4 bps vs ~3.9 bps breakeven cost — and live data so far does nothing to suggest it is net-profitable. It's not clearly broken either; it's just unproven and noisy. No alert warranted, but don't read the small negative total as either reassuring or alarming. Keep collecting data.
