@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-12 02:00 UTC",
-  "n_tested": 86,
+  "generated": "2026-10-05 16:45 UTC",
+  "n_tested": 92,
   "n_survivors": 0,
   "bar": "net_bps_test > 0 on BOTH venues at 5 bps cost, no look-ahead",
   "results": [
@@ -167,6 +167,21 @@
       "survives": false
     },
     {
+      "strategy": "volume_absorption_reversal",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.608,
+      "cb_net_2bps": -1.104,
+      "min_net_2bps": -1.608,
+      "min_net_5bps": -4.608,
+      "win_test_bus": 0.5073,
+      "bets_test_bus": 1640,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "inside_bar_fade",
       "family": "candle_microstructure",
       "file": "candle_microstructure.py",
@@ -238,6 +253,21 @@
       "bets_test_bus": 5593,
       "survives_2bps": false,
       "survives_5bps": false,
+      "survives": false
+    },
+    {
+      "strategy": "jump_vs_diffusion_fade",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.082,
+      "cb_net_2bps": -1.865,
+      "min_net_2bps": -1.865,
+      "min_net_5bps": -4.865,
+      "win_test_bus": 0.5347,
+      "bets_test_bus": 6291,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
       "survives": false
     },
     {
@@ -354,6 +384,21 @@
       "min_net_5bps": -4.973,
       "win_test_bus": 0.5051,
       "bets_test_bus": 23730,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
+      "strategy": "amihud_regime_flip",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.979,
+      "cb_net_2bps": -1.803,
+      "min_net_2bps": -1.979,
+      "min_net_5bps": -4.979,
+      "win_test_bus": 0.4968,
+      "bets_test_bus": 51173,
       "survives_2bps": false,
       "survives_5bps": false,
       "lookahead_flag": false,
@@ -727,6 +772,21 @@
       "survives": false
     },
     {
+      "strategy": "compression_participation_break",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.981,
+      "cb_net_2bps": -2.151,
+      "min_net_2bps": -2.151,
+      "min_net_5bps": -5.151,
+      "win_test_bus": 0.5121,
+      "bets_test_bus": 3130,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "obv_trend",
       "family": "volume_flow",
       "file": "volume_flow.py",
@@ -843,6 +903,21 @@
       "survives": false
     },
     {
+      "strategy": "dispersion_gated_momentum",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -2.248,
+      "cb_net_2bps": -2.017,
+      "min_net_2bps": -2.248,
+      "min_net_5bps": -5.248,
+      "win_test_bus": 0.4846,
+      "bets_test_bus": 28448,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "mrvf_12_1.5",
       "family": "builtin_grid",
       "file": "",
@@ -925,6 +1000,21 @@
       "bets_test_bus": 56361,
       "survives_2bps": false,
       "survives_5bps": false,
+      "survives": false
+    },
+    {
+      "strategy": "wick_flow_rejection",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.389,
+      "cb_net_2bps": -2.583,
+      "min_net_2bps": -2.583,
+      "min_net_5bps": -5.583,
+      "win_test_bus": 0.5097,
+      "bets_test_bus": 2686,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
       "survives": false
     },
     {
