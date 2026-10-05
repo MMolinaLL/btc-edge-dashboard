@@ -313,3 +313,4 @@
 {"t": "2026-10-04 18:00 UTC", "headline": "30 trades, net -1.04 bps/bet (-31.3 total); latest 8-bet window -4.9 net / -1.9 gross. Signal flat at 0.", "alert_level": "none"}
 {"t": "2026-10-05 00:29 UTC", "headline": "31 trades, net -1.03 bps/bet (-31.8 total); gross still negative, sample too thin to judge. Signal flat at 0.", "alert_level": "none"}
 {"t": "2026-10-05 13:50 UTC", "headline": "31 trades, net -1.03 bps/bet (-31.8 total); still thin & marginal. Signal flat at 0, no change vs last check.", "alert_level": "none"}
+{"t": "2026-10-05 21:23 UTC", "headline": "31 trades, net -1.03 bps/bet (-31.8 total); unchanged vs last check. Signal flat at 0, no new fills.", "alert_level": "none"}
