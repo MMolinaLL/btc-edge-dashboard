@@ -1,13 +1,13 @@
-# 🟢 31 trades, net -1.03 bps/bet (-31.8 total), win 38.7% — no new trades since last check; sample still too thin to judge.
+# 🟢 31 trades, net -1.03 bps/bet (-31.8 total), win 38.7% \u2014 unchanged since last check; sample still too thin to judge.
 
-_Updated 2026-10-14 00:55 UTC · model claude-opus-4-8_
+_Updated 2026-10-14 11:21 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$83.4k, still chopping in the low-$80ks after August's run up from the $60ks. Signal is 0 (no live position); per-trade outcomes remain very wide, roughly -28 to +49 bps.
+**Regime:** BTC ~$83.4k, chopping in the low-$80ks after August's climb from the $60ks. Signal is 0 (no live position); no new resolved trades since the last check (last entry 2026-10-04).
 
-**What's happening.** No new trades have resolved since the last check — the ledger still holds 31 trades, mean net **-1.03 bps/bet** (total **-31.8 bps**), with a **38.7%** win rate. The last-10-bet window looks milder: 70% wins and **-0.23 bps/bet** net (2.78 gross vs 3.0 cost), i.e. essentially breakeven. The two views disagree because the full-sample loss is driven by a handful of large adverse moves (e.g. -28 and -13 bps shorts during August's rally).
+**What's happening:** Nothing new to resolve since last time. The full live ledger still stands at **31 trades, 38.7% win rate, mean -1.03 bps/bet, -31.8 bps cumulative** (at 3 bps assumed cost). The strategy is currently flat (signal 0).
 
-**What the numbers do tell us.** The strategy is behaving as advertised: highly selective, a tiny trickle of trades, and marginal economics. Even its validated gross edge (~4 bps) barely clears the ~3.9 bps breakeven cost, so small samples will swing between slightly positive and slightly negative.
+**The two views disagree, and that's expected noise.** The recent rolling **window of 9 bets looks good** (77.8% win, +2.6 bps/bet net), but 9 trades is far too few to mean anything \u2014 one or two big hits (e.g., the +48.7 and +25.9 bps winners) dominate. The longer ledger of 31 is still modestly negative. Per-trade outcomes remain wildly dispersed, roughly **-28 to +49 bps**, which is exactly why dozens of trades can't yet separate edge from luck.
 
-**What they don't tell us.** 31 resolved trades is far too few to confirm or reject an edge this thin — a single big winner or loser moves the average by a bps or more. The -1.03 bps/bet is well within what noise can produce at this sample size. The recent near-breakeven window is equally inconclusive.
+**What the numbers do and don't tell us:** They confirm the strategy is *selective* (trades accrue slowly \u2014 none resolved in ~10 days) and *marginal*. Recall the validated gross edge is only ~4 bps/bet against a ~3.9 bps breakeven cost \u2014 so it was never expected to be clearly profitable net of realistic fees. Separately, the broader edge search found **0 survivors** passing the stricter bar (net-positive on both venues at 5 bps cost).
 
-**Bottom line.** Nothing has changed since last time and nothing here is alarming — but nothing is encouraging either. This remains a marginal, probably-not-net-profitable candidate, and the live record is still too thin to judge. Keep collecting data; no action warranted. Note also the edge search found **0 survivors** passing a stricter 5 bps two-venue bar, consistent with a fragile edge.
+**Bottom line:** No degradation alert \u2014 but no evidence of a reliable edge either. The sample is still too thin to judge, the ledger is slightly negative, and there is **no basis to expect net profit** after real costs. Keep collecting data; don't act on the flattering 9-bet window.
