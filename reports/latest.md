@@ -1,15 +1,13 @@
-# 🟢 31 trades, net -1.03 bps/bet (-31.8 total), win 38.7% — unchanged since last check; still too thin to judge.
+# 🟢 31 resolved trades, net -1.03 bps/bet (-31.8 total), win 38.7% — unchanged; sample still too thin to judge.
 
-_Updated 2026-10-15 10:58 UTC · model claude-opus-4-8_
+_Updated 2026-10-15 18:03 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$80.9k, chopping in the low-$80ks after August's run up from the $60ks. Signal is 0 (no live position); no new resolved trades since 2026-10-04.
+**Regime:** BTC ~$82.2k, still chopping in the low-$80ks after August's run from the $60ks. Signal is 0 (no live position) and no new resolved trades since 2026-10-04.
 
-**What's happening:** Nothing has changed since the last check. The full live ledger still shows **31 resolved trades**, averaging **-1.03 bps per bet** (total **-31.8 bps**), with a **38.7% win rate**. The most recent trade resolved on 2026-10-04, and the signal is currently flat (0), so no new information has arrived.
+**What's happening:** Nothing has changed since the last check. The ledger still shows 31 resolved trades, a mean of **-1.03 bps/bet** (-31.8 bps cumulative) and a **38.7% win rate**. No new trades have resolved since 2026-10-04, and the strategy currently holds no position (signal 0).
 
-**What the numbers do tell us:** On paper this run is modestly net-negative after the assumed 3 bps cost. That's roughly consistent with what we expected going in — this strategy's gross edge was only ~4 bps/bet against a ~3.9 bps breakeven, so it was always expected to be marginal and possibly *not* net-profitable after realistic costs.
+**What the numbers do say:** Net results are modestly negative. Backing out the assumed 3 bps cost, implied gross is ~2 bps/bet — below the ~4 bps gross edge we expected and below the ~3.9 bps breakeven cost. Consistent with the prior warning that this signal is marginal and likely not net-profitable after realistic fees.
 
-**What they don't tell us:** 31 trades is a tiny sample. Individual bets swing wildly — from -28 bps to +52 bps — so the average is dominated by a handful of outcomes. You cannot distinguish 'the edge is gone' from 'normal noise' at this size. A couple of big winners or losers would flip the running total meaningfully. The '5-bet window' showing +7.9 bps is even noisier and should be ignored for conclusions.
+**What they don't say:** 31 trades is far too few to distinguish a real breakdown from ordinary noise. The results are dominated by a handful of big winners (e.g. +48.7 and +25.9 bps) and big losers (-28.1 bps), so a single trade swings the average by a bps or more. The tiny 4-bet rolling window (+7.9 bps) is statistical noise and should not be read as a rebound. The separate edge search still finds **zero survivors** at a 5 bps cost bar on both venues — a quiet negative.
 
-**Context:** The independent edge search still finds **0 survivors** at the stricter 5-bps, two-venue bar — a reminder this family of signals is marginal at best.
-
-**Bottom line:** Mildly negative, exactly in the 'marginal / likely-not-profitable-after-costs' zone we flagged from the start. No sign of a sudden breakdown, but also no demonstrated live edge. Keep collecting data; do not expect guaranteed profit.
+**Bottom line:** Mildly negative live performance, exactly in the marginal zone we flagged, but the sample is too thin to conclude the edge has broken. No action warranted. Keep collecting trades; revisit once we have several dozen more resolutions. No profit is implied or guaranteed.
