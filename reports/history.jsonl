@@ -345,3 +345,4 @@
 {"t": "2026-10-15 18:03 UTC", "headline": "31 resolved trades, net -1.03 bps/bet (-31.8 total), win 38.7% \u2014 unchanged; sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-16 00:06 UTC", "headline": "31 resolved trades, net -1.03 bps/bet (-31.8 total), win 38.7% \u2014 unchanged; sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-16 10:52 UTC", "headline": "31 resolved trades, net -1.03 bps/bet (-31.8 total), win 38.7% \u2014 still too thin to judge; flat now.", "alert_level": "none"}
+{"t": "2026-10-16 17:49 UTC", "headline": "31 resolved trades, net -1.03 bps/bet (-31.8 total), win 38.7% \u2014 still too thin, edge marginal; signal flat.", "alert_level": "none"}
