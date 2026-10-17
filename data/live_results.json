@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-17 00:10 UTC",
+  "updated": "2026-10-17 10:15 UTC",
   "source": "Coinbase",
-  "price": 81475.82,
+  "price": 81471.49,
   "signal": 0,
   "window": {
-    "bets": 4,
-    "win": 0.75,
-    "net_bps": 1.719,
-    "gross_bps": 4.719,
+    "bets": 2,
+    "win": 1.0,
+    "net_bps": 2.499,
+    "gross_bps": 5.499,
     "cost_bps": 3.0
   },
   "ledger": {
