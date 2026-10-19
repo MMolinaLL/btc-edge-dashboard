@@ -1,15 +1,15 @@
-# 🟢 32 resolved trades, net -1.02 bps/bet (-32.5 total), win 37.5% — one new trade; thin, marginal, as-expected.
+# 🟢 32 resolved trades, net -1.02 bps/bet (-32.5 total), win 37.5% — unchanged vs last check; thin and marginal.
 
-_Updated 2026-10-18 23:57 UTC · model claude-opus-4-8_
+_Updated 2026-10-19 12:22 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$82.0k, still chopping in the low-$80ks after August's run-up from the $60ks. Signal is flat (0); one new trade resolved on 2026-10-18 at -0.70 bps.
+**Regime:** BTC ~$82.4k, still chopping in the low-$80ks after August's run-up from the $60ks. Signal is flat (0); no new resolved trades since the prior check.
 
-**What changed:** One new trade since last cycle (31→32 resolved). The 2026-10-18 fade earned +2.3 bps gross but -0.70 bps net after the 3 bps cost assumption. Signal is currently flat.
+**What's happening:** No real change since last time. The ledger still shows **32 resolved trades**, averaging **-1.02 bps per bet** (**-32.5 bps total**, ~0.3% cumulative) with a **37.5% win rate**. The more recent rolling window of 12 bets is essentially flat at **+0.17 bps net** (3.17 gross vs 3.0 cost) — slightly positive but tiny.
 
-**Where it stands:** Over all 32 trades the strategy averages **-1.02 bps/bet** (total **-32.5 bps**), winning 37.5% of the time. The rolling 9-bet window is similar: gross +0.90 bps, net **-2.10 bps** after costs. Implied gross edge (~2 bps) is running *below* the ~4 bps seen in validation, but on a sample this small that gap is well within noise.
+**What the numbers tell us:** This is roughly the picture we expected. The strategy was only ever estimated at ~4 bps gross edge against a ~3.9 bps breakeven cost — razor-thin. A small net-negative result over 32 trades is fully consistent with a marginal, probably-not-net-profitable signal, not evidence of a dramatic breakdown.
 
-**What the numbers do and don't tell us:** This is exactly the picture the research warned about — a real but tiny gross edge that costs likely eat. A net-negative 32-trade ledger here is *consistent with the original thesis*, not evidence of a new breakdown. Thirty-two selective trades remain too few to distinguish 'marginal-but-alive' from 'dead.' The low win rate (few big winners carrying the gross) is also the expected shape for this fade-the-extreme design.
+**What they don't tell us:** 32 trades is still a small sample. Results are dominated by a handful of outliers (e.g. +49, +25 bps winners offsetting -28, -13 bps losers), so both the win rate and the mean are noisy. We cannot statistically distinguish 'small negative edge' from 'zero edge' here. The low win rate (37.5%) with positive-ish gross is normal for a fade strategy that wins big occasionally and loses small often.
 
-**Also note:** The broader edge search shows **0 survivors** passing the stricter bar (net positive on both venues at 5 bps cost) — no candidate currently clears realistic costs.
+**Also worth noting:** the independent edge search found **0 survivors** at a 5 bps cost bar on both venues — reinforcing that no robust net-profitable version exists.
 
-**Bottom line:** No alarm, but no profit either. The data is behaving as a marginal, probably-not-net-profitable strategy should. Don't expect this to make money after costs; keep logging trades before drawing conclusions.
+**Bottom line:** Holding roughly as expected — marginal, slightly negative net, no profit guaranteed or implied. Not enough new data to change the view. Keep monitoring; no action warranted.
