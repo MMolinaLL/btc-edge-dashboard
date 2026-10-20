@@ -355,3 +355,4 @@
 {"t": "2026-10-18 23:57 UTC", "headline": "32 resolved trades, net -1.02 bps/bet (-32.5 total), win 37.5% \u2014 one new trade; thin, marginal, as-expected.", "alert_level": "none"}
 {"t": "2026-10-19 12:22 UTC", "headline": "32 resolved trades, net -1.02 bps/bet (-32.5 total), win 37.5% \u2014 unchanged vs last check; thin and marginal.", "alert_level": "none"}
 {"t": "2026-10-19 19:41 UTC", "headline": "32 resolved trades, net -1.02 bps/bet (-32.5 total), win 37.5% \u2014 flat vs last check; thin and marginal.", "alert_level": "none"}
+{"t": "2026-10-20 00:55 UTC", "headline": "No new resolved trades since last check: still 32 trades, net -1.02 bps/bet (-32.5 total), win 37.5% \u2014 thin and marginal.", "alert_level": "none"}
