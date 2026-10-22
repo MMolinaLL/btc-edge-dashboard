@@ -1,13 +1,13 @@
-# 🟢 32 trades, net -1.0 bps/bet (-32.5 total); recent 13-bet window softer at -8.4 bps — thin, roughly as expected.
+# 🟢 32 trades, net -1.0 bps/bet (-32.5 total); recent 13-bet window -8.4 bps — thin, unchanged, roughly as expected.
 
-_Updated 2026-10-22 11:18 UTC · model claude-opus-4-8_
+_Updated 2026-10-22 18:21 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$81.9k, still chopping in the low-to-mid $80ks after August's run from the $60ks. Signal is flat (0); the rolling 13-bet window is weaker than the full ledger but remains well within noise for a strategy with huge per-trade dispersion.
+**Regime:** BTC ~$81.2k, still chopping in the low-to-mid $80ks after August's run up from the $60ks. Signal is flat (0); numbers are essentially unchanged from the prior check, with the 13-bet window softer than the full ledger but well inside the noise band for a strategy with huge per-trade dispersion.
 
-**What's happening.** The full live ledger is unchanged in shape: 32 resolved trades, 37.5% win rate, averaging **-1.0 bps/bet** (-32.5 bps cumulative). That is essentially what we expected — this signal was flagged up front as *marginal and likely not net-profitable* after realistic costs (~4 bps gross edge vs ~3.9 bps breakeven). Losing a hair per bet is consistent with that prior, not a surprise.
+**How it's doing:** Little has changed since last check. The full live ledger is 32 resolved trades averaging **-1.0 bps/bet** (total **-32.5 bps**), win rate 37.5%. The most recent 13-bet window is weaker at **-8.4 bps/bet net** (-5.4 gross), win rate 30.8%.
 
-**What changed.** The dashboard now surfaces a rolling 13-bet window at **-8.4 bps/bet net (-5.4 gross, 30.8% win)**. That's softer than the full-history -1.0, and the gross number being negative means the raw signal (before costs) underperformed in this slice. Worth noting — but 13 bets is a tiny sample, and per-trade outcomes here swing wildly (individual trades range from about -28 bps to +52 bps). A couple of bad fades (e.g. the -28 and -13 bps shorts) dominate the window. The standard error on 13 such bets is large enough that -8.4 is not statistically distinguishable from zero.
+**What changed vs last time:** Essentially nothing — same trade count, same aggregates. No new signal is firing right now (signal = 0).
 
-**What the numbers don't tell us.** With only 32 lifetime trades and ~1-2% of candles trading, we still can't confirm or reject the edge. The offline edge search also found **zero survivors** at a stricter 5 bps cost bar — reinforcing that this is at best a razor-thin effect.
+**What the numbers do and don't tell us:** This strategy was only ever expected to earn ~4 bps gross per bet against a ~3.9 bps breakeven cost — marginal by design. Individual trades here swing wildly, from **-28 bps to +51 bps**, so 13 or even 32 bets is far too few to separate skill from luck. A single big winner or loser moves the average by several bps. The negative live numbers are consistent with both 'no real edge after costs' and 'normal unlucky run of a tiny-edge strategy.' We simply can't distinguish those yet.
 
-**Bottom line.** No action needed. Performance is in line with a known-marginal strategy; the recent window is weaker but too small to call degradation. Keep watching — if the negative drift persists over several dozen more trades, escalate to watch/alert. No profit is implied or guaranteed.
+**Honest bottom line:** The sample is still too thin to judge, and the aggregate is modestly negative — exactly what you'd expect from a marginal, likely-not-net-profitable signal. No evidence of a sudden breakdown, but also no evidence of a durable edge. Note the offline edge search found **0 survivors** at a 5 bps cost bar. Keep monitoring; don't infer profit.
