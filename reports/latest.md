@@ -1,13 +1,13 @@
-# 🟢 32 trades, net -1.0 bps/bet (-32.5 total); recent 12-bet window -9.0 bps — thin, essentially unchanged.
+# 🟢 32 trades, net -1.0 bps/bet (-32.5 total); latest 9-bet window -2.6 bps — thin, basically unchanged.
 
-_Updated 2026-10-23 00:25 UTC · model claude-opus-4-8_
+_Updated 2026-10-23 11:08 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$81.1k, still chopping in the low-mid $80ks after August's surge from the $60ks. Signal is flat (0) and the numbers are a hair softer but statistically indistinguishable from the prior check.
+**Regime:** BTC ~$81.6k, still chopping in the low-mid $80ks after August's run up from the $60ks. Signal is flat (0) right now; no new trades resolved since the prior check, so the numbers are essentially static.
 
-**How it's doing:** Roughly as expected — which for this strategy means marginal-to-slightly-negative. The full ledger is 32 resolved trades averaging **-1.0 bps/bet** (-32.5 bps cumulative, win rate 37.5%). The most recent rolling window of 12 bets is weaker at **-9.0 bps/bet** (win rate 25%), but that is a tiny slice with enormous per-trade swings — individual outcomes range from **+48.7 bps to -28.1 bps**. A couple of bad coin-flips easily produce a -9 bps window with no real change in edge.
+**How it's doing:** Roughly as expected for a strategy we already flagged as marginal. Across all 32 resolved live trades the average result is **-1.0 bps/bet** (-32.5 bps cumulative), with a 37.5% win rate. The most recent rolling window of 9 bets sits at **-2.6 bps/bet** (22% wins), on ~3.0 bps assumed cost against ~0.4 bps gross.
 
-**What changed vs last time:** Essentially nothing. The ledger is identical in size (32 trades) and mean (-1.0 vs -1.0), and the short window is comparable (-9.0 vs -8.4). No new trades have resolved since the prior check, and the signal is currently flat.
+**What changed vs last time:** Almost nothing. The ledger still shows 32 resolved trades — no new fills have cleared since the prior check — so this is the same sample viewed through a slightly different rolling window. The headline numbers are a hair softer but statistically indistinguishable from before.
 
-**What the numbers do and don't tell us:** With only 32 lifetime trades and a gross edge of ~4 bps against a ~3.9 bps breakeven cost, this sample is far too thin to confirm *or* reject the edge. The dispersion dwarfs the mean. Note the research bar is also unmet: **zero survivors** passed the cross-venue, 5 bps-cost, no-look-ahead screen.
+**What the numbers do and don't tell us:** They're consistent with the pre-registered thesis that gross edge (~4 bps) is smaller than realistic trading cost (~3.9 bps), i.e. likely not net-profitable. But 32 trades — and a 9-trade window — is far too little to *conclude* anything. Individual outcomes swing from +49 to -28 bps, so a handful of trades dominate the average. The automated edge re-search also found **zero survivors** that clear a positive net return on both venues at 5 bps cost.
 
-**Bottom line:** Behaving as a marginal, probably not net-profitable signal — consistent with its validation. No degradation alarm warranted on this sample, but no evidence of real edge either. Keep accumulating trades; do not expect profit.
+**Bottom line:** No edge has been demonstrated, but nothing has broken either. Results are slightly negative and in line with expectations for a marginal signal. The sample is too thin to flag degradation. Keep monitoring; don't expect — or promise — profit.
