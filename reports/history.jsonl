@@ -367,3 +367,4 @@
 {"t": "2026-10-23 00:25 UTC", "headline": "32 trades, net -1.0 bps/bet (-32.5 total); recent 12-bet window -9.0 bps \u2014 thin, essentially unchanged.", "alert_level": "none"}
 {"t": "2026-10-23 11:08 UTC", "headline": "32 trades, net -1.0 bps/bet (-32.5 total); latest 9-bet window -2.6 bps \u2014 thin, basically unchanged.", "alert_level": "none"}
 {"t": "2026-10-23 18:08 UTC", "headline": "32 resolved trades, net -1.0 bps/bet (-32.5 total); latest 8-bet window -2.3 bps \u2014 still thin, basically flat vs last check.", "alert_level": "none"}
+{"t": "2026-10-24 00:19 UTC", "headline": "32 resolved trades, net -1.0 bps/bet (-32.5 total); 9-bet window -0.4 bps \u2014 thin and basically flat vs last check.", "alert_level": "none"}
