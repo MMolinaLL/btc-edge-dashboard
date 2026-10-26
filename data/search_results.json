@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-12 02:00 UTC",
-  "n_tested": 86,
+  "generated": "2026-10-26 14:48 UTC",
+  "n_tested": 92,
   "n_survivors": 0,
   "bar": "net_bps_test > 0 on BOTH venues at 5 bps cost, no look-ahead",
   "results": [
@@ -390,6 +390,21 @@
       "survives": false
     },
     {
+      "strategy": "semivar_asymmetry_reversal",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -1.17,
+      "cb_net_2bps": -1.997,
+      "min_net_2bps": -1.997,
+      "min_net_5bps": -4.997,
+      "win_test_bus": 0.5372,
+      "bets_test_bus": 19823,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "meanrev_1",
       "family": "builtin_grid",
       "file": "",
@@ -742,6 +757,21 @@
       "survives": false
     },
     {
+      "strategy": "kyle_lambda_residual_fade",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": 0.694,
+      "cb_net_2bps": -2.187,
+      "min_net_2bps": -2.187,
+      "min_net_5bps": -5.187,
+      "win_test_bus": 0.5776,
+      "bets_test_bus": 27722,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "mrvf_12_2.0",
       "family": "builtin_grid",
       "file": "",
@@ -765,6 +795,21 @@
       "min_net_5bps": -5.192,
       "win_test_bus": 0.4996,
       "bets_test_bus": 56366,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
+      "strategy": "compression_volflow_breakout",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -2.181,
+      "cb_net_2bps": -2.193,
+      "min_net_2bps": -2.193,
+      "min_net_5bps": -5.193,
+      "win_test_bus": 0.4971,
+      "bets_test_bus": 18720,
       "survives_2bps": false,
       "survives_5bps": false,
       "lookahead_flag": false,
@@ -826,6 +871,21 @@
       "bets_test_bus": 16268,
       "survives_2bps": false,
       "survives_5bps": false,
+      "survives": false
+    },
+    {
+      "strategy": "volofvol_regime_flip",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -2.236,
+      "cb_net_2bps": -1.954,
+      "min_net_2bps": -2.236,
+      "min_net_5bps": -5.236,
+      "win_test_bus": 0.4939,
+      "bets_test_bus": 56004,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
       "survives": false
     },
     {
@@ -956,6 +1016,21 @@
       "survives": false
     },
     {
+      "strategy": "flow_acceleration",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -2.91,
+      "cb_net_2bps": -2.033,
+      "min_net_2bps": -2.91,
+      "min_net_5bps": -5.91,
+      "win_test_bus": 0.4729,
+      "bets_test_bus": 12380,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
+      "survives": false
+    },
+    {
       "strategy": "momentum_12",
       "family": "builtin_grid",
       "file": "",
@@ -1039,6 +1114,21 @@
       "bets_test_bus": 55107,
       "survives_2bps": false,
       "survives_5bps": false,
+      "survives": false
+    },
+    {
+      "strategy": "amihud_gated_momentum",
+      "family": "ai_proposed",
+      "file": "ai_proposed.py",
+      "bus_net_2bps": -3.22,
+      "cb_net_2bps": -1.93,
+      "min_net_2bps": -3.22,
+      "min_net_5bps": -6.22,
+      "win_test_bus": 0.4612,
+      "bets_test_bus": 44368,
+      "survives_2bps": false,
+      "survives_5bps": false,
+      "lookahead_flag": false,
       "survives": false
     },
     {
