@@ -1,19 +1,13 @@
-# 🟢 Unchanged: 32 resolved trades at -1.0 bps/bet (-32.5 total); last-9 window +2.1 bps net — thin, marginal, no new fills.
+# 🟢 No change: 32 resolved trades at -1.0 bps/bet (-32.5 total); latest 7-bet window ~flat (-0.06 bps net) — thin and marginal.
 
-_Updated 2026-10-27 01:13 UTC · model claude-opus-4-8_
+_Updated 2026-10-27 11:43 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$80.2k, still chopping in the high-$70s/low-$80s after August's run from the $60s. Signal is flat (0) and the ledger is unchanged at 32 resolved trades — nothing new has resolved since the last check.
+**Regime:** BTC ~$79.7k, still chopping in the high-$70s/low-$80s after August's run up from the $60s. Signal is flat (0) and the ledger is unchanged at 32 resolved trades — nothing new has resolved since the last check.
 
-## How it's doing
-No change since last check. The strategy hasn't fired a new trade — the ledger still shows **32 resolved trades**, and the current signal is **0** (flat, no position). BTC sits around **$80.2k**, little moved.
+**What's happening:** Nothing new has traded. The ledger still shows 32 resolved bets, win rate 37.5%, averaging **-1.0 bps/bet** for a cumulative **-32.5 bps**. The current signal is 0 (no position). The rolling 7-bet window is essentially break-even: ~2.9 bps gross minus 3.0 bps assumed cost = **-0.06 bps net**.
 
-## What the numbers say
-- **Full ledger:** 32 trades, 37.5% win rate, **-1.0 bps/bet** net, **-32.5 bps total**. That's slightly negative after costs — consistent with a signal whose gross edge (~4 bps) is right at the breakeven cost (~3.9 bps).
-- **Recent-9 window:** +2.1 bps net (55.6% wins). Mildly positive, but **nine trades is noise**, not evidence.
-- Results are dominated by a few big winners (e.g. +48.7, +25.9, +25.3 bps) offsetting several double-digit losers. High variance, small sample.
+**What changed vs last time:** Effectively nothing — same 32 trades, same totals. The headline window metric shifted slightly (now a 7-bet view near zero rather than the prior last-9 at +2.1), but that's just a different slice of the same thin history, not new information.
 
-## What they don't tell us
-With only ~32 lifetime fills and ~1-2% of candles trading, we cannot distinguish a real edge from zero. A -32.5 bps cumulative result over this many trades is well within what random chance produces for a coin-flip-ish signal. Neither the small loss nor the recent small gain is statistically meaningful.
+**What the numbers do and don't tell us:** This remains consistent with a strategy whose *gross* edge (~3-4 bps) sits right on top of its breakeven cost (~3.9 bps). After costs it's marginal-to-slightly-negative, exactly as validation warned. Crucially, 32 trades is a tiny sample: the -32.5 bps is driven by a handful of big losers (-28, -13, -10 bps) offset by big winners (+49, +26, +26 bps), so the per-bet average is extremely noisy. We cannot distinguish 'small real negative edge' from 'bad luck' at this size.
 
-## Bottom line
-This remains a **marginal, likely-not-net-profitable** candidate, performing roughly as expected: hovering around breakeven. Nothing has degraded further, and nothing has improved. No action warranted; just keep accumulating out-of-sample fills. Do not treat the positive recent window as a signal to size up.
+**Bottom line:** No degradation alarm — the live results look like the expected marginal, break-even-ish behavior, not a breakdown. But there is **no evidence of reliable net profit**, and the broader edge search still has **0 survivors** at a 5 bps cost bar. Treat this as a research curiosity, not a money-maker, until many more fills accumulate.
