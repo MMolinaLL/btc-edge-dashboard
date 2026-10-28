@@ -1,13 +1,13 @@
-# 🟢 No change: 32 resolved trades at -1.0 bps/bet (-32.5 total); signal flat, sample still too thin to judge.
+# 🟢 No material change: 32 resolved trades at -1.0 bps/bet (-32.5 total); new trade open, sample still too thin to judge.
 
-_Updated 2026-10-28 01:00 UTC · model claude-opus-4-8_
+_Updated 2026-10-28 12:16 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$80.6k, still chopping in the high-$70s/low-$80s after August's run up from the $60s. Signal is flat (0) and the ledger is unchanged at 32 resolved trades — nothing new has resolved since the last check.
+**Regime:** BTC near $80.9k, still chopping in the high-$70s/low-$80s after August's run from the $60s. A fresh long signal (signal=1) just fired and sits unresolved; no trades have newly resolved since last check.
 
-**What's happening:** Nothing new since last check. The ledger still shows **32 resolved trades**, with a **37.5% win rate**, averaging **-1.0 bps per trade** (-32.5 bps cumulative, after 3 bps assumed cost). The current signal is **0** (no position), and price sits near **$80.6k**.
+**What's happening:** The ledger is essentially unchanged from last time — still 32 resolved trades, win rate 37.5%, averaging **-1.0 bps/bet** for **-32.5 bps total**. One new trade just entered (trade count 33) and hasn't resolved yet, so no fresh P&L has landed. The current signal flipped from flat to **long (+1)**.
 
-**What the numbers tell us:** On paper the live average is slightly negative, which is exactly what we'd expect from a strategy whose gross edge (~4 bps) barely clears its breakeven cost (~3.9 bps). The results are also wildly noisy: individual trades range from +49 bps to -28 bps. A handful of big winners (the Aug 21 +49, Sep 3 +26) and big losers (Aug 19 -28) dominate the total. With only 32 bets, one or two outcomes swing the whole picture.
+**What changed:** Almost nothing. The short rolling window of 6 bets shows +3.4 bps net, but six trades is pure noise and shouldn't move your view either way.
 
-**What they don't tell us:** Anything conclusive. 32 trades is far too small to distinguish 'no edge' from 'marginal edge buried in noise.' A negative running total here is not evidence of breakdown — it's within the range of normal luck for a marginal signal. Separately, the broader edge search still finds **zero survivors** that clear a stricter 5-bps, two-venue bar, consistent with the prior view that this strategy is likely not net-profitable after realistic costs.
+**What the numbers do and don't tell us:** A -1.0 bps/bet average over 32 trades is mildly negative, but remember the edge was only ever estimated at ~4 bps gross against a ~3.9 bps breakeven cost — this strategy was flagged up front as marginal and probably *not* net-profitable after realistic costs. A small negative over a few dozen trades is fully consistent with that thin-to-nonexistent edge; it is **not** proof of a breakdown. Individual trades swing from +49 to -28 bps, so 32 samples carries wide error bars. Separately, the edge-search found **0 survivors** passing the stricter 5 bps/both-venues bar — reinforcing that the underlying edge is fragile.
 
-**Bottom line:** Behaving roughly as expected for a marginal, selective signal. No degradation alert warranted, but no profit either — and none should be assumed. We keep watching; the sample grows only ~1-2% of candles, so patience is required.
+**Bottom line:** No alarm, but no vindication either. Results are hovering slightly below breakeven, exactly as the honest prior expected. Keep collecting data — a verdict needs dozens more resolved trades, not six.

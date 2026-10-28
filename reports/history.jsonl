@@ -380,3 +380,4 @@
 {"t": "2026-10-27 11:43 UTC", "headline": "No change: 32 resolved trades at -1.0 bps/bet (-32.5 total); latest 7-bet window ~flat (-0.06 bps net) \u2014 thin and marginal.", "alert_level": "none"}
 {"t": "2026-10-27 19:15 UTC", "headline": "Unchanged: 32 resolved trades at -1.0 bps/bet (-32.5 total); signal flat, sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-28 01:00 UTC", "headline": "No change: 32 resolved trades at -1.0 bps/bet (-32.5 total); signal flat, sample still too thin to judge.", "alert_level": "none"}
+{"t": "2026-10-28 12:16 UTC", "headline": "No material change: 32 resolved trades at -1.0 bps/bet (-32.5 total); new trade open, sample still too thin to judge.", "alert_level": "none"}
