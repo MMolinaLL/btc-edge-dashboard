@@ -1,13 +1,13 @@
-# 🟢 No material change: 32 resolved trades at -1.0 bps/bet (-32.5 total); new trade open, sample still too thin to judge.
+# 🟢 One new trade resolved (+9.7 bps net); ledger now 33 trades at -0.69 bps/bet (-22.8 total). Still too thin to judge.
 
-_Updated 2026-10-28 12:16 UTC · model claude-opus-4-8_
+_Updated 2026-10-28 19:21 UTC · model claude-opus-4-8_
 
-**Regime:** BTC near $80.9k, still chopping in the high-$70s/low-$80s after August's run from the $60s. A fresh long signal (signal=1) just fired and sits unresolved; no trades have newly resolved since last check.
+**Regime:** BTC near $81.1k, still chopping in the high-$70s/low-$80s after August's run up from the $60s. No signal currently active (signal=0).
 
-**What's happening:** The ledger is essentially unchanged from last time — still 32 resolved trades, win rate 37.5%, averaging **-1.0 bps/bet** for **-32.5 bps total**. One new trade just entered (trade count 33) and hasn't resolved yet, so no fresh P&L has landed. The current signal flipped from flat to **long (+1)**.
+**What changed:** Since last check, one trade resolved — the Oct‑28 long at $80,798 that closed +9.70 bps net. That nudged the ledger from 32 trades/-32.5 bps total up to **33 trades, -22.8 bps total (-0.69 bps per bet)**. Win rate sits at 39.4%.
 
-**What changed:** Almost nothing. The short rolling window of 6 bets shows +3.4 bps net, but six trades is pure noise and shouldn't move your view either way.
+**How it's doing:** Essentially as expected for a marginal strategy. The design edge was only ~4 bps gross against a ~3.9 bps breakeven cost — i.e. likely *not* net‑profitable after realistic costs. A per‑bet average of -0.69 bps is squarely in the noise band around breakeven, not evidence of a broken signal.
 
-**What the numbers do and don't tell us:** A -1.0 bps/bet average over 32 trades is mildly negative, but remember the edge was only ever estimated at ~4 bps gross against a ~3.9 bps breakeven cost — this strategy was flagged up front as marginal and probably *not* net-profitable after realistic costs. A small negative over a few dozen trades is fully consistent with that thin-to-nonexistent edge; it is **not** proof of a breakdown. Individual trades swing from +49 to -28 bps, so 32 samples carries wide error bars. Separately, the edge-search found **0 survivors** passing the stricter 5 bps/both-venues bar — reinforcing that the underlying edge is fragile.
+**What the numbers do and don't tell us:** With just 33 resolved trades, and single trades swinging ±25–50 bps (see the +48.7 and -28.1 bps outliers), the cumulative P&L is dominated by a handful of candles. The recent 7‑trade window shows +2.49 bps net, but that's far too small to mean anything — it could flip negative on one bad fill. We cannot distinguish 'tiny real edge' from 'no edge' at this sample size.
 
-**Bottom line:** No alarm, but no vindication either. Results are hovering slightly below breakeven, exactly as the honest prior expected. Keep collecting data — a verdict needs dozens more resolved trades, not six.
+**Bottom line:** No alarm and no celebration. The strategy is behaving like the marginal, probably‑unprofitable‑after‑costs candidate it was validated to be. Separately, the edge search still shows **0 survivors** against the stricter 5‑bps/both‑venues bar — a reminder not to expect a durable money‑maker here. Keep logging; we need many dozens more trades before any verdict.
