@@ -1,13 +1,15 @@
-# 🟢 One new trade resolved (+9.7 bps net); ledger now 33 trades at -0.69 bps/bet (-22.8 total). Still too thin to judge.
+# 🟢 Ledger at 34 trades (33 resolved), -0.69 bps/bet (-22.8 total); recent 9-bet window mildly positive. Still too thin to judge.
 
-_Updated 2026-10-28 19:21 UTC · model claude-opus-4-8_
+_Updated 2026-10-29 01:36 UTC · model claude-opus-4-8_
 
-**Regime:** BTC near $81.1k, still chopping in the high-$70s/low-$80s after August's run up from the $60s. No signal currently active (signal=0).
+**Regime:** BTC near $80.6k, chopping in the high-$70s/low-$80s after August's run up from the $60s. A fade (signal=1) is currently active.
 
-**What changed:** Since last check, one trade resolved — the Oct‑28 long at $80,798 that closed +9.70 bps net. That nudged the ledger from 32 trades/-32.5 bps total up to **33 trades, -22.8 bps total (-0.69 bps per bet)**. Win rate sits at 39.4%.
+**What changed:** One more trade was added (now 34 total, 33 resolved) and a signal is live right now. The last resolved trade on Oct 28 was a winner (+9.7 bps net). The full-ledger average is -0.69 bps/bet, totaling **-22.8 bps** across 33 resolved trades — essentially unchanged from last time.
 
-**How it's doing:** Essentially as expected for a marginal strategy. The design edge was only ~4 bps gross against a ~3.9 bps breakeven cost — i.e. likely *not* net‑profitable after realistic costs. A per‑bet average of -0.69 bps is squarely in the noise band around breakeven, not evidence of a broken signal.
+**What the numbers say:** The headline average is slightly negative, which is roughly what we'd expect from a strategy whose gross edge (~4 bps) barely clears its trading cost. The trailing 9-bet window is net **+1.2 bps** (gross 4.2, cost 3.0), so recent trades are not collapsing. Win rate sits near 39% — this is a few-big-winners strategy (e.g. +48, +26, +25 bps) offsetting many small losers, so results swing hard on single trades.
 
-**What the numbers do and don't tell us:** With just 33 resolved trades, and single trades swinging ±25–50 bps (see the +48.7 and -28.1 bps outliers), the cumulative P&L is dominated by a handful of candles. The recent 7‑trade window shows +2.49 bps net, but that's far too small to mean anything — it could flip negative on one bad fill. We cannot distinguish 'tiny real edge' from 'no edge' at this sample size.
+**What they don't say:** 33 trades is far too few to distinguish a real edge from zero or from noise. The spread of outcomes (+52 to -28 bps) is wide relative to the ~4 bps edge we're hunting, so the true per-bet value could plausibly be modestly positive or modestly negative. We can't call it either way yet.
 
-**Bottom line:** No alarm and no celebration. The strategy is behaving like the marginal, probably‑unprofitable‑after‑costs candidate it was validated to be. Separately, the edge search still shows **0 survivors** against the stricter 5‑bps/both‑venues bar — a reminder not to expect a durable money‑maker here. Keep logging; we need many dozens more trades before any verdict.
+**Also note:** the independent edge search still returns **zero survivors** at a stricter 5 bps cost bar on both venues — consistent with this being marginal at best.
+
+**Bottom line:** No evidence of breakdown, but no proof of profit. Treat as an unproven, likely-marginal signal. Keep collecting data; do not deploy real capital on this sample.
