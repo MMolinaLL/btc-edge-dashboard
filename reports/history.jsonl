@@ -383,3 +383,4 @@
 {"t": "2026-10-28 12:16 UTC", "headline": "No material change: 32 resolved trades at -1.0 bps/bet (-32.5 total); new trade open, sample still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-28 19:21 UTC", "headline": "One new trade resolved (+9.7 bps net); ledger now 33 trades at -0.69 bps/bet (-22.8 total). Still too thin to judge.", "alert_level": "none"}
 {"t": "2026-10-29 01:36 UTC", "headline": "Ledger at 34 trades (33 resolved), -0.69 bps/bet (-22.8 total); recent 9-bet window mildly positive. Still too thin to judge.", "alert_level": "none"}
+{"t": "2026-10-29 12:25 UTC", "headline": "Ledger 34 trades, -1.06 bps/bet net (-35.9 total), gross ~+1.9 bps; recent 12-bet window negative. Still too thin to judge.", "alert_level": "none"}
