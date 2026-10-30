@@ -1,15 +1,15 @@
-# 🟡 34-trade ledger -1.06 bps/bet (-35.9 total); latest 17-bet window gross-negative (-7.6). Thin but still softening.
+# 🟡 34-trade ledger at -1.06 bps/bet (-35.9 total); latest 19-bet window gross-negative (-3.1). Thin, still soft.
 
-_Updated 2026-10-30 01:37 UTC · model claude-opus-4-8_
+_Updated 2026-10-30 12:16 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling 17-bet window is gross-negative (-7.6 bps) below the ~+4 bps expected edge; keep watching, sample still thin.
+> **WATCH:** Rolling window is gross-negative (-3.1 bps) before costs, below the ~4 bps gross edge we expected. Sample still small — keep watching, don't pause yet.
 
-**Regime:** BTC ~$77k, chopping in the high-$70s/low-$80s after August's run from the $60s; no signal active now. Two-sided volatile tape is the environment this fade targets.
+**Regime:** BTC ~$77k, chopping in the high-$70s/low-$80s after August's run up from the $60s; no signal active now. The two-sided, volatile tape is the environment this fade targets.
 
-**How it's doing:** Still underwater and drifting the wrong way, but on a sample too small to be conclusive. The full ledger is 34 resolved trades, averaging **-1.06 bps/bet** (-35.9 bps total), winning just **38%** of the time. Back out the 3 bps assumed cost and gross is only about **+1.9 bps/bet** — well under the ~4 bps gross edge we expected, and already thinner than breakeven (~3.9 bps cost) implied in validation.
+**How it's doing:** Still underwater. Across all 34 resolved trades the strategy averages **-1.06 bps/bet** (-35.9 bps cumulative), with a 38% win rate. The most recent 19-bet window is **-6.06 bps/bet net**, and crucially **-3.06 bps gross** — i.e. losing slightly even before the 3 bps cost assumption. That's below the ~4 bps gross edge the research expected.
 
-**What changed vs last time:** The recent window grew from 14 to 17 bets and got worse: it's now **gross-negative at -7.6 bps** (net -10.6), versus -6.1 gross last check. So the softening we flagged is continuing, not reversing. Recent trades are genuinely mixed — Oct 28 +9.7 bps, Oct 29 -13.1 bps — classic high-variance, low-signal behavior.
+**What changed vs last time:** Two more trades resolved. The rolling window's gross figure improved a touch (from about -7.6 to -3.1 bps), so the bleeding slowed rather than accelerated. Recent trades are mixed: a +9.7 bps winner on 10-28, a -13.1 bps loser on 10-29.
 
-**What the numbers do and don't tell us:** With only 17 recent and 34 total bets, single trades of ±25-50 bps swing everything; this is nowhere near enough to distinguish 'broken' from 'unlucky.' A couple of big winners (Aug 21 +49, Sep 3 +26) are the only reason the full-ledger gross stayed positive at all.
+**What the numbers do and don't tell us:** With only 34 total bets, this is a *small* sample. A handful of big moves (the +48.7 and -28.1 bps outliers) dominate the average, so neither the losses nor any recovery is statistically convincing. We genuinely cannot distinguish 'edge has died' from 'normal bad run' at this size. What *is* notable: the independent edge search still finds **zero survivors** at a 5 bps cost bar — consistent with this being a marginal, likely-not-net-profitable signal.
 
-**Bottom line:** This was always a marginal, probably-not-net-profitable edge, and live data so far is consistent with that — leaning slightly negative. No evidence of profit; no proof of a hard breakdown either. Keep it on **watch**, let the sample build, don't add risk.
+**Bottom line:** No evidence of profit, some evidence of softness, but the sample is too thin to call a breakdown. Staying on **watch**, not alert. This was always a marginal candidate (gross ~4 bps vs ~3.9 bps breakeven); nothing here suggests it has quietly become a money-maker.
