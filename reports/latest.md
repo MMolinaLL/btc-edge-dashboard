@@ -1,15 +1,15 @@
-# 🟡 34-trade ledger at -1.06 bps/bet (-35.9 total); latest 20-bet window still gross-negative (-1.9). Thin and soft.
+# 🟡 34-trade ledger at -1.06 bps/bet (-35.9 total); recent 15-bet window gross-negative (-3.0). Thin, soft, still unprofitable net.
 
-_Updated 2026-10-31 01:26 UTC · model claude-opus-4-8_
+_Updated 2026-10-31 11:48 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window gross-negative over a non-trivial sample; edge not showing live. Sample still small — monitor, don't panic.
+> **WATCH:** Recent window gross edge turned negative (-3.0 bps over 15 bets) and full ledger gross (~+1.9 bps) runs below the ~4 bps expected. Sample too thin to pause, but watch for continuation.
 
-**Regime:** BTC ~$77.3k, still chopping in the high-$70s/low-$80s after the August run from the $60s; no signal active now. This two-sided, volatile tape is what the fade targets.
+**Regime:** BTC ~$77.4k, chopping in the high-$70s/low-$80s after the August run up from the $60s; no signal active now. This two-sided, volatile tape is the kind the fade is built for.
 
-**How it's doing:** Soft, and essentially unchanged since last check. The full ledger now holds 34 resolved trades averaging **-1.06 bps/bet** (-35.9 bps cumulative), with a win rate of just **38%**. The most recent 20-bet window is **-1.9 bps gross** and **-4.9 bps net** after 3 bps costs. Remember the strategy's whole thesis rests on a tiny ~4 bps gross edge against a ~3.9 bps breakeven — so even in validation it was marginal. Right now the live gross number is *negative*, meaning the edge isn't visibly present in this sample, let alone enough to cover costs.
+**How it's doing:** Still underwater. Across all 34 resolved trades the strategy averages **-1.06 bps per bet** (-35.9 bps cumulative) with a 38% win rate. The latest 15-bet window is worse: **-6.0 bps net**, and notably even the **gross** figure (before costs) is **-3.0 bps**. Strip costs from the full ledger and gross edge is roughly **+1.9 bps/bet** — positive, but below the ~4 bps the research suggested and well inside noise.
 
-**What changed vs last time:** Little to nothing — same 34-trade ledger, same window stats. Two new recent trades (one +9.7, one -13.1 bps net) roughly cancel. So the 'watch' picture persists rather than worsening.
+**What changed vs last time:** Little of substance. The rolling window shrank from 20 to 15 bets and its gross went from about -1.9 to -3.0 bps. That's a nudge in the wrong direction, not a new signal — a single bad 5-minute move swings these averages hard (recent trades range from +49 to -28 bps).
 
-**What the numbers do and don't tell us:** With only 34 bets, outcomes are dominated by a handful of big moves (e.g. one +48.7 and one -28.1). That's far too few to conclude the edge is *broken* — but a gross-negative rolling window is a legitimate early warning, not noise to dismiss. Separately, the independent edge-search found **0 survivors** at a 5 bps cost bar, consistent with 'marginal at best.'
+**What the numbers do and don't tell us:** With only 34 lifetime trades and ~15 in the window, confidence intervals are huge. We cannot distinguish "edge gone" from "ordinary bad luck." Separately, the independent edge search returned **0 survivors** at a 5 bps cost bar — a reminder this was always marginal.
 
-**Bottom line:** No evidence of live profitability, and no evidence it's a durable money-maker. Keep it in research/paper mode; don't deploy real size. Not an alert yet — sample's too thin for a confident breakdown call. No guaranteed profit here.
+**Bottom line:** Consistent with prior validation, this looks **marginal-to-unprofitable after costs**, and nothing here is strong enough to pause on. Keep collecting trades; if gross edge stays negative over several more dozen bets, escalate. No profit is implied or guaranteed.
