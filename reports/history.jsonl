@@ -390,3 +390,4 @@
 {"t": "2026-10-30 19:00 UTC", "headline": "34-trade ledger at -1.06 bps/bet (-35.9 total); latest 20-bet window gross-negative (-1.9). Thin, still soft.", "alert_level": "watch"}
 {"t": "2026-10-31 01:26 UTC", "headline": "34-trade ledger at -1.06 bps/bet (-35.9 total); latest 20-bet window still gross-negative (-1.9). Thin and soft.", "alert_level": "watch"}
 {"t": "2026-10-31 11:48 UTC", "headline": "34-trade ledger at -1.06 bps/bet (-35.9 total); recent 15-bet window gross-negative (-3.0). Thin, soft, still unprofitable net.", "alert_level": "watch"}
+{"t": "2026-10-31 18:15 UTC", "headline": "34-trade ledger at -1.06 bps/bet (-35.9 total); latest 15-bet window gross-negative (-3.0 bps). Still thin, still unprofitable net.", "alert_level": "watch"}
