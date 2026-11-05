@@ -1,15 +1,15 @@
-# 🟡 34 trades: -1.06 bps/bet net (gross ~+1.9), below the ~4 expected and under cost; recent window gross negative.
+# 🟡 34 trades, -1.06 bps/bet net (gross ~+1.9, below the ~4 expected); recent 15-bet window gross-negative.
 
-_Updated 2026-11-04 20:41 UTC · model claude-opus-4-8_
+_Updated 2026-11-05 02:00 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running ~+1.9 bps vs ~4 expected, and the trailing 13-bet window is gross-negative (-5.6 bps). Thin sample, but soft enough to keep watching.
+> **WATCH:** Gross edge running below expectation and recent 15-bet window is gross-negative; keep watching, sample still modest.
 
-**Regime:** BTC ~$80.1k, still chopping in the high-$70s/low-$80s after August's run from the $60s; no signal active now. This two-sided, volatile tape is the environment the fade targets, so weak gross numbers carry some weight.
+**Regime:** BTC ~$80.6k, still chopping in the high-$70s/low-$80s after August's run up from the $60s; no signal active now. This two-sided, volatile tape is exactly what the fade targets, so soft gross numbers here carry some weight.
 
-**How it's doing.** Over 34 resolved trades the strategy is net **-1.06 bps/bet (-35.9 bps total)**, winning just **38%** of the time. Stripping out the assumed 3.0 bps cost, the *gross* edge is about **+1.9 bps/bet** — still positive, but well short of the ~4 bps we expected and below the ~3.9 bps it needs just to break even after realistic costs.
+**How it's doing.** The ledger is unchanged since last check: 34 resolved trades, win rate 38%, averaging **-1.06 bps per bet** after an assumed 3 bps cost (total -35.9 bps). Backing out cost, the **gross** result is only about **+1.9 bps/bet** — positive, but well short of the ~4 bps gross edge we expected and barely above (really around) the ~3.9 bps breakeven cost. In plain terms: on paper the signal still leans the right way, but not by enough to clearly beat realistic trading costs.
 
-**What changed vs last time.** Essentially nothing: the ledger is still at 34 trades (last fill Oct 29), so no new bets have resolved. Price drifted from ~$78.2k to ~$80.1k. The one soft spot is the trailing **13-bet window, which is gross-negative at -5.6 bps** (net -8.6) — an early hint the fade isn't catching reversals lately.
+**What changed.** Essentially nothing — no new resolved trades since the prior report, just an updated price (~$80.6k). The flagged concern persists: the most recent 15-bet window is **gross-negative** (-5.79 bps gross, -8.79 net, 33% wins), meaning lately even before costs it's been losing.
 
-**What the numbers do and don't tell us.** With only 34 trades and single-bet swings of **+49 to -28 bps**, the error bars are huge — a couple of lucky or unlucky fills move the average by more than the entire expected edge. So the -35.9 bps total is *not* proof of breakdown, and the +1.9 bps gross is *not* proof of edge. The separately-run edge search finding **0 survivors** (positive net on both venues at 5 bps cost) reinforces that this signal was always marginal at best.
+**What the numbers do and don't tell us.** 34 trades is still a thin sample, and individual outcomes are noisy (single trades range from +52 to -28 bps). A 15-bet rough patch is not proof of a broken edge — it's within what randomness can produce. But it's not nothing, which is why this stays a *watch*, not an *alert*. Also notable: the broader edge search found **zero survivors** that clear a positive net at 5 bps cost on both venues.
 
-**Bottom line.** Consistent with a strategy that is marginal and probably not net-profitable after costs. No profit is implied or expected. Stay on **watch**: no basis to pause yet, but the below-expectation gross plus a negative recent window warrant another look as trades accumulate.
+**Bottom line.** Marginal strategy, performing at or below its already-slim expectation, with a soft recent patch. No evidence of guaranteed profit; no clear case yet to pause. Keep collecting trades.
