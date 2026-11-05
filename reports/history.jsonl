@@ -403,3 +403,4 @@
 {"t": "2026-11-04 13:53 UTC", "headline": "34 trades: -1.06 bps/bet net (-35.9 total), gross ~+1.9 bps \u2014 below the ~4 expected and under cost.", "alert_level": "watch"}
 {"t": "2026-11-04 20:41 UTC", "headline": "34 trades: -1.06 bps/bet net (gross ~+1.9), below the ~4 expected and under cost; recent window gross negative.", "alert_level": "watch"}
 {"t": "2026-11-05 02:00 UTC", "headline": "34 trades, -1.06 bps/bet net (gross ~+1.9, below the ~4 expected); recent 15-bet window gross-negative.", "alert_level": "watch"}
+{"t": "2026-11-05 14:08 UTC", "headline": "34 trades net -1.06 bps/bet (gross ~+1.9, below the ~4 expected); recent 17-bet window is gross-negative. Thin sample.", "alert_level": "watch"}
