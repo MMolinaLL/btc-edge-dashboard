@@ -1,15 +1,15 @@
-# 🔴 34-trade ledger net -1.06 bps/bet; recent 23-bet window now gross-NEGATIVE (-12.2 bps), edge not showing up live.
+# 🔴 23-bet window gross -12.2 bps (net -15.2); 34-trade ledger -1.06 bps/bet — live gross edge is negative, not just marginal.
 
-_Updated 2026-11-06 02:01 UTC · model claude-opus-4-8_
+_Updated 2026-11-06 13:51 UTC · model claude-opus-4-8_
 
-> **ALERT:** Recent 23-bet window is gross-negative (-12.2 bps) vs an expected +4; edge has inverted, not just been eaten by costs. Consider pausing pending more data.
+> **ALERT:** Recent 23-bet window is gross-negative (-12.2 bps) with 30% win rate; live gross edge opposite of the expected +4 bps. Recommend keeping strategy paused.
 
-**Regime:** BTC ~$76k, still chopping in the high-$70s/low-$80s with sharp two-sided 5-min swings — the volatile tape this fade targets, so weak numbers here aren't easily excused by 'wrong regime'. No signal active now.
+**Regime:** BTC ~$75.9k, still chopping in the mid-$70s to mid-$80s with sharp two-sided 5-min swings — exactly the volatile tape this fade is built for, so weak results can't be waved away as 'wrong regime.' No signal active now.
 
-**How it's doing:** Not well, and it's gotten worse since last check. Across all 34 resolved trades the strategy averages **-1.06 bps per bet** (total -35.9 bps), winning only **38%** of the time. The more recent rolling window of **23 bets** is the bigger worry: it's **-15.2 bps net per bet and -12.2 bps *gross***. Gross means *before* trading costs — so this isn't costs eating a thin edge, it's the edge itself pointing the wrong way over this stretch.
+**How it's doing:** Poorly, and consistently so. Across the full 34-trade ledger the strategy averages **-1.06 bps per bet** (total -35.9 bps), and the more recent 23-bet window is worse: **-12.2 bps gross, -15.2 bps net**, winning only **30%** of bets. The important detail is that the recent window is negative *before* trading costs — the raw signal itself lost money, not just a thin edge eaten by fees.
 
-**What changed vs last time:** Last update flagged a 17-bet window that was gross-negative and called it a 'watch'. That window has grown to 23 bets and deteriorated further. Two consecutive readings pointing the same (bad) direction is why I'm escalating to **alert**.
+**What changed vs last time:** Nothing improved. This confirms the prior alert rather than reversing it. The separate edge-search found **0 survivors** against the bar (positive net on both venues at 5 bps cost), reinforcing that no robust edge is currently visible.
 
-**What the numbers do and don't tell us:** The validated edge was always tiny (~4 bps gross, ~3.9 bps breakeven cost) and likely not net-profitable — so some underperformance was expected. But a *gross* result of -12 bps when we expected roughly +4 is a meaningful miss, not just noise around breakeven. Caveat: 23-34 trades is still a modest sample with high per-trade variance (individual trades here range from -28 to +51 bps), so this isn't statistical certainty. Also note: the latest independent edge search found **0 survivors**.
+**What the numbers do and don't tell us:** With only 23–34 resolved trades and single-trade outcomes swinging from about -28 to +51 bps, this is still a small, noisy sample — we cannot precisely pin the true edge. But the problem isn't ambiguity around a tiny positive number; live gross returns are *negative* in the very regime the signal targets, which is a stronger signal than mere underperformance. This is not proof the strategy is broken, but it is clear evidence the expected ~4 bps gross edge is not showing up.
 
-**Bottom line:** The hoped-for edge is not appearing in live data and has recently inverted. No signal is active now. I'd treat this as grounds to pause/shelve rather than scale up. No profit is implied or guaranteed.
+**Bottom line:** This was always a marginal, likely-not-net-profitable candidate. Live data is actively leaning negative, not neutral. Keep it paused and treat any future profitability claim with skepticism — there is no sign of guaranteed, or even probable, net profit here.
