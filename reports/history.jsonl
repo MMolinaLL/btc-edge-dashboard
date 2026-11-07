@@ -407,3 +407,4 @@
 {"t": "2026-11-06 02:01 UTC", "headline": "34-trade ledger net -1.06 bps/bet; recent 23-bet window now gross-NEGATIVE (-12.2 bps), edge not showing up live.", "alert_level": "alert"}
 {"t": "2026-11-06 13:51 UTC", "headline": "23-bet window gross -12.2 bps (net -15.2); 34-trade ledger -1.06 bps/bet \u2014 live gross edge is negative, not just marginal.", "alert_level": "alert"}
 {"t": "2026-11-06 20:16 UTC", "headline": "21-bet window gross -12.3 bps (net -15.3); 34-trade ledger -1.06 bps/bet net \u2014 marginal edge, recent window soft.", "alert_level": "watch"}
+{"t": "2026-11-07 01:40 UTC", "headline": "18-bet window net -17.6 bps/bet; 34-trade ledger -1.06 bps/bet net \u2014 marginal signal running soft, sample still thin.", "alert_level": "watch"}
