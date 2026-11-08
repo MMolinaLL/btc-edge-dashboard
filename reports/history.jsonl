@@ -411,3 +411,4 @@
 {"t": "2026-11-07 12:35 UTC", "headline": "34-trade ledger -1.06 bps/bet net; latest 13-bet window -17.1 bps \u2014 marginal signal running soft, sample still thin.", "alert_level": "watch"}
 {"t": "2026-11-07 18:29 UTC", "headline": "34-trade ledger at -1.06 bps/bet net; latest 13-bet window -16.7 bps \u2014 marginal signal still running soft on a thin sample.", "alert_level": "watch"}
 {"t": "2026-11-08 01:08 UTC", "headline": "34-trade ledger at -1.06 bps/bet net; latest 13-bet window -15.1 bps \u2014 marginal signal still soft on a modest sample.", "alert_level": "watch"}
+{"t": "2026-11-08 12:53 UTC", "headline": "Ledger unchanged at 34 trades, -1.06 bps/bet net (-35.9 total); 3-bet recent window +2.1 bps \u2014 still soft, no signal active.", "alert_level": "watch"}
