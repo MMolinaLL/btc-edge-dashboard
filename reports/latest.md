@@ -1,17 +1,15 @@
-# 🟡 Ledger unchanged at 34 trades, -1.06 bps/bet net (-35.9 total); 3-bet recent window +2.1 bps — still soft, no signal active.
+# 🟡 Ledger flat at 34 trades, -1.06 bps/bet net (-35.9 total); recent 5-bet window +1.3 bps net — soft but thin, no signal active.
 
-_Updated 2026-11-08 12:53 UTC · model claude-opus-4-8_
+_Updated 2026-11-08 18:41 UTC · model claude-opus-4-8_
 
-> **WATCH:** Full-ledger net remains modestly negative (-1.06 bps/bet over 34 trades), below the ~+1 bps you'd expect at this cost; keep monitoring, sample still modest.
+> **WATCH:** 34-trade net is mildly negative (-1.06 bps/bet) on a modestly-sized sample; not a confirmed breakdown, but worth watching.
 
-**Regime:** BTC ~$75.8k, still chopping in the mid-$70s–mid-$80s with sharp two-sided 5-min swings — the volatile tape this fade targets, so soft results can't be excused by a 'wrong regime.' No signal currently active.
+**Regime:** BTC ~$75.9k, still chopping across the mid-$70s to mid-$80s with sharp two-sided 5-min swings — exactly the volatile tape this fade targets, so soft results can't be blamed on a 'wrong regime.' No signal active right now.
 
-**What's happening.** The cumulative ledger is effectively unchanged since last check: 34 resolved trades, 38.2% win rate, **-1.06 bps/bet net (-35.9 bps total)**. No new trades have been added to the full ledger. The separate recent rolling window shows 3 bets, all winners, **+2.06 bps net** — but three trades tells us essentially nothing.
+**Where things stand.** The full live ledger is unchanged since last check: 34 resolved trades, win rate 38%, averaging **-1.06 bps per trade** for a cumulative **-35.9 bps**. No new trades have closed, and no signal is currently active (price ~$75.9k).
 
-**What changed.** Last time the latest 13-bet window was -15.1 bps; the current tiny 3-bet window is slightly positive. That's a mild cosmetic improvement, not evidence of recovery — it's small-sample noise either way.
+**What changed.** Only the short rolling window moved: it now shows 5 bets at 80% win and **+1.26 bps net** (gross +4.3, cost 3.0). That's a faint positive, but 5 trades is statistical noise — one big winner swings it entirely.
 
-**What the numbers do say.** Over the full 34-trade history, the signal is running *below* expectation. Gross edge was supposed to be ~4 bps/bet; here net is -1.06 bps at an assumed 3 bps cost, implying gross of only ~2 bps. That's consistent with the known verdict that this signal is marginal and likely not net-profitable after realistic costs. The fresh edge-search found **0 survivors** passing the stricter 5-bps-cost, both-venues bar.
+**What the numbers do and don't tell us.** Recall this signal was marginal by design: ~4 bps gross edge against a ~3.9 bps breakeven cost. So it was never expected to clear realistic costs comfortably. The live ledger running slightly negative is consistent with 'barely-or-not profitable,' not proof of a collapse — 34 selective trades is still a small sample, and individual trades swing from +52 to -28 bps. Separately, the edge re-search found **zero survivors** that stay net-positive on both venues at 5 bps cost — a real caution flag.
 
-**What they don't say.** 34 trades is still a modest sample for a signal this thin — individual outcomes swing from -28 to +52 bps, so the average is noisy. We cannot yet call this a confirmed breakdown.
-
-**Bottom line.** No edge visible in live data, slightly negative overall, nothing to trade right now. Keep on *watch*, no profit implied. Would escalate only on sustained negative results over more trades.
+**Bottom line.** No evidence of a tradeable, cost-covering edge here, and mild negative drift on a modest sample. This is not a hard 'alert' breakdown, but it does not deserve capital. Keep it flat/paper, keep logging. I'd escalate to alert if the ledger grows (say 50+ trades) while staying materially negative beyond cost. No profit is implied or guaranteed.
