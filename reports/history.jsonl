@@ -416,3 +416,4 @@
 {"t": "2026-11-09 01:28 UTC", "headline": "34 trades net -1.06 bps/bet (-35.9 total); recent 6-bet window -16 bps net but tiny \u2014 soft, within noise, no signal active.", "alert_level": "watch"}
 {"t": "2026-11-09 15:26 UTC", "headline": "34 bets net -1.06 bps/bet (-35.9 total); recent 8-bet window -13.3 bps net on negative gross \u2014 soft but sample too thin to call breakdown. No signal active.", "alert_level": "watch"}
 {"t": "2026-11-10 03:58 UTC", "headline": "34 resolved bets, net -1.06 bps/bet (-35.9 total); recent 7-bet window -15.2 bps net on negative gross. Still thin. No signal live.", "alert_level": "watch"}
+{"t": "2026-11-10 14:28 UTC", "headline": "34 bets, net -1.06 bps/bet (-35.9 total); gross ~+1.9 bps/bet. Marginal as expected. Recent 6-bet window noisy-negative. No signal live.", "alert_level": "none"}

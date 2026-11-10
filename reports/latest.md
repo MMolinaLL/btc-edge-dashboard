@@ -1,15 +1,13 @@
-# 🟡 34 resolved bets, net -1.06 bps/bet (-35.9 total); recent 7-bet window -15.2 bps net on negative gross. Still thin. No signal live.
+# 🟢 34 bets, net -1.06 bps/bet (-35.9 total); gross ~+1.9 bps/bet. Marginal as expected. Recent 6-bet window noisy-negative. No signal live.
 
-_Updated 2026-11-10 03:58 UTC · model claude-opus-4-8_
+_Updated 2026-11-10 14:28 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window net clearly negative and gross edge running below validation; sample still too small to confirm breakdown.
+**Regime:** BTC ~$73.7k, chopping in the low-mid $70s with sharp two-sided 5-min swings — exactly the volatile tape this fade targets, so results can't be blamed on a 'wrong regime.' Signal flat right now.
 
-**Regime:** BTC ~$74.5k, grinding in the mid-$70s with sharp two-sided 5-min swings — the volatile tape this fade is built for, so weak results can't be excused by a 'wrong regime.' No signal firing now.
+**How it's doing.** Across all 34 resolved bets the strategy is netting **-1.06 bps per trade** (-35.9 bps cumulative) with a 38% win rate. Backing out the 3.0 bps cost, gross is about **+1.9 bps/bet** — positive but below the ~4 bps gross edge we hoped for, and short of the ~3.9 bps it needs just to break even after realistic costs.
 
-**Status: unchanged and soft.** The ledger still shows 34 resolved bets with no new fills since last check, so the picture is essentially the same: net **-1.06 bps per bet** and **-35.9 bps** cumulative. Win rate is a coin-flippy 38%, and the recent 7-bet window is **-15.2 bps net** on **-12.2 bps gross** — i.e. the losses aren't just costs, the raw signal lost money in that stretch.
+**What changed.** Little of substance since last update. The headline 'recent window' is now just **6 bets** (net -17.5 bps, gross -14.5). That looks ugly, but six 5-minute trades is pure noise — two bad draws can produce this easily, and it tells us essentially nothing.
 
-**What changed vs last time:** basically nothing. No additional trades resolved, so the slightly worse window number (-15.2 vs -13.3 bps) is just reshuffling, not fresh evidence.
+**What the numbers do and don't say.** They're consistent with the prior honest verdict: this is a **marginal signal that is probably not net-profitable after costs**. A slightly-negative net over 34 trades is exactly what 'marginal edge, high cost' looks like — it is *not* evidence of a sudden breakdown of a working strategy, because there was never a strong edge to break. The parallel edge search again found **0 survivors** passing the two-venue/5-bps bar, reinforcing that no robust edge is present.
 
-**What the numbers do and don't tell us:** Backing out costs (3.0 bps), live gross is running near ~1.9 bps/bet — well below the ~4 bps gross edge seen in validation, and below the ~3.9 bps breakeven cost. That's consistent with a strategy that was marginal to begin with and is now underperforming. **But 34 trades is a small sample**, and because only ~1-2% of candles trade, it grows slowly. A handful of big swings (e.g. the +49 and -28 bps outliers) dominate, so neither the negative total nor the recent window is statistically decisive.
-
-**Bottom line:** No evidence the edge is working; some evidence it's weak-to-absent. This was never a confident money-maker. Keep it on **watch**, not alert — the sample isn't large enough to justify declaring a confirmed breakdown. No signal is currently active.
+**Bottom line.** Performing roughly as (pessimistically) expected, not degrading. 34 trades is still too thin for a verdict, and the 6-bet window is noise. No action needed, but don't expect this to turn profitable — keep watching as the sample grows. No guarantee of profit here.
