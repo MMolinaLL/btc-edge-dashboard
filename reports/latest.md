@@ -1,13 +1,13 @@
-# 🟢 Still 34 bets, net -1.06 bps/bet (-35.9 total); gross ~+1.9 bps/bet, below ~4 bps expected. Sample thin, signal flat.
+# 🟢 35 bets, net -1.14 bps/bet (-40 total); gross ~+1.9 bps still below ~4 bps expected. Sample thin, signal flat.
 
-_Updated 2026-11-11 21:05 UTC · model claude-opus-4-8_
+_Updated 2026-11-12 02:44 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$74.6k, still chopping in the low-mid $70s with sharp two-sided 5-min swings — the volatile tape this fade targets. Signal is flat (0) right now.
+**Regime:** BTC ~$73.7k, still chopping in the low-mid $70s with sharp two-sided 5-min swings — the volatile tape this fade targets. Signal is currently flat (0).
 
-**What's happening:** No new resolved trades since last check — the ledger still shows **34 bets**, win rate **38.2%**, and a cumulative **-35.9 bps** (about **-1.06 bps per bet**). The signal is currently flat (0), so nothing is live. The tiny 2-bet 'window' reads -5.3 bps net, but two trades tell us essentially nothing.
+**What changed.** One new trade since last check (34→35): a Nov-11 long that lost -4.1 bps. The ledger ticked from -1.06 to **-1.14 bps/bet**, total **-40.0 bps**. Nothing structurally new — just the sample creeping up by one.
 
-**What changed:** Effectively nothing versus the prior assessment. Same trade count, same totals. The research-side edge search still finds **0 survivors** that clear a 5 bps cost hurdle on both venues — consistent with this being a marginal signal.
+**What the numbers say.** Across 35 resolved trades, win rate is 37%, net mean **-1.14 bps**. Backing out the assumed 3 bps cost, gross edge is about **+1.9 bps/bet** — positive, but still well short of the ~4 bps gross we validated and below the ~3.9 bps breakeven. So on this sample the strategy is roughly break-even-to-slightly-negative gross, and net-negative after costs.
 
-**What the numbers do/don't tell us:** Gross performance is roughly **+1.9 bps/bet**, which is *positive but well short* of the ~4 bps gross edge we hoped to see — and below the ~3.9 bps it needs just to break even on costs. So on this sample it is net-losing. But 34 selective trades is a small sample with huge per-trade variance (individual results here swing from -28 to +52 bps). That means we **cannot** distinguish 'the edge decayed' from 'normal noise around a thin edge.' A dozen more trades could easily move the average a bp or two in either direction.
+**What they don't tell us.** 35 trades is far too few to distinguish a real edge from noise. Results are dominated by a handful of big winners (+52, +29, +26 bps) against many small losers; drop one or two and the picture flips. This is exactly the small-sample fog we warned about. The recent 3-bet window (-2.6 bps net) is meaningless on its own.
 
-**Bottom line:** This remains a marginal, probably-not-net-profitable signal on the live evidence. It is underperforming expectations but not in a way that is statistically damning yet. No alert — the honest read is 'weak and still too thin to judge.' Keep logging; don't hype, don't expect profit.
+**Bottom line.** Behaving as expected for a *marginal* candidate that was never confirmed net-profitable: gross hovering below target, net slightly negative, sample too thin to judge. No sign of a sharp breakdown, but also no evidence of a durable, cost-covering edge. Separately, the edge search still shows **0 survivors** at the 5 bps bar — consistent with 'likely not net-profitable.' Keep logging; don't deploy real capital on this.
