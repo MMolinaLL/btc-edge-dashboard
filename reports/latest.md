@@ -1,13 +1,13 @@
-# 🟢 35 bets, net -1.14 bps/bet (-40 total); gross ~+1.9 bps — below the hoped ~4 bps edge. Still thin, no alert.
+# 🟢 35 bets, net -1.14 bps/bet (gross ~+1.9); recent 14-bet window soft (gross -5.1) but sample too thin to judge.
 
-_Updated 2026-11-13 02:27 UTC · model claude-opus-4-8_
+_Updated 2026-11-13 14:02 UTC · model claude-opus-4-8_
 
-**Regime:** BTC ~$70.5k, still grinding lower from the mid-$70s with sharp two-sided 5-min swings — the choppy, volatile tape this fade is built for. Signal currently flat (0).
+**Regime:** BTC ~$69.4k, chopping lower from the mid-$80s highs seen in Sept/Oct with sharp two-sided 5-min swings — the volatile tape this fade targets. Signal currently flat (0).
 
-**How it's doing.** The live ledger holds at 35 resolved trades, unchanged since last check, so nothing has actually resolved to move the needle. Net result is **-1.14 bps per bet (-40 bps total)**, with a win rate of ~37%. Backing out the 3 bps assumed cost, the **gross** edge is about **+1.9 bps/bet** — positive, but well short of the ~4 bps we'd hoped for and barely above (actually below, after realistic costs) the ~3.9 bps breakeven. In plain terms: on these numbers it is not covering its trading costs.
+**How it's doing.** Over all 35 resolved trades the strategy nets **-1.14 bps/bet (-40 bps total)**. Adding back the 3 bps cost assumption, gross is about **+1.9 bps/bet** — positive, but well below the ~4 bps gross edge we hoped to see. In plain terms: the signal still leans the right way slightly, but not enough to clear realistic trading costs. That matches what we already knew — this is a *marginal* strategy that likely isn't net-profitable after fees.
 
-**What changed.** Essentially nothing versus the prior assessment — same 35 trades, same picture. The trailing 9-bet window looks worse (net -4.7 bps, gross -1.7 bps, 33% wins), but nine trades is noise, not evidence.
+**What changed vs last time.** Essentially nothing in the full ledger (still 35 trades, same numbers). The win rate is low (37%), which is normal for a fade strategy — it should win less often but win bigger. The recent rolling 14-bet window is soft: **net -8.1 bps, gross -5.1 bps**. That's a genuinely weak stretch, but 14 trades is noise-level, so I'm not treating it as degradation yet.
 
-**What the numbers do and don't tell us.** They confirm the strategy is behaving as advertised: *marginal*. A gross edge near +2 bps on a thin sample is fully consistent with either a tiny real edge or pure chance. Individual trades swing wildly (-28 to +49 bps), so 35 bets can't distinguish a small positive edge from zero. Note also: the independent edge search found **0 survivors** at a 5-bps-cost, no-look-ahead bar — a sobering backdrop.
+**What the numbers do and don't tell us.** With only 35 lifetime bets — and this signal trading just ~1-2% of candles — the uncertainty bands are huge. A couple of big winners (e.g. +49 and +26 bps in August) or losers can swing the average by bps. We cannot yet distinguish 'small real edge' from 'no edge.' Separately, the edge-search found **0 survivors** at a 5 bps cost bar across both venues.
 
-**Bottom line.** No degradation alert — but no cause for optimism either. The data remains too thin to judge, and the gross edge sits below breakeven cost. Keep collecting; do not expect net profit.
+**Bottom line.** Behaving as expected for a marginal, likely-unprofitable-after-costs signal. Too thin to alert, but the recent window is worth watching. No claim of guaranteed profit.
