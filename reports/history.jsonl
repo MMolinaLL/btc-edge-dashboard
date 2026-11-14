@@ -426,3 +426,4 @@
 {"t": "2026-11-13 14:02 UTC", "headline": "35 bets, net -1.14 bps/bet (gross ~+1.9); recent 14-bet window soft (gross -5.1) but sample too thin to judge.", "alert_level": "none"}
 {"t": "2026-11-14 01:59 UTC", "headline": "36 bets, net -1.41 bps/bet (gross ~+1.6); recent 18-bet window now negative even gross (-3.7) \u2014 early soft patch.", "alert_level": "watch"}
 {"t": "2026-11-14 13:04 UTC", "headline": "36 bets, net -1.41 bps/bet (gross ~+1.6); latest 18-bet window negative even gross (-3.7) \u2014 soft patch persists.", "alert_level": "watch"}
+{"t": "2026-11-14 18:57 UTC", "headline": "37 trades, net -2.36 bps/bet; latest 22-bet window negative even gross (-4.6) \u2014 soft patch deepening.", "alert_level": "watch"}
