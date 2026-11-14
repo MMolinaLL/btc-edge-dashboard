@@ -424,3 +424,4 @@
 {"t": "2026-11-12 14:45 UTC", "headline": "35 bets, net -1.14 bps/bet (-40 total); gross ~+1.9 bps \u2014 below the ~4 bps hoped-for edge. Sample still thin.", "alert_level": "none"}
 {"t": "2026-11-13 02:27 UTC", "headline": "35 bets, net -1.14 bps/bet (-40 total); gross ~+1.9 bps \u2014 below the hoped ~4 bps edge. Still thin, no alert.", "alert_level": "none"}
 {"t": "2026-11-13 14:02 UTC", "headline": "35 bets, net -1.14 bps/bet (gross ~+1.9); recent 14-bet window soft (gross -5.1) but sample too thin to judge.", "alert_level": "none"}
+{"t": "2026-11-14 01:59 UTC", "headline": "36 bets, net -1.41 bps/bet (gross ~+1.6); recent 18-bet window now negative even gross (-3.7) \u2014 early soft patch.", "alert_level": "watch"}
