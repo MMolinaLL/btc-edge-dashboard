@@ -1,15 +1,15 @@
-# 🟡 37 trades, net -2.36 bps/bet (total -87 bps); latest 17-bet window negative even gross (-5.3) — degradation signs persist, sample still thin.
+# 🟡 37 trades net -2.36 bps/bet (-87 bps total); latest 18-bet window negative even gross (-5.9) — degradation signs persist on a still-modest sample.
 
-_Updated 2026-11-15 13:33 UTC · model claude-opus-4-8_
+_Updated 2026-11-15 19:35 UTC · model claude-opus-4-8_
 
-> **WATCH:** Rolling window negative before costs (gross -5.3 bps over 17 bets); recent long fades got run over in the BTC selloff. Not yet dozens-of-trades conclusive, but worth close watching.
+> **WATCH:** Recent window gross-negative and full-ledger gross (~+0.6 bps) far below the ~4 bps expected edge. Not a confirmed breakdown, but worth close watch; consider pausing if the next ~10-20 trades stay net-negative.
 
-**Regime:** BTC ~$65.4k, down hard from mid-$80s Sept/Oct highs with violent 5-min swings. Signal flat (0) now; the recent long (buy-the-dip) fades repeatedly lost as price kept falling.
+**Regime:** BTC ~$64.9k, down sharply from mid-$80s Sept/Oct highs with violent 5-min swings. Signal flat (0) now; recent buy-the-dip longs faded repeatedly against a falling market.
 
-**How it's doing:** Not well, but the sample is still too small for a verdict. Across all 37 resolved trades the strategy averages **-2.36 bps/bet** (cumulative **-87 bps**), winning just **35%** of the time. The most recent 17-bet window is **-8.3 bps net**, and importantly **-5.3 bps gross** — i.e. losing *before* trading costs even enter the picture.
+**How it's doing.** Weak. Across all 37 resolved trades the strategy is net **-2.36 bps/bet** (total **-87.3 bps**), winning just **35%** of the time. Strip out the 3 bps assumed cost and gross is only about **+0.6 bps/bet** — well under the ~4 bps gross edge we expected, and below the ~3.9 bps breakeven cost. The latest 18-bet window is worse: **-8.92 bps net, and -5.92 bps gross**, meaning it lost money *before* costs.
 
-**What changed vs last time:** Little has resolved since the prior check (still 37 trades), so this is continuity, not new evidence. The pattern holds: a soft patch that is negative even on a gross basis. The recent November trades are telling — a cluster of *long* fades (signal +1) during BTC's slide from ~$80k to ~$65k all lost (-4 to -37 bps), classic 'catching a falling knife' behavior for a mean-reversion signal in a strong trend.
+**What changed.** Essentially one trade since last check: a **-36.7 bps** long on Nov 14 as BTC kept falling. The picture is unchanged — longs that tried to fade the dip (Oct 29, Nov 11/13/14) mostly lost as the downtrend continued.
 
-**What the numbers do and don't tell us:** The expected edge was only ~4 bps gross with a ~3.9 bps breakeven — razor-thin by design. A gross-negative window *suggests* the edge isn't showing up out-of-sample, but 17-37 selective trades is still noise-dominated; one or two big swings move these averages a lot. The separate edge search also found **zero survivors** at a 5 bps cost bar.
+**What the numbers do and don't tell us.** They show a consistent *drift* in the wrong direction, not just one bad bet. But 37 trades is still a modest sample for a strategy whose true edge was always tiny and marginal; a handful of large swings dominate the tally. Separately, the edge re-search found **0 survivors** clearing a positive-after-5bps bar on both venues — reinforcing that this signal is fragile.
 
-**Bottom line:** Early, persistent underperformance — negative even before costs — on a marginal strategy that was never expected to clear realistic costs. No guaranteed profit here; if anything, evidence leans toward no net edge. Keep it in observation mode; do not scale up.
+**Bottom line.** This was never expected to be reliably profitable after costs, and live results are consistent with that pessimistic view — currently worse. No guaranteed anything here. Keep it on **watch**; if the next batch stays net-negative, escalate to pausing.
