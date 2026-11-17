@@ -432,3 +432,4 @@
 {"t": "2026-11-15 19:35 UTC", "headline": "37 trades net -2.36 bps/bet (-87 bps total); latest 18-bet window negative even gross (-5.9) \u2014 degradation signs persist on a still-modest sample.", "alert_level": "watch"}
 {"t": "2026-11-16 01:36 UTC", "headline": "37 trades net -2.36 bps/bet (-87 bps total); recent 14-bet window negative even gross (-3.7) \u2014 degradation signs persist on a modest sample.", "alert_level": "watch"}
 {"t": "2026-11-16 15:01 UTC", "headline": "37 trades, -2.36 bps/bet net (-87 bps total); recent 13-bet window negative even gross (-2.1) \u2014 degradation signs persist on modest sample.", "alert_level": "watch"}
+{"t": "2026-11-17 04:20 UTC", "headline": "37 trades: gross ~+0.6 bps/bet (vs ~4 expected), net -2.36 bps; recent 10-bet window negative even gross \u2014 degradation signs persist.", "alert_level": "watch"}
