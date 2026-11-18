@@ -1,15 +1,15 @@
-# 🟡 37 trades: net -2.36 bps/bet, gross ~0.6 vs ~4 expected; recent 6-bet window positive but noise. Still degraded.
+# 🟡 37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); last 4 bets positive but pure noise. Still degraded.
 
-_Updated 2026-11-18 03:21 UTC · model claude-opus-4-8_
+_Updated 2026-11-18 15:14 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running ~0.6 bps/bet vs ~4 expected over 37 trades, net -2.36 bps/bet; below breakeven. Watch, don't pause yet.
+> **WATCH:** Full-sample gross edge ~0.6 bps is well below the ~4 bps expected and below breakeven; keep monitoring, don't scale up.
 
-**Regime:** BTC ~$64k, down sharply from mid-$80s Sept/Oct peaks with violent 5-min swings. Signal flat now; recent long (dip-buying) entries repeatedly faded into a falling market.
+**Regime:** BTC ~$63.5k, down hard from mid-$80s Sept/Oct peaks with violent 5-min swings. Signal flat now; recent long (dip-buying) entries repeatedly faded into the falling market.
 
-**How it's doing.** Across all 37 resolved live trades, the strategy is net **-2.36 bps per bet** (total **-87.3 bps**) with a win rate of just **35%**. Gross of costs it's earning only ~0.6 bps/bet versus the ~4 bps the research expected — and well under the ~3.9 bps it needs just to break even. In plain terms: on the live sample so far, there's no net edge.
+**How it's doing:** Over all 37 resolved live bets, the strategy is losing money: average **-2.36 bps per bet**, totalling **-87.3 bps**, with a win rate of just **35%**. Strip out the ~3 bps cost and the *gross* edge is only about **+0.6 bps** — far short of the ~4 bps we expected, and below the ~3.9 bps breakeven cost. In plain terms: on live data it has been roughly break-even-to-slightly-negative before costs, and a loser after them.
 
-**What changed vs last time.** Not much. The ledger is unchanged at 37 trades with the same negative totals. The one bright spot is the recent 6-bet window at **+15.8 bps net** — but six trades is far too few to mean anything; one or two lucky fades can produce that. The headline damage is still the recent *long* (dip-buying) entries that got run over as BTC fell from the mid-$80s to ~$64k, including a -36.7 bps loss on Nov 14.
+**What changed vs last time:** Little of substance. The headline still reads 'degraded.' The dashboard's most recent window (4 bets, 75% win, +30.9 bps) looks great, but **4 trades is noise** — one lucky short-fade can produce that. It does not overturn the 37-trade picture.
 
-**What the numbers do and don't tell us.** 37 trades is enough to say the live result is disappointing, but not enough to definitively declare the edge dead — this signal was always marginal and trades rarely (~1-2% of candles). The zero edge-search survivors reinforce that a robust, cost-surviving edge hasn't been confirmed.
+**What the numbers do and don't tell us:** 37 trades is enough to say the edge is *not* showing up strongly, but not enough to declare it definitively dead. The recent long (buy-the-dip) entries in November — e.g. -36.7 bps on 11/14 — kept getting run over as BTC fell from ~$80k to ~$63k; mean-reversion struggles in strong trends. Separately, the fresh edge search found **zero survivors** at a 5 bps cost bar on both venues — consistent with a marginal, probably-not-net-profitable signal.
 
-**Bottom line.** Underperforming expectations and net-negative so far, consistent with a marginal strategy that likely isn't profitable after costs. No guaranteed profit here; keep it on **watch**, let the sample grow, and don't be fooled by the small recent green streak.
+**Bottom line:** Honest read — this remains a marginal signal performing at or below break-even live. No guaranteed profit here. Stay on **watch**, keep size minimal, and don't be seduced by the 4-bet hot streak.
