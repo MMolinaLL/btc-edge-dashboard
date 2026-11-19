@@ -436,3 +436,4 @@
 {"t": "2026-11-17 15:36 UTC", "headline": "37 trades: gross ~+0.6 bps/bet vs ~4 expected, net -2.36 bps; recent longs faded into Nov crash \u2014 degradation signs persist.", "alert_level": "watch"}
 {"t": "2026-11-18 03:21 UTC", "headline": "37 trades: net -2.36 bps/bet, gross ~0.6 vs ~4 expected; recent 6-bet window positive but noise. Still degraded.", "alert_level": "watch"}
 {"t": "2026-11-18 15:14 UTC", "headline": "37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); last 4 bets positive but pure noise. Still degraded.", "alert_level": "watch"}
+{"t": "2026-11-19 02:57 UTC", "headline": "37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); recent 6-bet window +16.9 but tiny noise. Still degraded.", "alert_level": "watch"}
