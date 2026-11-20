@@ -1,15 +1,15 @@
-# 🟡 37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); recent 6-bet window +15.2 is noise. Still degraded.
+# 🟡 37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); 5-bet +20 bps window is noise. Still degraded.
 
-_Updated 2026-11-19 15:22 UTC · model claude-opus-4-8_
+_Updated 2026-11-20 02:52 UTC · model claude-opus-4-8_
 
-> **WATCH:** Cumulative live edge running below expectation (gross ~0.6 bps vs ~4 bps modeled); 37 trades is non-trivial but not conclusive. Keep paused/paper, don't deploy capital.
+> **WATCH:** Full-sample net stays clearly negative (-2.36 bps/bet over 37 trades, win rate 35%). Edge is running well below the thin ~4 bps gross it was validated at.
 
-**Regime:** BTC ~$63.3k, down hard from mid-$80s Sept/Oct highs with violent 5-min swings. Signal is flat now; the recent string of long (dip-buy) entries during the slide got repeatedly stopped against, including a -36.7 bps hit on Nov 14.
+**Regime:** BTC ~$61.7k, continuing the slide from the mid-$80s Sept/Oct highs with sharp 5-min swings. Signal is flat (0) right now; the recent dip-buy longs during the fall took the worst hits, notably -36.7 bps on Nov 14.
 
-**How it's doing.** Nothing material changed since last check — the ledger still shows the same 37 resolved bets, net **-2.36 bps per trade** (-87.3 bps total) with a **35% win rate**. That's below the modeled ~4 bps gross edge: backing out the 3 bps cost, realized gross is only ~0.6 bps/bet, well short of expectation and under the ~3.9 bps breakeven.
+**How it's doing:** Across all 37 resolved live bets the strategy is losing money: about **-2.36 bps per bet** (total **-87.3 bps**), with wins on only **35%** of trades. For a signal whose *best-case* validated gross edge was ~4 bps against a ~3.9 bps breakeven cost, that's a poor result — the implied live gross is roughly **0.6 bps**, far short of expectation.
 
-**What changed.** The highlighted rolling **6-bet window is +15.2 bps net (67% wins)**, which looks encouraging — but six trades is statistical noise and should not be read as a turnaround. One or two lucky short fades can produce that. The signal is currently **flat (0)**, so no new position.
+**What changed vs last time:** Very little. We added a few trades and the latest **5-bet window shows +20 bps net (4 of 5 wins)**. That looks encouraging, but 5 trades is statistically meaningless — one or two lucky fades. It does *not* offset the negative full-sample picture, and we should not read a recovery into it.
 
-**What the numbers do and don't tell us.** 37 trades is enough to say the live edge is *not* clearly positive, but not enough to declare a definitive breakdown. A pattern worth noting: the profitable fills were mostly short entries into spikes, while the recent **long dip-buys in November got run over** by the falling market (e.g. -36.7, -13.1, -10.6 bps). That's consistent with mean-reversion failing in a strong trend. Separately, the edge re-search found **0 survivors** passing a 5 bps-cost, both-venue bar — no candidate currently clears realistic costs.
+**What the numbers do and don't tell us:** 37 trades is a modest sample — enough to say the live edge is clearly *not* running hot, but not enough to prove a hard structural break versus plain bad luck in a trending, volatile market. Mean reversion naturally struggles when price trends hard (the dip-buys got run over on the way down). Separately, the edge search found **0 survivors** at 5 bps cost on both venues — no candidate currently clears a realistic cost bar.
 
-**Bottom line.** This was always a marginal, likely-not-net-profitable signal, and live data so far supports that cautious view rather than refuting it. No guaranteed profit here. Stay in watch: keep it on paper, don't commit capital on the strength of a 6-bet pop.
+**Bottom line:** This remains a marginal, probably-not-net-profitable signal, and live data so far leans negative. The recent green window is noise. Keep it on **watch**, not alert — not yet a decisive breakdown, but no evidence of a real edge either. No profit is implied or guaranteed.
