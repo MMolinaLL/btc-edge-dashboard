@@ -439,3 +439,4 @@
 {"t": "2026-11-19 02:57 UTC", "headline": "37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); recent 6-bet window +16.9 but tiny noise. Still degraded.", "alert_level": "watch"}
 {"t": "2026-11-19 15:22 UTC", "headline": "37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); recent 6-bet window +15.2 is noise. Still degraded.", "alert_level": "watch"}
 {"t": "2026-11-20 02:52 UTC", "headline": "37 live bets net -2.36 bps/bet (gross ~0.6 vs ~4 expected); 5-bet +20 bps window is noise. Still degraded.", "alert_level": "watch"}
+{"t": "2026-11-20 14:59 UTC", "headline": "37 live bets net -2.36 bps/bet; gross ~0.6 vs ~4 expected. No new trades vs last check. Still degraded, signal flat.", "alert_level": "watch"}
