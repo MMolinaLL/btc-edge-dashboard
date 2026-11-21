@@ -1,15 +1,15 @@
-# 🟡 37 live bets unchanged, net -2.36 bps/bet (gross ~0.6 vs ~4 expected); signal flat. Still degraded.
+# 🟡 38 live bets, full-ledger net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last 11 bets +3.4 net. Still subpar.
 
-_Updated 2026-11-21 02:59 UTC · model claude-opus-4-8_
+_Updated 2026-11-21 14:20 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running well below the ~4 bps expectation across 37 trades; net clearly negative. Not pausing yet, but edge is not showing up live.
+> **WATCH:** Full-sample edge running ~1/3 of expected and net-negative after cost; recent window positive but small. Keep monitoring, don't scale.
 
-**Regime:** BTC ~$58.5k, still grinding down from the mid-$80s Sept/Oct highs with sharp 5-min swings. Signal is flat (0); the strategy's recent dip-buy longs during the slide took the biggest losses.
+**Regime:** BTC ~$60.1k, still well off the mid-$80s Sept/Oct highs after a sharp slide; signal currently flat (0). Recent dip-buy longs have been volatile, with both the worst and one of the best trades in the last week.
 
-**What's happening:** No new resolved trades since the last check — still 37 live bets. Over those, the strategy wins just 35% of the time and loses an average of **-2.36 bps per bet** (total **-87.3 bps**). Backing out the 3 bps cost, gross is only ~**0.6 bps/bet** versus the ~4 bps we expected. The small recent window (4 bets) is net -7.2 bps, but 4 trades tells us essentially nothing on its own.
+**How it's doing:** Over the full live ledger of 38 resolved trades, the strategy is net **-1.66 bps per bet** (total **-63 bps**), winning just **37%** of the time. After subtracting the 3 bps cost assumption, its gross edge is running around **1.3 bps/bet** — roughly a third of the ~4 bps we expected, and below the ~3.9 bps it needs just to break even. So on the full record it is **not paying for itself**.
 
-**What changed vs last time:** Almost nothing — same 37-trade ledger, same flat signal. Price has drifted further down (~$61.6k → ~$58.5k), continuing the slide from the mid-$80s.
+**What changed vs last time:** Essentially one new trade resolved (37 → 38). Mean net improved slightly from -2.36 to -1.66 bps, helped by a +24 bps long on 11-21 during the slide. The most recent rolling window (11 bets) is actually **positive: +3.36 net, 73% wins** — a welcome swing, but a small, cherry-cut sample.
 
-**What the numbers do and don't tell us:** 37 trades is enough to say the live edge is *not showing up as hoped* — gross is running near zero, not 4 bps. But it's still a thin sample for a signal that only trades ~1-2% of candles, and single trades (e.g. the -36.7 bps Nov 14 long) swing the average heavily. This is consistent degradation, not yet a proven, dozens-deep breakdown demanding a shutdown.
+**What the numbers do and don't tell us:** 38 selective trades is still a thin sample for a signal with a ~4 bps edge; a handful of large swings (e.g. the -37 bps 11-14 long, the +49 bps 08-21 short) dominate the tally. The positive recent window and the negative overall tally are **both too small to be conclusive**. The independent edge search still finds **zero survivors** at the stricter two-venue, 5 bps bar.
 
-**Honest bottom line:** This was always a marginal strategy (gross ~4 bps vs ~3.9 bps breakeven), and live data so far is *worse* than marginal — likely net-losing. The independent edge search still finds **zero survivors**. Keep it paused/paper and keep monitoring; don't expect it to turn profitable. Status stays **watch**.
+**Bottom line:** Marginal strategy, performing below expectation out-of-sample and net-negative overall. No guarantee of profit — keep it on watch, don't commit capital.
