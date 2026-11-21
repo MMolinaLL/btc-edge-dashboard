@@ -1,17 +1,15 @@
-# 🟡 37 live bets net -2.36 bps/bet; gross ~0.6 vs ~4 expected. No new trades vs last check. Still degraded, signal flat.
+# 🟡 37 live bets unchanged, net -2.36 bps/bet (gross ~0.6 vs ~4 expected); signal flat. Still degraded.
 
-_Updated 2026-11-20 14:59 UTC · model claude-opus-4-8_
+_Updated 2026-11-21 02:59 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running well below the ~4 bps thesis (~0.6 bps) and net is negative across 37 bets; keep paused/paper until gross edge reappears.
+> **WATCH:** Gross edge running well below the ~4 bps expectation across 37 trades; net clearly negative. Not pausing yet, but edge is not showing up live.
 
-**Regime:** BTC ~$61.6k, still grinding down from the mid-$80s Sept/Oct highs with violent 5-min swings. Signal is flat (0) now; recent dip-buy longs during the slide were the worst hits (-36.7 bps on Nov 14).
+**Regime:** BTC ~$58.5k, still grinding down from the mid-$80s Sept/Oct highs with sharp 5-min swings. Signal is flat (0); the strategy's recent dip-buy longs during the slide took the biggest losses.
 
-**Bottom line: still underperforming, nothing improved since last check.** The ledger is unchanged at 37 resolved trades, meaning no new bets have been added — so this update carries no fresh information, just continuity. Net result remains **-2.36 bps per bet** (-87.3 bps total), with a **35% win rate**.
+**What's happening:** No new resolved trades since the last check — still 37 live bets. Over those, the strategy wins just 35% of the time and loses an average of **-2.36 bps per bet** (total **-87.3 bps**). Backing out the 3 bps cost, gross is only ~**0.6 bps/bet** versus the ~4 bps we expected. The small recent window (4 bets) is net -7.2 bps, but 4 trades tells us essentially nothing on its own.
 
-**What the numbers say:** The strategy's thesis was a thin ~4 bps gross edge against a ~3.9 bps breakeven cost — marginal by design. Live gross is only ~0.6 bps, well short of 4. That gap, not the trading cost, is the real concern: the raw signal isn't capturing the move it's supposed to. After the 3 bps cost applied here, every honest accounting lands negative.
+**What changed vs last time:** Almost nothing — same 37-trade ledger, same flat signal. Price has drifted further down (~$61.6k → ~$58.5k), continuing the slide from the mid-$80s.
 
-**What they don't say:** 37 selective trades is a modest sample — enough to be skeptical, not enough to declare the edge dead with confidence. The 3-bet rolling window (-2.2 bps) is pure noise and should be ignored. The scatter is huge (single trades from -36.7 to +48.7 bps), so point estimates are shaky.
+**What the numbers do and don't tell us:** 37 trades is enough to say the live edge is *not showing up as hoped* — gross is running near zero, not 4 bps. But it's still a thin sample for a signal that only trades ~1-2% of candles, and single trades (e.g. the -36.7 bps Nov 14 long) swing the average heavily. This is consistent degradation, not yet a proven, dozens-deep breakdown demanding a shutdown.
 
-**What changed vs last time:** Nothing material — same ledger, smaller rolling window. Separately, the edge-search found **zero survivors** passing the two-venue, 5 bps, no-look-ahead bar — consistent with no deployable edge right now.
-
-**Verdict:** Keep on watch and treat as not net-profitable. No guarantee of profit; do not scale up. Wait for more resolved trades before any stronger call.
+**Honest bottom line:** This was always a marginal strategy (gross ~4 bps vs ~3.9 bps breakeven), and live data so far is *worse* than marginal — likely net-losing. The independent edge search still finds **zero survivors**. Keep it paused/paper and keep monitoring; don't expect it to turn profitable. Status stays **watch**.
