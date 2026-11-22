@@ -443,3 +443,4 @@
 {"t": "2026-11-21 02:59 UTC", "headline": "37 live bets unchanged, net -2.36 bps/bet (gross ~0.6 vs ~4 expected); signal flat. Still degraded.", "alert_level": "watch"}
 {"t": "2026-11-21 14:20 UTC", "headline": "38 live bets, full-ledger net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last 11 bets +3.4 net. Still subpar.", "alert_level": "watch"}
 {"t": "2026-11-22 01:56 UTC", "headline": "38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last 10 +2.1 net. Marginal, below spec.", "alert_level": "watch"}
+{"t": "2026-11-22 14:11 UTC", "headline": "38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); recent 13 gross ~0. Marginal, underperforming spec.", "alert_level": "watch"}
