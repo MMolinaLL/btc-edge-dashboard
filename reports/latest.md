@@ -1,15 +1,15 @@
-# 🟡 38 live bets, full-ledger net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last 11 bets +3.4 net. Still subpar.
+# 🟡 38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last 10 +2.1 net. Marginal, below spec.
 
-_Updated 2026-11-21 14:20 UTC · model claude-opus-4-8_
+_Updated 2026-11-22 01:56 UTC · model claude-opus-4-8_
 
-> **WATCH:** Full-sample edge running ~1/3 of expected and net-negative after cost; recent window positive but small. Keep monitoring, don't scale.
+> **WATCH:** Full-ledger gross edge (~1.3 bps) is running below the ~4 bps expected and net is negative over 38 bets. Not a hard breakdown yet, but keep monitoring.
 
-**Regime:** BTC ~$60.1k, still well off the mid-$80s Sept/Oct highs after a sharp slide; signal currently flat (0). Recent dip-buy longs have been volatile, with both the worst and one of the best trades in the last week.
+**Regime:** BTC has slid to ~$60.0k from the mid-$80s Sept/Oct highs — a sharp, trend-heavy regime that is unfriendly to a mean-reversion fade. Signal is currently flat (0).
 
-**How it's doing:** Over the full live ledger of 38 resolved trades, the strategy is net **-1.66 bps per bet** (total **-63 bps**), winning just **37%** of the time. After subtracting the 3 bps cost assumption, its gross edge is running around **1.3 bps/bet** — roughly a third of the ~4 bps we expected, and below the ~3.9 bps it needs just to break even. So on the full record it is **not paying for itself**.
+**How it's doing:** Over the full live ledger of 38 resolved trades, the strategy is net **-1.66 bps/bet** (-63 bps total) with a 37% win rate. Backing out the 3 bps cost assumption, the implied *gross* edge is only ~1.3 bps/bet — below the ~4 bps we expected and below the ~3.9 bps breakeven. In plain terms: on this sample it has not paid for its trading costs.
 
-**What changed vs last time:** Essentially one new trade resolved (37 → 38). Mean net improved slightly from -2.36 to -1.66 bps, helped by a +24 bps long on 11-21 during the slide. The most recent rolling window (11 bets) is actually **positive: +3.36 net, 73% wins** — a welcome swing, but a small, cherry-cut sample.
+**What changed vs last time:** Little. The ledger is unchanged at 38 bets and still modestly negative. The most recent 10 bets are net **+2.1 bps** (70% wins), which is encouraging but is a tiny, noisy slice — a couple of trades swing it. Note the wide dispersion: a single -36.7 bps long (Nov 14, during the crash) and a +24.3 bps long (Nov 21) dominate recent PnL.
 
-**What the numbers do and don't tell us:** 38 selective trades is still a thin sample for a signal with a ~4 bps edge; a handful of large swings (e.g. the -37 bps 11-14 long, the +49 bps 08-21 short) dominate the tally. The positive recent window and the negative overall tally are **both too small to be conclusive**. The independent edge search still finds **zero survivors** at the stricter two-venue, 5 bps bar.
+**What the numbers do/don't tell us:** 38 trades is enough to say the live edge is *not* clearly beating costs, but not enough to declare the signal dead — expected per-bet edge is tiny, so noise easily masks a few-bps true edge. The regime matters: a selective mean-reversion fade struggles in a steep trending sell-off like the move to $60k. Separately, the broader edge search still has **0 survivors** at a 5 bps bar.
 
-**Bottom line:** Marginal strategy, performing below expectation out-of-sample and net-negative overall. No guarantee of profit — keep it on watch, don't commit capital.
+**Bottom line:** Consistent with prior guidance — this was always marginal and likely not net-profitable after realistic costs. Live data supports that cautious view. Keep it on watch; no evidence of guaranteed profit, and no urgent reason to pause yet.
