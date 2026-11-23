@@ -1,15 +1,15 @@
-# 🟡 38 live bets net -1.66 bps/bet; gross ~1.3 vs ~4 expected. Marginal signal underperforming spec, sample still thin.
+# 🟡 38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last-13 window flipped positive. Thin, marginal.
 
-_Updated 2026-11-23 02:19 UTC · model claude-opus-4-8_
+_Updated 2026-11-23 17:33 UTC · model claude-opus-4-8_
 
-> **WATCH:** Gross edge running ~1.3 bps vs ~4 expected over 38 bets; recent 13-bet gross near zero. Keep monitoring, sample still modest.
+> **WATCH:** Full-sample gross edge (~1.3 bps) running well below the ~4 bps spec; still too few trades to confirm breakdown.
 
-**Regime:** BTC has slid to ~$60.7k from mid-$80s Sept/Oct highs — a sharp, trend-heavy down-leg that is structurally hostile to a mean-reversion fade. Signal is currently flat (0).
+**Regime:** BTC has dropped to ~$61.7k from mid-$80s Sept/Oct highs — a sharp trend-down leg that is structurally hostile to a mean-reversion fade. Signal is currently flat (0).
 
-**How it's doing.** Across all 38 resolved live bets, the strategy is losing about **-1.66 bps per bet** (-63 bps total), winning just **36.8%** of the time. Before costs the gross edge is running only ~1.3 bps/bet — well short of the ~4 bps gross the backtest implied, and below the ~3.9 bps breakeven cost. The most recent 13-bet window is roughly **flat gross (+0.16 bps)** and **-2.84 bps net**.
+**How it's doing.** Across all 38 resolved live bets the strategy is net **-1.66 bps/bet** (total **-63 bps**), winning just **36.8%** of the time. Even before costs the gross edge is only ~1.3 bps/bet — well short of the ~4 bps/bet the backtest led us to expect. So on the full live sample it is underperforming its own (already marginal) spec.
 
-**What changed vs last time.** Very little. The picture is essentially the same as the prior read: a marginal signal delivering less gross edge than hoped. No new trades appear to have flipped the story in either direction, and the independent edge search still finds **0 survivors** that clear the profit bar on both venues.
+**What changed vs last time.** The most recent rolling window of 13 bets actually looks *better*: **+5.2 bps net** (gross ~8.2 bps) with a 61.5% win rate. That's a genuine improvement over the prior read, but 13 trades is tiny and easily explained by a couple of lucky fades (e.g. the +48.7 and +24.3 bps winners). Don't over-weight it.
 
-**What the numbers do and don't tell us.** 38 trades is still a small sample for a signal that only fires on ~1-2% of candles, so the sub-breakeven result is consistent with *either* genuine weakness *or* ordinary noise — we can't yet distinguish them. The recent losers cluster in the sharp BTC downtrend (e.g. the -36.7 bps long on Nov 14), which fits the regime being unfriendly to fading moves.
+**What the numbers do and don't tell us.** They tell us the signal remains *marginal* and, over its full live history, net-negative after a realistic 3 bps cost — consistent with the original finding that breakeven cost (~3.9 bps) sits right at the edge. The separate edge search still returns **0 survivors** at a 5 bps cost bar on both venues, reinforcing that no robust net edge has been demonstrated. What they *don't* tell us: 38 trades can't distinguish 'dead' from 'noisy marginal,' and the recent down-trend is a known-bad regime for fading.
 
-**Bottom line.** The edge is not holding up to spec, but gross PnL is still marginally positive, so this is a *watch*, not a breakdown warranting a halt. There is no evidence of profitability after realistic costs, and none should be assumed. Keep collecting data before drawing firm conclusions.
+**Bottom line.** Behaving as feared: a thin, marginal signal that is not reliably net-profitable. No evidence of profit, but no clean breakdown either. Keep it on watch, keep collecting trades, don't deploy real size.
