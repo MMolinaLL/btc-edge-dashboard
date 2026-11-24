@@ -446,3 +446,4 @@
 {"t": "2026-11-22 14:11 UTC", "headline": "38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); recent 13 gross ~0. Marginal, underperforming spec.", "alert_level": "watch"}
 {"t": "2026-11-23 02:19 UTC", "headline": "38 live bets net -1.66 bps/bet; gross ~1.3 vs ~4 expected. Marginal signal underperforming spec, sample still thin.", "alert_level": "watch"}
 {"t": "2026-11-23 17:33 UTC", "headline": "38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); last-13 window flipped positive. Thin, marginal.", "alert_level": "watch"}
+{"t": "2026-11-24 05:45 UTC", "headline": "38 live bets net -1.66 bps/bet (gross ~1.3 vs ~4 expected); recent 7-bet window -14 bps. Thin and marginal.", "alert_level": "watch"}
