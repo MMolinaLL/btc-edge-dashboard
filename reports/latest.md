@@ -1,15 +1,15 @@
-# 🟡 38 live bets net -1.66 bps/bet (below ~4 bps expected); last-6 window +3.4 bps but tiny. Still marginal.
+# 🟡 38 live bets net -1.66 bps/bet (below ~1 bps expected); last-6 window +11.8 bps but tiny. Still marginal.
 
-_Updated 2026-11-24 17:04 UTC · model claude-opus-4-8_
+_Updated 2026-11-25 04:47 UTC · model claude-opus-4-8_
 
-> **WATCH:** Full 38-trade ledger nets -1.66 bps/bet, below cost and below the ~4 bps gross edge. Sample is modest, not yet a clear breakdown — keep monitoring.
+> **WATCH:** Full-sample net is negative (-1.66 bps/bet over 38 trades, -63 bps cumulative) — early degradation worth watching, not yet a clear breakdown.
 
-**Regime:** BTC has fallen further to ~$59.2k from mid-$80s Sept/Oct highs — a sustained downtrend that is structurally unfriendly to a mean-reversion fade. Signal is currently flat (0).
+**Regime:** BTC has slid to ~$59k from mid-$80s highs in Sept/Oct — a sustained downtrend that is structurally unfriendly to a mean-reversion fade. Signal is currently flat (0).
 
-**How it's doing:** Across all 38 resolved live bets, the strategy averages **-1.66 bps per bet** (total **-63 bps**), with a win rate of **36.8%**. That is below the ~4 bps gross edge we hoped to see, and below the ~3 bps cost assumed here — so on this sample it is **not net-profitable**. This matches expectations that the signal is marginal at best.
+**How it's doing.** Across all 38 resolved live bets, the strategy is net **-1.66 bps per bet** (-63 bps cumulative, 36.8% win rate). That's below the already-thin expectation (~4 bps gross, ~1 bps net at 3 bps cost) — and remember realistic breakeven is ~3.9 bps, so after true costs this would look worse, not better.
 
-**What changed vs last time:** Very little. The ledger is unchanged at 38 trades (no new resolved bets since the prior check). The small rolling **6-bet window is now +3.4 bps net** (vs a negative 7-bet window last time) — a mild uptick, but **6 trades is pure noise** and should not be read as recovery.
+**What changed vs last time.** Little on the full ledger — still ~-1.66 bps/bet, still a 'watch'. The one bright spot is the recent 6-bet window: +11.8 bps net, 4 of 6 winners. But six trades is noise, not evidence; a single lucky fade (e.g. the +48 and +24 bps winners) can flip a tiny window green.
 
-**What the numbers do and don't tell us:** With only ~1-2% of candles trading, the sample grows slowly. 38 trades is enough to say the edge is *not obviously strong*, but **not enough to firmly declare it broken**. The spread of outcomes is wide (single trades range from -37 to +49 bps), so means move a lot per trade. Separately, the independent edge search found **0 survivors** that clear a positive net return on both venues at 5 bps cost — a sobering, honest backdrop.
+**What the numbers do and don't tell us.** 38 trades is enough to say the live edge is *not* visibly positive, but not enough to confirm a true breakdown versus bad luck — confidence intervals at this count are wide. The low win rate (37%) is consistent with a fade strategy that relies on occasional big winners, which is fragile. No new candidate survived the edge search (0 survivors at the 5 bps bar).
 
-**Bottom line:** The strategy is behaving like the marginal, probably-not-net-profitable signal we expected. No guaranteed profit here. Staying at **watch**: cumulative results lean negative in an unfriendly downtrend, but the sample isn't yet decisive enough to force a pause.
+**Bottom line.** This remains a marginal, probably-not-net-profitable signal, and live data has leaned slightly negative, not positive. The sustained downtrend is an unfavorable regime for fading. Nothing here suggests guaranteed profit; keep it in research/paper mode and keep watching. No pause warranted yet, but no green light either.
