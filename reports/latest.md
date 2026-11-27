@@ -1,15 +1,15 @@
-# 🟡 38 bets net -1.66 bps/bet (-63 bps total); last 6 bets +12.8 bps net. Marginal as expected, sample still thin.
+# 🟡 38 resolved bets net -1.66 bps/bet (-63 bps total); recent 8-bet window +2.43 bps net. Still marginal, sample thin.
 
-_Updated 2026-11-27 03:57 UTC · model claude-opus-4-8_
+_Updated 2026-11-27 16:17 UTC · model claude-opus-4-8_
 
-> **WATCH:** Full-sample net is below breakeven (-1.66 bps/bet over 38 trades) and implied gross edge (~1.3 bps) is running under the ~4 bps expectation. Not a confirmed breakdown — keep watching.
+> **WATCH:** Cumulative ledger remains net-negative (-63 bps over 38 bets), consistent with a marginal/likely-unprofitable edge. Not a clear breakdown, but worth watching.
 
-**Regime:** BTC ~$61.4k, down sharply from mid-$80s highs over recent months — a choppy, trending backdrop that is awkward for a mean-reversion fade. Signal is currently flat (0).
+**Regime:** BTC ~$60.0k, down hard from mid-$80s highs over the past few months — a trending, volatile backdrop that is awkward for a mean-reversion fade. Signal currently flat (0).
 
-**How it's doing.** Over the full live ledger of 38 resolved trades, the strategy is netting **-1.66 bps per bet (-63 bps cumulative)** at an assumed 3 bps cost, winning just **36.8%** of the time. That's below breakeven and consistent with the pre-registered warning that this signal is *marginal and likely not net-profitable after realistic costs*. The implied gross edge (~1.3 bps/bet) is running under the ~4 bps we hoped to see.
+**How it's doing.** The full live ledger now holds 38 resolved trades: win rate 36.8%, averaging **-1.66 bps per bet** (**-63 bps cumulative**) after a 3.0 bps cost assumption. That is net-negative — but remember this strategy was flagged up-front as *marginal*: ~4 bps gross edge against a ~3.9 bps breakeven cost. A small negative result is exactly what you'd expect if the edge is real-but-tiny, or if it's zero.
 
-**What changed vs last time.** Little of substance. The headline numbers are essentially unchanged from the prior read. The most recent 6-bet window looks great — **+12.8 bps net, 83% wins** — but six trades is noise, not evidence. Note the biggest recent losers came on long (`signal 1`) fades during BTC's slide from the $80s into the $60s, exactly the kind of move that punishes mean-reversion.
+**What changed.** Little has moved since last check. The ledger count is unchanged at 38, so no fresh trades have resolved. The trailing 8-bet window is mildly positive (**+2.43 bps net**, 62.5% wins), echoing the earlier note that the most recent trades have steadied. One ugly outlier remains visible: a -36.7 bps long on Nov 14 during the sharp drop into the low $60ks.
 
-**What the numbers do and don't tell us.** 38 trades is still a small sample: a handful of big winners or losers swings the average materially. We cannot statistically distinguish 'small real negative edge' from 'zero edge plus noise' here. Separately, the edge-search found **0 survivors** passing the net-positive-on-both-venues bar — reinforcing that a durable, cost-covering edge has not been demonstrated.
+**What the numbers do and don't tell us.** 38 trades is still **too few to conclude anything**. With bet-to-bet swings of ±25-50 bps, a -1.66 bps average is statistically indistinguishable from zero. The negative total is suggestive, not conclusive. Separately, the independent edge search still returns **0 survivors** at a 5 bps cost bar — a meaningful reminder that no robust net-profitable version has been found.
 
-**Bottom line.** No guaranteed profit here — if anything, live results lean mildly negative, as expected for a marginal signal. Nothing yet justifies an alert-level pause, but the edge is not proving itself. Keep collecting resolved trades and watch for the rolling net staying clearly negative over more bets.
+**Bottom line.** Behaving as expected for a marginal signal: slightly net-negative, well within noise, sample too thin to judge. No guaranteed profit here — if anything, the weight of evidence leans toward 'not net-profitable after real costs.' Keep collecting data; no action beyond continued monitoring.
