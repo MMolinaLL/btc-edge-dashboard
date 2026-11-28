@@ -455,3 +455,4 @@
 {"t": "2026-11-27 03:57 UTC", "headline": "38 bets net -1.66 bps/bet (-63 bps total); last 6 bets +12.8 bps net. Marginal as expected, sample still thin.", "alert_level": "watch"}
 {"t": "2026-11-27 16:17 UTC", "headline": "38 resolved bets net -1.66 bps/bet (-63 bps total); recent 8-bet window +2.43 bps net. Still marginal, sample thin.", "alert_level": "watch"}
 {"t": "2026-11-28 03:44 UTC", "headline": "38 bets net -1.66 bps/bet (-63 bps total); gross ~1.3 bps/bet, below the ~4 bps expected. Still thin, still marginal.", "alert_level": "watch"}
+{"t": "2026-11-28 15:10 UTC", "headline": "38 bets net -1.66 bps/bet (-63 bps total); gross ~1.3 bps vs ~4 bps expected. Thin, marginal, flat signal.", "alert_level": "watch"}
